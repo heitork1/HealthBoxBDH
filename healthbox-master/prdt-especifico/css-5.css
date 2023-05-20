@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.texto{
+    height: 80vh;
+    width: 30vw;
+    margin-left: 56%;
+    margin-top: 12vh;
+}
+
+
+.body{
+    width: 100%;
+    height: 100%;
+    background-color: #D7DBD9;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+
+.menu-principal{
+    display: inline;
+    width: 100%;
+    background-color:#0A250D;
+    height: 55px;
+    position: fixed;
+}
+
+
+menu{
+    font-family: arial;
+    margin-top: 30px;
+    width: 200px;
+    height: 100px;
+}
+
+
+.logo{
+    background-image: url(/img/inicio/logo-br.png);
+    width: 220px;
+    height: 220px;
+    margin-top: -82px;
+    margin-left: -10px;
+    position: fixed;
+    background-size: cover;
+}
+.btn-text-top{
+    margin-left: 135vh;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255,8);
+    border-radius: 12px;
+    padding: 15px 50px 15px 30px;
+    width: 170px;
+    height: 2px;
+    position: relative;
+}
+.btn-buscar-top{
+    margin-left: -29px;
+    top: 16px;
+    width: 20px;
+    height: 22px;
+    background:url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+    border:none;
+    cursor: pointer;
+    position: fixed;
+}
+.form-busca-site{
+    margin-left: 2px;
+}
+.menu-secundario{
+    width: 100%;
+    background-color:#7C9E82;
+    height: 45px;
+    position: fixed;  
+    top: 8.5vh;
+}
+
+
+.Palavras-menu-secundario{
+    display: flex;
+    height: 20px;
+    width: 345px;
+    justify-content:space-around;
+    margin-left: 145vh;
+    margin-top: 13px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+.espaço-palavras-menu-principal{
+    margin-left: 84vw;
+    margin-top: -2vw;
+    position: fixed;
+    height: 4vh;
+    width: 14vw;
+    display: inline-flex;
+}
+
+
+.sacola{
+    margin-left: 22%;
+    margin-top: 4px;
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+.entrar{
+    margin-left: 22%;
+    margin-top: 4px;
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+
+
+.img-sacola{
+    width: 25px;
+    height: 25px;
+    background-image: url(/img/inicio/bag.png) ;
+    position: fixed;
+    background-size: cover;
+    margin-left: 16vh;
+    margin-top: 1px;
+}
+.img-entrar{
+    width: 25px;
+    height: 25px;
+    background-image: url(/img/inicio/bonequinho.png) ;
+    position: fixed;
+    background-size: cover;
+    margin-left: 2vh;
+    margin-top: 1px;
+}
+
+.fundou{
+    display: flex;
+    margin-top: 22vh;
+    margin-left: 4vw;
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    
+}
+.main{
+    display: flex;
+    margin-left: 4vw;
+}
+.text{
+    font-family:'Fira Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 63px;
+}
