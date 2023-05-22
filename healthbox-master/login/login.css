@@ -57,6 +57,9 @@ form{
     justify-content: space-between;
     align-items: baseline;
 }
+.opcoes1 a{
+    color:#FFFFFF;
+}
 .redes{
 display: flex;
 height: 10%;
