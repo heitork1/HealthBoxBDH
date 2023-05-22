@@ -172,10 +172,10 @@ header {
    margin-top: 20vh;
    margin-left: 4vh;
    display:grid;
-   /* border:1px solid black; */
+   border:1px solid black;
    grid-template-areas: 
-   'b1 b1 b1 b1 b1 b2'
-   'b1 b1 b1 b1 b1 b2';
+   'b1 b1 b1 b1 b2 b2'
+   'b1 b1 b1 b1 b2 b2';
    width: 200vh;
    height: 100px;
    
@@ -195,7 +195,7 @@ header {
 
 
 .box-descricao{ 
-    /* border: solid 1px black; */
+    border: solid 1px black;
     display: flex;
     flex-direction: row;
     margin-top: 25px;
@@ -209,68 +209,26 @@ header {
     font-size: 20px;
     font-weight: bold;
     color: #3D2A1A;
+    
 }
 
-a,#box1{
+#box1 > a{
   color:#3D2A1A;
-  text-decoration: none;
+}
 
+.descricao-produtos >a{
+    text-decoration: none;
+    color:#3D2A1A;
 }
 
 
-
-#box2{
+#menu{
     grid-area: b2;
-    /* grid-column: 1/9; */
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    font-weight:bold;
     color: #3D2A1A;
 }
 
-#box3{
-    grid-area: b3;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-}
-
-/* #box4{
-    font-family: 'Montserrat', sans-serif;
-    grid-area: b4;
-}
-
-#box5{
-    grid-area: b5;
-    /* display: flex; */
-    /* font-family: 'Montserrat', sans-serif;
-    font-size: 17px; */
-/* } */
-
-/* #box6{
-    grid-area: b6;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    
-}
-
-#box7{
-    font-family: 'Montserrat', sans-serif;
-    grid-area: b7;
-}
-
-#box8{
-    grid-area: b8;
-    /* display: flex; */
-    /* font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-} */ 
-
-#box9{
-    grid-area: b9;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    
-} 
 
 
 #box12{
@@ -279,6 +237,7 @@ a,#box1{
     height: 330px;
     background-color: rgb(223,203,190);
     border-radius: 8px;
+    text-decoration: none;
 }
 
 #box13{
@@ -288,6 +247,7 @@ a,#box1{
     /* background-image: url(2.png); */
     background-color: rgb(223,203,190);
     border-radius: 8px;
+    text-decoration: none;
 }
 
 #box14{
@@ -297,6 +257,7 @@ a,#box1{
     /* background-image: url(3.png); */
     background-color: rgb(223,203,190); 
     border-radius: 8px;
+    text-decoration: none;
 }
 
 #box15{
@@ -306,6 +267,7 @@ a,#box1{
     /* background-image: url(4.png); */
     background-color: rgb(223,203,190);
     border-radius: 8px;
+    text-decoration: none;
 }
 
 .imgbox{
@@ -384,29 +346,81 @@ input > #box5{
     width: 2vh;
 }
 
-.espaco-botao{
-    background-color: aqua;
-    justify-items: center;
-}
-.botao-carregar-mais{
-    
-    background-color: #7C9E82;
-    width: 50px;
-}
 
-
-button, espaco-botao  {
-    background-color: #4CAF50; /* Green */
+  .espaco-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 30px;
+  }
+  
+  .botaoEnviar {
+    width: 200px; /* Ajuste a largura conforme necessário */
     border-radius: 8px;
     border: none;
     color: white;
     padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    justify-content: center;
+    background-color: #4CAF50;
     transition-duration: 0.4s;
     cursor: pointer;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
   }
+
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu .menu-titulo {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .menu .menu-dropdown {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .menu .menu-item {
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+
+  .menu .menu-item:hover {
+    background-color: #f1f1f1;
+  }
+
+  .menu:hover .menu-dropdown {
+    display: block;
+  }
+
+  .menu-subtitulo {
+    cursor: pointer;
+  }
+
+  .menu-dropdown-sub {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+  }
+
+  .menu-item:hover .menu-dropdown-sub {
+    display: block;
+  }
+
+
+
