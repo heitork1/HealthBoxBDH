@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.faixa1{
+    background-color: #093807;
+    display: flex;
+    height: 8.8vh;
+    align-items: center;  
+}
+.faixa1 p{
+    margin-left: 15%;
+}
+#logo{
+    height: 35vh;
+    padding: 0%;
+    margin-left: -0.7%;
+}
+.pesquisa{
+    display: flex;
+    background-color: white;
+    height: 61.83%;
+    align-items: center;
+    border-radius: 12px;
+    width: 16vw;
+    padding-left: 2.27%;
+    margin-left: 46.6%;
+    
+}
+.pesquisa img {
+    height: 70%;
+    margin-left: 6%;
+}
+input{
+    border: none;
+    outline: none;
+}
+.entrar{
+    display: flex;
+    height: 75%;
+    align-items: center;
+    margin-left: 2.5%;
+}
+p{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 4%;
+}
+.sacola{
+    display: flex;
+    height: 75%;
+    align-items: center;
+    margin-left: 3%;
+}
+img{
+    height: 60%;
+}
+.faixa2{
+    background-color: #429C44;
+    height: 7.2vh;
+}
+
+.opcoes{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 83%;
+    justify-content: space-between;
+    width: 15%;
+}
+.opcoes p {
+    font-size: 16px;
+    align-self: center;
+}
+#nos{
+    padding-right: 2%;
+}
+body{
+    background-color: #E9E7E4;
+    font-family: 'Inter', sans-serif;
+    color: #3D2A1A;
+}

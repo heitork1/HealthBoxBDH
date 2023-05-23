@@ -84,16 +84,16 @@ h1{
     justify-content: center;
 }
 .informacoes{
-    width:25vw;
+    width:24vw;
     margin: 3vh 0 0;
 }
 .endereco{
     background-color: #DFCBBE;
     margin: 2.5vh 0 1.5vh 0;
-    height: 32%;
+    height: 36%;
 }
 .endereco > h2{
-    margin-top: 3%;
+    margin-top: 2%;
     font-size: 20px;
 }
 
@@ -103,7 +103,7 @@ h1{
 .pagamento{
     background-color: #DFCBBE;
     margin: 3vh 0 ;
-    height: 26%;
+    height: 24%;
 }
 
 .casa img{
