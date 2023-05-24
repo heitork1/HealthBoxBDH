@@ -82,3 +82,29 @@ body{
     font-family: 'Inter', sans-serif;
     color: #3D2A1A;
 }
+.valqtd{
+    display: flex;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+.sub{
+    display: flex;
+}
+.total{
+    display: flex;
+}
+.itens{
+    width: 70%;
+}
+.item{
+    display: flex; 
+}
+.item img{
+    width: 30%;
+}
+.freres img{
+    width: 3%;
+    height: 5%;
+}
