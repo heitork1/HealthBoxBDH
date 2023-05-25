@@ -1,7 +1,7 @@
 body {
-    margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
+    margin:0;
 }
 header {
     display: flex;
@@ -164,19 +164,131 @@ header {
     margin-top: 22vh;
     margin-left: 4vw;
 }
+
 .coluna{
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    
 }
+
 .main{
     display: flex;
     margin-left: 4vw;
 }
+
 .text{
     font-family:'Fira Sans', sans-serif;
     font-size: 45px;
     font-weight: 400;
     line-height: 63px;
 }
+
+.produto-especifico{
+    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 150px;
+}
+
+.imagens-produtos{
+    display: grid;
+}
+
+.imgs{
+   margin-left: 75px;
+   background-color: #857c9e;
+   border: 1px solid black;
+   height: 125px;
+   width: 150px;
+   display: grid;
+}
+
+.img{
+    
+   background-color: #857c9e;
+   border: 1px solid black;
+   height: 506px;
+   width: 600px;
+}
+
+.descricao-produto{
+    border: 1px solid black;
+    width: 500px;
+}
+
+.plv-produtos{
+    border: 1px solid black;
+    width: 500px;
+}
+
+
+#plv1{
+    border: 1px solid black;
+    height: 130px;
+}
+
+#plv2{
+    border: 1px solid black;
+    height: 60px;
+}
+
+#plv3{
+    border: 1px solid black;
+    height: 50px;
+}
+
+#plv4{
+    border: 1px solid black;
+    height: 50px;
+}
+
+#plv5{
+    border: 1px solid black;
+    height: 70px;
+}
+
+#plv6{
+    border: 1px solid black;
+    height: 70px;
+}
+
+.frete{
+    display: grid;
+    width: 500px;
+    background-color: aqua;
+}
+
+.cep input{
+    background-color: #DFCBBE;
+    margin-left: 3px;
+}
+input{
+    /* border: none; */
+    outline: none;
+    width: 130px;
+}
+.cep{
+    background-color: #DFCBBE;
+    width: 160px;
+    margin-right:10px;
+    border-radius: 7px;
+    padding: 1px 0 1px 2px;
+}
+
+.calcular{
+    border: none;
+    background-color: #B49E88;
+    padding: 0 2% 0 2%;
+    height: 20px;
+    width: 80px;
+    border-radius:7px;
+}
+
+
+
+#plv7{
+    border: 1px solid black;
+}
+ 
+
+
+
