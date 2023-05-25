@@ -40,25 +40,29 @@
             <h1>SACOLA</h1>
             <div class="item">
                 <img src="../img/sacola/image.png" alt="">
-                <div>
+                <div class="descricao">
                     <h2>Dieta -7kg em 7 dias</h2>
                     <div class="valqtd">
-                        <p>R$200,00</p>
-                        <span>+</span>
-                        <span>1</span>
-                        <span>-</span>
+                        <p class="val">R$200,00</p>
+                        <div class="quantity">
+                            <span class="operadores">+</span>
+                            <span class="qtd">1</span>
+                            <span class="operadores">-</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <img src="../img/sacola/image1.png" alt="">
-                <div>
+                <div class="descricao">
                     <h2>Dieta -15kg em 15 dias</h2>
                     <div class="valqtd">
-                        <p>R$200,00</p>
-                        <span>+</span>
-                        <span>1</span>
-                        <span>-</span>
+                        <p class="val">R$200,00</p>
+                        <div class="quantity">
+                            <span class="operadores">+</span>
+                            <span class="qtd">1</span>
+                            <span class="operadores">-</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,10 +70,13 @@
         <img src="../img/finalizar/linha-vertical.png" alt="">
         <section class="freres">
             <h2>FRETE</h2>
-            <label for="cep"><img src="../img/sacola/casinha.png" alt=""></label>
-            <input type="text" placeholder="CEP 00000-000" name="cep">
-            <button type="submit">Calcular</button>
-
+            <div class="frete">
+                <div class="cep">
+                    <label for="cep"><img src="../img/sacola/casinha.png" alt=""></label>
+                    <input type="text" placeholder="CEP 00000-000" name="cep">
+                </div>
+                <button type="submit" class="calcular">Calcular</button>
+            </div>
             <h2>RESUMO DE PEDIDO</h2>
             <div class="sub">
                 <p>Subtotal</p>
