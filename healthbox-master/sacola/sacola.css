@@ -85,6 +85,8 @@ body{
 .valqtd{
     display: flex;
     margin-left: -4.2%;
+    margin-top: 10%;
+    height: 15%;
 }
 main{
     display: flex;
@@ -177,6 +179,5 @@ main{
     display: flex;
     background-color: #B49E88;
     border-radius: 5px;
-    
     margin-left: 2%;
 }
