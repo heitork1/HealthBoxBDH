@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 .faixa1{
     background-color: #093807;
@@ -25,7 +26,6 @@
     width: 16vw;
     padding-left: 2.27%;
     margin-left: 46.6%;
-    
 }
 .pesquisa img {
     height: 70%;
@@ -93,40 +93,109 @@ main{
 }
 .sub{
     display: flex;
+    align-items: baseline;
+    height: 8%;
+    width: 66%;
+    justify-content: space-between;
+}
+.sub p{
+    color: #3D2A1A;
+    font-size: 18px;
+    margin-left: 0;
+    font-weight: 600;
+}
+.sub span{
+    background-color: #DFCBBE;
+    width: 70%;
+    height:70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 900;
 }
 .total{
     display: flex;
+    align-items: baseline;
+    height: 8%;
+    width: 66%;
+    justify-content: space-between;
+}
+.total p{
+    color: #3D2A1A;
+    font-size: 18px;
+    margin-left: 0;
+    font-weight: 600;
+}
+.total span{
+    background-color: #DFCBBE;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 900;
 }
 .itens{
     width: 70%;
     margin-left: 5%;
+    margin-top: 1.5%;
+}
+.itens h1{
+    display: flex;
+    justify-content: center;
 }
 .itens h2{
-    background-color: #DFCBBE;
-    
+    background-color: #DFCBBE;  
 }
 .itens p{
     background-color: #DFCBBE;
 }
 .item{
     display: flex;
-    margin-top: 5%; 
-    
+    margin-top: 5%;  
 }
 .item img{
     width: 25%;
+    border: solid 5px #848D43;
 }
-.item p{
-    
-}
+
 .item h2{
     width:85%;
     padding: 0.5% 3%;
     border-radius: 2px;
 }
+.freres{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .freres img{
     width: 100%;
     height: 90%;
+}
+.freres h2{
+    width: 66%;
+    display: flex;
+    justify-content: center;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    width: 66%;
+    height: 10%;
+}
+.confirmar{
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #093807;
+    font-weight: 700;
+    font-size: large;
+    color: white;
+    border: none;
+    
 }
 .operadores{
     background-color: #B49E88;
@@ -141,6 +210,8 @@ main{
     display: flex;
     justify-content: center; 
     border-radius: 5px;
+    height: 100%;
+    align-items: center;
 }
 .cep{
     display: flex;
@@ -155,7 +226,7 @@ main{
 }
 .cep input{
     background-color: #DFCBBE;
-    margin-left: 10%;
+    margin-left: 8%;
 }
 .frete{
     display: flex;  
@@ -165,6 +236,8 @@ main{
     background-color: #B49E88;
     padding: 0 2% 0 2%;
     border-radius:7px;
+    color: #3D2A1A;
+    font-weight: 900;
 }
 .descricao{
     margin-left: 5%;
@@ -173,6 +246,11 @@ main{
 .val{
     width: 50%;
     border-radius: 5px;
+    color: #3D2A1A;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .quantity{
     width: 20%;
@@ -180,4 +258,11 @@ main{
     background-color: #B49E88;
     border-radius: 5px;
     margin-left: 2%;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
+.linha{
+    margin-left: -8%;
+    margin-top: 2%;
 }

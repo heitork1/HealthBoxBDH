@@ -86,6 +86,7 @@ p{
 
 main{
     display: flex;
+    background-color: #EBECF0;
 }
 #prato{
     margin-left: 4%;
