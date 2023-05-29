@@ -247,46 +247,87 @@ header {
 }
 
 #plv6{
+    display: flex;
     border: 1px solid black;
     height: 70px;
+    align-items: center;
+
 }
 
 .frete{
     display: grid;
     width: 500px;
-    background-color: aqua;
+    
 }
 
 .cep input{
     background-color: #DFCBBE;
-    margin-left: 3px;
+    margin-left: 2px;
+    width: 130px;
+    position: relative;
 }
+
 input{
-    /* border: none; */
+    border: none;
     outline: none;
     width: 130px;
+    font-family: 'Montserrat', sans-serif;
 }
 .cep{
+    display: flex;
     background-color: #DFCBBE;
     width: 160px;
-    margin-right:10px;
+    margin-left: 20px;
     border-radius: 7px;
-    padding: 1px 0 1px 2px;
+    padding: auto;
+    height: 30px;
+    align-items: center;
 }
 
 .calcular{
     border: none;
     background-color: #B49E88;
     padding: 0 2% 0 2%;
-    height: 20px;
+    height: 30px;
     width: 80px;
     border-radius:7px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cep img{
+    width: 20px;
+    padding:4px 4px;
 }
 
 
 
 #plv7{
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.botao button{
+    background-color: #144d04;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    border-radius: 7px;
+    width: 200px;
+    border: none;
+    font-size: 15px;
+}
+
+.botao{
+    
+    display:flex;
+    align-items: center;
+    height: 100px;
+    margin-left: 20px;
+    width: 100%;
+    justify-content: center;
+
 }
  
 
