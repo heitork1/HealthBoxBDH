@@ -1,0 +1,83 @@
+const express = require('express')
+const bodyParser = require('body-parser')
+const mysql = require('mysql2');
+const app = express()
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+
+const path = require('path')
+app.use('/assets', express.static('assets'))
+app.use('/img', express.static('img'))
+app.use('/pages', express.static('pages'))
+
+const connection = mysql.createConnection({
+  host: '127.0.0.1',
+  user: 'root',
+  password: 'root',
+  database: 'HealthBox',
+});
+
+connection.connect(function (err) {
+  if (!err){
+    console.log("Conexão como o Banco realizada com sucesso!!!");
+  } else{
+    console.log("Erro: Conexão NÃO realizada", err);
+  }
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/Tela-Inicial.html')
+})
+ 
+app.post('/login', (req, res) => {
+  let username = req.body.username;
+  let password = req.body.password;
+
+connection.query("SELECT * FROM user WHERE email_user = '" + username + "'", function (err, rows) {
+    if (!err) {
+      if (rows.length > 0) {
+        // senha do banco de dados
+        let senhaBanco = rows[0].senha_user;
+
+        // Verifica se a senha digitada pelo usuário é igual à senha cadastrada no banco de dados
+        if (password === senhaBanco) {
+          console.log('Senha correta! Acesso permitido.');
+          res.send('Login com Sucesso!!!');
+        } else {
+          console.log('Senha incorreta! Acesso negado.');
+          res.send('Senha incorreta');
+
+        }
+      } else {
+        console.log('Usuário não encontrado.');
+        res.send('Login Falhou - Email não cadastrado');
+      }
+    } else {
+      console.log('Erro: Consulta não realizada', err);
+    }
+  });
+
+    res.send('Mandou para o Servidor');
+})
+
+app.post('/cadastro', (req, res) => {
+  let username = req.body.username;
+  let password = req.body.password;
+  let email = req.body.password;
+  let telefone = req.body.telefone;
+  let date = req.body.date
+
+connection.query("INSERT INTO user (`nome_user`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username + "'," + "'" + email + "'," + "'" + password + "'," + "'" + telefone + "'," + "'" + date + "'" + ")", function (err, rows) {
+    if (!err) {
+      console.log("Usuario cadastrado com sucesso")
+    } else {
+      console.log('Não foi possível cadastrar', err);
+    }
+  });
+
+    res.send('Mandou para o Servidor');
+})
+
+app.listen(3002, () => {
+  console.log('Servidor rodando na porta 3000!')
+})
