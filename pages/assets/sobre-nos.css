@@ -162,10 +162,7 @@ header {
 .img-vovo{
     width: 80vw;
     height: 100vh;
-    background-image: url(/healthbox-master/img/sobre-nos/sobrenosvovó.png);
-    background-size: cover;
-    display: inline-flex;
-    margin-left: -15vw;
+   
 }
 
 
