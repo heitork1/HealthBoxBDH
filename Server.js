@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root',
   password: 'root',
-  database: 'HealthBox',
+  database: 'healthbox',
 });
 
 connection.connect(function (err) {
@@ -33,11 +33,11 @@ app.post('/login', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
 
-connection.query("SELECT * FROM user WHERE email_user = '" + username + "'", function (err, rows) {
+connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", function (err, rows) {
     if (!err) {
       if (rows.length > 0) {
         // senha do banco de dados
-        let senhaBanco = rows[0].senha_user;
+        let senhaBanco = rows[0].senha;
 
         // Verifica se a senha digitada pelo usuário é igual à senha cadastrada no banco de dados
         if (password === senhaBanco) {
@@ -46,7 +46,6 @@ connection.query("SELECT * FROM user WHERE email_user = '" + username + "'", fun
         } else {
           console.log('Senha incorreta! Acesso negado.');
           res.send('Senha incorreta');
-
         }
       } else {
         console.log('Usuário não encontrado.');
@@ -56,18 +55,16 @@ connection.query("SELECT * FROM user WHERE email_user = '" + username + "'", fun
       console.log('Erro: Consulta não realizada', err);
     }
   });
-
-    res.send('Mandou para o Servidor');
 })
 
 app.post('/cadastro', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
-  let email = req.body.password;
+  let email = req.body.email;
   let telefone = req.body.telefone;
   let date = req.body.date
 
-connection.query("INSERT INTO user (`nome_user`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username + "'," + "'" + email + "'," + "'" + password + "'," + "'" + telefone + "'," + "'" + date + "'" + ")", function (err, rows) {
+connection.query("INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username + "'," + "'" + email + "'," + "'" + password + "'," + "'" + telefone + "'," + "'" + date + "'" + ")", function (err, rows) {
     if (!err) {
       console.log("Usuario cadastrado com sucesso")
     } else {
@@ -79,5 +76,5 @@ connection.query("INSERT INTO user (`nome_user`, `email`, `senha`,`telefone`, `d
 })
 
 app.listen(3002, () => {
-  console.log('Servidor rodando na porta 3000!')
+  console.log('Servidor rodando na porta 3002!')
 })

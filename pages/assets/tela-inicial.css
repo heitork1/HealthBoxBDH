@@ -22,9 +22,9 @@
     height: 61.83%;
     align-items: center;
     border-radius: 12px;
-    width: 16vw;
+    width: 18vw;
     padding-left: 2.27%;
-    margin-left: 46.6%;
+    margin-left: 45%;
     
 }
 .pesquisa img {
@@ -36,26 +36,38 @@ input{
     outline: none;
 }
 .entrar{
-    display: flex;
-    height: 75%;
-    align-items: center;
-    margin-left: 2.5%;
+    width: 10%;
+    margin-left: 4%;
 }
+.entrar a{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    text-decoration: none;
+}
+.entrar img{
+    width: 50%;
+}
+.sacola img{
+    width: 25%;
+}
+.sacola a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sacola p{
+    margin-left: 6%;
+}
+
 p{
     color: white;
     font-size: 15px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
-.sacola{
-    display: flex;
-    height: 75%;
-    align-items: center;
-    margin-left: 3%;
-}
-img{
-    height: 60%;
-}
+
+
 .faixa2{
     background-color: #429C44;
     height: 7.2vh;
