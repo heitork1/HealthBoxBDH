@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Conta</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/pages/assets/minha-conta.css">
 </head>
 
@@ -44,50 +48,61 @@
         <section class="minhaconta">
             <h1>Minha Conta</h1>
             <div class="formulario">
-                <form action="/atualizar" method="post">
-                    <div class="nome">
-                        <label for="username">Nome Completo</label>
-                        <input type="text" name="username" placeholder="Nome do usuário (dinâmico)">
-                    </div>
-                    <div class="email">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="email do usuário (dinâmico)">
-                    </div>
-                    <div class="senha">
-                        <label for="password">Senha do usuário</label>
-                        <input type="password" name="password">
-                    </div>
-                    <div class="data_tel">
-                        <div class="data">
-                            <label for="date">Data de nascimento</label>
-                            <input type="date" name="date" id="" placeholder="00/00/0000">
+                <div class="form">
+                    <form action="/atualizar" method="post">
+                        <div class="nome">
+                            <label for="username">Nome Completo</label>
+                            <input type="text" name="username" placeholder="Nome do usuário (dinâmico)">
                         </div>
-                        <div class="tel">
-                            <label for="tel"></label>
-                            <input type="tel" placeholder="(00) 00000-0000" name="tel">
+                        <div class="email">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="email do usuário (dinâmico)">
                         </div>
-                    </div>
-                    <input type="submit" value="Alterar informações de cadastro">
-                </form>
+                        <div class="senha">
+                            <label for="password">Senha do usuário</label>
+                            <input type="password" name="password">
+                        </div>
+                        <div class="data_tel">
+                            <div class="data">
+                                <label for="date">Data de nascimento</label>
+                                <input type="date" name="date" id="nasc" placeholder="00/00/0000">
+                            </div>
+                            <div class="tel">
+                                <label for="tel">DDD + Telefone</label>
+                                <input type="tel" placeholder="(00) 00000-0000" name="tel">
+                            </div>
+                        </div>
+                        <input type="submit" value="Alterar informações de cadastro" id="alterar">
+                    </form>
+                </div>
             </div>
         </section>
         <section class="separador">
-            <img src="../pages/img/inicio/logo.png" alt="" id="logo">
+            <img src="../pages/img/inicio/logo (2).png" alt="" class="logo">
             <img src="../pages/img/finalizar/linha-vertical.png" alt="" id="linha">
         </section>
         <section class="pedidos">
             <h1>Meus Pedidos</h1>
             <div class="box-1">
-                <img src="" alt="">
-                <p>Dieta -7kg em 7 dias</p>
-                <p>R$200,00</p>
-                <p>Entrega prevista: 00/00/0000</p>
+                <div class="div1">
+                    
+                    <img src="/pages\img\produto-img\4.png" alt="" class="produto">
+                    <div class="legenda">
+                        <p class="nomeprod">Dieta -7kg em 7 dias</p>
+                        <p class="valor">R$200,00</p>
+                    </div>
+                </div>
+                <p class="entrega">Entrega prevista: 00/00/0000</p>
             </div>
-            <div class="box-1">
-                <img src="" alt="">
-                <p>Dieta -15kg em 15 dias</p>
-                <p>R$400,00</p>
-                <p>Entregue</p>
+            <div class="box-1 debaixo">
+                <div class="div1">
+                    <img src="/pages\img\produto-img\1.png" alt="" class="produto">
+                    <div class="legenda">
+                        <p class="nomeprod">Dieta -15kg em 15 dias</p>
+                        <p class="valor">R$400,00</p>
+                    </div>
+                </div>
+                <p class="entrega">Entregue</p>
             </div>
         </section>
     </main>
