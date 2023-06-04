@@ -91,3 +91,22 @@ p{
     font-family: 'Montserrat', sans-serif;
     margin-left: 4%;
 }
+.mulher{
+    height: 83vh;
+    border: solid 1px #CED7D2;
+}
+main{
+    background-color: #EBECF0;
+    display: flex;
+}
+.texto{
+    width: 50%;
+    text-align: justify;
+    margin: auto;
+    margin-left: 4%;
+}
+.texto p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+}
