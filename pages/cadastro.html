@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +9,85 @@
     <link rel="stylesheet" href="/pages/assets/cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="main">
         <img src="/pages/img/Login-cadastro/logo.png" alt="">
-    <div class="grande">
-        <form action="/cadastro" method="post">
-            <label for="username">Nome completo</label>
-            <input type="text" class="large-data" name="username">
-            <label for="email">E-mail</label>
-            <input type="text" class="large-data" name="email">
-            <label for="password">Crie uma senha</label>
-            <input type="text" class="large-data" name="password">
-            <div class="form2">
-                <div class="small-data">
-                    <label for="date">Data de nascimento</label>
-                    <input type="date" name="date" id="">
+        <div class="grande">
+            <form action="/cadastro" method="post">
+                <label for="username">Nome completo</label>
+                <input type="text" class="large-data" name="username">
+                <label for="email">E-mail</label>
+                <input type="text" class="large-data" name="email">
+                <label for="password">Crie uma senha</label>
+                <input type="text" class="large-data" name="password">
+                <div class="form2">
+                    <div class="small-data">
+                        <label for="date">Data de nascimento</label>
+                        <input type="date" name="date" id="">
+                    </div>
+                    <div class="small-data">
+                        <label for="telefone">DDD + Telefone</label>
+                        <input type="tel" name="telefone" id="tel">
+                    </div>
                 </div>
-                <div class="small-data">
-                    <label for="telefone">DDD + Telefone</label>
-                    <input type="tel" name="telefone" id="tel">
+                <div class="termos">
+                    <p class="small-letters" id="politica">Ao criar uma conta, você concorda com a <a href=""> Política
+                            de Privacidade</a> e com os <a href="">Termos de Uso da Health Box.</a>
                 </div>
-            </div>
-            <div class="termos">
-            <p class="small-letters" id="politica">Ao criar uma conta, você concorda com a <a href="">Política de Privacidade</a> e com os <a href="" id="uso">Termos de Uso</a> da Health Box.</p>
-            </div>
-            <input type="submit" value="Cadastrar" id="cadastrar">
-            <p class="small-letters" id="login">Já é um usuário? <a href="../login/login.html">Fazer Login</a> </p>
-        </form>
+                <input type="submit" value="Cadastrar" id="cadastrar">
+                <p class="small-letters" id="login">Já é um usuário? <a href="../login/login.html">Fazer Login</a> </p>
+            </form>
+        </div>
     </div>
-</div>
+    <footer>
+        <div class="linha">h</div>
+        <div class="row1">
+            <div class="col1">
+                <img src="/pages/img/inicio/logo (2).png" alt="">
+                <div class="sublinhado"></div>
+                <p class="lema">Tornando a sua vida mais saudável</p>
+            </div>
+            <div class="col2">
+                <h4>Institucional</h4>
+                <a href="">Quem somos</a>
+                <a href="">Política de Privacidade</a>
+            </div>
+            <div class="col3">
+                <h4>Dúvida</h4>
+                <a href="">Meus Pedidos</a>
+                <a href="">Minha Conta</a>
+                <a href="">Entrega</a>
+            </div>
+            <div class="col4">
+                <h4>Redes Sociais</h4>
+                <div class="redes">
+                    <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook" >
+                    <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
+                    <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
+                </div>
+            </div>
+        </div>
+        <div class="contato">
+            <div class="localizacao">
+                <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
+                <p>Joinville/SC</p>
+            </div>
+            <div class="fone">
+                <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
+                <p>Fone/Whatsapp: (47) 00000-0000</p>
+            </div>
+            <div class="email">
+                <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
+                <p>Healthbox@gmail.com</p>
+                <p class="ilustra">As imagens são meramente ilustrativas</p>
+            </div>
+            <div class="linha2">v</div>
+        </div>
+    </footer>
 </body>
+
 </html>
