@@ -1,163 +1,155 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  margin:0;
+  width: 100%;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 /* menu principal */
 
-.menu01{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 58px;
-    background-color: #0A250D;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    box-sizing: border-box;
+.faixa1{
+  background-color: #093807;
+  display: flex;
+  height: 8.8vh;
+  align-items: center;  
+  width:100%;
+  margin: 0;
 }
 
-.logo {
-    /* font-size: 10px;
-    font-weight: bold; */
-    text-transform: uppercase;
-    width: 236px;
-    height: 145px;
-    margin-top:-96px;
-    margin-left: -25px;
+
+#logo{
+  display: flex;
+  height: 35vh;
+  margin-left: -1vw;
 }
 
-/* caixa de pesquisa */
-
-.caixa-de-pergunta {
-    flex: 1;
-    margin: 0 5px;
-    /* text-transform: uppercase; */
+.pesquisa{
+  display: flex;
+  background-color: white;
+  height:5.5vh;
+  align-items: center;
+  border-radius: 1vw;
+  width: 22vw;
+  padding-left: 1vw;
+  margin-left: 45vw;
+  transition: 0.2s;
 }
 
-.caixa-de-pergunta input[type="text"] {
-    margin-right: 1vw;
-    width: 20vw;
-    height: 5vh;
-    border: none;
-    border-radius: 8px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    font-size: 16px;
-    background-color:rgb(235, 236,240);
-}
-.btn-buscar-top{
-    margin-left: -7vh;
-    margin-top: 2px;
-    width: 4vh;
-    height: 4vh;
-    background-color: rgba(138, 97, 172, 0.533);
-    background:no-repeat;
-    border:none;
-    cursor: pointer;
-    position: fixed;
-    background-image: URL(icons8-lupa\ \(1\).svg);
-    background-size: 4vh;
-}
-
-.search-and-login {
-    display: flex;
-    align-items: center;
-}
-
-/* Entrar e sacola */
-
-.entrar-sacola {
-    display: flex;
-    align-items: center;
-    width: 30vh ;
-}
-
-/* entrar */
-
-.Tex-entrar{
-    color: #fff;
-    margin-left:21vh;
-    margin-top:-1vh ;
-    text-decoration: none;
-    font-size: 2vh;
-    position: fixed; 
-    font-family: 'Montserrat', sans-serif;
-} 
-
-.entrar-tamanho{
-    width: 4vh;
-    height: 4vh;
-    margin-top:-2vh;
-    margin-left: 16vh;
-    position: fixed; 
-}
-
-/* sacola */
-
-.bag-tamanho{
-    width: 4vh;
-    height: 4vh;
-    margin-top:-2vh;
-    position: fixed; 
-}
-.Tex-bag{
-    color: #fff;
-    margin-left:5vh;
-    margin-top:-1vh ;
-    text-decoration: none;
-    font-size: 2vh;
-    position: fixed; 
-    font-family: 'Montserrat', sans-serif;
+.pesquisa:hover{
+  background-color: rgb(211, 211, 211);
+  cursor: pointer;
 
 }
 
-/* menu02  */
-
-.menu02{
-    position: fixed;
-    margin-top: 58px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 45px;
-    background-color: #7C9E82;
-    flex-direction:row-reverse;
-    display: flex;
+.pesquisa input{
+  background-color: transparent;
 }
 
-.Esp-menu-02{
-        text-transform: uppercase;
-        height: 20px;
-        width: 240px ;
-        margin-right:1vw; 
-        display: flex;
-        justify-content: space-around;   
+.pesquisa img {
+  display:flex;
+  height: 4vh;
+  margin-left:13vh;
 }
 
-    .produto{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        color: #fff;
-        text-decoration: none;
-        text-transform:capitalize;
-    }
-    .sobre-nos{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        color: #fff;
-        text-decoration: none;
-        text-transform:capitalize;
-    }
+input{
+  border: none;
+  outline: none;
+}
+
+.entrar{
+  display: flex;
+  width: 10vw;
+  margin-left: 3vw;
+}
+
+
+.entrar a{
+  display: flex;
+  width: 4vw;
+  align-items: center;
+  text-decoration: none;
+}
+
+.entrar img{
+  width: 2vw;
+}
+
+.entrar p{
+  padding: 0.3vw;
+  margin-left: 0.2vw;
+  transition: 0.3s;
+}
+
+.entrar p:hover {
+  background-color: #429c4462;
+  border-radius: 1vh;
+  padding: 0.5vw;
+}
+
+.sacola img{
+  width: 2vw;
+}
+
+.sacola a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 2vw;
+}
+
+.sacola p{
+  margin-left: 0.76vw;
+  transition: 0.3s;
+}
+
+.sacola p:hover {
+  background-color: #429c4462;
+  border-radius: 1vh;
+  padding: 0.5vw;
+}
+
+/*Menu secundario*/
+
+.faixa2{
+  background-color: #429C44;
+  height: 7.2vh;
+  width: auto;
+  margin:0;
+}
+
+.opcoes a:hover {
+  background-color: #254e2562;
+  border-radius: 1vh;
+  padding: 0.5vw;
+}
+
+.opcoes{
+  display: flex;
+  height: 3.5vw;
+  align-items: center;
+  margin-left:83vw;
+  justify-content:space-around;
+  width: 33vh;
+}
+.opcoes a {
+  align-self: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  transition: 0.3s;
+}
+
+#nos{
+  display: flex;
+}
+
+header p{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 2vw;
+}
+
     
 
 .container-descricao{
@@ -278,7 +270,7 @@ header {
 
 #imgbox12{
     
-    background-image: url(image\ \(2\).png);
+    background-image: url(/pages/img/prdt-especifico/image\ \(2\).png);
     background-position: center;
     background-size:230px;
     border-radius: 8px;
@@ -287,21 +279,21 @@ header {
 
 #imgbox13{
   
-    background-image: url(image\ \(5\).png);
+    background-image: url(/pages/img/prdt-especifico/image.png);
     background-position: center center;
     background-size:230px;
     border-radius: 8px;
 }
 
 #imgbox14{
-    background-image: url(image\ \(4\).png);
+    background-image: url(/pages/img/prdt-especifico/image\ \(4\).png);
     background-position: center center;
     background-size:230px;
     border-radius: 8px;
 }
 
 #imgbox15{
-    background-image: url(image.png);
+    background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
     background-position: center center;
     background-size:230px;
     border-radius: 8px;
