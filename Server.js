@@ -25,14 +25,15 @@ connection.connect(function (err) {
   }
 });
 
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/Tela-Inicial.html')
 })
  
+
 app.post('/login', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
-
 connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", function (err, rows) {
     if (!err) {
       if (rows.length > 0) {
@@ -42,7 +43,13 @@ connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", func
         // Verifica se a senha digitada pelo usuário é igual à senha cadastrada no banco de dados
         if (password === senhaBanco) {
           console.log('Senha correta! Acesso permitido.');
-          res.send('Login com Sucesso!!!');
+          connection.query("SELECT nome from usuarios where senha='"+ senhaBanco +"'", function(err, rows){
+            if(!err){
+              res.redirect('/pages/produtos.html/' + rows[0].nome)
+            } else {
+              console.log("Não foi possível encontrar", err)
+            }
+          })
         } else {
           console.log('Senha incorreta! Acesso negado.');
           res.send('Senha incorreta');
@@ -57,6 +64,14 @@ connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", func
   });
 })
 
+
+app.get('/pages/produtos.html/:nome', function(req, res){
+  res.redirect('/pages/produtos.html')
+  var usuario = document.querySelector('#entrar')
+  usuario.innerHTML = req.params.nome
+})
+
+
 app.post('/cadastro', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
@@ -64,7 +79,8 @@ app.post('/cadastro', (req, res) => {
   let telefone = req.body.telefone;
   let date = req.body.date
 
-connection.query("INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username + "'," + "'" + email + "'," + "'" + password + "'," + "'" + telefone + "'," + "'" + date + "'" + ")", function (err, rows) {
+connection.query("INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username + "'," + "'" + email + "'," + "'" + password + "'," + "'" + telefone + "'," + "'" + date + "'" + ")"
+, function (err, rows) {
     if (!err) {
       console.log("Usuario cadastrado com sucesso")
     } else {
