@@ -150,7 +150,7 @@ label{
 .col4{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 11%;
     margin-right: 5%;
 }
 .localizacao{
@@ -184,5 +184,5 @@ h4{
     margin-top: 2%;
 }
 .ilustra{
-    margin-left: 55vw;
+    margin-left: 52vw;
 }
