@@ -112,8 +112,10 @@ h1{
     font-weight: 500;
 }
 
+
 footer{
     font-family: 'montserrat', sans-serif;
+    background-color: #EBECF0;
 }
 .linha{
     background-color: #093807;
@@ -137,7 +139,7 @@ footer{
     justify-content: space-around;
 }
 .row1 a{
-    color:#5D4837;
+    color: black;
 }
 .row1 img{
     margin-top: -5%;

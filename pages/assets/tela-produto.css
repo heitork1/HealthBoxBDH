@@ -422,8 +422,16 @@ input{
 
 
 
-
-
+footer{
+    font-family: 'montserrat', sans-serif;
+    background-color: #EBECF0;
+}
+footer p{
+    color: black;
+}
+.contato p{
+    margin-left: 1%;
+}
 .linha{
     background-color: #093807;
     height: 2vh;
@@ -446,7 +454,7 @@ input{
     justify-content: space-around;
 }
 .row1 a{
-    color:#5D4837;
+    color:black;
 }
 .row1 img{
     margin-top: -5%;
@@ -472,7 +480,7 @@ input{
 .col4{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 11%;
     margin-right: 5%;
 }
 .localizacao{
@@ -496,6 +504,7 @@ input{
     text-align: center;
     margin-right: 1%;
     margin-top: 2%;
+    font-size: 16px;
 }
 .redes img{
     width: 25%;
@@ -505,7 +514,6 @@ h4{
     font-size: 18px;
     margin-top: 2%;
 }
-.ilustra{
-    margin-left: 55vw;
+#ilustra{
+    margin-left: 52vw;
 }
-
