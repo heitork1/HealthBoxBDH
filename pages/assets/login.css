@@ -67,6 +67,9 @@ form{
 .manter{
     display: flex;
 }
+.flag{
+    margin-left: -4%;
+}
 #entrar{
     margin-left: 30%;
     width: 40%;
@@ -160,16 +163,13 @@ footer{
     margin-right: 5%;
 }
 .localizacao{
-    display: flex;
-    align-items: center;
+    display: flex;  
 }
 .fone{
     display: flex;
-    align-items: center;
 }
 .email{
     display: flex;
-    align-items: center;
 }
 .contato{
     margin-top: 3%;

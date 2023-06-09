@@ -138,14 +138,7 @@ body{
 
 .redes{
 display: flex;
-height: 10%;
-justify-content: space-between;
 margin-right: 10%;
-}
-
-.redes img{
-    height: 100%;
-    border-radius: 8%;
 }
 
 .icons8{
@@ -225,7 +218,7 @@ margin-right: 10%;
 }
 
 .row1 a{
-    color:#5D4837;
+    color: black;
 }
 
 .row1 img{
@@ -243,7 +236,7 @@ margin-right: 10%;
 }
 
 .col2 a{
-    margin-top: 13%;
+    margin-top: 12%;
 }
 
 .col3{
@@ -258,7 +251,7 @@ margin-right: 10%;
 .col4{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 11%;
     margin-right: 5%;
 }
 
@@ -270,7 +263,7 @@ margin-right: 10%;
     display: flex;
 }
 
-.email{
+#email{
     display: flex;
 }
 
@@ -290,8 +283,9 @@ margin-right: 10%;
 }
 
 .redes img{
-    width: 25%;
+    width: 28%;
     margin-top: 15%;
+    margin-right: 4%;
 }
 
 h4{
@@ -300,5 +294,5 @@ h4{
 }
 
 .ilustra{
-    margin-left: 55vw;
+    margin-left: 52vw;
 }
