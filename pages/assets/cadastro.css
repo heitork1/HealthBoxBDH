@@ -19,7 +19,7 @@ body{
 }
 .grande{
     width: 70vh;
-    height: 70vh;
+    height: 73vh;
     background-color: #194018;
     border: 3vh solid #72B06F;
     margin-bottom: 1%;
@@ -34,7 +34,7 @@ body{
 form{
     display: flex;
     flex-direction: column;
-    height: 95%;
+    height: 100%;
     width: 80%;
     margin: auto;
     margin-top: 8%;
@@ -66,14 +66,19 @@ label{
     text-decoration: none;
     margin-top: 2%;
 }
+#tel{
+    margin-top: 4%;
+}
 .small-data{
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    font-size: 14px;
 }
 .small-data input{
     outline: none;
     background-color: #E9E7E4;
+    margin-top: 5%;
 }
 .small-letters{
     margin: auto;
@@ -99,7 +104,9 @@ label{
     font-family: 'Montserrat', sans-serif;
    
 }
-
+#login{
+    margin-top:4%;
+}
 
 
 .linha{
@@ -124,7 +131,7 @@ label{
     justify-content: space-around;
 }
 .row1 a{
-    color:#5D4837;
+    color: black;
 }
 .row1 img{
     margin-top: -5%;

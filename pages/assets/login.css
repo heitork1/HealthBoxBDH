@@ -1,5 +1,7 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header{
     height: 10vh;
@@ -18,8 +20,8 @@ body{
     
 }
 .email-senha{
-    height: 5%;
-    border-radius: 3%;
+    height: 7%;
+    border-radius: 2px;
     border: none;
     background-color: #E9E7E4;
 }
@@ -52,29 +54,18 @@ form{
 }
 .small-letters{
     line-height: 20px;
-    font-size: 13px;
+    font-size: 12px;
 }
 .opcoes1{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 .opcoes1 a{
     color:#FFFFFF;
 }
-.redes{
-display: flex;
-height: 10%;
-justify-content: space-between;
-margin-right: 10%;
-
-}
-.redes img{
-    height: 100%;
-    border-radius: 8%;
-}
-.icons8{
-   height: 5px;
+.manter{
+    display: flex;
 }
 #entrar{
     margin-left: 30%;
@@ -91,10 +82,6 @@ margin-right: 10%;
 .termos{
     font-size: 12px;
 }
-.registro{
-    display: flex;
-    justify-content: center;   
-}
 .registro2{
     display: flex;
     justify-content: center;
@@ -104,21 +91,23 @@ margin-right: 10%;
     color: white;
     margin-left: 2%;
 }
-
-.uso{
-   margin-top: 0;
-   display: flex;
-   justify-content: center;
-}
-.link_uso{
-    margin-left: 1%;
-    margin-right: 1%;
-}
 .termos_link{
     color: white;
-    
+}
+.concorda{
+    margin-top: 0;
+    text-align: justify;
 }
 
+
+
+footer p, h4{
+    margin: 0;
+}
+footer{
+    margin: 0;
+    margin-top: 5%;
+}
 .linha{
     background-color: #093807;
     height: 2vh;
@@ -141,7 +130,7 @@ margin-right: 10%;
     justify-content: space-around;
 }
 .row1 a{
-    color:#5D4837;
+    color: black;
 }
 .row1 img{
     margin-top: -5%;
@@ -167,24 +156,29 @@ margin-right: 10%;
 .col4{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 11%;
     margin-right: 5%;
 }
 .localizacao{
     display: flex;
+    align-items: center;
 }
 .fone{
     display: flex;
+    align-items: center;
 }
 .email{
     display: flex;
+    align-items: center;
 }
 .contato{
     margin-top: 3%;
     margin-left: 2%;
+    
 }
 .contato img{
     width: 2%;
+    height: 2%;
     margin-right: 1%;
 }
 .lema{
@@ -201,5 +195,5 @@ h4{
     margin-top: 2%;
 }
 .ilustra{
-    margin-left: 55vw;
+    margin-left: 52vw;
 }
