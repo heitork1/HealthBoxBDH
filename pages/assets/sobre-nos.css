@@ -113,7 +113,8 @@ main{
 
 footer{
     font-family: 'montserrat', sans-serif;
-    
+    background-color: #EBECF0;
+    margin-top: 1%;
 }
 footer p{
     color: black;

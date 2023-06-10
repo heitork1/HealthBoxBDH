@@ -100,7 +100,7 @@ p{
     margin-left: 4%;
 }
 body{
-    background-color: #E9E7E4;
+    background-color: #EBECF0;
     font-family: 'Inter', sans-serif;
     color: #3D2A1A;
 }
@@ -296,6 +296,7 @@ footer{
     margin-top: 5%;
     font-family: 'montserrat', sans-serif;
     color: black;
+    background-color: #EBECF0;
 }
 footer p{
     color: black;
