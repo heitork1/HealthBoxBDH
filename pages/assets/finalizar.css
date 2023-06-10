@@ -363,13 +363,24 @@ h4{
     margin-top: 2%;
 }
 
+
+footer{
+    font-family: 'montserrat', sans-serif;
+}
+footer p{
+    color: black;
+    margin: 0;
+    font-size: 16px;
+}
+footer h4{
+    color: black;
+}
 .linha{
     background-color: #093807;
     height: 2vh;
 }
 .linha2{
     background-color: #093807;
-
     height: 8vh;
 }
 .sublinhado{
@@ -385,7 +396,7 @@ h4{
     justify-content: space-around;
 }
 .row1 a{
-    color:#5D4837;
+    color: black;
 }
 .row1 img{
     margin-top: -5%;
@@ -411,7 +422,7 @@ h4{
 .col4{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 11%;
     margin-right: 5%;
 }
 .localizacao{
@@ -421,7 +432,7 @@ h4{
     display: flex;
 }
 .email{
-    display: flex;
+    display: flex;   
 }
 .contato{
     margin-top: 3%;
@@ -445,5 +456,5 @@ h4{
     margin-top: 2%;
 }
 .ilustra{
-    margin-left: 55vw;
+    margin-left: 52vw;
 }

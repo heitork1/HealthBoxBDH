@@ -63,12 +63,10 @@ input{
 .sacola p{
     margin-left: 6%;
 }
-
 .faixa2{
     background-color: #429C44;
     height: 7.2vh;
 }
-
 .opcoes{
     display: flex;
     height: 100%;
@@ -113,13 +111,20 @@ main{
 
 
 
+footer{
+    font-family: 'montserrat', sans-serif;
+    
+}
+footer p{
+    color: black;
+    font-size: 16px;
+}
 .linha{
     background-color: #093807;
     height: 2vh;
 }
 .linha2{
     background-color: #093807;
-
     height: 8vh;
 }
 .sublinhado{
@@ -135,7 +140,7 @@ main{
     justify-content: space-around;
 }
 .row1 a{
-    color:#5D4837;
+    color: black;
 }
 .row1 img{
     margin-top: -5%;
@@ -180,6 +185,9 @@ main{
 .contato img{
     width: 2%;
     margin-right: 1%;
+}
+.contato p{
+    margin-left: 0;
 }
 .lema{
     text-align: center;
