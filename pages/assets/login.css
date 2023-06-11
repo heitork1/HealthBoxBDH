@@ -19,6 +19,7 @@ body{
 .email-senha{
     height: 7%;
     border-radius: 2px;
+    padding-left: 1%;
     border: none;
     background-color: #E9E7E4;
 }

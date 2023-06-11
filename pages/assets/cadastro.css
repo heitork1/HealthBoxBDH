@@ -16,6 +16,8 @@ body{
 .large-data{
     background-color: #E9E7E4;
     border: none;
+    padding-left: 2%;
+    font-family: 'montserrat', sans-serif;
 }
 .grande{
     width: 70vh;
@@ -51,14 +53,15 @@ label{
     margin-top: 1%;
 }
 .termos{
-    text-align: center;
+    text-align: justify;
     margin-top: 6%;
 }
 .small-data input{
     height: 4vh;
-    
+    padding-left: 4%;
     border-radius: 3%;
     border: none;
+    font-family: 'montserrat', sans-serif;
 }
 
 .form2{
@@ -106,7 +109,7 @@ label{
    
 }
 #login{
-    margin-top:4%;
+    margin-top:5%;
 }
 
 
