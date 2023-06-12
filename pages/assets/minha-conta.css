@@ -28,9 +28,12 @@
     margin-left: 44%;
     
 }
+.pesquisa input{
+    font-family: "montserrat", sans-serif;
+}
 .pesquisa img {
     height: 70%;
-    margin-left: 13%;
+    margin-left: 17%;
 }
 input{
     border: none;
