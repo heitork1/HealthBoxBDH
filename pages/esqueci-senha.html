@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Box</title>
-    <link rel="stylesheet" href="/pages/assets/login.css">
+    <link rel="stylesheet" href="/pages/assets/senha.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
@@ -15,28 +15,15 @@
     <div class="main">
         <img src="/pages/img/Login-cadastro/logo.png" alt="">
         <div class="grande">
-            <form action="/login" method="post" >
-                <label for="">E-mail</label>
-                <input type="text" class="email-senha" name="username" placeholder="usuario@dominio.com">
-                <label for="">Senha</label>
-                <input type="text" class="large-data email-senha" name="password" placeholder="12345678">
-                <div class="opcoes1">
-                    <a href="esqueci-senha.html"><p class="small-letters">Esqueci minha senha</p></a>
-                    <div class="manter">
-                        <input type="checkbox" name="conectado" class="flag">
-                        <label for="conectado" class="small-letters">Mantenha-me conectado</label>
-                    </div>
-                </div>
-                <div class="termos_de_uso">
-                <p class="small-letters termos concorda">Ao fazer login, você concorda 
-                    com a <a href="politica.html" class="termos_link">Política de Privacidade</a> e com os
-                    <a href="politica.html" class="termos_link link_uso">Termos de Uso</a> da Health box.</p>
-                </div>
-                <input type="submit" value="Entrar" id="entrar">
-                <div class="registro2">
-                    <p class="small-letters registro">Não está registrado?</p>
-                    <a href="cadastro.html" class="small-letters cadastro">Cadastre-se!</a>
-                </div>
+            <form class="medio" action="/login" method="post" >
+                <h1> Esqueceu a sua senha?</h1>
+                <p class="texto-menor"> Insira o seu endereço de e-mail. Você receberá uma mensangem de e-mail com as instruções necessárias para redefinir a senha.</p>
+                <label for=""></label>
+               <div class="espaco-email">
+                <p class="e-mail">E-mail:</p>
+                <input type="text" class="email" name="username" placeholder="Insira seu e-mail"></div> 
+               <div class="espaco-botao"><input type="submit" value="Enviar" class="botao-enviar"></div>
+               <p class="voltar">Volte para página de <a href="/pages/login.html">Login</a> ou <a href="/pages/cadastro.html">Cadastro</a>.</p>
             </form>
         </div>
     </div>
@@ -51,13 +38,13 @@
                 </div>
                 <div class="col2">
                     <h4>Institucional</h4>
-                    <a href="sobre-nos.html">Sobre nós</a>
-                    <a href="politica.html">Política de Privacidade</a>
+                    <a href="">Sobre nós</a>
+                    <a href="">Política de Privacidade</a>
                 </div>
                 <div class="col3">
                     <h4>Dúvida</h4>
-                    <a href="minha-conta.html">Meus Pedidos</a>
-                    <a href="minha-conta.html">Minha Conta</a>
+                    <a href="">Meus Pedidos</a>
+                    <a href="">Minha Conta</a>
                     <a href="">Entrega</a>
                 </div>
                 <div class="col4">
@@ -78,16 +65,10 @@
                     <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
                     <p>Fone/Whatsapp: (47) 00000-0000</p>
                 </div>
-                <div class="email">
+                <div id="email">
                     <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
                     <p>Healthbox@gmail.com</p>
                     <p class="ilustra">As imagens são meramente ilustrativas</p>
                 </div>
             </div>
             <div class="linha2">
-            </div>
-        </div>
-    </footer>
-</body>
-
-</html>

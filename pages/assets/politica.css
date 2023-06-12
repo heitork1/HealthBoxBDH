@@ -28,7 +28,7 @@
 }
 .pesquisa img {
     height: 70%;
-    margin-left: 13%;
+    margin-left: 2vw;
 }
 input{
     border: none;
@@ -113,6 +113,10 @@ h1{
 }
 
 
+footer{
+    font-family: 'montserrat', sans-serif;
+    background-color: #EBECF0;
+}
 .linha{
     background-color: #093807;
     height: 2vh;
@@ -135,7 +139,7 @@ h1{
     justify-content: space-around;
 }
 .row1 a{
-    color:#5D4837;
+    color: black;
 }
 .row1 img{
     margin-top: -5%;
@@ -161,7 +165,7 @@ h1{
 .col4{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 11%;
     margin-right: 5%;
 }
 .localizacao{
@@ -173,6 +177,7 @@ h1{
 .email{
     display: flex;
 }
+
 .contato{
     margin-top: 3%;
     margin-left: 2%;
@@ -195,5 +200,5 @@ h4{
     margin-top: 2%;
 }
 .ilustra{
-    margin-left: 55vw;
+    margin-left: 52vw;
 }

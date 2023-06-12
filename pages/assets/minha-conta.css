@@ -111,6 +111,7 @@ main{
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     height: 84vh;
+    background-color: #EBECF0;
 }
 .nome{
     display: flex;
@@ -215,7 +216,9 @@ form input{
     justify-content: center;
     border-radius: 4px;
     margin-top: 5%;
-    margin-left: 51%;
+    margin-left: 50%;
+    padding: 1%;
+
 }
 .entrega{
     background-color: #E9E7E4;
@@ -229,9 +232,9 @@ form input{
     padding-right: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
-    max-width:60%;
+    max-width:70%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 .minhaconta{
     height: 75vh;
@@ -247,13 +250,22 @@ h1{
 }
 
 
+
+footer{
+    font-family: 'montserrat', sans-serif;
+    background-color: #EBECF0;
+}
+footer p{
+    color: black;
+    margin: 0;
+    font-size: 16px;
+}
 .linha{
     background-color: #093807;
     height: 2vh;
 }
 .linha2{
     background-color: #093807;
-
     height: 8vh;
 }
 .sublinhado{
@@ -269,7 +281,7 @@ h1{
     justify-content: space-around;
 }
 .row1 a{
-    color:#5D4837;
+    color: black;
 }
 .row1 img{
     margin-top: -5%;
@@ -295,7 +307,7 @@ h1{
 .col4{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 11%;
     margin-right: 5%;
 }
 .localizacao{
@@ -304,8 +316,8 @@ h1{
 .fone{
     display: flex;
 }
-.email{
-    display: flex;
+#email{
+    display: flex;   
 }
 .contato{
     margin-top: 3%;
@@ -330,12 +342,5 @@ h4{
     font-weight: 700;
 }
 .ilustra{
-    margin-left: 55vw;
-}
-footer{
-    font-family: 'montserrat', sans-serif;
-}
-footer p{
-    color: #5D4837;
-    margin-left: 1%;
+    margin-left: 52vw;
 }
