@@ -45,7 +45,7 @@ connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", func
           console.log('Senha correta! Acesso permitido.');
           connection.query("SELECT nome from usuarios where senha='"+ senhaBanco +"'", function(err, rows){
             if(!err){
-              res.redirect('/pages/produtos.html/' + rows[0].nome)
+              res.redirect('/pages/produtos.html/')
             } else {
               console.log("Não foi possível encontrar", err)
             }
@@ -65,11 +65,10 @@ connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", func
 })
 
 
-app.get('/pages/produtos.html/:nome', function(req, res){
-  res.redirect('/pages/produtos.html')
-  var usuario = document.querySelector('#entrar')
-  usuario.innerHTML = req.params.nome
-})
+// app.get('/pages/produtos.html/:nome', function(req, res){
+//   res.redirect('/pages/produtos.html')
+
+// })
 
 
 app.post('/cadastro', (req, res) => {
