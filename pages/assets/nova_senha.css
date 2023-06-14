@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+}
+body{
+    background-color: #EBECF0;
+}
+.bloco{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 45vh;
+    align-items: center;
+    justify-content: space-around;
+}
+img{
+    width: 46vh;
+    display: flex;
+    align-content: baseline;
+    margin: auto;
+    margin-bottom: -3%;
+    margin-top: -4px;
+}
+h1{
+    color: #3D2A1A;
+    font-size: 40px;
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+form p{
+    text-align: center;
+    color: #3D2A1A;
+    text-align: center;
+    font-size: 20px;
+
+}
+.senha{
+    width: 70%;
+    height: 5vh;
+    border-radius: 4px;
+    outline: none;
+    border:none;
+    background-color: rgb(223,203,190);
+    padding-left: 1%;
+}
+.confirma{
+    width: 30%;
+    height: 10vh;
+    background-color: #255226;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 4px;
+}
