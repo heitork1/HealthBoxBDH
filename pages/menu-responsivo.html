@@ -16,29 +16,41 @@ body {
   background-color: rgb(255, 255, 255);
   margin:0;
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
-
-.faixa1{
+.faixa1 {
   background-color: #093807;
-  display: flex;
   height: 8.8vh;
-  align-items: center;  
-  width:100%;
+  align-items: center;
+  width: 100%;
   margin: 0;
-}
-
-
-#logo{
   display: flex;
-  height: 35vh;
-  margin-left: -1vw;
+  justify-content: space-between; /* Adicionado para distribuir os elementos horizontalmente */
 }
 
-.pesquisa{
+.faixa1 a {
+  text-decoration: none;
+  display: flex; /* Adicionado para alinhar os elementos em linha */
+  align-items: center; /* Adicionado para centralizar verticalmente os elementos */
+}
+
+.faixa1-direita a {
+  margin-left: 10px; /* Adicione um espaçamento entre os links */
+}
+
+.faixa1-direita p {
+  margin-right: 5px; /* Adicionado para espaçamento entre o texto e a imagem */
+}
+
+#logo {
+  height: 35vh;
+}
+
+.pesquisa {
   display: flex;
   background-color: white;
-  height:5.5vh;
+  height: 5.5vh;
   align-items: center;
   border-radius: 1vw;
   width: 22vw;
@@ -47,116 +59,75 @@ body {
   transition: 0.2s;
 }
 
-.pesquisa:hover{
+.pesquisa:hover {
   background-color: rgb(211, 211, 211);
   cursor: pointer;
-
 }
 
-.pesquisa input{
+.pesquisa input {
   background-color: transparent;
 }
 
 .pesquisa img {
-  display:flex;
+  display: flex;
   height: 4vh;
-  margin-left:13vh;
+  margin-left: 13vh;
 }
 
-input{
+input {
   border: none;
   outline: none;
 }
 
-.entrar{
-  display: flex;
-  width: 10vw;
-  margin-left: 3vw;
+.entrar img {
+  width: 16px; /* Ajusta o tamanho das imagens */
+  height: 16px;
 }
 
-
-.entrar a{
-  display: flex;
-  width: 4vw;
-  align-items: center;
-  text-decoration: none;
+.sacola img {
+  width: 16px; /* Ajusta o tamanho das imagens */
+  height: 16px;
 }
-
-.entrar img{
-  width: 2vw;
-}
-
-.entrar p{
-  padding: 0.3vw;
-  margin-left: 0.2vw;
-  transition: 0.3s;
-}
-
-.entrar p:hover {
-  background-color: #429c4462;
-  border-radius: 1vh;
-  padding: 0.5vw;
-}
-
-.sacola img{
-  width: 2vw;
-}
-
-.sacola a{
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  margin-right: 2vw;
-}
-
-.sacola p{
-  margin-left: 0.76vw;
-  transition: 0.3s;
-}
-
-.sacola p:hover {
-  background-color: #429c4462;
-  border-radius: 1vh;
-  padding: 0.5vw;
-}
-
 
 .faixa1 {
   overflow: hidden;
   background-color: #093807;
 }
 
-.faixa1 a {
-  float: right;
+.faixa1 p {
   display: block;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-
+  transition: 0.3s;
 }
 
-.faixa1 a:hover {
+.faixa1 p:hover {
   background-color: #429c4462;
   border-radius: 1vh;
 }
 
-.faixa1 a.Logo {
-  height: 35vh;
-  margin-left: -1vw;
+#logo {
   background-color: #04AA6D;
-  color: white;
-  float:left;
-
 }
 
 .faixa1 .icon {
   display: none;
+  color: #fff; /* Altera a cor do ícone para branco */
+  font-size: 24px; /* Ajusta o tamanho do ícone */
+  margin-right: 10px; /* Adiciona um espaçamento à direita */
 }
 
 @media screen and (max-width: 600px) {
-  .faixa1 a:not(:first-child) {display: none;}
+  .faixa1 a:not(:first-child) {
+    display: none;
+  }
+
+  .faixa1 #entrar {
+    display: none;
+  }
+
   .faixa1 a.icon {
     float: right;
     display: block;
@@ -164,12 +135,16 @@ input{
 }
 
 @media screen and (max-width: 600px) {
-  .faixa1.responsive {position: relative;}
+  .faixa1.responsive {
+    position: relative;
+  }
+
   .faixa1.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .faixa1 .responsive a {
     float: none;
     display: block;
@@ -181,24 +156,33 @@ input{
 <body>
 
 <div class="faixa1" id="myTopnav">
-  
-  <a href="#sacola">Sacola</a>
-  <a href="#entar">Entrar</a>
-  <a href="#inicio" class="Logo">Logo</a>  
+  <a href="/Tela-Inicial.html" class="Logo" id="logo">
+    <img src="/pages/img/inicio/logo-br.png" alt="Healthbox" id="logo">
+  </a>
+
+  <div class="faixa1-direita">
+    <a href="/pages/login.html" class="entrar" id="entrar">
+      <p>Entrar</p>
+      <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+    </a>
+    <a href="/pages/sacola.html" class="sacola" id="sacola">
+      <p>Sacola</p>
+      <img src="/pages/img/inicio/bag.png" alt="" />
+    </a>
+  </div>
+
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  
     <i class="fa fa-bars"></i>
   </a>
 </div>
 
-
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "faixa1.faixa1") {
+  if (x.className === "faixa1") {
     x.className += " responsive";
   } else {
-    x.className = "faixa1.faixa1";
+    x.className = "faixa1";
   }
 }
 </script>
