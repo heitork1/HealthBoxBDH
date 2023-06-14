@@ -45,13 +45,12 @@ connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", func
           console.log('Senha correta! Acesso permitido.');
           connection.query("SELECT nome from usuarios where senha='"+ senhaBanco +"'", function(err, rows){
             if(!err){
-              res.redirect('/pages/produtos.html/')
+              res.redirect('/pages/produtos.html')
             } else {
               console.log("Não foi possível encontrar", err)
             }
           })
         } else {
-          console.log('Senha incorreta! Acesso negado.');
           res.send('Senha incorreta');
         }
       } else {

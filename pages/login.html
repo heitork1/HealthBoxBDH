@@ -8,18 +8,18 @@
     <title>Health Box</title>
     <link rel="stylesheet" href="/pages/assets/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <script src="../pages/scripts/login.js"></script>
 </head>
 
 <body>
     <div class="main">
         <img src="/pages/img/Login-cadastro/logo.png" alt="">
         <div class="grande">
-            <form action="/login" method="post" >
+            <form action="/login" method="post" onsubmit="return validarFormulario()">
                 <label for="">E-mail</label>
-                <input type="text" class="email-senha" name="username" placeholder="usuario@dominio.com">
+                <input type="text" class="email-senha" name="username" placeholder="usuario@dominio.com" id="email">
                 <label for="">Senha</label>
-                <input type="text" class="large-data email-senha" name="password" placeholder="12345678">
+                <input type="text" class="large-data email-senha" name="password" placeholder="12345678" id="senha">
                 <div class="opcoes1">
                     <a href="esqueci-senha.html"><p class="small-letters">Esqueci minha senha</p></a>
                     <div class="manter">
