@@ -30,26 +30,25 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
 })
  
-
 app.post('/login', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
-connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", function (err, rows) {
+  
+  connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", function (err, rows) {
     if (!err) {
       if (rows.length > 0) {
-        // senha do banco de dados
         let senhaBanco = rows[0].senha;
 
-        // Verifica se a senha digitada pelo usuário é igual à senha cadastrada no banco de dados
         if (password === senhaBanco) {
           console.log('Senha correta! Acesso permitido.');
-          connection.query("SELECT nome from usuarios where senha='"+ senhaBanco +"'", function(err, rows){
-            if(!err){
-              res.redirect('/pages/produtos.html')
+          connection.query("SELECT nome from usuarios where senha='" + senhaBanco + "'", function (err, rows) {
+            if (!err) {
+              res.send('Sucesso');
             } else {
-              console.log("Não foi possível encontrar", err)
+              console.log("Não foi possível encontrar", err);
+              res.send('Ocorreu um erro durante o login. Tente novamente mais tarde.');
             }
-          })
+          });
         } else {
           res.send('Senha incorreta');
         }
@@ -59,10 +58,10 @@ connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", func
       }
     } else {
       console.log('Erro: Consulta não realizada', err);
+      res.send('Ocorreu um erro durante o login. Tente novamente mais tarde.');
     }
   });
-})
-
+});
 
 // app.get('/pages/produtos.html/:nome', function(req, res){
 //   res.redirect('/pages/produtos.html')
