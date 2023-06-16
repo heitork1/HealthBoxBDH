@@ -31,16 +31,21 @@ body {
 
 .faixa1 a {
   text-decoration: none;
-  display: flex; /* Adicionado para alinhar os elementos em linha */
-  align-items: center; /* Adicionado para centralizar verticalmente os elementos */
+}
+
+.faixa1-direita {
+  display: flex;
+  align-items: center;
 }
 
 .faixa1-direita a {
+  display: flex; /* Exibe os elementos <a> como flex */
+  align-items: center; /* Alinha os itens verticalmente */
   margin-left: 10px; /* Adicione um espaçamento entre os links */
 }
 
 .faixa1-direita p {
-  margin-right: 5px; /* Adicionado para espaçamento entre o texto e a imagem */
+  margin-left: 5px; /* Adiciona um espaçamento à esquerda do <p> */
 }
 
 #logo {
@@ -80,13 +85,11 @@ input {
 }
 
 .entrar img {
-  width: 16px; /* Ajusta o tamanho das imagens */
-  height: 16px;
+  width: 2vw;
 }
 
 .sacola img {
-  width: 16px; /* Ajusta o tamanho das imagens */
-  height: 16px;
+  width: 2vw;
 }
 
 .faixa1 {
@@ -162,12 +165,12 @@ input {
 
   <div class="faixa1-direita">
     <a href="/pages/login.html" class="entrar" id="entrar">
-      <p>Entrar</p>
       <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+      <p>Entrar</p>
     </a>
     <a href="/pages/sacola.html" class="sacola" id="sacola">
-      <p>Sacola</p>
       <img src="/pages/img/inicio/bag.png" alt="" />
+      <p>Sacola</p>
     </a>
   </div>
 
