@@ -120,8 +120,9 @@ main{
     display: flex;
     flex-direction: column;
 }
-.email{
+.emailInput{
     display: flex;
+    flex-direction: column;
 }
 .senha{
     display: flex;

@@ -11,23 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <script src="scripts/cadastro.js"></script>
 </head>
 
 <body>
     <div class="main">
         <img src="/pages/img/Login-cadastro/logo.png" alt="">
         <div class="grande">
-            <form action="/cadastro" method="post">
+            <form action="/cadastro" method="post" onsubmit="return validarFormulario()">
                 <label for="username">Nome completo</label>
-                <input type="text" class="large-data" name="username" placeholder="João da Silva">
-                <label for="email">E-mail</label>
-                <input type="text" class="large-data" name="email" placeholder="usuario@dominio.com">
-                <label for="password">Crie uma senha</label>
-                <input type="text" class="large-data" name="password" placeholder="12345678">
+                <input type="text" class="large-data" name="username" placeholder="João da Silva" id="username">
+                <label for="email" class="label">E-mail</label>
+                <input type="text" class="large-data" name="email" placeholder="usuario@dominio.com" id="email">
+                <label for="password" class="label">Crie uma senha</label>
+                <input type="text" class="large-data" name="password" placeholder="12345678" id="password">
                 <div class="form2">
                     <div class="small-data">
                         <label for="date">Data de nascimento</label>
-                        <input type="date" name="date" id="">
+                        <input type="date" name="date" id="date">
                     </div>
                     <div class="small-data">
                         <label for="telefone">DDD + Telefone</label>

@@ -85,7 +85,7 @@ connection.query("INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `da
     }
   });
 
-    res.send('Mandou para o Servidor');
+    res.redirect('/pages/produtos.html');
 })
 
 app.listen(3002, () => {

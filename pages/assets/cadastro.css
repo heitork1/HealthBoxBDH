@@ -21,7 +21,7 @@ body{
 }
 .grande{
     width: 70vh;
-    height: 73vh;
+    height: 76vh;
     background-color: #194018;
     border: 3vh solid #72B06F;
     margin-bottom: 1%;
@@ -40,26 +40,28 @@ form{
     height: 100%;
     width: 80%;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 4%;
     justify-content:space-around;  
     text-decoration: none;
 }
 form .large-data{
-    height: 5%;
+    height: 6%;
     margin-top: 2%;
     outline: none;
+    border-radius: 4px;
 }
-label{
-    margin-top: 1%;
+
+.label{
+    margin-top: 5%;
 }
 .termos{
     text-align: justify;
     margin-top: 6%;
 }
 .small-data input{
-    height: 4vh;
+    height: 4.5vh;
     padding-left: 4%;
-    border-radius: 3%;
+    border-radius: 4px;
     border: none;
     font-family: 'montserrat', sans-serif;
 }
@@ -68,7 +70,7 @@ label{
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 #tel{
     margin-top: 4%;
@@ -82,7 +84,7 @@ label{
 .small-data input{
     outline: none;
     background-color: #E9E7E4;
-    margin-top: 5%;
+    margin-top: 6%;
 }
 .small-letters{
     margin: auto;
@@ -100,7 +102,7 @@ label{
     color: #ffffff;
     width: 45%;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 5%;
     margin-bottom: 1%;
     border: none;
     border-radius: 3%;
