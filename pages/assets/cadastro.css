@@ -108,11 +108,11 @@ form .large-data{
     border-radius: 3%;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-   
 }
 #login{
     margin-top:5%;
 }
+
 
 
 .linha{
@@ -121,7 +121,7 @@ form .large-data{
 }
 .linha2{
     background-color: #093807;
-    height: 8vh;
+    height: 2vh;
 }
 .sublinhado{
     background-color: #093807;
