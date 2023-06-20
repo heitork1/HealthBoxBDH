@@ -162,8 +162,6 @@ header p{
    'b1 b1 b1 b2 b2';
    width: 200vh;
    
-   
-   
 } 
 .container-caixinhas{
     display:grid;
@@ -180,6 +178,9 @@ header p{
     /* border: solid 1px black; */
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 150px;
+    
 }
 
 
@@ -213,7 +214,9 @@ header p{
     color: #3D2A1A;
     font-weight:bold;
     margin-top: -8px;
-
+    position: absolute;
+    top: 150px;
+    right: 260px;
 }
 
 
@@ -455,88 +458,103 @@ input > #box5{
 
   
 
+
+
+
+  footer{
+    font-family: 'montserrat', sans-serif;
+    background-color: #EBECF0;
+    padding-top: 2%;
+}
+footer p{
+    color: black;
+}
+.contato p{
+    margin-left: 0;
+    font-size: 16px;
+}
 .linha{
-  background-color: #093807;
-  height: 2vh;
+    background-color: #093807;
+    height: 2vh;
 }
 .linha2{
-  background-color: #093807;
+    background-color: #093807;
 
-  height: 8vh;
+    height: 2vh;
 }
 .sublinhado{
-  background-color: #093807;
-  margin-top: -8%;
-  height: 2%;
-  width: 80%;
-  margin-left: 2%;
+    background-color: #093807;
+    margin-top: -8%;
+    height: 2%;
+    width: 80%;
+    margin-left: 2%;
 }
 .row1{
-  display: flex;
-  padding-top: 1%;
-  justify-content: space-around;
+    display: flex;
+    padding-top: 1%;
+    justify-content: space-around;
 }
 .row1 a{
-  color:#5D4837;
+    color:black;
 }
 .row1 img{
-  margin-top: -5%;
+    margin-top: -5%;
 }
 .col1 p{
-  width: 70%;
-  margin-left: 6%;
+    width: 70%;
+    margin-left: 6%;
 }
 .col2{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .col2 a{
-  margin-top: 13%;
+    margin-top: 12%;
 }
 .col3{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .col3 a{
-  margin-top: 20%;
+    margin-top: 20%;
 }
 .col4{
-  display: flex;
-  flex-direction: column;
-  width: 10%;
-  margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 11%;
+    margin-right: 5%;
 }
 .localizacao{
-  display: flex;
+    display: flex;
 }
 .fone{
-  display: flex;
+    display: flex;
 }
 .email{
-  display: flex;
+    display: flex;
 }
 .contato{
-  margin-top: 3%;
-  margin-left: 2%;
+    margin-top: 3%;
+    margin-left: 2%;
 }
 .contato img{
-  width: 2%;
-  margin-right: 1%;
+    width: 2%;
+    margin-right: 1%;
 }
 .lema{
-  text-align: center;
-  margin-right: 1%;
-  margin-top: 2%;
+    text-align: center;
+    margin-right: 1%;
+    margin-top: 2%;
+    font-size: 16px;
 }
 .redes img{
-  width: 25%;
-  margin-top: 15%;
+    width: 25%;
+    margin-top: 15%;
 }
 h4{
-  font-size: 18px;
-  margin-top: 2%;
+    font-size: 18px;
+    margin-top: 2%;
 }
-.ilustra{
-  margin-left: 55vw;
+#ilustra{
+    margin-left: 52vw;
 }
-
