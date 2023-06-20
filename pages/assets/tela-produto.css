@@ -45,7 +45,8 @@ body {
 
 .pesquisa input{
     width:12vw ;
-    background-color:transparent
+    background-color:transparent;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .pesquisa img {
@@ -168,6 +169,7 @@ header p{
    /* border: 1px solid black; */
    width: 150px;
    display: grid;
+   cursor: pointer;
 }
 
 #img1{
@@ -221,6 +223,7 @@ header p{
    /* border: 1px solid black; */
     height: 485px;
     display: flex;
+    
 }
 
 
@@ -234,6 +237,7 @@ header p{
 .plv-produtos{
     /* border: 1px solid black; */
     width: 500px;
+    
 }
 
 
@@ -376,6 +380,7 @@ input{
     margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
+    cursor: pointer;
 }
 .calcular:hover{
     transform: scale(1.075);
@@ -404,6 +409,7 @@ input{
     border: none;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .botao{
@@ -425,16 +431,22 @@ input{
 
 body{
     background-color: #EBECF0;
+    margin: auto;
 }
+
 
 
 footer{
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
-    margin-top: 1%;
+    position: absolute;
+    top:700px;
 }
 footer p{
     color: black;
+}
+.contato p{
+    margin-left: 0;
     font-size: 16px;
 }
 .linha{
@@ -443,7 +455,8 @@ footer p{
 }
 .linha2{
     background-color: #093807;
-    height: 8vh;
+
+    height: 2vh;
 }
 .sublinhado{
     background-color: #093807;
@@ -458,7 +471,7 @@ footer p{
     justify-content: space-around;
 }
 .row1 a{
-    color: black;
+    color:black;
 }
 .row1 img{
     margin-top: -5%;
@@ -472,7 +485,7 @@ footer p{
     flex-direction: column;
 }
 .col2 a{
-    margin-top: 13%;
+    margin-top: 12%;
 }
 .col3{
     display: flex;
@@ -484,14 +497,16 @@ footer p{
 .col4{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 11%;
     margin-right: 5%;
 }
 .localizacao{
     display: flex;
+    align-items: center;
 }
 .fone{
     display: flex;
+    align-items: center;
 }
 .email{
     display: flex;
@@ -502,16 +517,15 @@ footer p{
     margin-left: 2%;
 }
 .contato img{
-    height: 35px;
-    margin-right: 10px;
-}
-.contato p{
-    margin-left: 0;
+    width: 2%;
+    height: 2%;
+    margin-right: 1%;
 }
 .lema{
     text-align: center;
     margin-right: 1%;
     margin-top: 2%;
+    font-size: 16px;
 }
 .redes img{
     width: 25%;
@@ -521,6 +535,6 @@ h4{
     font-size: 18px;
     margin-top: 2%;
 }
-.ilustra{
-    margin-left: 55vw;
+#ilustra{
+    margin-left: 52vw;
 }

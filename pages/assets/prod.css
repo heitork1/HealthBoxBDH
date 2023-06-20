@@ -45,7 +45,8 @@ body {
 
 .pesquisa input{
   width:12vw ;
-  background-color:transparent
+  background-color:transparent;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .pesquisa img {
@@ -171,7 +172,13 @@ header p{
      'b12 b13 b14 b15'
      'b12 b13 b14 b15';
     justify-content: space-around;
+    position:absolute;
+    top: 32vh;
+    left: 3vw;
+    right: 3vw;
+    
 }
+
 
 
 .box-descricao{ 
@@ -179,8 +186,12 @@ header p{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 120px;
+    top: 20vh;
+    left: 50px;
     
+}
+.box-descricao h1{
+  cursor: pointer;
 }
 
 
@@ -213,8 +224,8 @@ header p{
     font-weight:bold;
     margin-top: -8px;
     position: absolute;
-    top: 120px;
-    right: 330px;
+    top: 20vh;
+    right: 50vh;
 }
 
 
@@ -226,6 +237,11 @@ header p{
     background-color: rgb(223,203,190);
     border-radius: 8px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+#box12:hover{
+  transform: scale(1.03);
 }
 
 #box13{
@@ -236,6 +252,11 @@ header p{
     background-color: rgb(223,203,190);
     border-radius: 8px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+#box13:hover{
+  transform: scale(1.03);
 }
 
 #box14{
@@ -246,6 +267,11 @@ header p{
     background-color: rgb(223,203,190); 
     border-radius: 8px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+#box14:hover{
+  transform: scale(1.03);
 }
 
 #box15{
@@ -256,6 +282,11 @@ header p{
     background-color: rgb(223,203,190);
     border-radius: 8px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+#box15:hover{
+  transform: scale(1.03);
 }
 
 .imgbox{
@@ -265,7 +296,11 @@ header p{
     width: 230px;
     justify-content: center;
     /* border: 1px solid black; */
+
+    
 }
+
+
 
 #imgbox12{
     
@@ -352,6 +387,15 @@ input > #box5{
     cursor: pointer;
     font-weight:bold;
     font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom:10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .botaoEnviar:hover{
+    transform: scale(1.03);
+    
   }
 
   .menu {
@@ -359,29 +403,32 @@ input > #box5{
     display: inline-block;
     padding: 10px;
     background-color:rgb(255, 255, 255);
-    transition: background-color 0.3s;
+    
+
   }
 
 
   .menu .menu-titulo {
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-
+    transition: 0.3s;
   }
 
   .menu .menu-dropdown {
     position: absolute;
     display: none;
     background-color:#B49E88;
-    min-width: 160px;
+    min-width: 220px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
   }
 
   .menu .menu-item {
     padding: 12px 16px;
     cursor: pointer;
+    transition: 0.3s;
 
   }
 
@@ -391,6 +438,7 @@ input > #box5{
 
   .menu:hover .menu-dropdown {
     display: block;
+    
   }
 
   .menu-subtitulo {
@@ -406,6 +454,7 @@ input > #box5{
     top: 0;
     left: 100%;
     z-index: 1;
+    transition: 0.3s;
   }
 
   .menu-item:hover .menu-dropdown-sub {
