@@ -179,7 +179,7 @@ header p{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 150px;
+    top: 120px;
     
 }
 
@@ -191,8 +191,6 @@ header p{
     font-size: 20px;
     font-weight: bold;
     color: #3D2A1A;
-   
-    
 }
 
 #box1 > a{
@@ -215,8 +213,8 @@ header p{
     font-weight:bold;
     margin-top: -8px;
     position: absolute;
-    top: 150px;
-    right: 260px;
+    top: 120px;
+    right: 330px;
 }
 
 
@@ -464,7 +462,8 @@ input > #box5{
   footer{
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
-    padding-top: 2%;
+    position: absolute;
+    top:700px;
 }
 footer p{
     color: black;
@@ -526,12 +525,15 @@ footer p{
 }
 .localizacao{
     display: flex;
+    align-items: center;
 }
 .fone{
     display: flex;
+    align-items: center;
 }
 .email{
     display: flex;
+    align-items: center;
 }
 .contato{
     margin-top: 3%;
@@ -539,6 +541,7 @@ footer p{
 }
 .contato img{
     width: 2%;
+    height: 2%;
     margin-right: 1%;
 }
 .lema{
