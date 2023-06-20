@@ -2,7 +2,7 @@ body {
   padding: 0;
   background-color: rgb(255, 255, 255);
   margin:0;
-  width: 100%;
+  width: auto;
 }
 
 
@@ -13,8 +13,8 @@ body {
   display: flex;
   height: 8.8vh;
   align-items: center;  
-  width:100%;
-  margin: 0;
+  width:auto;
+  
 }
 
 
@@ -27,13 +27,14 @@ body {
 .pesquisa{
   display: flex;
   background-color: white;
-  height:5.5vh;
+  height:2.5vw;
   align-items: center;
   border-radius: 1vw;
   width: 22vw;
   padding-left: 1vw;
   margin-left: 45vw;
   transition: 0.2s;
+  justify-content: space-around;
 }
 
 .pesquisa:hover{
@@ -43,13 +44,13 @@ body {
 }
 
 .pesquisa input{
-  background-color: transparent;
+  width:12vw ;
+  background-color:transparent
 }
 
 .pesquisa img {
   display:flex;
   height: 4vh;
-  margin-left:13vh;
 }
 
 input{
@@ -115,7 +116,6 @@ input{
   background-color: #429C44;
   height: 7.2vh;
   width: auto;
-  margin:0;
 }
 
 .opcoes a:hover {
