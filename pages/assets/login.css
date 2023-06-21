@@ -25,7 +25,7 @@ body{
 }
 @media screen and (min-width:900px){
     .email-senha{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 .email-senha{
@@ -71,7 +71,7 @@ form{
 }
 @media screen and (min-width: 900px){
     .small-letters{
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 .opcoes1{
@@ -99,7 +99,7 @@ form{
 }
 @media screen and (min-width: 900px){
     .termos{
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 .registro2{

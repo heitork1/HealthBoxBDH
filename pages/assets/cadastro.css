@@ -110,7 +110,24 @@ form .large-data{
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
-@media screen and (min-width: 900px){
+@media screen and (min-width:1226px){
+    label{
+        font-size: 14px;
+    }
+    .small-data{
+        font-size: 14px;
+    }
+    #cadastrar{
+        margin-bottom: 0;
+    }
+    #login{
+        margin-top: 0vh;
+    }
+    .termos{
+        margin-top: 2vh;
+    }
+}
+@media screen and (min-width: 900px) AND (max-width:1220px){
     .small-letters{
         font-size: 14px;
     }
@@ -127,6 +144,7 @@ form .large-data{
 #login{
     margin-top:5%;
 }
+
 
 
 
