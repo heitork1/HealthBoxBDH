@@ -171,7 +171,9 @@ header p{
     grid-template-areas:
      'b12 b13 b14 b15'
      'b12 b13 b14 b15';
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 10vh;
+    margin-right: 10vh;
    
 }
 
@@ -267,6 +269,7 @@ header p{
 }
 
 #box15{
+  
     grid-area: b15;
     width: 20vw;
     height: 53vh;
@@ -281,11 +284,157 @@ header p{
   transform: scale(1.03);
 }
 
+.container-caixinhas2{
+  display:grid;
+  /* grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%) ; */
+  grid-template-areas:
+   'b16 b17 b18 b19'
+   'b16 b17 b18 b19'
+   'b20 b21 b22 b23'
+   'b20 b21 b22 b23';
+   justify-content: space-between;
+   margin-left: 10vh;
+   margin-right: 10vh;
+
+}
+
+#box16{
+  margin-top: 5vh;
+  grid-area: b16;
+  width: 20vw;
+  height: 53vh;
+  /* background-image: url(4.png); */
+  background-color: rgb(223,203,190);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#box16:hover{
+transform: scale(1.03);
+}
+
+#box17{
+  margin-top: 5vh;
+  grid-area: b17;
+  width: 20vw;
+  height: 53vh;
+  /* background-image: url(4.png); */
+  background-color: rgb(223,203,190);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#box17:hover{
+transform: scale(1.03);
+}
+
+#box18{
+  margin-top: 5vh;
+  grid-area: b18;
+  width: 20vw;
+  height: 53vh;
+  /* background-image: url(4.png); */
+  background-color: rgb(223,203,190);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#box18:hover{
+transform: scale(1.03);
+}
+
+#box19{
+  margin-top: 5vh;
+  grid-area: b19;
+  width: 20vw;
+  height: 53vh;
+  /* background-image: url(4.png); */
+  background-color: rgb(223,203,190);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#box19:hover{
+transform: scale(1.03);
+}
+
+#box20{
+  margin-top: 10vh;
+  grid-area: b20;
+  width: 20vw;
+  height: 53vh;
+  /* background-image: url(4.png); */
+  background-color: rgb(223,203,190);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#box20:hover{
+transform: scale(1.03);
+}
+
+#box21{
+  margin-top: 10vh;
+  grid-area: b21;
+  width: 20vw;
+  height: 53vh;
+  /* background-image: url(4.png); */
+  background-color: rgb(223,203,190);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#box21:hover{
+transform: scale(1.03);
+}
+
+#box22{
+  margin-top: 10vh;
+  grid-area: b22;
+  width: 20vw;
+  height: 53vh;
+  /* background-image: url(4.png); */
+  background-color: rgb(223,203,190);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#box22:hover{
+transform: scale(1.03);
+}
+
+#box23{
+  margin-top: 10vh;
+  grid-area: b23;
+  width: 20vw;
+  height: 53vh;
+  /* background-image: url(4.png); */
+  background-color: rgb(223,203,190);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#box23:hover{
+transform: scale(1.03);
+}
+
+
+
+
 .imgbox{
     margin: auto ;
     margin-top: 25px;
-    height:31vh;
-    width: 16vw;
+    height:30vh;
+    width: 15vw;
     justify-content: center;
     /* border: 1px solid black; */
 
@@ -325,6 +474,69 @@ header p{
     border-radius: 8px;
 }
 
+#imgbox16{
+  background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
+  background-position: center center;
+  background-size:230px;
+  border-radius: 8px;
+}
+
+#imgbox17{
+  background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
+  background-position: center center;
+  background-size:230px;
+  border-radius: 8px;
+}
+
+#imgbox18{
+  background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
+  background-position: center center;
+  background-size:230px;
+  border-radius: 8px;
+}
+
+#imgbox19{
+  background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
+  background-position: center center;
+  background-size:230px;
+  border-radius: 8px;
+}
+
+#imgbox20{
+  background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
+  background-position: center center;
+  background-size:230px;
+  border-radius: 8px;
+}
+
+#imgbox21{
+  background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
+  background-position: center center;
+  background-size:230px;
+  border-radius: 8px;
+}
+
+#imgbox22{
+  background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
+  background-position: center center;
+  background-size:230px;
+  border-radius: 8px;
+}
+
+#imgbox23{
+  background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
+  background-position: center center;
+  background-size:230px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
 
 .produtos{
     color: #0A250D;
@@ -358,19 +570,27 @@ input > #box5{
 }
 
 
-  .espaco-botao {
+  .espaco-divs{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .espaco-botao{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
    margin-top: 30px;
   }
+
+
   
   .botaoEnviar {
     width: 200px; /* Ajuste a largura conforme necessário */
     border-radius: 8px;
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 16px;
     text-align: center;
     font-size: 16px;
     background-color: #4CAF50;
@@ -380,11 +600,16 @@ input > #box5{
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
     cursor: pointer;
+    align-items: center;
   }
 
   .botaoEnviar:hover{
     transform: scale(1.03);
     
+  }
+
+  #minhaDiv {
+    display: none; /* Oculta o conteúdo */
   }
 
   .menu {

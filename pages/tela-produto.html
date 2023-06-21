@@ -52,9 +52,9 @@
 
 <div class="produto-especifico">
     <div class="imagens-produtos">
-        <div id="img1" class="imgs"></div>
-        <div id="img2" class="imgs"></div>
-        <div id="img3" class="imgs"></div>
+        <div id="img1" class="imgs" onclick="slider('/pages/img/prdt-especifico/image\ \(2\).png')"></div>
+        <div id="img2" class="imgs" onclick="slider('/pages/img/prdt-especifico/image\ \(2\).png')"></div>
+        <div id="img3" class="imgs" onclick="slider('/pages/img/prdt-especifico/image\ \(5\).png')"></div>
         <div id="img4" class="imgs"></div>
     </div>
     <div class="img"><img src="/pages/img/prdt-especifico/image (2).png" alt="">
@@ -150,5 +150,19 @@
     </div>
 </footer>
 </body>
+<script>
+
+    function slider(anything){
+        document.querySelector('.one'). src = anything; 
+    };
+
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () => {
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+    }
+</script>
 
 </html>

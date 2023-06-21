@@ -1,9 +1,10 @@
 body {
     padding: 0;
     background-color: rgb(255, 255, 255);
-    margin:0;
+    margin: 0;
     width: auto;
-}
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+  }
 
 
 /* menu principal */
@@ -45,7 +46,8 @@ body {
 
 .pesquisa input{
     width:12vw ;
-    background-color:transparent
+    background-color:transparent;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .pesquisa img {
@@ -130,7 +132,7 @@ input{
     align-items: center;
     margin-left:83vw;
     justify-content:space-around;
-    width: 33vh;
+    width: 32.5vh;
 }
 .opcoes a {
     align-self: center;
@@ -151,8 +153,9 @@ p{
     margin-left: 4%;
 }
 .mulher{
-    height: 83vh;
+    height: 85vh;
     border: solid 1px #CED7D2;
+    margin: 0;
 }
 main{
     background-color: #EBECF0;
@@ -174,12 +177,12 @@ body{
     background-color: #EBECF0;
 }
 
-
 footer{
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
-    padding-top: 2%;
+
 }
+
 footer p{
     color: black;
 }
@@ -194,7 +197,7 @@ footer p{
 .linha2{
     background-color: #093807;
 
-    height: 8vh;
+    height: 2vh;
 }
 .sublinhado{
     background-color: #093807;
@@ -240,12 +243,15 @@ footer p{
 }
 .localizacao{
     display: flex;
+    align-items: center;
 }
 .fone{
     display: flex;
+    align-items: center;
 }
 .email{
     display: flex;
+    align-items: center;
 }
 .contato{
     margin-top: 3%;
@@ -253,6 +259,7 @@ footer p{
 }
 .contato img{
     width: 2%;
+    height: 2%;
     margin-right: 1%;
 }
 .lema{
@@ -272,3 +279,4 @@ h4{
 #ilustra{
     margin-left: 52vw;
 }
+
