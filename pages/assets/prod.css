@@ -511,8 +511,7 @@ input > #box5{
   footer{
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
-    position: absolute;
-    top:700px;
+    margin-top: 3vh;
 }
 footer p{
     color: black;
