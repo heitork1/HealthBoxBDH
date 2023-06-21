@@ -5,11 +5,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" escondido="IE=edge">
+    <meta name="viewport" escondido="width=device-width, initial-scale=1.0">
     <title>Health Box</title>
     <link rel="stylesheet" type="text/css" href="assets/prod.css">
-    <script src="/pages/scripts/produtos.js"></script>
 </head>
 <body>
   <header>
@@ -24,7 +23,7 @@
         <div class="entrar">
             <a href="/pages/login.html">
                 <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                <p id="entrar">Entrar</p>
+                <p>Entrar</p>
             </a>
         </div>
 
@@ -185,8 +184,11 @@
 
     <div class="espaco-botao">
     
-        <input type="submit" name="botao" value="CARREGAR MAIS" class="botaoEnviar" />
-       
+        <input type="button" id="meuBotao" name="botao" value="CARREGAR MAIS" class="botaoEnviar"  onclick="toggleDiv()">
+        <div id="minhaDiv" class="escondido">
+          <div class="quad"></div>
+          
+        </div>
     </div>
     
     <footer>
@@ -237,7 +239,34 @@
           </div>
       </div>
   </footer>
+<script >
+  function toggleDiv() {
+  var botao = document.getElementById("meuBotao");
+  var div = document.getElementById("minhaDiv");
 
+  if (div.classList.contains("escondido")) {
+    div.classList.remove("escondido"); // Mostra a div
+    botao.style.display = "none"; // Esconde o botão
+  } else {
+    div.classList.add("escondido"); // Esconde a div
+    botao.style.display = "block"; // Mostra o botão
+  }
+}
+var coll = document.getElementsByClassName("botaoEnviar");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var escondido = this.nextElementSibling;
+    if (escondido.style.display === "block") {
+      escondido.style.display = "none";
+    } else {
+      escondido.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 </html>
 
