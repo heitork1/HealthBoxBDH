@@ -17,11 +17,16 @@ body{
     margin-top: 2%;
 }
 .email-senha{
-    height: 8%;
+    height: 4.5vh;
     border-radius: 4px;
     padding-left: 1%;
     border: none;
     background-color: #E9E7E4;
+}
+@media screen and (min-width:900px){
+    .email-senha{
+        font-size: 16px;
+    }
 }
 .email-senha{
     outline: none;
@@ -36,28 +41,38 @@ body{
 .grande{
     display: flex;
     justify-content: space-around;
-    width: 70vh;
-    height: 70vh;
+    width: 65vh;
+    height: 55vh;
     background-color: #194018;
     border: 3vh solid #72B06F;
     margin-bottom: 1%;
     border-radius: 1%;
 }
+@media screen and (min-width: 900px){
+    label{
+        font-size: 18px;
+    }
+}
 label{
-    margin-bottom: -5%;
+    margin-bottom: -3%;
 }
 form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 95%;
-    width: 80%;
-    margin-top: 4%;
+    width: 85%;
+    margin-top: 1.5vh;
 }
 
 .small-letters{
     line-height: 20px;
     font-size: 12px;
+}
+@media screen and (min-width: 900px){
+    .small-letters{
+        font-size: 15px;
+    }
 }
 .opcoes1{
     display: flex;
@@ -70,7 +85,7 @@ form{
 #entrar{
     margin-left: 30%;
     width: 40%;
-    height: 10%;
+    height: 12%;
     font-size: 20px;
     font-weight: 700;
     background-color: #848D43;
@@ -81,6 +96,11 @@ form{
 }
 .termos{
     font-size: 12px;
+}
+@media screen and (min-width: 900px){
+    .termos{
+        font-size: 15px;
+    }
 }
 .registro2{
     display: flex;

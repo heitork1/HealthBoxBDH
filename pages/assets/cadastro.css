@@ -40,7 +40,7 @@ form{
     height: 100%;
     width: 80%;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 3vh;
     justify-content:space-around;  
     text-decoration: none;
 }
@@ -91,11 +91,7 @@ form .large-data{
     line-height: 20px;
     font-size: 12px;
 }
-@media screen and (min-width: 900px){
-    .small-letters{
-        font-size: 14px;
-    }
-}
+
 .small-letters a{
     color: white;
 }
@@ -113,6 +109,20 @@ form .large-data{
     border-radius: 3%;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
+}
+@media screen and (min-width: 900px){
+    .small-letters{
+        font-size: 14px;
+    }
+    label{
+        font-size: 18px;
+    }
+    input{
+        font-size: 16px;
+    }
+    #cadastrar{
+        font-size: 24px;
+    }
 }
 #login{
     margin-top:5%;
