@@ -91,6 +91,11 @@ form .large-data{
     line-height: 20px;
     font-size: 12px;
 }
+@media screen and (min-width: 900px){
+    .small-letters{
+        font-size: 14px;
+    }
+}
 .small-letters a{
     color: white;
 }
