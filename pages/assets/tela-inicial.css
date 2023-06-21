@@ -1,9 +1,10 @@
 body {
     padding: 0;
     background-color: rgb(255, 255, 255);
-    margin:0;
+    margin: 0;
     width: auto;
-}
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+  }
 
 
 /* menu principal */
@@ -170,13 +171,13 @@ main{
 }
 .letrinha{
     font-size: 25px;
-    margin-top: 3%;
-    margin-bottom: 2%;
+    margin-top:5vh ;
 }
 .letrao{
     font-family: 'League Gothic', sans-serif;
     font-size: 140px;
     line-height: 140px;
+    margin-top:0;
 }
 
 

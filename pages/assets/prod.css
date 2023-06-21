@@ -1,10 +1,10 @@
 body {
   padding: 0;
   background-color: rgb(255, 255, 255);
-  margin:0;
+  margin: 0;
   width: auto;
+  overflow-x: hidden; /* Impede a rolagem horizontal */
 }
-
 
 /* menu principal */
 
