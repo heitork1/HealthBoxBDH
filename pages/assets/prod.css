@@ -154,7 +154,7 @@ header p{
     
 
 .container-descricao{
-   margin-top: 20vh;
+   margin-top: 18vh;
    margin-left: 4vh;
    display:inline-grid;
    /* border:1px solid black; */
@@ -172,11 +172,7 @@ header p{
      'b12 b13 b14 b15'
      'b12 b13 b14 b15';
     justify-content: space-around;
-    position:absolute;
-    top: 32vh;
-    left: 3vw;
-    right: 3vw;
-    
+   
 }
 
 
@@ -184,12 +180,10 @@ header p{
 .box-descricao{ 
     /* border: solid 1px black; */
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 20vh;
-    left: 50px;
-    
+    margin-top: -15VH;
+    margin-left: 3vw;
 }
+
 .box-descricao h1{
   cursor: pointer;
 }
@@ -222,18 +216,16 @@ header p{
     font-size: 20px;
     color: #3D2A1A;
     font-weight:bold;
-    margin-top: -8px;
-    position: absolute;
-    top: 20vh;
-    right: 50vh;
+    margin-top: -17VH;
+    
 }
 
 
 
 #box12{
     grid-area:b12 ;
-    width: 43vh;
-    height: 330px;
+    width: 20vw;
+    height: 53vh;
     background-color: rgb(223,203,190);
     border-radius: 8px;
     text-decoration: none;
@@ -246,8 +238,8 @@ header p{
 
 #box13{
     grid-area:b13 ;
-    width: 43vh;
-    height: 330px;
+    width: 20vw;
+    height: 53vh;
     /* background-image: url(2.png); */
     background-color: rgb(223,203,190);
     border-radius: 8px;
@@ -261,8 +253,8 @@ header p{
 
 #box14{
     grid-area: b14;
-    width: 43vh;
-    height: 330px;
+    width: 20vw;
+    height: 53vh;
     /* background-image: url(3.png); */
     background-color: rgb(223,203,190); 
     border-radius: 8px;
@@ -276,8 +268,8 @@ header p{
 
 #box15{
     grid-area: b15;
-    width: 43vh;
-    height: 330px;
+    width: 20vw;
+    height: 53vh;
     /* background-image: url(4.png); */
     background-color: rgb(223,203,190);
     border-radius: 8px;
@@ -292,8 +284,8 @@ header p{
 .imgbox{
     margin: auto ;
     margin-top: 25px;
-    height:200px;
-    width: 230px;
+    height:31vh;
+    width: 16vw;
     justify-content: center;
     /* border: 1px solid black; */
 
@@ -340,7 +332,7 @@ header p{
 
 .descricao-produtos{
     /* border: 1px solid black; */
-    height: 100px;
+    height:15vh;
 }
 
 
@@ -348,8 +340,7 @@ header p{
     font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    margin-left: 25px;
-    margin-top:7px;
+    margin-left: 2vw;
 
 }
 
@@ -357,8 +348,8 @@ header p{
     font-size: 1.0em;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    margin-left: 25px;
-    margin-top: -10px;
+    margin-left: 2vw;
+    margin-top:-1vh;
 }
 
 
@@ -387,8 +378,6 @@ input > #box5{
     cursor: pointer;
     font-weight:bold;
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    bottom:10px;
     transition: 0.3s;
     cursor: pointer;
   }
@@ -465,23 +454,21 @@ input > #box5{
 
   .rating {
     direction: rtl;
-    margin-right: 125px;
-    margin-top: -50px;
-    font-size: 30px;
+    margin-right: 17.2vh;
+    font-size:5vh ;
+    margin-top: -3vh;
   }
 
 
   .rating span {
-    display: inline-block;
-    position: relative;
-    width: 20px;
+    display:inline-block;
+    width:3vh;
     cursor: pointer;
   }
 
 
   .rating span:before {
     content: "\2605";
-    position: absolute;
   }
 
 
@@ -501,10 +488,6 @@ input > #box5{
     content: "\2605";
     color: gold;
   }
-
-
-  
-
 
 
 
