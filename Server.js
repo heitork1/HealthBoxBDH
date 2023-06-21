@@ -50,26 +50,25 @@ app.post('/login', (req, res) => {
   let password = req.body.password;
 
   if (username && password) {
-    console.log("Recebeu: " + username + " " + password)
+    
     // Execute SQL query that'll select the account from the database based on the specified username and password
     connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", function (error, results, fields) {
-      console.log(results)
       // If there is an issue with the query, output the error
       if (error) throw error;
       // If the account exists
       if (results.length > 0) {
-        console.log(results)
-        // Authenticate the user
-        
-        req.session.loggedin = true;
-        req.session.username = username;
-        // Redirect to home page
-        res.redirect('/pages/produtos.html');
-        sessionStorage.setItem("usuario", username)
+        if (results[0].senha === password) {
+          // Authenticate the user
+          req.session.loggedin = true;
+          req.session.username = username;
+          // Redirect to home page
+          res.redirect('/pages/produtos.html');
+        } else {
+          res.send("Senha incorreta")
+        }
       } else {
-        res.send('Usuário ou senha incorreto!');
+        res.send('Login Falhou - Email não cadastrado');
       }
-      res.end();
     });
   } else {
     res.send('Por favor preencha todos os campos');
