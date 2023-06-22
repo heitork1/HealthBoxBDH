@@ -18,9 +18,9 @@
             <div class="bloco">
                 <p>Crie uma nova senha diferente da anterior. Tente usar no mínimo 8 caracteres, utilizando uma
                     combinação de letras, números e caracteres especiais (@,!,#<$)</p>
-                        <input type="text" placeholder="Nova senha" class="senha">
-                        <input type="text" placeholder="Repita nova senha" class="senha">
-                        <button type="submit" class="confirma">Confirmar</button>
+                        <input type="text" placeholder="Nova senha" class="senha" id="senha1">
+                        <input type="text" placeholder="Repita nova senha" class="senha" id="senha2">
+                        <button id="meuBotao" type="button" class="confirma" onclick="mudarNomeBotao()" onclick="desabilitarHover()">CONFIRMAR</button>
             </div>
         </form>
     </main>
@@ -74,5 +74,14 @@
     </footer>
     
 </body>
+<script>
+function mudarNomeBotao() {
 
+  var botao = document.getElementById("meuBotao");
+  botao.textContent = "CONFIRMADO";
+  botao.style.transform = "scale(1)";
+  botao.onclick = null;
+}
+ 
+</script>
 </html>

@@ -199,9 +199,18 @@ margin-right: 10%;
 
 .linha2{
     background-color: #093807;
-    height: 8vh;
+    height: 2vh;
 }
-
+footer{
+    margin-top: 5%;
+    font-family: 'montserrat', sans-serif;
+    color: black;
+    background-color: #EBECF0;
+}
+footer p{
+    color: black;
+    font-size: 16px;
+}
 .sublinhado{
     background-color: #093807;
     margin-top: -8%;
@@ -259,26 +268,38 @@ margin-right: 10%;
 }
 
 .fone{
+    margin-bottom: 2.8vh;
+    margin-top: 2.8vh;
     display: flex;
 }
 
 #email{
     display: flex;
+    margin-bottom: 1.5vh;
 }
 
+
 .contato{
+    display: flex;
+    flex-direction: column;
     margin-top: 3%;
     margin-left: 2%;
+    margin-top: 7vh;
 }
+
+
 .contato img{
     width: 2%;
     margin-right: 1%;
 }
 
+
 .lema{
+    margin-bottom: 3vh;
     text-align: center;
     margin-right: 1%;
     margin-top: 2%;
+    font-size: 16px;
 }
 
 .redes img{
@@ -288,6 +309,7 @@ margin-right: 10%;
 }
 
 h4{
+    margin-bottom: 3vh;
     font-size: 18px;
     margin-top: 2%;
 }

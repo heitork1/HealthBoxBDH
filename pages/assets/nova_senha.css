@@ -140,15 +140,15 @@ footer p{
     align-items: center;
 }
 .fone{
-    margin-bottom: 3.3vh;
-    margin-top: 3.3vh;
+    margin-bottom: 2.8vh;
+    margin-top: 2.8vh;
     display: flex;
     align-items: center;
 }
 .email{
     display: flex;
     align-items: center;
-    margin-bottom: 2vh;
+    margin-bottom: 1.5vh;
 }
 .contato{
     margin-top: 3%;
@@ -160,6 +160,7 @@ footer p{
     margin-right: 1%;
 }
 .lema{
+    margin-bottom: 3vh;
     text-align: center;
     margin-right: 1%;
     margin-top: 2%;
@@ -170,6 +171,7 @@ footer p{
     margin-top: 15%;
 }
 h4{
+    margin-bottom: 3vh;
     font-size: 18px;
     margin-top: 2%;
 }
