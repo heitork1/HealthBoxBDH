@@ -165,11 +165,11 @@ h1{
 }
 .endereco{
     background-color: #DFCBBE;
-   
+    margin-top: -1%;
     height: 32%;
 }
 .endereco > h2{
-    margin-top: 2%;
+    margin-top: 3%;
     font-size: 20px;
     margin-bottom: 0;
 }
@@ -266,6 +266,7 @@ form{
 main input{
     background-color: #DFCBBE;
     border-bottom: solid 1px #6D5842;
+    font-family: 'montserrat', sans-serif;
 }
 .asdemais{
     margin-top: 2.5%;
@@ -314,12 +315,13 @@ main input{
     border-radius: 8px;
 }
 .voltar{
-    margin-left: 74%;
+    margin-left: 71%;
     font-size: 14px;
+    margin-top: 0;
 }
 .resumo h1{
-    margin-top: 4%;
-    margin-bottom: 2%;
+    margin-top: 4.5%;
+    margin-bottom: 3.5%;
     width: 83%;
 }
 h5{
@@ -341,6 +343,12 @@ input[type=submit]{
     font-family: 'montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
+    transition: 0.3s;
+}
+input[type=submit]:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
 }
 form{
     display: flex;
@@ -352,6 +360,12 @@ textarea{
     outline: none;
     padding: 1% 2% 1% 2%;
     border-radius: 15px;
+    font-family: 'montserrat', sans-serif;
+    transition: 0.3s;
+}
+textarea:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
 }
 a{
     color: #3C2919;
@@ -384,7 +398,10 @@ h1{
     width: 75%;
     margin-left: 2%
 }
-
+.endereco input:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+}
 .observacoes{
     width: 85%;
 }
@@ -411,6 +428,7 @@ h4{
 footer{
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
+    margin-top: 4vh;
 }
 footer p{
     color: black;
