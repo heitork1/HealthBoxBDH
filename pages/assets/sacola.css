@@ -152,7 +152,7 @@ p{
 }
 body{
     background-color: #EBECF0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'montserrat', sans-serif;
     color: #3D2A1A;
 }
 .valqtd{
@@ -160,6 +160,7 @@ body{
     margin-left: -4.2%;
     margin-top: 10%;
     height: 15%;
+    align-items: center;
 }
 main{
     display: flex;
@@ -252,6 +253,7 @@ main{
     width: 66%;
     display: flex;
     justify-content: center;
+    margin-top: 4vh;
 }
 .botao{
     display: flex;
@@ -268,7 +270,11 @@ main{
     font-size: large;
     color: white;
     border: none;
-    
+    transition: 0.3s;
+}
+.confirmar:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 .operadores{
     background-color: #B49E88;
@@ -276,6 +282,11 @@ main{
     display: flex;
     justify-content: center;
     border-radius: 5px;
+    cursor: pointer;
+}
+.quantity:hover{
+   transform: scale(1.05);
+   transition: 0.3s;
 }
 .qtd{
     background-color: #CDB9AA;
@@ -293,6 +304,8 @@ main{
     margin-right: 6%;
     border-radius: 7px;
     padding: 0.5% 0 0.5% 1%;
+    transition: 0.3s;
+    font-family: 'montserrat', sans-serif;
 }
 .cep label{
     width: 10%;
@@ -300,6 +313,11 @@ main{
 .cep input{
     background-color: #DFCBBE;
     margin-left: 8%;
+    font-family: 'montserrat', sans-serif;
+}
+.cep:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 .frete{
     display: flex;  
@@ -311,6 +329,11 @@ main{
     border-radius:7px;
     color: #3D2A1A;
     font-weight: 900;
+    transition: 0.3s;
+}
+.calcular:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 .descricao{
     margin-left: 5%;
@@ -320,10 +343,11 @@ main{
     width: 50%;
     border-radius: 5px;
     color: #3D2A1A;
-    font-weight: 1000;
+    font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
 }
 .quantity{
     width: 20%;
@@ -334,6 +358,8 @@ main{
     align-items: center;
     color: white;
     font-weight: 700;
+    transition: 0.3s;
+    height: 100%;
 }
 .linha{
     margin-left: -5%;
