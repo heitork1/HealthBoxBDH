@@ -425,6 +425,51 @@ input{
     transform: scale(1.05);
 }
  
+.espaco-botao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   margin-top: 30px;
+  }
+
+
+  
+  .botaoEnviar {
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #4CAF50;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .botaoEnviar:hover{
+    transform: scale(1.03);
+    
+  }
+
+  #minhaDiv {
+    display: none; /* Oculta o conteúdo */
+  }
+
+  .descricao-escondida p{
+    margin-top: 9vh;
+    margin-left: 8vw;
+    width: 50vw;
+    border-radius: 2vh;
+    text-align:justify;
+    /* border: 1px solid black; */
+    font-family: 'montserrat', sans-serif;
+  }
 
 
 
@@ -438,7 +483,7 @@ body{
 footer{
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
-    margin-top: 3vh;
+    margin-top: 9vh;
 }
 footer p{
     color: black;
