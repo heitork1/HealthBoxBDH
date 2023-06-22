@@ -121,12 +121,18 @@ form{
 
 
 
-footer p, h4{
-    margin: 0;
-}
+
 footer{
-    margin: 0;
-    margin-top: 4%;
+    margin-top: 8vh;
+    font-family: 'montserrat', sans-serif;
+    background-color: #EBECF0;
+}
+footer p{
+    color: black;
+}
+.contato p{
+    margin-left: 0;
+    font-size: 16px;
 }
 .linha{
     background-color: #093807;
@@ -150,7 +156,7 @@ footer{
     justify-content: space-around;
 }
 .row1 a{
-    color: black;
+    color:black;
 }
 .row1 img{
     margin-top: -5%;
@@ -164,7 +170,7 @@ footer{
     flex-direction: column;
 }
 .col2 a{
-    margin-top: 13%;
+    margin-top: 12%;
 }
 .col3{
     display: flex;
@@ -180,18 +186,24 @@ footer{
     margin-right: 5%;
 }
 .localizacao{
-    display: flex;  
+    display: flex;
+    align-items: center;
+   
 }
 .fone{
     display: flex;
+    align-items: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 .email{
     display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
 }
 .contato{
     margin-top: 3%;
     margin-left: 2%;
-    
 }
 .contato img{
     width: 2%;
@@ -202,6 +214,8 @@ footer{
     text-align: center;
     margin-right: 1%;
     margin-top: 2%;
+    font-size: 16px;
+    margin-bottom: 4.5vh;
 }
 .redes img{
     width: 25%;
@@ -210,7 +224,11 @@ footer{
 h4{
     font-size: 18px;
     margin-top: 2%;
+    margin-bottom: 13%;
 }
-.ilustra{
+.col3 h4{
+    margin-bottom: 23%;
+}
+#ilustra{
     margin-left: 52vw;
 }
