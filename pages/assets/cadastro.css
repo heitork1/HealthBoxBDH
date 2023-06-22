@@ -148,12 +148,24 @@ form .large-data{
 
 
 
+footer{
+    font-family: 'montserrat', sans-serif;
+    background-color: #EBECF0;
+}
+footer p{
+    color: black;
+}
+.contato p{
+    margin-left: 0;
+    font-size: 16px;
+}
 .linha{
     background-color: #093807;
     height: 2vh;
 }
 .linha2{
     background-color: #093807;
+
     height: 2vh;
 }
 .sublinhado{
@@ -169,7 +181,7 @@ form .large-data{
     justify-content: space-around;
 }
 .row1 a{
-    color: black;
+    color:black;
 }
 .row1 img{
     margin-top: -5%;
@@ -183,7 +195,7 @@ form .large-data{
     flex-direction: column;
 }
 .col2 a{
-    margin-top: 13%;
+    margin-top: 12%;
 }
 .col3{
     display: flex;
@@ -200,12 +212,19 @@ form .large-data{
 }
 .localizacao{
     display: flex;
+    align-items: center;
+   
 }
 .fone{
     display: flex;
+    align-items: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 .email{
     display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
 }
 .contato{
     margin-top: 3%;
@@ -213,12 +232,15 @@ form .large-data{
 }
 .contato img{
     width: 2%;
+    height: 2%;
     margin-right: 1%;
 }
 .lema{
     text-align: center;
     margin-right: 1%;
     margin-top: 2%;
+    font-size: 16px;
+    margin-bottom: 4.5vh;
 }
 .redes img{
     width: 25%;
@@ -227,7 +249,11 @@ form .large-data{
 h4{
     font-size: 18px;
     margin-top: 2%;
+    margin-bottom: 13%;
 }
-.ilustra{
+.col3 h4{
+    margin-bottom: 23%;
+}
+#ilustra{
     margin-left: 52vw;
 }
