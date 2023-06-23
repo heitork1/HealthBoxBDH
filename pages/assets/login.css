@@ -22,6 +22,12 @@ body{
     padding-left: 1%;
     border: none;
     background-color: #E9E7E4;
+    transition: 0.3s;
+}
+.email-senha:hover{
+    opacity: 0.9;
+    transform: scale(1.01);
+    transition: 0.3s;
 }
 @media screen and (min-width:900px){
     .email-senha{
@@ -93,6 +99,11 @@ form{
     color: #FFFFFF;
     border-radius: 2%;
     cursor: pointer;
+    transition: 0.3s;
+}
+#entrar:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 .termos{
     font-size: 12px;
