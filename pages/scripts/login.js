@@ -1,8 +1,4 @@
 
-
-
-
-
 function validarFormulario() {
     // Obtém os valores do formulário
     var username = document.getElementById('email').value;
@@ -32,7 +28,6 @@ function validarFormulario() {
     xhr.send('username=' + username + '&password=' + password);
 
     // Evita o envio do formulário tradicional
-    return false;
   }
 
   function exibirAlerta(mensagem) {

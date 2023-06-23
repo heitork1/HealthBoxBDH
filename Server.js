@@ -13,13 +13,14 @@ const connection = mysql.createConnection({
 
 const app = express()
 
+
 app.use(session({
-  secret: 'secret',
-  resave: true,
+  secret: 'd12df23fd234dc213',
+  resave: false,
   saveUninitialized: true
 }));
 
-app.use(bodyParser.json())
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use('/assets', express.static('assets'))
 app.use('/img', express.static('img'))
@@ -61,8 +62,15 @@ app.post('/login', (req, res) => {
           // Authenticate the user
           req.session.loggedin = true;
           req.session.username = username;
+
+          connection.query("SELECT nome FROM usuarios WHERE email = '" + username + "'", function (error, results, fields) {
+            if (error) throw error;
+            if (results.length > 0) {
+              req.session.nomeUsuario = results[0].nome;
+              res.send(req.session.nomeUsuario)
+            }
           // Redirect to home page
-          res.redirect('/pages/produtos.html');
+          });
         } else {
           res.send("Senha incorreta")
         }
@@ -73,6 +81,19 @@ app.post('/login', (req, res) => {
   } else {
     res.send('Por favor preencha todos os campos');
     res.end();
+  }
+});
+
+app.get('/pages/produtos.html', (req, res) => {
+  if (req.session.loggedin) {
+    connection.query("SELECT nome FROM usuarios WHERE email = '" + req.session.username + "'", function (error, results, fields) {
+      if (error) throw error;
+      if (results.length > 0) {
+        res.render('produtos', { nomeUsuario: results[0].nome });
+      }
+    });
+  } else {
+    res.redirect('/login');
   }
 });
 
