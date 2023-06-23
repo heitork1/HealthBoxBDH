@@ -96,8 +96,9 @@
                 <span>R$621,99</span>
             </div>
             <div class="botao">
-                <button type="submit" class="confirmar">CONFIRMAR</button>
+                <button type="submit" class="confirmar" onclick="alterarNome(this)" >CONFIRMAR</button>
             </div>
+            <div id="minhaDiv"> <p>Aguardando seu pagamento! <a href="/pages/minha-conta.html">Clique Aqui</a> para atualizações do seu pedido.</p></div>
         </section>
     </main>
     <footer>
@@ -105,7 +106,7 @@
         <div class="verdinho">
             <div class="row1">
                 <div class="col1">
-                    <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <a href="/index.html"><img src="/pages/img/inicio/logo (2).png" alt=""></a>
                     <div class="sublinhado"></div>
                     <p class="lema">Tornando a sua vida mais saudável</p>
                 </div>
@@ -122,10 +123,10 @@
                 <div class="col4">
                     <h4>Redes Sociais</h4>
                     <div class="redes">
-                        <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
-                        <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
-                        <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
-                    </div>
+                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a> 
+                         <a href="https://www.instagram.com/accounts/login/"><img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
+                        <a href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a> 
+                     </div>
                 </div>
             </div>
             <div class="contato">
@@ -148,5 +149,17 @@
         </div>
     </footer>
 </body>
+<script>
+     function alterarNome(button) {
+    if (!button.dataset.alterado) {
+    button.style.transform = "scale(1)";
+      button.innerHTML = "CONFIRMADO";
+      button.dataset.alterado = true;
+      document.getElementById("minhaDiv").style.display = "inline-block";
+      document.getElementById("minhaDiv").style.width = "7vh";
+      
+    }
+  }
+</script>
 
 </html>

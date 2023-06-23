@@ -106,7 +106,7 @@ body{
     transition: 0.3s;
 }
 .botao-enviar:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .voltar{
@@ -118,7 +118,16 @@ body{
 
 .voltar a{
     color: #3D2A1A;
+    text-decoration: none;
+    transition: 0.3s;
 }
+
+.voltar a:HOVER{
+    color: #3D2A1A;
+    text-decoration: underline;
+}
+
+
 
 .small-letters{
     line-height: 20px;
@@ -303,9 +312,8 @@ footer p{
 }
 
 .redes img{
-    width: 28%;
+    width: 75%;
     margin-top: 15%;
-    margin-right: 4%;
 }
 
 h4{

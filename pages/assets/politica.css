@@ -7,7 +7,8 @@
     display: flex;
     height: 8.8vh;
     align-items: center;  
-    width:auto;
+    width:100%;
+    position: fixed;
     
 }
 
@@ -110,7 +111,10 @@ input{
 .faixa2{
     background-color: #429C44;
     height: 7.2vh;
-    width: auto;
+   width: 100%;
+    top: 8.7vh;
+    position: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 .opcoes a:hover {
     background-color: #254e2562;
@@ -153,7 +157,7 @@ main{
 h1{
     display: flex;
     justify-content: center;
-    padding-top: 2%;
+    padding-top: 20vh;
     padding-bottom: 3%;
 }
 .texto{
@@ -167,8 +171,16 @@ h1{
 
 
 footer{
+    margin-top: 8vh;
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
+}
+footer p{
+    color: black;
+}
+.contato p{
+    margin-left: 0;
+    font-size: 16px;
 }
 .linha{
     background-color: #093807;
@@ -177,7 +189,7 @@ footer{
 .linha2{
     background-color: #093807;
 
-    height: 8vh;
+    height: 2vh;
 }
 .sublinhado{
     background-color: #093807;
@@ -192,7 +204,7 @@ footer{
     justify-content: space-around;
 }
 .row1 a{
-    color: black;
+    color:black;
 }
 .row1 img{
     margin-top: -5%;
@@ -206,7 +218,7 @@ footer{
     flex-direction: column;
 }
 .col2 a{
-    margin-top: 13%;
+    margin-top: 12%;
 }
 .col3{
     display: flex;
@@ -223,26 +235,35 @@ footer{
 }
 .localizacao{
     display: flex;
+    align-items: center;
+   
 }
 .fone{
     display: flex;
+    align-items: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 .email{
     display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
 }
-
 .contato{
     margin-top: 3%;
     margin-left: 2%;
 }
 .contato img{
     width: 2%;
+    height: 2%;
     margin-right: 1%;
 }
 .lema{
     text-align: center;
     margin-right: 1%;
     margin-top: 2%;
+    font-size: 16px;
+    margin-bottom: 4.5vh;
 }
 .redes img{
     width: 25%;
@@ -251,7 +272,11 @@ footer{
 h4{
     font-size: 18px;
     margin-top: 2%;
+    margin-bottom: 13%;
 }
-.ilustra{
+.col3 h4{
+    margin-bottom: 23%;
+}
+#ilustra{
     margin-left: 52vw;
 }
