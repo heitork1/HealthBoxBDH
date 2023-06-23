@@ -290,13 +290,15 @@ main{
     transition: 0.3s;
 }
 #minhaDiv{
+    margin-top: -2vh;
+    margin-left: -1vw;
     display: none;
-    height: 9vh;
+    width: 70vh;
 }
 
 #minhaDiv p{
     color: black;
-    text-align: justify;
+
 }
 .operadores{
     background-color: #B49E88;
