@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/pages/assets/minha-conta.css">
-   
+    <script src="/pages/scripts/minha-conta.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -52,24 +53,24 @@
                     <form action="/atualizar" method="post">
                         <div class="nome">
                             <label for="username">Nome Completo</label>
-                            <input type="text" name="username" placeholder="Nome do usuário (dinâmico)">
+                            <input type="text" name="username" id="inputNome">
                         </div>
                         <div class="emailInput">
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" placeholder="E-mail do usuário (dinâmico)">
+                            <input type="email" name="email" id="inputEmail">
                         </div>
                         <div class="senha">
                             <label for="password" >Senha do usuário</label>
-                            <input type="password" name="password" placeholder="Nova senha">
+                            <input type="password" name="password" placeholder="senha" id="inputSenha">
                         </div>
                         <div class="data_tel">
                             <div class="data">
                                 <label for="date">Data de nascimento</label>
-                                <input type="date" name="date" id="nasc" placeholder="00/00/0000">
+                                <input type="date" name="date" id="nasc">
                             </div>
                             <div class="tel">
                                 <label for="tel">DDD + Telefone</label>
-                                <input type="tel" placeholder="(00) 00000-0000" name="tel">
+                                <input type="tel" placeholder="(00) 00000-0000" name="tel" id="telefone">
                             </div>
                         </div>
                         <input type="submit" value="Alterar informações de cadastro" id="alterar">

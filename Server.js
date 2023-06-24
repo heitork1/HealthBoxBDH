@@ -1,8 +1,17 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require('express')
+const bodyParser = require('body-parser')
 const mysql = require('mysql2');
 const session = require('express-session');
+
+const app = express()
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.set('view engine', 'ejs');
+
 const path = require('path')
+app.use('/assets', express.static('assets'))
+app.use('/img', express.static('img'))
+app.use('/pages', express.static('pages'))
 
 const connection = mysql.createConnection({
   host: '127.0.0.1',
@@ -11,91 +20,106 @@ const connection = mysql.createConnection({
   database: 'healthbox',
 });
 
-const app = express()
-
 
 app.use(session({
-  secret: 'd12df23fd234dc213',
-  resave: false,
-  saveUninitialized: true
+  secret: 'secret',
+  resave: true,
+  saveUninitialized: false
 }));
 
-
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use('/assets', express.static('assets'))
-app.use('/img', express.static('img'))
-app.use('/pages', express.static('pages'))
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'static')));
-
 connection.connect(function (err) {
-  if (!err) {
+  if (!err){
     console.log("Conexão como o Banco realizada com sucesso!!!");
-  } else {
+  } else{
     console.log("Erro: Conexão NÃO realizada", err);
   }
 });
 
-
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
 })
-
-app.get('/login', (req, res) => {
-  res.sendFile(__dirname + '/pages/login.html')
-})
-
 app.post('/login', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
 
-  if (username && password) {
-    
-    // Execute SQL query that'll select the account from the database based on the specified username and password
-    connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", function (error, results, fields) {
-      // If there is an issue with the query, output the error
-      if (error) throw error;
-      // If the account exists
-      if (results.length > 0) {
-        if (results[0].senha === password) {
-          // Authenticate the user
-          req.session.loggedin = true;
-          req.session.username = username;
+  connection.query("SELECT * FROM usuarios WHERE email = '" + username + "'", function (err, rows) {
+    if (!err) {
+      if (rows.length > 0) {
+        let senhaBanco = rows[0].senha;
 
-          connection.query("SELECT nome FROM usuarios WHERE email = '" + username + "'", function (error, results, fields) {
-            if (error) throw error;
-            if (results.length > 0) {
-              req.session.nomeUsuario = results[0].nome;
-              res.send(req.session.nomeUsuario)
+        if (password === senhaBanco) {
+          console.log('Senha correta! Acesso permitido.');
+          req.session.nomeUsuario = rows[0].nome;
+          req.sessionID = rows[0].id
+          
+          connection.query("SELECT nome from usuarios where senha='" + senhaBanco + "'", function (err, rows) {
+            if (!err) {
+              res.send(rows[0].nome);
+             
+            } else {
+              console.log("Não foi possível encontrar", err);
+              res.send('Ocorreu um erro durante o login. Tente novamente mais tarde.');
             }
-          // Redirect to home page
           });
         } else {
-          res.send("Senha incorreta")
+          res.send('Senha incorreta');
         }
       } else {
+        console.log('Usuário não encontrado.');
         res.send('Login Falhou - Email não cadastrado');
       }
-    });
+    } else {
+      console.log('Erro: Consulta não realizada', err);
+      res.send('Ocorreu um erro durante o login. Tente novamente mais tarde.');
+    }
+  });
+});
+
+app.get('/pages/minha-conta.html', function(req, res) {
+  // Recupere o usuário logado a partir do token ou sessão
+  // Suponha que o ID do usuário seja armazenado em req.session.userID
+  // Execute a consulta SQL para obter os dados do usuário pelo ID
+  if(req.session.userID){
+  connection.query(
+    "SELECT * FROM usuarios WHERE id = ?",
+    [req.session.userID],
+    function(error, results) {
+      if (error) {
+        console.log('Erro ao consultar o banco de dados:', error);
+        res.status(500).send('Ocorreu um erro durante o processamento da solicitação.');
+      } else {
+        const user = results[0];
+        res.render('minha-conta', { user });
+      }
+    }
+  );
+} else {
+  res.redirect('/pages/login.html');
+}
+});
+
+
+app.post('/pages/minha-conta', function (req, res) {
+  if (req.session.userID) {
+    var updatedUser = req.body;
+
+    connection.query(
+      "UPDATE usuarios SET ? WHERE id = ?",
+      [updatedUser, req.session.userID],
+      function(error) {
+        if (error) {
+          console.log('Erro ao atualizar o usuário:', error);
+          res.status(500).send('Ocorreu um erro durante o processamento da solicitação.');
+        } else {
+          res.send('success');
+        }
+      }
+    );
   } else {
-    res.send('Por favor preencha todos os campos');
-    res.end();
+    res.redirect('/pages/login.html');
   }
 });
 
-app.get('/pages/produtos.html', (req, res) => {
-  if (req.session.loggedin) {
-    connection.query("SELECT nome FROM usuarios WHERE email = '" + req.session.username + "'", function (error, results, fields) {
-      if (error) throw error;
-      if (results.length > 0) {
-        res.render('produtos', { nomeUsuario: results[0].nome });
-      }
-    });
-  } else {
-    res.redirect('/login');
-  }
-});
 
 app.post('/cadastro', (req, res) => {
   let username = req.body.username;
@@ -104,16 +128,16 @@ app.post('/cadastro', (req, res) => {
   let telefone = req.body.telefone;
   let date = req.body.date
 
-  connection.query("INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username + "'," + "'" + email + "'," + "'" + password + "'," + "'" + telefone + "'," + "'" + date + "'" + ")"
-    , function (err, rows) {
-      if (!err) {
-        console.log("Usuario cadastrado com sucesso")
-      } else {
-        console.log('Não foi possível cadastrar', err);
-      }
-    });
+connection.query("INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username + "'," + "'" + email + "'," + "'" + password + "'," + "'" + telefone + "'," + "'" + date + "'" + ")"
+, function (err, rows) {
+    if (!err) {
+      console.log("Usuario cadastrado com sucesso")
+    } else {
+      console.log('Não foi possível cadastrar', err);
+    }
+  });
 
-  res.redirect('/pages/produtos.html');
+    res.redirect('/pages/produtos.html');
 })
 
 app.listen(3002, () => {
