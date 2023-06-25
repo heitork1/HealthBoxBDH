@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" escondido="IE=edge">
+    <meta name="viewport" escondido="width=device-width, initial-scale=1.0">
+    <title>Health Box</title>
+    <link rel="stylesheet" type="text/css" href="assets/prod.css">
+    <script src="/pages/scripts/produtos.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="faixa1">
+        <img src="/pages/img/inicio/logo-br.png" alt="" id="logo" />
+        <div class="pesquisa">
+            <input type="text" name="" id="" placeholder="Pesquisar" />
+            <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
+                style="transform: scaleX(-1)" class="lupa"/>
+        </div>
+
+        <div class="entrar">
+            <a href="/pages/minha-conta.html">
+                <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                <p id="nomeUsuario"><%= nomeUsuario %></p>
+            </a>
+        </div>
+
+        <div class="sacola">
+            <a href="/sacola.html">
+                <img src="/pages/img/inicio/bag.png" alt="" />
+                <p>Sacola</p>
+            </a>
+        </div>
+    </div>
+    <div class="faixa2">
+        <div class="opcoes">
+            <a href="/pages/produtos.html">Produtos</a>
+            <a href="/pages/sobre-nos.html">Sobre nós</a>
+        </div>
+    </div>
+</header>
+                       
+    <div class="container-descricao">
+        <div id="box1" class="box-descricao">
+        <a href="#"><p>TODOS OS PRODUTOS</p> </a>
+        </div>
+        <div class="menu" id="menu">
+            <span class="menu-titulo"><p>CATEGORIA &#9660;</p>  </span>
+            <div class="menu-dropdown">
+              <div class="menu-item">
+                <span class="menu-subtitulo">Faixa de Preço &#x25BA;</span>
+                <div class="menu-dropdown-sub">
+                  <div class="menu-item">Até R$150</div>
+                  <div class="menu-item">Até R$200</div>
+                  <div class="menu-item">Até R$250</div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="menu-subtitulo">Alérgicos &#x25BA;</span>
+                <div class="menu-dropdown-sub">
+                  <div class="menu-item">Gluten</div>
+                  <div class="menu-item">Lactose</div>
+                  <div class="menu-item">APLV</div>
+                  <div class="menu-item">Oleaginosos</div>
+                  <div class="menu-item">Ovo</div>
+                  <div class="menu-item">Frutos do mar</div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="menu-subtitulo">Dias &#x25BA;</span>
+                <div class="menu-dropdown-sub">
+                  <div class="menu-item">7 dias</div>
+                  <div class="menu-item">15 dias</div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="menu-subtitulo">Tipo de Alimentação &#x25BA;</span>
+                <div class="menu-dropdown-sub">
+                  <div class="menu-item">Vegetariano</div>
+                  <div class="menu-item">Vegano</div>
+                  <div class="menu-item">Ovolactovegetariano</div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+    </div>
+            
+    <div class="container-caixinhas">
+        <div id="box12">
+            <div id="imgbox12" class="imgbox"></div>
+            <div class="descricao-produtos"><a href="#"><h1  id="h1">DIETA -7KG EM 7 DIAS</h1></a>
+                
+                    <h2 id="h2">R$ 200,00</h2>
+                    <div><form>
+                      <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <span></span>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <span></span>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <span></span>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <span></span>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <span></span>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+        </div>
+        <div id="box13">
+            <div id="imgbox13" class="imgbox"></div>
+            <div class="descricao-produtos"><a href="#"><h1  id="h1">DIETA -15KG EM 15 DIAS</h1></a>
+               
+                    <h2 id="h2">R$ 400,00</h2>
+                    <div> 
+                      <form>
+                        <div class="rating">
+                          <input type="radio" id="star5" name="rating" value="5">
+                          <span></span>
+                          <input type="radio" id="star4" name="rating" value="4">
+                          <span></span>
+                          <input type="radio" id="star3" name="rating" value="3">
+                          <span></span>
+                          <input type="radio" id="star2" name="rating" value="2">
+                          <span></span>
+                          <input type="radio" id="star1" name="rating" value="1">
+                          <span></span>
+                        </div>
+                      </form>
+
+                    </div>
+            </div>
+        </div>    
+        <div id="box14">
+            <div id="imgbox14" class="imgbox"></div>
+            <div class="descricao-produtos"><a href="#"><h1 id="h1">DIETA -7KG EM 7 DIAS  <h1 id="h1" style="margin-top: -12px; margin-left:132px; font-size: 15px;">SEM LACTOSE</h1></h1></a>
+                
+                    <h2 id="h2" style="margin-top:-28px;">R$ 250,00</h2>
+                    <div>
+                      <form>
+                        <div class="rating">
+                          <input type="radio" id="star5" name="rating" value="5">
+                          <span></span>
+                          <input type="radio" id="star4" name="rating" value="4">
+                          <span></span>
+                          <input type="radio" id="star3" name="rating" value="3">
+                          <span></span>
+                          <input type="radio" id="star2" name="rating" value="2">
+                          <span></span>
+                          <input type="radio" id="star1" name="rating" value="1">
+                          <span></span>
+                        </div>
+                      </form>
+                    </div>
+            </div>    
+        </div>
+        <div id="box15"> <a href="/pages/tela-produto.html"></a>
+            <a href="/pages/tela-produto.html"><div id="imgbox15" class="imgbox"></div></a>
+            <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+                
+                    <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
+                    <div><form>
+                      <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <span></span>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <span></span>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <span></span>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <span></span>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <span></span>
+                      </div>
+                    </form></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="espaco-divs">
+    
+      <div id="minhaDiv" class="escondido" onclick="toggleDiv()">  
+        <div class="container-caixinhas2">
+         <div id="box16"> <a href="/pages/tela-produto.html"></a>
+        
+            <a href="/pages/tela-produto.html"><div id="imgbox16" class="imgbox"></div></a>
+                <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+                    
+                  <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
+                    <div>
+                      <form>
+                        <div class="rating">
+                          <input type="radio" id="star5" name="rating" value="5">
+                          <span></span>
+                          <input type="radio" id="star4" name="rating" value="4">
+                          <span></span>
+                          <input type="radio" id="star3" name="rating" value="3">
+                          <span></span>
+                          <input type="radio" id="star2" name="rating" value="2">
+                          <span></span>
+                          <input type="radio" id="star1" name="rating" value="1">
+                          <span></span>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="box17"> <a href="/pages/tela-produto.html"></a>
+        
+              <a href="/pages/tela-produto.html"><div id="imgbox17" class="imgbox"></div></a>
+                  <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+                      
+                    <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
+                      <div>
+                        <form>
+                          <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <span></span>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <span></span>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <span></span>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <span></span>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <span></span>
+                          </div>
+                        </form>
+                      </div>
+                  </div>
+              </div>
+
+              <div id="box18"> <a href="/pages/tela-produto.html"></a>
+        
+                <a href="/pages/tela-produto.html"><div id="imgbox18" class="imgbox"></div></a>
+                    <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+                        
+                      <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
+                        <div>
+                          <form>
+                            <div class="rating">
+                              <input type="radio" id="star5" name="rating" value="5">
+                              <span></span>
+                              <input type="radio" id="star4" name="rating" value="4">
+                              <span></span>
+                              <input type="radio" id="star3" name="rating" value="3">
+                              <span></span>
+                              <input type="radio" id="star2" name="rating" value="2">
+                              <span></span>
+                              <input type="radio" id="star1" name="rating" value="1">
+                              <span></span>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="box19"> <a href="/pages/tela-produto.html"></a>
+        
+                  <a href="/pages/tela-produto.html"><div id="imgbox19" class="imgbox"></div></a>
+                      <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+                          
+                        <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
+                          <div>
+                            <form>
+                              <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <span></span>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <span></span>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <span></span>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <span></span>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <span></span>
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div id="box20"> <a href="/pages/tela-produto.html"></a>
+        
+                    <a href="/pages/tela-produto.html"><div id="imgbox20" class="imgbox"></div></a>
+                        <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+                            
+                          <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
+                            <div>
+                              <form>
+                                <div class="rating">
+                                  <input type="radio" id="star5" name="rating" value="5">
+                                  <span></span>
+                                  <input type="radio" id="star4" name="rating" value="4">
+                                  <span></span>
+                                  <input type="radio" id="star3" name="rating" value="3">
+                                  <span></span>
+                                  <input type="radio" id="star2" name="rating" value="2">
+                                  <span></span>
+                                  <input type="radio" id="star1" name="rating" value="1">
+                                  <span></span>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="box21"> <a href="/pages/tela-produto.html"></a>
+        
+                      <a href="/pages/tela-produto.html"><div id="imgbox21" class="imgbox"></div></a>
+                          <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+                              
+                            <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
+                              <div>
+                                <form>
+                                  <div class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <span></span>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <span></span>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <span></span>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <span></span>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <span></span>
+                                  </div>
+                                </form>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div id="box22"> <a href="/pages/tela-produto.html"></a>
+        
+                        <a href="/pages/tela-produto.html"><div id="imgbox22" class="imgbox"></div></a>
+                            <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+                                
+                              <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
+                                <div>
+                                  <form>
+                                    <div class="rating">
+                                      <input type="radio" id="star5" name="rating" value="5">
+                                      <span></span>
+                                      <input type="radio" id="star4" name="rating" value="4">
+                                      <span></span>
+                                      <input type="radio" id="star3" name="rating" value="3">
+                                      <span></span>
+                                      <input type="radio" id="star2" name="rating" value="2">
+                                      <span></span>
+                                      <input type="radio" id="star1" name="rating" value="1">
+                                      <span></span>
+                                    </div>
+                                  </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="box23"> <a href="/pages/tela-produto.html"></a>
+        
+                          <a href="/pages/tela-produto.html"><div id="imgbox23" class="imgbox"></div></a>
+                              <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+                                  
+                                <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
+                                  <div>
+                                    <form>
+                                      <div class="rating">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <span></span>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <span></span>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <span></span>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <span></span>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <span></span>
+                                      </div>
+                                    </form>
+                                  </div>
+                              </div>
+                          </div>
+
+
+
+
+          </div>
+      </div>
+      <div class="espaco-botao">
+          <input type="button" id="meuBotao" name="botao" value="CARREGAR MAIS" class="botaoEnviar"  onclick="toggleDiv()">
+      </div>
+            
+    </div>    
+           
+          
+        
+    
+    <footer>
+      <div class="linha"></div>
+      <div class="verdinho">
+          <div class="row1">
+              <div class="col1">
+                  <img src="/pages/img/inicio/logo (2).png" alt="">
+                  <div class="sublinhado"></div>
+                  <p class="lema">Tornando a sua vida mais saudável</p>
+              </div>
+              <div class="col2">
+                  <h4>Institucional</h4>
+                  <a href="sobre-nos.html">Sobre nós</a>
+                  <a href="politica.html">Política de Privacidade</a>
+              </div>
+              <div class="col3">
+                  <h4>Dúvida</h4>
+                  <a href="minha-conta.html">Meus Pedidos</a>
+                  <a href="minha-conta.html">Minha Conta</a>
+              </div>
+              <div class="col4">
+                  <h4>Redes Sociais</h4>
+                  <div class="redes">
+                      <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
+                      <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
+                      <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
+                  </div>
+              </div>
+          </div>
+          <div class="contato">
+              <div class="localizacao">
+                  <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
+                  <p>Joinville/SC</p>
+              </div>
+              <div class="fone">
+                  <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
+                  <p>Fone/Whatsapp: (47) 00000-0000</p>
+              </div>
+              <div class="email">
+                  <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
+                  <p>Healthbox@gmail.com</p>
+                  <p id="ilustra">As imagens são meramente ilustrativas</p>
+              </div>
+          </div>
+          <div class="linha2">
+          </div>
+      </div>
+  </footer>
+<script >
+function toggleDiv() {
+  var div = document.getElementById("minhaDiv");
+  var botao = document.getElementById("meuBotao");
+
+  if (div.style.display === "none") {
+    div.style.display = "block"; // Mostra a div
+    div.style.justifyContent = "spaceBeetwen";
+    botao.value = "CARREGAR MENOS"; // Altera o texto do botão
+  } else {
+    div.style.display = "none"; // Oculta a div
+    botao.value = "CARREGAR MAIS"; // Altera o texto do botão
+  }
+}
+</script>
+</body>
+</html>
+

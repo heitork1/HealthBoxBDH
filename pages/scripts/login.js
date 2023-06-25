@@ -22,7 +22,7 @@ function validarFormulario() {
         exibirAlerta('Email não cadastrado. Tente novamente.');
       } else {
         // Redirecionar para a página de produtos
-        window.location.href = '/pages/produtos.html?username=' + resposta;
+        window.location.href = '/pages/produtos';
       }
     }
   };

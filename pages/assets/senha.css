@@ -15,6 +15,10 @@ body{
     justify-content: center; 
 }
 
+.main img{
+    width: 25vw;
+}
+
 .main h1{
     color: #3D2A1A;
     font-size: 40px;
@@ -35,10 +39,7 @@ body{
 }
 
 
-.main > img{
-    margin-top:-20px;
-    width: 300px;
-}
+
 
 .grande{
     display: flex;
@@ -71,6 +72,8 @@ body{
     width: 200px;
     transition: 0.3s;
 }
+
+
 
 .email:hover{
     background:rgb(165, 151, 141);
