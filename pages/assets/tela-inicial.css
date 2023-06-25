@@ -8,15 +8,16 @@ body {
 
 
 /* menu principal */
-
 .faixa1{
     background-color: #093807;
     display: flex;
     height: 8.8vh;
     align-items: center;  
-    width:auto;
-    
+    width:100%;
+    position: fixed;  
+    top: 0;
 }
+
 
 
 #logo{
@@ -117,7 +118,11 @@ input{
 .faixa2{
     background-color: #429C44;
     height: 7.2vh;
-    width: auto;
+   width: 100%;
+    top: 8.7vh;
+    position: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    
 }
 
 .opcoes a:hover {
@@ -157,6 +162,7 @@ p{
 main{
     display: flex;
     background-color: #EBECF0;
+    margin-top: 15vh;
 }
 #prato{
     margin-left: 8vw;
@@ -176,7 +182,7 @@ main{
 .letrao{
     font-family: 'League Gothic', sans-serif;
     font-size: 140px;
-    line-height: 140px;
+    line-height: 130px;
     margin-top:0;
 }
 

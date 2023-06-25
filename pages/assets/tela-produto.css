@@ -12,8 +12,9 @@ body {
     display: flex;
     height: 8.8vh;
     align-items: center;  
-    width:auto;
-    
+    width:100%;
+    position: fixed;  
+    top: 0;
 }
 
 
@@ -115,7 +116,10 @@ input{
 .faixa2{
     background-color: #429C44;
     height: 7.2vh;
-    width: auto;
+   width: 100%;
+    top: 8.7vh;
+    position: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .opcoes a:hover {
@@ -154,7 +158,7 @@ header p{
 .produto-especifico{
     display: flex;
     /* border: 1px solid black; */
-    margin-top: 7vh;
+    margin-top: 20vh;
 }
 
 .imagens-produtos{

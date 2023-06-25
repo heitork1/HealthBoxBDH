@@ -13,6 +13,14 @@ body{
     justify-content: center; 
     color: white;   
 }
+.main > a{
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -12vh;
+    margin-top: -10vh;
+}
+
 .large-data{
     background-color: #E9E7E4;
     border: none;
@@ -34,9 +42,7 @@ body{
     border-radius: 1%;
 }
 .main img{
-    width: 22%;
-    margin-top: -5%;
-    margin-bottom: -5%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }

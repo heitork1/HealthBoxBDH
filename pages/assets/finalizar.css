@@ -13,10 +13,10 @@ body {
     display: flex;
     height: 8.8vh;
     align-items: center;  
-    width:auto;
-    
+    width:100%;
+    position: fixed;  
+    top: 0;
 }
-
 
 #logo{
     display: flex;
@@ -111,11 +111,13 @@ input{
 }
 
 /*Menu secundario*/
-
 .faixa2{
     background-color: #429C44;
     height: 7.2vh;
-    width: auto;
+   width: 100%;
+    top: 8.7vh;
+    position: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .opcoes a:hover {
@@ -262,6 +264,9 @@ form{
     padding: 2%;
     padding-left: 4%;
     border-radius: 10px;
+}
+main{
+    margin-top: 15vh;
 }
 main input{
     background-color: #DFCBBE;

@@ -8,11 +8,12 @@
     height: 8.8vh;
     align-items: center;  
     width:100%;
-    position: fixed;
-    
+    position: fixed;  
 }
 
-
+body{
+ background-color: #EBECF0;;
+}
 #logo{
     display: flex;
     height: 35vh;
