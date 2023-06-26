@@ -238,6 +238,7 @@ header p{
 
 #box12:hover{
   transform: scale(1.03);
+
 }
 
 #box13{
@@ -578,44 +579,13 @@ input > #box5{
     margin-top: 30px;
   }
 
-  .espaco-botao{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   margin-top: 30px;
-  }
-
-
   
-  .botaoEnviar {
-    width: 200px; /* Ajuste a largura conforme necessário */
-    border-radius: 8px;
-    border: none;
-    color: white;
-    padding: 16px;
-    text-align: center;
-    font-size: 16px;
-    background-color: #4CAF50;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    font-weight:bold;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.3s;
-    cursor: pointer;
-    align-items: center;
-  }
-
-  .botaoEnviar:hover{
-    transform: scale(1.03);
-    
-  }
 
   #minhaDiv {
     display: none; /* Oculta o conteúdo */
   }
 
   .menu {
-    position: relative;
     display: inline-block;
     padding: 10px;
     
@@ -677,47 +647,60 @@ input > #box5{
     display: block;
   }
 
-
-
-  .rating {
-    direction: rtl;
-    margin-right: 17.2vh;
-    font-size:5vh ;
-    margin-top: -3vh;
+.espaco-botao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   margin-top: 30px;
   }
 
 
-  .rating span {
-    display:inline-block;
-    width:3vh;
+  
+  .botaoEnviar {
+    width: 200px; /* Ajuste a largura conforme necessário */
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #4CAF50;
+    transition-duration: 0.4s;
     cursor: pointer;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    align-items: center;
   }
 
-
-  .rating span:before {
-    content: "\2605";
+  .botaoEnviar:hover{
+    transform: scale(1.03);
+    
   }
 
-
-  .rating span:hover:before,
-  .rating span:hover ~ span:before {
-    content: "\2605";
-    color: gold;
+  .botaoVer {
+    width: 200px; /* Ajuste a largura conforme necessário */
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #4CAF50;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    align-items: center;
   }
 
-
-  .rating input {
-    display: none;
+  .botaoVer:hover{
+    transform: scale(1.03);
+    
   }
-
-
-  .rating input:checked ~ span:before {
-    content: "\2605";
-    color: gold;
-  }
-
-
-
   footer{
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
@@ -801,14 +784,14 @@ footer p{
   justify-content: space-between;
   height: 8vh;
   margin-left: 6%;
-  margin-top: 2%; //
+  margin-top: 2%; 
 }
 .contato img{
   height: 50%;
-  margin-right: 3%; //
+  margin-right: 3%; 
 }
 .localizacao img{
-  margin-right: 5%; // 
+  margin-right: 5%;
 }
 .lema{
     text-align: center;
