@@ -22,24 +22,40 @@
                     style="transform: scaleX(-1)" class="lupa"/>
             </div>
 
-            <div class="entrar">
-                <a href="/pages/login.html">
-                    <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                    <p id="nomeUsuario"></p>
-                </a>
-            </div>
-
-            <div class="sacola">
-                <a href="/pages/sacola.html">
-                    <img src="/pages/img/inicio/bag.png" alt="" />
-                    <p>Sacola</p>
-                </a>
+            <% if (typeof nomeUsuario !== 'undefined') { %> 
+                <div class="entrar">
+                    <a href="/pages/minha-conta">
+                        <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                        <p id="nomeUsuario"><%= nomeUsuario %></p>
+                    </a>
+                </div>
+                <% } else { %>
+                  <div class="entrar">
+                    <a href="/pages/login.html">
+                        <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                        <p id="nomeUsuario">Entrar</p>
+                    </a>
+                </div>
+                <% } %>
+               <% if (typeof nomeUsuario !== 'undefined') { %> 
+                <div class="sacola">
+                    <a href="/pages/sacola">
+                        <img src="/pages/img/inicio/bag.png" alt="" />
+                        <p>Sacola</p>
+                    </a>
+                <% } else { %>
+                   <div class="sacola">
+                    <a href="/pages/login.html">
+                        <img src="/pages/img/inicio/bag.png" alt="" />
+                        <p>Sacola</p>
+                    </a>
+                    <% } %>
             </div>
         </div>
         <div class="faixa2">
             <div class="opcoes">
                 <a href="/pages/produtos.html">Produtos</a>
-                <a href="/pages/sobre-nos.html">Sobre nós</a>
+                <a href="#">Sobre nós</a>
             </div>
         </div>
     </header>

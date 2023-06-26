@@ -13,8 +13,9 @@ body {
     display: flex;
     height: 8.8vh;
     align-items: center;  
-    width:auto;
-    
+    width:100%;
+    position: fixed;  
+    top: 0;
   }
   
   
@@ -169,7 +170,7 @@ main{
     justify-content: center;
     height: 84vh;
     background-color: #EBECF0;
-    margin-top: 10vh;
+    margin-top: 18vh;
 }
 .nome{
     display: flex;
