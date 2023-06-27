@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/pages/assets/tela-inicial.css" />
+</head>
+
+<body>
+    <header>
+        <div class="faixa1">
+            <img src="pages/img/inicio/logo-br.png" alt="" id="logo" />
+            <div class="pesquisa">
+                <input type="text" name="" id="" placeholder="Pesquisar" />
+                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
+                    style="transform: scaleX(-1)" />
+            </div>
+
+            <div class="entrar">
+                <% if (typeof nomeUsuario !== 'undefined') { %>
+                    <a href="/pages/minha-conta">
+                      <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                      <p id="nomeUsuario"><%= nomeUsuario %></p>
+                    </a>
+                  <% } else { %>
+                    <a href="/pages/login.html">
+                      <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                      <p id="nomeUsuario">Entrar</p>
+                    </a>
+                  <% } %>
+            </div>
+
+            <div class="sacola">
+                <a href="/pages/sacola">
+                    <img src="/pages/img/inicio/bag.png" alt="" />
+                    <p>Sacola</p>
+                </a>
+            </div>
+        </div>
+        <div class="faixa2">
+            <div class="opcoes">
+                <p><a href="pages/produtos">Produtos</a></p>
+                <p id="nos"><a href="pages/sobre-nos">Sobre nós</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="/pages/img/inicio/img-inicio.jpg" alt="" id="prato">
+        <div class="texto">
+            <p class="letrinha">EMAGRECER DE FORMA</p>
+            <p class="letrao">RÁPIDA, <BR>FÁCIL E <br>GOSTOSA</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="linha"></div>
+        <div class="verdinho">
+            <div class="row1">
+                <div class="col1">
+                    <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <div class="sublinhado"></div>
+                    <p class="lema">Tornando a sua vida mais saudável</p>
+                </div>
+                <div class="col2">
+                    <h4>Institucional</h4>
+                    <a href="/pages/sobre-nos">Sobre nós</a>
+                    <a href="/pages/politica">Política de Privacidade</a>
+                </div>
+                <div class="col3">
+                    <h4>Dúvida</h4>
+                    <a href="/pages/minha-conta">Meus Pedidos</a>
+                    <a href="/pages/minha-conta">Minha Conta</a>
+                </div>
+                <div class="col4">
+                    <h4>Redes Sociais</h4>
+                    <div class="redes">
+                        <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
+                        <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
+                        <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="contato">
+                <div class="localizacao">
+                    <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
+                    <p>Joinville/SC</p>
+                </div>
+                <div class="fone">
+                    <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
+                    <p>Fone/Whatsapp: (47) 00000-0000</p>
+                </div>
+                <div class="email">
+                    <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
+                    <p>Healthbox@gmail.com</p>
+                </div>
+            </div>
+            <div class="linha2">
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+</script>
+
+</html>

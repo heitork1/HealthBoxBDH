@@ -82,7 +82,12 @@ app.get('/pages/sobre-nos', (req, res) => {
   res.send(renderedHtml);
 });
 
-
+app.get('/pages/politica', (req, res) => {
+  const filePath = path.join(__dirname, 'pages', 'politica.ejs');
+  const html = fs.readFileSync(filePath, 'utf8');
+  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username });
+  res.send(renderedHtml);
+});
 
 app.post('/login', (req, res) => {
   let username = req.body.username;
@@ -146,6 +151,20 @@ app.get('/pages/minha-conta', checkLogin, (req, res) => {
 
 app.get('/pages/sacola', checkLogin, (req, res) => {
   const filePath = path.join(__dirname, 'pages', 'sacola.ejs');
+  const html = fs.readFileSync(filePath, 'utf8');
+  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username});
+  res.send(renderedHtml);
+});
+
+app.get('/pages/tela-produto', checkLogin, (req, res) => {
+  const filePath = path.join(__dirname, 'pages', 'tela-produto.ejs');
+  const html = fs.readFileSync(filePath, 'utf8');
+  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username});
+  res.send(renderedHtml);
+});
+
+app.get('/pages/finalizar', checkLogin, (req, res) => {
+  const filePath = path.join(__dirname, 'pages', 'finalizar.ejs');
   const html = fs.readFileSync(filePath, 'utf8');
   const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username});
   res.send(renderedHtml);
