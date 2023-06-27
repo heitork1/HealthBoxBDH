@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre-nos</title>
+    <link rel="stylesheet" type="text/css" href="/pages/assets/sobre-nos.css">
+</head>
+
+<body>
+    <header>
+        <div class="faixa1">
+            <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo"/></a>
+            <div class="pesquisa">
+                <input type="text" name="" id="" placeholder="Pesquisar" />
+                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
+                    style="transform: scaleX(-1)" class="lupa"/>
+            </div>
+
+            <% if (typeof nomeUsuario !== 'undefined') { %> 
+                <div class="entrar">
+                    <a href="/pages/minha-conta">
+                        <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                        <p id="nomeUsuario"><%= nomeUsuario %></p>
+                    </a>
+                </div>
+                <% } else { %>
+                  <div class="entrar">
+                    <a href="/pages/login.html">
+                        <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                        <p id="nomeUsuario">Entrar</p>
+                    </a>
+                </div>
+                <% } %>
+               <% if (typeof nomeUsuario !== 'undefined') { %> 
+                <div class="sacola">
+                    <a href="/pages/sacola">
+                        <img src="/pages/img/inicio/bag.png" alt="" />
+                        <p>Sacola</p>
+                    </a>
+                <% } else { %>
+                   <div class="sacola">
+                    <a href="/pages/login.html">
+                        <img src="/pages/img/inicio/bag.png" alt="" />
+                        <p>Sacola</p>
+                    </a>
+                    <% } %>
+            </div>
+        </div>
+        <div class="faixa2">
+            <div class="opcoes">
+                <a href="/pages/produtos">Produtos</a>
+                <a href="#">Sobre nós</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="/pages/img/sobre-nos/mulher.png" alt="" class="mulher">
+        <section class="texto">
+            <p><b class="negrito">Bem-vindo(a) à Healthbox</b>, uma empresa inovadora no ramo alimentício que oferece marmitas congeladas de alimentos saudáveis. Criamos um serviço que entrega suas refeições prontas, gostosas e saudáveis.</p>
+            
+            <p>Nosso objetivo é fornecer alimentos saudáveis e saborosos, que não só atendam às suas necessidades nutricionais, mas também estimulem seu paladar. Todos os nossos ingredientes são cuidadosamente selecionados e preparados com o máximo de cuidado, para garantir a qualidade e o sabor em cada mordida.</p>
+            
+            <p>Na <b class="negrito">Healthbox</b>, acreditamos que a alimentação saudável não precisa ser monótona ou sem graça. Nós estamos aqui para mostrar que é possível ter uma alimentação equilibrada e deliciosa ao mesmo tempo. Experimente nossas marmitas de alimentos saudáveis e sinta a diferença em sua vida.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="linha"></div>
+        <div class="verdinho">
+            <div class="row1">
+                <div class="col1">
+                    <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <div class="sublinhado"></div>
+                    <p class="lema">Tornando a sua vida mais saudável</p>
+                </div>
+                <div class="col2">
+                    <h4>Institucional</h4>
+                    <a href="sobre-nos">Sobre nós</a>
+                    <a href="politica">Política de Privacidade</a>
+                </div>
+                <div class="col3">
+                    <h4>Dúvida</h4>
+                    <a href="minha-conta">Meus Pedidos</a>
+                    <a href="minha-conta">Minha Conta</a>
+                </div>
+                <div class="col4">
+                    <h4>Redes Sociais</h4>
+                    <div class="redes">
+                        <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
+                        <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
+                        <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="contato">
+                <div class="localizacao">
+                    <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
+                    <p>Joinville/SC</p>
+                </div>
+                <div class="fone">
+                    <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
+                    <p>Fone/Whatsapp: (47) 00000-0000</p>
+                </div>
+                <div class="email">
+                    <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
+                    <p>Healthbox@gmail.com</p>
+                </div>
+    
+            </div>
+            <div class="linha2">
+            </div>
+        </div>
+    </footer>
+    </body>
+
+</html>

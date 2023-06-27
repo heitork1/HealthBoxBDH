@@ -1,6 +1,7 @@
 body {
   padding: 0;
   background-color: #EBECF0;
+  background-color: #EBECF0;
   margin: 0;
   width: auto;
   overflow-x: hidden; /* Impede a rolagem horizontal */
@@ -16,7 +17,6 @@ body {
   width:100%;
   position: fixed;  
   top: 0;
-  z-index: 9999;
 }
 
 #logo{
@@ -119,7 +119,6 @@ input{
   height: 7.2vh;
  width: 100%;
   top: 8.7vh;
-  z-index: 9999;
   position: fixed;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
@@ -159,6 +158,7 @@ header p{
     
 
 .container-descricao{
+   margin-top: 32vh;
    margin-top: 32vh;
    margin-left: 4vh;
    display:inline-grid;
@@ -602,7 +602,11 @@ input > #box5{
 
   .menu {
     display: inline-block;
-    padding: 3%;
+    padding: 10px;
+    
+    
+    
+
   }
 
 

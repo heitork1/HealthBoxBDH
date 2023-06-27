@@ -2,35 +2,47 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre-nos</title>
-    <link rel="stylesheet" type="text/css" href="/pages/assets/sobre-nos.css">
+    <meta charset="UTF-8" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/pages/assets/tela-inicial.css" />
 </head>
 
 <body>
     <header>
         <div class="faixa1">
-            <a href="../index.html"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo"/></a>
+            <img src="pages/img/inicio/logo-br.png" alt="" id="logo" />
             <div class="pesquisa">
                 <input type="text" name="" id="" placeholder="Pesquisar" />
                 <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
-                    style="transform: scaleX(-1)" class="lupa"/>
+                    style="transform: scaleX(-1)" />
             </div>
 
             <div class="entrar">
-                <a href="/pages/login.html">
-                    <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                    <p>Entrar</p>
-                </a>
+                <% if (typeof nomeUsuario !== 'undefined') { %>
+                    <a href="/pages/minha-conta">
+                      <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                      <p id="nomeUsuario"><%= nomeUsuario %></p>
+                    </a>
+                  <% } else { %>
+                    <a href="/pages/login.html">
+                      <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                      <p id="nomeUsuario">Entrar</p>
+                    </a>
+                  <% } %>
             </div>
 
             <div class="sacola">
-                <a href="/pages/sacola.html">
+                <a href="/pages/sacola">
                     <img src="/pages/img/inicio/bag.png" alt="" />
                     <p>Sacola</p>
                 </a>
@@ -38,21 +50,19 @@
         </div>
         <div class="faixa2">
             <div class="opcoes">
-                <a href="/pages/produtos.html">Produtos</a>
-                <a href="/pages/sobre-nos.html">Sobre nós</a>
+                <p><a href="pages/produtos">Produtos</a></p>
+                <p id="nos"><a href="pages/sobre-nos">Sobre nós</a></p>
             </div>
         </div>
     </header>
     <main>
-        <img src="/pages/img/sobre-nos/mulher.png" alt="" class="mulher">
-        <section class="texto">
-            <p><b class="negrito">Bem-vindo(a) à Healthbox</b>, uma empresa inovadora no ramo alimentício que oferece marmitas congeladas de alimentos saudáveis. Criamos um serviço que entrega suas refeições prontas, gostosas e saudáveis.</p>
-            
-            <p>Nosso objetivo é fornecer alimentos saudáveis e saborosos, que não só atendam às suas necessidades nutricionais, mas também estimulem seu paladar. Todos os nossos ingredientes são cuidadosamente selecionados e preparados com o máximo de cuidado, para garantir a qualidade e o sabor em cada mordida.</p>
-            
-            <p>Na <b class="negrito">Healthbox</b>, acreditamos que a alimentação saudável não precisa ser monótona ou sem graça. Nós estamos aqui para mostrar que é possível ter uma alimentação equilibrada e deliciosa ao mesmo tempo. Experimente nossas marmitas de alimentos saudáveis e sinta a diferença em sua vida.</p>
-        </section>
+        <img src="/pages/img/inicio/img-inicio.jpg" alt="" id="prato">
+        <div class="texto">
+            <p class="letrinha">EMAGRECER DE FORMA</p>
+            <p class="letrao">RÁPIDA, <BR>FÁCIL E <br>GOSTOSA</p>
+        </div>
     </main>
+    
     <footer>
         <div class="linha"></div>
         <div class="verdinho">
@@ -64,13 +74,13 @@
                 </div>
                 <div class="col2">
                     <h4>Institucional</h4>
-                    <a href="sobre-nos.html">Sobre nós</a>
-                    <a href="politica.html">Política de Privacidade</a>
+                    <a href="/pages/sobre-nos">Sobre nós</a>
+                    <a href="/pages/politica">Política de Privacidade</a>
                 </div>
                 <div class="col3">
                     <h4>Dúvida</h4>
-                    <a href="minha-conta.html">Meus Pedidos</a>
-                    <a href="minha-conta.html">Minha Conta</a>
+                    <a href="/pages/minha-conta">Meus Pedidos</a>
+                    <a href="/pages/minha-conta">Minha Conta</a>
                 </div>
                 <div class="col4">
                     <h4>Redes Sociais</h4>
@@ -94,12 +104,13 @@
                     <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
                     <p>Healthbox@gmail.com</p>
                 </div>
-    
             </div>
             <div class="linha2">
             </div>
         </div>
     </footer>
-    </body>
+</body>
+<script>
+</script>
 
 </html>

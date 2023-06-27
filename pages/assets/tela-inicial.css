@@ -256,13 +256,13 @@ footer p{
 .fone{
     display: flex;
     align-items: center;
-    width: 30%; // 
+    width: 30%; 
     
 }
 .email{
     display: flex;
     align-items: center;
-    margin-left: -10%; //
+    margin-left: -10%; 
 }
 .contato{
     width: 85%;
@@ -270,14 +270,14 @@ footer p{
     justify-content: space-between;
     height: 8vh;
     margin-left: 6%;
-    margin-top: 2%; //
+    margin-top: 2%;
 }
 .contato img{
     height: 50%;
-    margin-right: 3%; //
+    margin-right: 3%; 
 }
 .localizacao img{
-    margin-right: 5%; // 
+    margin-right: 5%; 
 }
 .lema{
     text-align: center;
