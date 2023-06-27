@@ -113,7 +113,11 @@
                         <p class="voltar"><a href="/pages/sacola.html">Voltar à sacola</a></p>
                         <h4>Subtotal: R$400,00</h4>
                         <h3>Total do pedido: R$408,00</h3>
-                        <input type="submit" value="CONFIRMAR">
+                        <div class="botao">
+                            <div class="botao">
+                                <button id="meuBotao" class="confirmar" onclick="alterarNome(this)">CONFIRMAR</button>
+                            </div>
+                            <div id="minhaDiv"> <p>Aguardando seu pagamento! <a href="/pages/minha-conta.html">Clique Aqui</a> para atualizações do seu pedido.</p></div>
                 </div>
             </section>
         </form>
@@ -165,5 +169,15 @@
         </div>
     </footer>
 </body>
+<script>
+   function alterarNome(button) {
+      if (!button.dataset.alterado) {
+        button.innerHTML = 'CONFIRMADO';
+        button.style.transform = "scale(1)";
+        button.dataset.alterado = true;
+        button.disabled = true;
+      }
+    }
+</script>
 
 </html>
