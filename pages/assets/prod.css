@@ -1,6 +1,7 @@
 body {
   padding: 0;
   background-color: #EBECF0;
+  background-color: #EBECF0;
   margin: 0;
   width: auto;
   overflow-x: hidden; /* Impede a rolagem horizontal */
@@ -157,6 +158,7 @@ header p{
 
 .container-descricao{
    margin-top: 32vh;
+   margin-top: 32vh;
    margin-left: 4vh;
    display:inline-grid;
    /* border:1px solid black; */
@@ -229,7 +231,7 @@ header p{
 #box12{
     grid-area:b12 ;
     width: 20vw;
-    height: 53vh;
+    height:55vh;
     background-color: rgb(223,203,190);
     border-radius: 8px;
     text-decoration: none;
@@ -238,12 +240,13 @@ header p{
 
 #box12:hover{
   transform: scale(1.03);
+
 }
 
 #box13{
     grid-area:b13 ;
     width: 20vw;
-    height: 53vh;
+    height: 55vh;
     /* background-image: url(2.png); */
     background-color: rgb(223,203,190);
     border-radius: 8px;
@@ -258,7 +261,7 @@ header p{
 #box14{
     grid-area: b14;
     width: 20vw;
-    height: 53vh;
+    height: 55vh;
     /* background-image: url(3.png); */
     background-color: rgb(223,203,190); 
     border-radius: 8px;
@@ -274,7 +277,7 @@ header p{
   
     grid-area: b15;
     width: 20vw;
-    height: 53vh;
+    height: 55vh;
     /* background-image: url(4.png); */
     background-color: rgb(223,203,190);
     border-radius: 8px;
@@ -305,7 +308,7 @@ header p{
   margin-top: 5vh;
   grid-area: b16;
   width: 20vw;
-  height: 53vh;
+  height: 55vh;
   /* background-image: url(4.png); */
   background-color: rgb(223,203,190);
   border-radius: 8px;
@@ -321,7 +324,7 @@ transform: scale(1.03);
   margin-top: 5vh;
   grid-area: b17;
   width: 20vw;
-  height: 53vh;
+  height: 55vh;
   /* background-image: url(4.png); */
   background-color: rgb(223,203,190);
   border-radius: 8px;
@@ -337,7 +340,7 @@ transform: scale(1.03);
   margin-top: 5vh;
   grid-area: b18;
   width: 20vw;
-  height: 53vh;
+  height: 55vh;
   /* background-image: url(4.png); */
   background-color: rgb(223,203,190);
   border-radius: 8px;
@@ -353,7 +356,7 @@ transform: scale(1.03);
   margin-top: 5vh;
   grid-area: b19;
   width: 20vw;
-  height: 53vh;
+  height: 55vh;
   /* background-image: url(4.png); */
   background-color: rgb(223,203,190);
   border-radius: 8px;
@@ -369,7 +372,7 @@ transform: scale(1.03);
   margin-top: 10vh;
   grid-area: b20;
   width: 20vw;
-  height: 53vh;
+  height: 55vh;
   /* background-image: url(4.png); */
   background-color: rgb(223,203,190);
   border-radius: 8px;
@@ -385,7 +388,7 @@ transform: scale(1.03);
   margin-top: 10vh;
   grid-area: b21;
   width: 20vw;
-  height: 53vh;
+  height: 55vh;
   /* background-image: url(4.png); */
   background-color: rgb(223,203,190);
   border-radius: 8px;
@@ -401,7 +404,7 @@ transform: scale(1.03);
   margin-top: 10vh;
   grid-area: b22;
   width: 20vw;
-  height: 53vh;
+  height: 55vh;
   /* background-image: url(4.png); */
   background-color: rgb(223,203,190);
   border-radius: 8px;
@@ -417,7 +420,7 @@ transform: scale(1.03);
   margin-top: 10vh;
   grid-area: b23;
   width: 20vw;
-  height: 53vh;
+  height: 55vh;
   /* background-image: url(4.png); */
   background-color: rgb(223,203,190);
   border-radius: 8px;
@@ -551,7 +554,7 @@ transform: scale(1.03);
 
 
 #h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin-left: 2vw;
@@ -559,7 +562,7 @@ transform: scale(1.03);
 }
 
 #h2{
-    font-size: 1.0em;
+    font-size: 1.4em;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin-left: 2vw;
@@ -578,46 +581,16 @@ input > #box5{
     margin-top: 30px;
   }
 
-  .espaco-botao{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   margin-top: 30px;
-  }
-
-
   
-  .botaoEnviar {
-    width: 200px; /* Ajuste a largura conforme necessário */
-    border-radius: 8px;
-    border: none;
-    color: white;
-    padding: 16px;
-    text-align: center;
-    font-size: 16px;
-    background-color: #4CAF50;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    font-weight:bold;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.3s;
-    cursor: pointer;
-    align-items: center;
-  }
-
-  .botaoEnviar:hover{
-    transform: scale(1.03);
-    
-  }
 
   #minhaDiv {
     display: none; /* Oculta o conteúdo */
   }
 
   .menu {
-    position: relative;
     display: inline-block;
     padding: 10px;
+    
     
     
 
@@ -677,47 +650,69 @@ input > #box5{
     display: block;
   }
 
-
-
-  .rating {
-    direction: rtl;
-    margin-right: 17.2vh;
-    font-size:5vh ;
-    margin-top: -3vh;
+.espaco-botao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
   }
 
-
-  .rating span {
-    display:inline-block;
-    width:3vh;
+  .espaco-botaoVer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .botaoEnviar {
+    width: 230px; /* Ajuste a largura conforme necessário */
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-size: 19px;
+    background-color: #4CAF50;
+    transition-duration: 0.4s;
     cursor: pointer;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    align-items: center;
   }
 
-
-  .rating span:before {
-    content: "\2605";
+  .botaoEnviar:hover{
+    transform: scale(1.03);
+    
   }
 
-
-  .rating span:hover:before,
-  .rating span:hover ~ span:before {
-    content: "\2605";
-    color: gold;
+  .botaoVer {
+    width: 230px; /* Ajuste a largura conforme necessário */
+    border-radius: 7px;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-size: 19px;
+    background-color:#7e6750;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    align-items: center; 
+  }
+  .botaoVer >a {
+   text-decoration: none;
+   color: white;
   }
 
-
-  .rating input {
-    display: none;
+  .botaoVer:hover{
+    transform: scale(1.05);
+    
   }
-
-
-  .rating input:checked ~ span:before {
-    content: "\2605";
-    color: gold;
-  }
-
-
-
   footer{
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
@@ -801,14 +796,14 @@ footer p{
   justify-content: space-between;
   height: 8vh;
   margin-left: 6%;
-  margin-top: 2%; //
+  margin-top: 2%; 
 }
 .contato img{
   height: 50%;
-  margin-right: 3%; //
+  margin-right: 3%; 
 }
 .localizacao img{
-  margin-right: 5%; // 
+  margin-right: 5%;
 }
 .lema{
     text-align: center;
