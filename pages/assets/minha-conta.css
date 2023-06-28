@@ -8,8 +8,6 @@ body {
   }
   
   /* menu principal */
-  
-.faixa1{
 .faixa1{
     background-color: #093807;
     display: flex;
@@ -115,16 +113,10 @@ body {
   }
   
   /*Menu secundario*/
-  
-.faixa2{
+
 .faixa2{
     background-color: #429C44;
     height: 7.2vh;
-   width: 100%;
-    top: 8.7vh;
-    position: fixed;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
    width: 100%;
     top: 8.7vh;
     position: fixed;
