@@ -1,14 +1,13 @@
 body {
   padding: 0;
-  background-color: #EBECF0;
-  background-color: #EBECF0;
+  background-color: rgb(255, 255, 255);
   margin: 0;
   width: auto;
-  overflow-x: hidden; /* Impede a rolagem horizontal */
+  overflow-x: hidden;
 }
 
-/* menu principal */
 
+/* menu principal */
 .faixa1{
   background-color: #093807;
   display: flex;
@@ -17,7 +16,10 @@ body {
   width:100%;
   position: fixed;  
   top: 0;
+  z-index: 9999;
 }
+
+
 
 #logo{
   display: flex;
@@ -28,7 +30,7 @@ body {
 .pesquisa{
   display: flex;
   background-color: white;
-  height:5vH;
+  height:2.5vw;
   align-items: center;
   border-radius: 1vw;
   width: 22vw;
@@ -52,10 +54,17 @@ body {
 
 .pesquisa img {
   display:flex;
-  height: 3.8vh;
-  margin-right: 1vw;
+  height: 4vh;
 }
-
+@media screen and (max-width: 1300PX){
+  .pesquisa{
+      margin-left: 35vw;
+      height:5vh
+  }
+  .pesquisa img{
+      height: 3.5vh;
+  }
+}
 input{
   border: none;
   outline: none;
@@ -66,7 +75,12 @@ input{
   width: 10vw;
   margin-left: 3vw;
 }
-
+@media screen and (max-width: 1300PX){
+  .entrar{
+      margin-left: 1.5vw;
+      margin-right: 1.5VW;
+  }
+}
 
 .entrar a{
   display: flex;
@@ -106,7 +120,11 @@ input{
   margin-left: 0.76vw;
   transition: 0.3s;
 }
-
+@media screen and (max-width: 1300PX){
+  .sacola a {
+      margin-right: 3vw;
+  }
+}
 .sacola p:hover {
   background-color: #429c4462;
   border-radius: 1vh;
@@ -114,6 +132,7 @@ input{
 }
 
 /*Menu secundario*/
+
 .faixa2{
   background-color: #429C44;
   height: 7.2vh;
@@ -121,6 +140,7 @@ input{
   top: 8.7vh;
   position: fixed;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  z-index: 9999;
 }
 
 .opcoes a:hover {
@@ -135,7 +155,7 @@ input{
   align-items: center;
   margin-left:83vw;
   justify-content:space-around;
-  width: 33vh;
+  width: 32.5vh;
 }
 .opcoes a {
   align-self: center;
@@ -144,7 +164,13 @@ input{
   color: white;
   transition: 0.3s;
 }
-
+@media screen and (max-width: 1300PX){
+  .opcoes{
+      height: 100%;
+      align-items: center;
+      margin-left: 75VW;
+  }
+}
 #nos{
   display: flex;
 }
@@ -155,11 +181,10 @@ header p{
   margin-left: 2vw;
 }
 
-    
-
-.container-descricao{
+@media screen and (max-width: 1300px){
+  .container-descricao{
    margin-top: 32vh;
-   margin-top: 32vh;
+   margin-bottom: -3vh;
    margin-left: 4vh;
    display:inline-grid;
    /* border:1px solid black; */
@@ -168,20 +193,41 @@ header p{
    'b1 b1 b1 b2 b2';
    width: 200vh;
    
-} 
+  } 
+}
+
+
+.container-descricao{
+  margin-top: 32vh;
+  margin-bottom: -3vh;
+  margin-left: 4vh;
+  display:inline-grid;
+  /* border:1px solid black; */
+  grid-template-areas: 
+  'b1 b1 b1 b2 b2'
+  'b1 b1 b1 b2 b2';
+  width: 200vh;
+}
+
+@media screen and (max-width: 1300px) and (min-height:720px){
 .container-caixinhas{
     display:grid;
-    /* grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(4, 25%) ; */
     grid-template-areas:
      'b12 b13 b14 b15'
      'b12 b13 b14 b15';
-    justify-content: space-between;
-    margin-left: 10vh;
-    margin-right: 10vh;
-   
+    justify-content: space-around;
+    margin: 30px;
+}
 }
 
+.container-caixinhas{
+  display:grid;
+  grid-template-areas:
+   'b12 b13 b14 b15'
+   'b12 b13 b14 b15';
+  justify-content: space-between;
+  gap: 5%;
+}
 
 
 .box-descricao{ 
@@ -194,7 +240,6 @@ header p{
 .box-descricao h1{
   cursor: pointer;
 }
-
 
 #box1{
     grid-area: b1;
@@ -216,7 +261,6 @@ header p{
     color:#3D2A1A;
 }
 
-
 #menu{
     grid-area: b2;
     font-family: 'Montserrat', sans-serif;
@@ -224,10 +268,7 @@ header p{
     color: #3D2A1A;
     font-weight:bold;
     margin-top: -17VH;
-    
 }
-
-
 
 #box12{
     grid-area:b12 ;
@@ -241,7 +282,6 @@ header p{
 
 #box12:hover{
   transform: scale(1.03);
-
 }
 
 #box13{
@@ -269,11 +309,9 @@ header p{
     text-decoration: none;
     transition: 0.3s;
 }
-
 #box14:hover{
   transform: scale(1.03);
 }
-
 #box15{
   
     grid-area: b15;
@@ -285,11 +323,9 @@ header p{
     text-decoration: none;
     transition: 0.3s;
 }
-
 #box15:hover{
   transform: scale(1.03);
 }
-
 .container-caixinhas2{
   display:grid;
   /* grid-template-columns: repeat(4, 25%);
@@ -302,9 +338,7 @@ header p{
    justify-content: space-between;
    margin-left: 5%;
    margin-right: 5%;
-
 }
-
 #box16{
   margin-top: 5vh;
   grid-area: b16;
@@ -316,11 +350,9 @@ header p{
   text-decoration: none;
   transition: 0.3s;
 }
-
 #box16:hover{
 transform: scale(1.03);
 }
-
 #box17{
   margin-top: 5vh;
   grid-area: b17;
@@ -332,7 +364,6 @@ transform: scale(1.03);
   text-decoration: none;
   transition: 0.3s;
 }
-
 #box17:hover{
 transform: scale(1.03);
 }
@@ -433,9 +464,6 @@ transform: scale(1.03);
 transform: scale(1.03);
 }
 
-
-
-
 .imgbox{
     margin: auto ;
     margin-top: 10%;
@@ -443,14 +471,9 @@ transform: scale(1.03);
     width: 15vw;
     justify-content: center;
     /* border: 1px solid black; */
-
-    
 }
 
-
-
 #imgbox12{
-    
     background-image: url(/pages/img/prdt-especifico/image\ \(2\).png);
     background-position: center;
     background-repeat: no-repeat;
@@ -458,7 +481,6 @@ transform: scale(1.03);
     border-radius: 7px;
     
 }
-
 #imgbox13{
   
     background-image: url(/pages/img/prdt-especifico/image.png);
@@ -467,7 +489,6 @@ transform: scale(1.03);
     background-size:100%;
     border-radius: 7px;
 }
-
 #imgbox14{
     background-image: url(/pages/img/prdt-especifico/image\ \(4\).png);
     background-position: center center;
@@ -475,7 +496,6 @@ transform: scale(1.03);
     background-repeat: no-repeat;
     border-radius: 7px;
 }
-
 #imgbox15{
     background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
     background-position: center center;
@@ -483,7 +503,6 @@ transform: scale(1.03);
     border-radius: 7px;
     background-repeat: no-repeat;
 }
-
 #imgbox16{
   background-image: url(/pages/img/produto-img/asparagus-2169305_1920.jpg);
   background-position: center center;
@@ -491,7 +510,6 @@ transform: scale(1.03);
   border-radius: 7px;
   background-repeat: no-repeat;
 }
-
 #imgbox17{
   background-image: url(/pages/img/produto-img/curry-7249247_1920.jpg);
   background-position: center center;
@@ -499,7 +517,6 @@ transform: scale(1.03);
   border-radius: 7px;
   background-repeat: no-repeat;
 }
-
 #imgbox18{
   background-image: url(/pages/img/produto-img/salmon-1485014_1920.jpg);
   background-position: center center;
@@ -507,7 +524,6 @@ transform: scale(1.03);
   border-radius: 7px;
   background-repeat: no-repeat;
 }
-
 #imgbox19{
   background-image: url(/pages/img/produto-img/mozzarella-5254110_1920.jpg);
   background-position: center center;
@@ -515,7 +531,6 @@ transform: scale(1.03);
   border-radius: 7px;
   background-repeat: no-repeat;
 }
-
 #imgbox20{
   background-image: url(/pages/img/produto-img/pancakes-3497531_1920.jpg);
   background-position: center center;
@@ -523,7 +538,6 @@ transform: scale(1.03);
   border-radius: 7px;
   background-repeat: no-repeat;
 }
-
 #imgbox21{
   background-image: url(/pages/img/produto-img/pasta-7209002_1920.jpg);
   background-position: center center;
@@ -531,7 +545,6 @@ transform: scale(1.03);
   border-radius: 7px;
   background-repeat: no-repeat;
 }
-
 #imgbox22{
   background-image: url(/pages/img/produto-img/smoothie-4625476_1920.jpg);
   background-position: center center;
@@ -539,7 +552,6 @@ transform: scale(1.03);
   border-radius: 7px;
   background-repeat: no-repeat;
 }
-
 #imgbox23{
   background-image: url(/pages/img/produto-img/vegetable-skewer-3317055_1920.jpg);
   background-position: center center;
@@ -547,33 +559,19 @@ transform: scale(1.03);
   border-radius: 7px;
   background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
-
-
 .produtos{
     color: #0A250D;
 }
-
 .descricao-produtos{
     /* border: 1px solid black; */
     height:15vh;
 }
-
-
 #h1 {
     font-size: 1.3em;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin-left: 2vw;
-
 }
-
 #h2{
     font-size: 1.4em;
     font-family: 'Montserrat', sans-serif;
@@ -581,41 +579,30 @@ transform: scale(1.03);
     margin-left: 2vw;
     margin-top:-1vh;
 }
-
-
 input > #box5{
     width: 2vh;
 }
-
-
   .espaco-divs{
     display: flex;
     flex-direction: column;
     margin-top: 2%;
   }
-
   
-
   #minhaDiv {
     display: none; /* Oculta o conteúdo */
   }
 
   .menu {
     display: inline-block;
+    padding: 3%;
     padding: 10px;
-    
-    
-    
-
   }
 
-
-  .menu .menu-titulo {
+  /* .menu .menu-titulo {
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
   }
-
   .menu .menu-dropdown {
     position: absolute;
     display: none;
@@ -626,27 +613,21 @@ input > #box5{
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
   }
-
   .menu .menu-item {
     padding: 11px 13px;
     cursor: pointer;
     transition: 0.3s;
-
   }
-
   .menu .menu-item:hover {
     background-color: #7e6750;
   }
-
   .menu:hover .menu-dropdown {
     display: block;
     
   }
-
   .menu-subtitulo {
     cursor: pointer;
   }
-
   .menu-dropdown-sub {
     display: none;
     background-color: #B49E88;
@@ -658,10 +639,9 @@ input > #box5{
     z-index: 1;
     transition: 0.3s;
   }
-
   .menu-item:hover .menu-dropdown-sub {
     display: block;
-  }
+  } */
 
 .espaco-botao{
     display: flex;
@@ -669,7 +649,6 @@ input > #box5{
     align-items: center;
     margin-top: 30px;
   }
-
   .espaco-botaoVer{
     display: flex;
     justify-content: space-around;
@@ -694,12 +673,10 @@ input > #box5{
     cursor: pointer;
     align-items: center;
   }
-
   .botaoEnviar:hover{
     transform: scale(1.03);
     
   }
-
   .botaoVer {
     width: 70%; /* Ajuste a largura conforme necessário */
     height: 30%;
@@ -722,7 +699,6 @@ input > #box5{
    text-decoration: none;
    color: white;
   }
-
   .botaoVer:hover{
     transform: scale(1.05);
     
@@ -745,7 +721,6 @@ footer p{
 }
 .linha2{
     background-color: #093807;
-
     height: 2vh;
 }
 .sublinhado{
