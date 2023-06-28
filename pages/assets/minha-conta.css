@@ -1,13 +1,13 @@
 body {
     padding: 0;
     background-color: #EBECF0;
-    background-color: #EBECF0;
     margin: 0;
     width: auto;
     overflow-x: hidden; /* Impede a rolagem horizontal */
   }
-  
-  /* menu principal */
+
+
+/* menu principal */
 .faixa1{
     background-color: #093807;
     display: flex;
@@ -16,16 +16,17 @@ body {
     width:100%;
     position: fixed;  
     top: 0;
-  }
-  
-  
-  #logo{
+}
+
+
+
+#logo{
     display: flex;
     height: 35vh;
     margin-left: -1vw;
-  }
-  
-  .pesquisa{
+}
+
+.pesquisa{
     display: flex;
     background-color: white;
     height:2.5vw;
@@ -36,83 +37,100 @@ body {
     margin-left: 45vw;
     transition: 0.2s;
     justify-content: space-around;
-  }
-  
-  .pesquisa:hover{
+}
+
+.pesquisa:hover{
     background-color: rgb(211, 211, 211);
     cursor: pointer;
-  
-  }
-  
-  .pesquisa input{
+
+}
+
+.pesquisa input{
     width:12vw ;
     background-color:transparent;
     font-family: 'Montserrat', sans-serif;
-  }
-  
-  .pesquisa img {
+}
+
+.pesquisa img {
     display:flex;
     height: 4vh;
-  }
-  
-  input{
+}
+@media screen and (max-width: 1150px){
+    .pesquisa{
+        margin-left: 30vw;
+        height:5vh
+    }
+    .pesquisa img{
+        height: 3.5vh;
+    }
+}
+input{
     border: none;
     outline: none;
-  }
-  
-  .entrar{
+}
+
+.entrar{
     display: flex;
     width: 10vw;
     margin-left: 3vw;
-  }
-  
-  
-  .entrar a{
+}
+@media screen and (max-width: 1150px){
+    .entrar{
+        margin-left: 2vw;
+    }
+}
+
+.entrar a{
     display: flex;
-    width:4vw;
+    width: 4vw;
     align-items: center;
     text-decoration: none;
-  }
-  
-  .entrar img{
+}
+
+.entrar img{
     width: 2vw;
-  }
-  
-  .entrar p{
+}
+
+.entrar p{
     padding: 0.3vw;
     margin-left: 0.2vw;
     transition: 0.3s;
-  }
-  
-  .entrar p:hover {
+}
+
+.entrar p:hover {
     background-color: #429c4462;
     border-radius: 1vh;
     padding: 0.5vw;
-  }
-  
-  .sacola img{
+}
+
+.sacola img{
     width: 2vw;
-  }
-  
-  .sacola a{
+}
+
+.sacola a{
     display: flex;
     align-items: center;
     text-decoration: none;
     margin-right: 2vw;
-  }
-  
-  .sacola p{
+}
+
+.sacola p{
     margin-left: 0.76vw;
     transition: 0.3s;
-  }
-  
-  .sacola p:hover {
+}
+@media screen and (max-width: 1150px){
+    .sacola a {
+        margin-right: 0.2vw;
+        margin-left: 1vw
+    }
+}
+.sacola p:hover {
     background-color: #429c4462;
     border-radius: 1vh;
     padding: 0.5vw;
-  }
-  
-  /*Menu secundario*/
+}
+
+/*Menu secundario*/
 
 .faixa2{
     background-color: #429C44;
@@ -121,33 +139,41 @@ body {
     top: 8.7vh;
     position: fixed;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    
 }
-  .opcoes a:hover {
+
+.opcoes a:hover {
     background-color: #254e2562;
     border-radius: 1vh;
     padding: 0.5vw;
-  }
-  
-  .opcoes{
+}
+
+.opcoes{
     display: flex;
     height: 3.5vw;
     align-items: center;
     margin-left:83vw;
     justify-content:space-around;
-    width: 33vh;
-  }
-  .opcoes a {
+    width: 32.5vh;
+}
+.opcoes a {
     align-self: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: white;
     transition: 0.3s;
-  }
-  
-  #nos{
+}
+@media screen and (max-width: 1150px){
+    .opcoes{
+        margin-left:80vw;
+        height: 100%;
+        align-items: center;
+        width: 26.5vh;
+    }
+}
+#nos{
     display: flex;
-  }
-
+}
  
 
 

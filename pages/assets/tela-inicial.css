@@ -1,6 +1,6 @@
 body {
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #EBECF0;
     margin: 0;
     width: auto;
     overflow-x: hidden; /* Impede a rolagem horizontal */
@@ -57,7 +57,7 @@ body {
 }
 @media screen and (max-width: 1150px){
     .pesquisa{
-        margin-left: 35vw;
+        margin-left: 30vw;
         height:5vh
     }
     .pesquisa img{
@@ -76,7 +76,7 @@ input{
 }
 @media screen and (max-width: 1150px){
     .entrar{
-        margin-left: 1.5vw;
+        margin-left: 2vw;
     }
 }
 
@@ -121,6 +121,7 @@ input{
 @media screen and (max-width: 1150px){
     .sacola a {
         margin-right: 0.2vw;
+        margin-left: 1vw
     }
 }
 .sacola p:hover {
@@ -164,14 +165,16 @@ input{
 }
 @media screen and (max-width: 1150px){
     .opcoes{
-        margin-left:78vw;
+        margin-left:80vw;
         height: 100%;
         align-items: center;
+        width: 26.5vh;
     }
 }
 #nos{
     display: flex;
 }
+ 
 
 
 
@@ -192,15 +195,16 @@ main{
     margin-left: 8vw;
     height: 84vh;
 }
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1150px) and (min-height: 720px){
     #prato{
         margin-left: 6vw;
-        height: 75vh;
+        height: 60vh;
         margin-top: 6vh;
     }
     main{
         margin-top: 16vh;
     }
+
 }
 .texto{
     width: 100%;
