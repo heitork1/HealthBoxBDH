@@ -163,7 +163,7 @@ input{
     color: white;
     transition: 0.3s;
 }
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1150px) and (min-height: 720px){
     .opcoes{
         margin-left:80vw;
         height: 100%;
@@ -202,7 +202,17 @@ main{
     font-size: 18px;
     font-weight: 500;
 }
-
+@media screen and (max-width: 1150px) and (min-height: 720px){
+    .mulher{
+        height: 60vh;
+    }
+    main{
+        margin-top: 30vh;
+    }
+    .texto{
+        margin-left: 2%;
+    }
+}
 body{
     background-color: #EBECF0;
 }
@@ -210,9 +220,12 @@ body{
 footer{
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
-
 }
-
+@media screen and (max-width: 1150px) and (min-height: 720px){
+    footer{
+        margin-top: 10vh;
+    }
+}
 footer p{
     color: black;
 }
