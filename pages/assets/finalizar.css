@@ -1,6 +1,6 @@
 body {
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #EBECF0;
     margin: 0;
     width: auto;
     overflow-x: hidden; /* Impede a rolagem horizontal */
@@ -57,7 +57,7 @@ body {
 }
 @media screen and (max-width: 1150px){
     .pesquisa{
-        margin-left: 35vw;
+        margin-left: 30vw;
         height:5vh
     }
     .pesquisa img{
@@ -76,7 +76,7 @@ input{
 }
 @media screen and (max-width: 1150px){
     .entrar{
-        margin-left: 1.5vw;
+        margin-left: 2vw;
     }
 }
 
@@ -121,6 +121,7 @@ input{
 @media screen and (max-width: 1150px){
     .sacola a {
         margin-right: 0.2vw;
+        margin-left: 1vw
     }
 }
 .sacola p:hover {
@@ -164,9 +165,10 @@ input{
 }
 @media screen and (max-width: 1150px){
     .opcoes{
-        margin-left:78vw;
+        margin-left:80vw;
         height: 100%;
         align-items: center;
+        width: 26.5vh;
     }
 }
 #nos{
@@ -193,6 +195,11 @@ h1{
 .informacoes{
     width:24vw;
     margin: 0vh 0 0;
+}
+@media screen and (max-width: 1150px) and (min-height: 720px){
+    .informacoes{
+        width: 30vw;
+    }
 }
 .endereco{
     background-color: #DFCBBE;
@@ -271,6 +278,15 @@ form{
 .descricao img{
     width: 28%;
 }
+@media screen and (max-width: 1150px) and (min-height: 720px){
+    .descricao img{
+        height: 30%;
+        width: 30%;
+    }
+    .descricao{
+        margin-top: 2.75vh;
+    }
+}
 .descproduto{
     width: 17vw;
     margin-left: 5%;
@@ -296,6 +312,11 @@ form{
 }
 main{
     margin-top: 15vh;
+}
+@media screen and (max-width: 1150px) and (min-height: 720px){
+    main{
+        margin-top: 22vh;
+    }
 }
 main input{
     background-color: #DFCBBE;
@@ -354,7 +375,7 @@ main input{
     margin-top: 0;
 }
 .resumo h1{
-    margin-top: 4.5%;
+    margin-top: 5%;
     margin-bottom: 3.5%;
     width: 83%;
 }
@@ -376,6 +397,8 @@ h3{
     color: white;
     border: none;
     transition: 0.3s;
+    margin-left: 25%;
+    margin-top: 1vh;
 }
 .confirmar:hover{
     transform: scale(1.05);
@@ -425,6 +448,11 @@ h1{
     display: flex;
     align-items: center;
     margin-top: 1vh;
+}
+@media screen and (max-width: 1150px) and (min-height: 720px){
+    .casa{
+        margin-top: 2vh;
+    }
 }
 .casa label{
     width: 10%;
