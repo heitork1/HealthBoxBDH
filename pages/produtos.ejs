@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <meta http-equiv="X-UA-Compatible" escondido="IE=edge">
-    <meta name="viewport" escondido="width=device-width, initial-scale=1.0">
-    <title>Health Box</title>
-    <link rel="stylesheet" type="text/css" href="assets/prod.css">
-    <script src="/pages/scripts/produtos.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <meta charset="UTF-8">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta http-equiv="X-UA-Compatible" escondido="IE=edge">
+  <meta name="viewport" escondido="width=device-width, initial-scale=1.0">
+  <title>Health Box</title>
+  <link rel="stylesheet" type="text/css" href="assets/prod.css">
+  <script src="/pages/scripts/produtos.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
   <header>
     <div class="faixa1">
-        <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo"/></a>
-        <div class="pesquisa">
-            <input type="text" name="" id="" placeholder="Pesquisar" />
-            <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
-                style="transform: scaleX(-1)" class="lupa"/>
-        </div>
-        <% if (typeof nomeUsuario !== 'undefined') { %> 
+      <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
+      <div class="pesquisa">
+        <input type="text" name="" id="" placeholder="Pesquisar" />
+        <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
+          class="lupa" />
+      </div>
+      <% if (typeof nomeUsuario !=='undefined' ) { %>
         <div class="entrar">
-            <a href="/pages/minha-conta">
-                <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                <p id="nomeUsuario"><%= nomeUsuario %></p>
-            </a>
+          <a href="/pages/minha-conta">
+            <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+            <p id="nomeUsuario">
+              <%= nomeUsuario %>
+            </p>
+          </a>
         </div>
         <% } else { %>
           <div class="entrar">
             <a href="/pages/login.html">
-                <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                <p id="nomeUsuario">Entrar</p>
+              <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+              <p id="nomeUsuario">Entrar</p>
             </a>
-        </div>
-        <% } %>
-       <% if (typeof nomeUsuario !== 'undefined') { %> 
-        <div class="sacola">
-            <a href="/pages/sacola">
-                <img src="/pages/img/inicio/bag.png" alt="" />
-                <p>Sacola</p>
-            </a>
-        <% } else { %>
-           <div class="sacola">
-            <a href="/pages/login.html">
-                <img src="/pages/img/inicio/bag.png" alt="" />
-                <p>Sacola</p>
-            </a>
-            <% } %>
-        </div>
+          </div>
+          <% } %>
+            <% if (typeof nomeUsuario !=='undefined' ) { %>
+              <div class="sacola">
+                <a href="/pages/sacola">
+                  <img src="/pages/img/inicio/bag.png" alt="" />
+                  <p>Sacola</p>
+                </a>
+                <% } else { %>
+                  <div class="sacola">
+                    <a href="/pages/login.html">
+                      <img src="/pages/img/inicio/bag.png" alt="" />
+                      <p>Sacola</p>
+                    </a>
+                    <% } %>
+                  </div>
+              </div>
+              <div class="faixa2">
+                <div class="opcoes">
+                  <a href="#">Produtos</a>
+                  <a href="/pages/sobre-nos">Sobre nós</a>
+                </div>
+              </div>
+  </header>
+
+  <div class="container-descricao">
+    <div id="box1" class="box-descricao">
+      <a href="/pages/produtos">
+        <p>TODOS OS PRODUTOS</p>
+      </a>
     </div>
-    <div class="faixa2">
-        <div class="opcoes">
-            <a href="#">Produtos</a>
-            <a href="/pages/sobre-nos">Sobre nós</a>
-        </div>
-    </div>
-</header>
-                       
-    <div class="container-descricao">
-        <div id="box1" class="box-descricao">
-        <a href="#"><p>TODOS OS PRODUTOS</p> </a>
-        </div>
-        <!-- <div class="menu" id="menu">
+    <!-- <div class="menu" id="menu">
             <span class="menu-titulo"><p>CATEGORIA &#9660;</p>  </span>
             <div class="menu-dropdown">
               <div class="menu-item">
@@ -102,231 +112,255 @@
               </div>
             </div>
           </div> -->
-       
-    </div>
-            
-    <div class="container-caixinhas">
-      <div id="box12">
-          <div id="imgbox12" class="imgbox"></div>
-          <div class="descricao-produtos"><a href="#"><h1  id="h1">DIETA -7KG EM 7 DIAS</h1></a>
 
-                  <h2 id="h2">R$ 200,00</h2>
-                  <div class="espaco-botaoVer">
-                    <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-                  </div>
-          </div>
-      </div>
-      <div id="box13">
-          <div id="imgbox13" class="imgbox"></div>
-          <div class="descricao-produtos"><a href="#"><h1  id="h1">DIETA -15KG EM 15 DIAS</h1></a>
-
-                  <h2 id="h2">R$ 400,00</h2>
-                  <div class="espaco-botaoVer">
-                    <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-                  </div>
-
-          </div>
-      </div>    
-      <div id="box14">
-          <div id="imgbox14" class="imgbox"></div>
-          <div class="descricao-produtos"><a href="#"><h1 id="h1">DIETA -7KG EM 7 DIAS  <h1 id="h1" style="margin-top: -10px; margin-left:153px; font-size: 15px;">SEM LACTOSE</h1></h1></a>
-
-                  <h2 id="h2" style="margin-top:-28px;">R$ 250,00</h2>
-                  <div class="espaco-botaoVer">
-                    <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-                  </div>
-
-          </div>    
-      </div>
-      <div id="box15"> <a href="/pages/tela-produto.html"></a>
-          <a href="/pages/tela-produto.html"><div id="imgbox15" class="imgbox"></div></a>
-          <div class="descricao-produtos"><a href="/pages/tela-produto"><h1 id="h1" >DIETA -7KG EM 7 DIAS <h1 id="h1" style="margin-top: -10px; margin-left:163px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
-
-                  <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
-                  <div class="espaco-botaoVer">
-                    <button type="button" class="botaoVer"><a href="/pages/tela-produto.html">VER MAIS</a></button>
-                  </div>
-
-          </div>
-      </div>
   </div>
 
-    <div class="espaco-divs">
-    
-      <div id="minhaDiv" class="escondido" onclick="toggleDiv()">  
-        <div class="container-caixinhas2">
-         <div id="box16"> <a href="/pages/tela-produto"></a>
-        
-            <a href="/pages/tela-produto"><div id="imgbox16" class="imgbox"></div></a>
-            <div class="descricao-produtos"><a href="/pages/tela-produto"><h1 id="h1" >DIETA -15KG EM 15 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:167px; font-size: 15px;">SEM LACTOSE</h1></h1></a>
+  <div class="container-caixinhas">
+    <div id="box12">
+      <a href="/pages/tela-produto.html">
+        <div id="imgbox12" class="imgbox"></div>
+      </a>
+      <div class="descricao-produtos"><a href="/pages/tela-produto">
+          <h1 class="h1">DIETA -7KG EM 7 DIAS</h1>
+        </a>
 
-              <h2 id="h2" style="margin-top:-28px;">R$ 450,00</h2>
-              <div class="espaco-botaoVer">
-                <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-              </div>
+        <h2 class="h2">R$ 200,00</h2>
+        <div class="espaco-botaoVer">
+          <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+        </div>
+      </div>
+    </div>
+    <div id="box13">
+      <a href="/pages/tela-produto.html">
+        <div id="imgbox13" class="imgbox"></div>
+      </a>
+      <div class="descricao-produtos"><a href="/pages/tela-produto">
+          <h1 class="h1">DIETA -15KG EM 15 DIAS</h1>
+        </a>
 
-            </div>
+        <h2 class="h2">R$ 400,00</h2>
+        <div class="espaco-botaoVer">
+          <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
         </div>
 
-        <div id="box17"> <a href="/pages/tela-produto"></a>
+      </div>
+    </div>
+    <div id="box14">
+      <a href="/pages/tela-produto.html">
+        <div id="imgbox14" class="imgbox"></div>
+      </a>
+      <div class="descricao-produtos"><a href="/pages/tela-produto">
+          <h1 class="h1">DIETA -7KG EM 7 DIAS <h1 class="h1-2">
+              SEM LACTOSE</h1>
+          </h1>
+        </a>
 
-          <a href="/pages/tela-produto"><div id="imgbox17" class="imgbox"></div></a>
-              <div class="descricao-produtos"><a href="/pages/tela-produto"><h1 id="h1" >DIETA -15KG EM 15 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:175px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+        <h2 class="h2" style="margin-top:-28px;">R$ 250,00</h2>
+        <div class="espaco-botaoVer">
+          <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+        </div>
 
-                <h2 id="h2" style="margin-top:-28px;">R$ 500,00</h2>
-                <div class="espaco-botaoVer">
-                  <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-                </div>
+      </div>
+    </div>
+    <div id="box15">
+      <a href="/pages/tela-produto.html">
+        <div id="imgbox15" class="imgbox"></div>
+      </a>
+      <div class="descricao-produtos"><a href="/pages/tela-produto">
+          <h1 class="h1">DIETA -7KG EM 7 DIAS <h1 class="h1-2">
+              SEM GLÚTEN</h1>
+          </h1>
+        </a>
 
-              </div>
-          </div>
+        <h2 class="h2" style="margin-top:-28px;">R$ 300,00</h2>
+        <div class="espaco-botaoVer">
+          <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+        </div>
 
-          <div id="box18"> <a href="/pages/tela-produto"></a>
+      </div>
+    </div>
+  </div>
 
-            <a href="/pages/tela-produto"><div id="imgbox18" class="imgbox"></div></a>
-                <div class="descricao-produtos"><a href="/pages/tela-produto"><h1 id="h1" >DIETA -7KG EM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:221px; font-size: 15px;">APLV</h1></h1></a>
+  <div class="espaco-divs">
 
-                  <h2 id="h2" style="margin-top:-28px;">R$ 300,00</h2>
-                  <div class="espaco-botaoVer">
-                    <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-                  </div>
+    <div id="minhaDiv" class="escondido" onclick="toggleDiv()">
+      <div class="container-caixinhas2">
 
-                </div>
+        <div id="box16">
+          <a href="/pages/tela-produto">
+            <div id="imgbox16" class="imgbox"></div>
+          </a>
+          <div class="descricao-produtos"><a href="/pages/tela-produto">
+              <h1 class="h1">DIETA -15KG EM 15 DIAS <h1 class="h1-2">SEM LACTOSE</h1>
+              </h1>
+            </a>
+            <h2 class="h2" style="margin-top:-28px;">R$ 450,00</h2>
+            <div class="espaco-botaoVer">
+              <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
             </div>
 
-            <div id="box19"> <a href="/pages/tela-produto."></a>
+          </div>
+        </div>
 
-              <a href="/pages/tela-produto"><div id="imgbox19" class="imgbox"></div></a>
-                  <div class="descricao-produtos"><a href="/pages/tela-produto.html"><h1 id="h1" >DIETA -15KG SEM 15 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:246px; font-size: 15px;">APLV</h1></h1></a>
+        <div id="box17">
+          <a href="/pages/tela-produto">
+            <div id="imgbox17" class="imgbox"></div>
+          </a>
+          <div class="descricao-produtos"><a href="/pages/tela-produto">
+              <h1 class="h1">DIETA -15KG EM 15 DIAS <h1 class="h1-2">SEM GLÚTEN</h1>
+              </h1>
+            </a>
+            <h2 class="h2" style="margin-top:-28px;">R$ 500,00</h2>
+            <div class="espaco-botaoVer">
+              <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+            </div>
 
-                    <h2 id="h2" style="margin-top:-28px;">R$ 500,00</h2>
-                    <div class="espaco-botaoVer">
-                      <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-                    </div>
+          </div>
+        </div>
 
-                  </div>
-              </div>
+        <div id="box18">
+          <a href="/pages/tela-produto">
+            <div id="imgbox18" class="imgbox"></div>
+          </a>
+          <div class="descricao-produtos"><a href="/pages/tela-produto">
+              <h1 class="h1">DIETA -7KG EM 7 DIAS <h1 class="h1-2">APLV</h1>
+              </h1>
+            </a>
+            <h2 class="h2" style="margin-top:-28px;">R$ 300,00</h2>
+            <div class="espaco-botaoVer">
+              <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+            </div>
+          </div>
+        </div>
 
-              <div id="box20"> <a href="/pages/tela-produto.html"></a>
+        <div id="box19">
+          <a href="/pages/tela-produto">
+            <div id="imgbox19" class="imgbox"></div>
+          </a>
+          <div class="descricao-produtos"><a href="/pages/tela-produto">
+              <h1 class="h1">DIETA -15KG SEM 15 DIAS <h1 class="h1-2">APLV</h1>
+              </h1>
+            </a>
+            <h2 class="h2" style="margin-top:-28px;">R$ 500,00</h2>
+            <div class="espaco-botaoVer">
+              <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+            </div>
+          </div>
+        </div>
 
-                <a href="/pages/tela-produto.html"><div id="imgbox20" class="imgbox"></div></a>
-                    <div class="descricao-produtos"><a href="/pages/tela-produto"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
+        <div id="box20">
+          <a href="/pages/tela-produto.html">
+            <div id="imgbox20" class="imgbox"></div>
+          </a>
+          <div class="descricao-produtos"><a href="/pages/tela-produto">
+              <h1 class="h1">DIETA -7KG SEM 7 DIAS <h1 class="h1-2">SEM GLÚTEN</h1>
+              </h1>
+            </a>
+            <h2 class="h2" style="margin-top:-28px;">R$ 350,00</h2>
+            <div class="espaco-botaoVer">
+              <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+            </div>
+          </div>
+        </div>
 
-                      <h2 id="h2" style="margin-top:-28px;">R$ 350,00</h2>
-                      <div class="espaco-botaoVer">
-                        <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-                      </div>
+        <div id="box21">
+          <a href="/pages/tela-produto">
+            <div id="imgbox21" class="imgbox"></div>
+          </a>
+          <div class="descricao-produtos"><a href="/pages/tela-produto">
+              <h1 class="h1">DIETA -7KG SEM 7 DIAS <h1 class="h1-2">SEM GLÚTEN</h1>
+              </h1>
+            </a>
+            <h2 class="h2" style="margin-top:-28px;">R$ 550,00</h2>
+            <div class="espaco-botaoVer">
+              <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+            </div>
+          </div>
+        </div>
 
-                    </div>
-                </div>
+        <div id="box22">
+          <a href="/pages/tela-produto">
+            <div id="imgbox22" class="imgbox"></div>
+          </a>
+          <div class="descricao-produtos"><a href="/pages/tela-produto">
+              <h1 class="h1">DIETA -7KG SEM 7 DIAS <h1 class="h1-2">SEM GLÚTEN</h1>
+              </h1>
+            </a>
+            <h2 class="h2" style="margin-top:-28px;">R$ 250,00</h2>
+            <div class="espaco-botaoVer">
+              <button type="button" class="botaoVer"><a href="/pages/tela-produto ">VER MAIS</a></button>
+            </div>
+          </div>
+        </div>
 
-                <div id="box21"> <a href="/pages/tela-produto.html"></a>
-
-                  <a href="/pages/tela-produto"><div id="imgbox21" class="imgbox"></div></a>
-                      <div class="descricao-produtos"><a href="/pages/tela-produto"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
-
-                        <h2 id="h2" style="margin-top:-28px;">R$ 550,00</h2>
-                        <div class="espaco-botaoVer">
-                          <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-                        </div>
-
-                      </div>
-                  </div>
-
-                  <div id="box22"> <a href="/pages/tela-produto"></a>
-
-                    <a href="/pages/tela-produto"><div id="imgbox22" class="imgbox"></div></a>
-                        <div class="descricao-produtos"><a href="/pages/tela-produto"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
-
-                          <h2 id="h2" style="margin-top:-28px;">R$ 250,00</h2>
-                          <div class="espaco-botaoVer">
-                            <button type="button" class="botaoVer"><a href="/pages/tela-produto ">VER MAIS</a></button>
-                          </div>
-
-                        </div>
-                    </div>
-
-                    <div id="box23"> <a href="/pages/tela-produto"></a>
-
-                      <a href="/pages/tela-produto"><div id="imgbox23" class="imgbox"></div></a>
-                          <div class="descricao-produtos"><a href="/pages/tela-produto"><h1 id="h1" >DIETA -7KG SEM 7 DIAS <h1 id="h1" style="margin-top: -12px; margin-left:150px; font-size: 15px;">SEM GLÚTEN</h1></h1></a>
-
-                            <h2 id="h2" style="margin-top:-28px;">R$ 500,00</h2>
-                            <div class="espaco-botaoVer">
-                              <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
-                            </div>
-
-                          </div>
-                      </div>
+        <div id="box23">
+          <a href="/pages/tela-produto">
+            <div id="imgbox23" class="imgbox"></div>
+          </a>
+          <div class="descricao-produtos"><a href="/pages/tela-produto">
+              <h1 class="h1">DIETA -7KG SEM 7 DIAS <h1 class="h1-2">SEM GLÚTEN</h1>
+              </h1>
+            </a>
+            <h2 class="h2" style="margin-top:-28px;">R$ 500,00</h2>
+            <div class="espaco-botaoVer">
+              <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="espaco-botao">
+      <input type="button" id="meuBotao" name="botao" value="CARREGAR MAIS" class="botaoEnviar" onclick="toggleDiv()">
+    </div>
+
   </div>
-      <div class="espaco-botao">
-          <input type="button" id="meuBotao" name="botao" value="CARREGAR MAIS" class="botaoEnviar"  onclick="toggleDiv()">
-      </div>
-            
-    </div>    
-      
-    <footer>
-      <div class="linha"></div>
-      <div class="verdinho">
-          <div class="row1">
-              <div class="col1">
-                  <img src="/pages/img/inicio/logo (2).png" alt="">
-                  <div class="sublinhado"></div>
-                  <p class="lema">Tornando a sua vida mais saudável</p>
-              </div>
-              <div class="col2">
-                  <h4>Institucional</h4>
-                  <a href="sobre-nos">Sobre nós</a>
-                  <a href="politica">Política de Privacidade</a>
-              </div>
-              <div class="col3">
-                  <h4>Dúvida</h4>
-                  <a href="minha-conta">Meus Pedidos</a>
-                  <a href="minha-conta">Minha Conta</a>
-              </div>
-              <div class="col4">
-                  <h4>Redes Sociais</h4>
-                  <div class="redes">
-                      <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
-                      <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
-                      <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
-                  </div>
-              </div>
-          </div>
-          <div class="contato">
-              <div class="localizacao">
-                  <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
-                  <p>Joinville/SC</p>
-              </div>
-              <div class="fone">
-                  <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
-                  <p>Fone/Whatsapp: (47) 00000-0000</p>
-              </div>
-              <div class="email">
-                  <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
-                  <p>Healthbox@gmail.com</p>
-              </div>
-          </div>
-          <div class="linha2">
-          </div>
-      </div>
-  </footer>
-<script >
-function toggleDiv() {
-  var div = document.getElementById("minhaDiv");
-  var botao = document.getElementById("meuBotao");
 
-  if (div.style.display === "none") {
-    div.style.display = "block"; // Mostra a div
-    div.style.justifyContent = "spaceBeetwen";
-    botao.value = "CARREGAR MENOS"; // Altera o texto do botão
-  } else {
-    div.style.display = "none"; // Oculta a div
-    botao.value = "CARREGAR MAIS"; // Altera o texto do botão
-  }
-}
-</script>
+  <footer>
+    <div class="linha"></div>
+    <div class="verdinho">
+      <div class="row1">
+        <div class="col1">
+          <img src="/pages/img/inicio/logo (2).png" alt="">
+          <div class="sublinhado"></div>
+          <p class="lema">Tornando a sua vida mais saudável</p>
+        </div>
+        <div class="col2">
+          <h4>Institucional</h4>
+          <a href="sobre-nos">Sobre nós</a>
+          <a href="politica">Política de Privacidade</a>
+        </div>
+        <div class="col3">
+          <h4>Dúvida</h4>
+          <a href="minha-conta">Meus Pedidos</a>
+          <a href="minha-conta">Minha Conta</a>
+        </div>
+        <div class="col4">
+          <h4>Redes Sociais</h4>
+          <div class="redes">
+            <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
+            <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
+            <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
+          </div>
+        </div>
+      </div>
+      <div class="contato">
+        <div class="localizacao">
+          <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
+          <p>Joinville/SC</p>
+        </div>
+        <div class="fone">
+          <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
+          <p>Fone/Whatsapp: (47) 00000-0000</p>
+        </div>
+        <div class="email">
+          <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
+          <p>Healthbox@gmail.com</p>
+        </div>
+      </div>
+      <div class="linha2">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
-
