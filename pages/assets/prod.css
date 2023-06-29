@@ -1,9 +1,9 @@
 body {
   padding: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #EBECF0;
   margin: 0;
   width: auto;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
 
@@ -16,7 +16,6 @@ body {
   width:100%;
   position: fixed;  
   top: 0;
-  z-index: 9999;
 }
 
 
@@ -56,9 +55,9 @@ body {
   display:flex;
   height: 4vh;
 }
-@media screen and (max-width: 1300PX){
+@media screen and (max-width: 1150px){
   .pesquisa{
-      margin-left: 35vw;
+      margin-left: 30vw;
       height:5vh
   }
   .pesquisa img{
@@ -75,10 +74,9 @@ input{
   width: 10vw;
   margin-left: 3vw;
 }
-@media screen and (max-width: 1300PX){
+@media screen and (max-width: 1150px){
   .entrar{
-      margin-left: 1.5vw;
-      margin-right: 1.5VW;
+      margin-left: 2vw;
   }
 }
 
@@ -120,9 +118,10 @@ input{
   margin-left: 0.76vw;
   transition: 0.3s;
 }
-@media screen and (max-width: 1300PX){
+@media screen and (max-width: 1150px){
   .sacola a {
-      margin-right: 3vw;
+      margin-right: 0.2vw;
+      margin-left: 1vw
   }
 }
 .sacola p:hover {
@@ -140,7 +139,7 @@ input{
   top: 8.7vh;
   position: fixed;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  z-index: 9999;
+  
 }
 
 .opcoes a:hover {
@@ -164,11 +163,12 @@ input{
   color: white;
   transition: 0.3s;
 }
-@media screen and (max-width: 1300PX){
+@media screen and (max-width: 1150px){
   .opcoes{
+      margin-left:80vw;
       height: 100%;
       align-items: center;
-      margin-left: 75VW;
+      width: 26.5vh;
   }
 }
 #nos{
