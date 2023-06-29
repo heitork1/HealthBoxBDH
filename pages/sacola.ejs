@@ -47,32 +47,36 @@
     <main>
         <section class="itens">
             <h1>SACOLA</h1>
-            <div class="item">
+            <div class="item" id="produto1">
                 <img src="/pages/img/sacola/image.png" alt="">
                 <div class="descricao">
                     <h2>Dieta -7kg em 7 dias</h2>
                     <div class="valqtd">
-                        <p class="val" id="produto1" data-preco="200.00">200,00</p>
+                        <span class="val">R$200,00</span>
                         <div class="quantity">
-                            <span class="operadores" onclick="aumentarQuantidade(this)">+</span>
+                            <span class="operadores" onclick="aumentarQuantidade(this)" >+</span>
                             <span class="qtd">1</span>
                             <span class="operadores" onclick="diminuirQuantidade(this)">-</span>
-                        </div>
+                        </div
+                        >
                     </div>
+                    <button type="button" class="botao-remover" onclick=" removeProduct(event)"></button>
                 </div>
             </div>
-            <div class="item">
+
+            <div class="item" id="produto2">
                 <img src="/pages/img/sacola/image1.png" alt="">
                 <div class="descricao">
                     <h2>Dieta -15kg em 15 dias</h2>
                     <div class="valqtd">
-                        <p  class="val" id="produto2" data-preco="200.00">200,00</p>
+                        <span class="val">R$200,00</span>
                         <div class="quantity">
                             <span class="operadores" onclick="aumentarQuantidade(this)">+</span>
                             <span class="qtd">1</span>
                             <span class="operadores" onclick="diminuirQuantidade(this)">-</span>
                         </div>
                     </div>
+                    <button type="button" class="botao-remover"  onclick=" removeProduct(event)"></button>
                 </div>
             </div>
         </section>
@@ -88,20 +92,20 @@
             </div>
             <h2>RESUMO DE PEDIDO</h2>
 
+           
             <div class="sub">
-                <p>Subtotal:</p>
-                <span>R$600,00</span>
+                <p>Total itens:</p>
+                <span></span>
             </div>
             <div class="total">
                 <p>Total do pedido:</p>
-                <span id="precoTotal">400,00</span>
+                <span id="precoTotal">R$400,00</span>
             </div>
             <div class="botao">
                 <button type="submit" class="confirmar" onclick="alterarNome(this)">CONFIRMAR</button>
             </div>
-            <div id="minhaDiv"> <p>Aguardando seu pagamento! <a href="/pages/minha-conta.html">Clique Aqui</a> para atualizações do seu pedido.</p></div>
-        </section>
     </main>
+
     <footer>
         <div class="linha1"></div>
         <div class="verdinho">

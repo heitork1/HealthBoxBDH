@@ -191,7 +191,7 @@ header p{
    grid-template-areas: 
    'b1 b1 b1 b2 b2'
    'b1 b1 b1 b2 b2';
-   width: 200vh;
+   width: 200vw;
    
   } 
 }
@@ -206,7 +206,7 @@ header p{
   grid-template-areas: 
   'b1 b1 b1 b2 b2'
   'b1 b1 b1 b2 b2';
-  width: 200vh;
+  width: 200vw;
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px){
@@ -575,8 +575,7 @@ transform: scale(1.03);
 }
 
 .h1-2{
-  display: flex;
-  align-items: baseline ;
+  
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 
@@ -591,6 +590,17 @@ transform: scale(1.03);
     margin-left: 2vw;
     margin-top:-1vh;
 }
+
+.palavrinhas{
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: first baseline;
+    flex-direction: row-reverse ;
+    width: 18vw;
+    justify-content: space-between;
+    margin-top: -1.6vh;
+}
+
 input > #box5{
     width: 2vh;
 }

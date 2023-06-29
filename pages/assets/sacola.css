@@ -203,7 +203,7 @@ main{
     display: flex;
     align-items: baseline;
     height: 8%;
-    width: 66%;
+    width: 60%;
     justify-content: space-between;
 }
 .sub p{
@@ -214,12 +214,12 @@ main{
 }
 .sub span{
     background-color: #DFCBBE;
-    width: 70%;
+    width: 50%;
     height:70%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 7px;
     font-weight: 900;
 }
 .total{
@@ -227,7 +227,7 @@ main{
     display: flex;
     align-items: baseline;
     height: 8%;
-    width: 66%;
+    width: 60%;
     justify-content: space-between;
 }
 .total p{
@@ -243,17 +243,17 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 7px;
     font-weight: 900;
 }
 .itens{
     
     width: 70%;
-    margin-left: 8%;
+    margin-left: 5%;
     margin-top: 1.5%;
 }
 .itens h1{
-    margin-top: 16vh;
+    margin-top: 20vh;
     display: flex;
     justify-content: center;
 }
@@ -267,11 +267,23 @@ main{
 .item{
     
     display: flex;
-    margin-top: 2%;  
+    margin-top: 5%;  
 }
 .item img{
     width: 25%;
-    border: solid 5px #848D43;
+    border: 4px solid rgb(196, 166, 146);
+    border-radius: 7px;
+}
+
+.botao-remover{
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top:-3vh;
+    background-image: url(/pages/img/sacola/icons8-lixeira-16.png);
 }
 
 .item h2{
@@ -308,6 +320,18 @@ main{
     margin-top: 4vh;
     margin-bottom: 0;
 }
+
+.botao-remover{
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top:-3vh;
+    background-image: url(/pages/img/sacola/icons8-lixeira-16.png);
+}
+
 .botao{
     display: flex;
     justify-content: center;
@@ -325,13 +349,12 @@ main{
     color: white;
     border: none;
     transition: 0.3s;
-    margin: auto;
-    
 }
 .confirmar:hover{
     transform: scale(1.05);
     transition: 0.3s;
 }
+
 #minhaDiv{
     margin-top: -2vh;
     margin-left: -1vw;
