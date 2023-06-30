@@ -15,58 +15,67 @@
 <body>
     <header>
         <div class="faixa1">
-            <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo"/></a>
+            <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
             <div class="pesquisa">
                 <input type="text" name="" id="" placeholder="Pesquisar" />
-                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
-                    style="transform: scaleX(-1)" class="lupa"/>
+                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
+                    class="lupa" />
             </div>
 
-            <% if (typeof nomeUsuario !== 'undefined') { %> 
+            <% if (typeof nomeUsuario !=='undefined' ) { %>
                 <div class="entrar">
                     <a href="/pages/minha-conta">
                         <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                        <p id="nomeUsuario"><%= nomeUsuario %></p>
+                        <p id="nomeUsuario">
+                            <%= nomeUsuario %>
+                        </p>
                     </a>
                 </div>
                 <% } else { %>
-                  <div class="entrar">
-                    <a href="/pages/login.html">
-                        <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                        <p id="nomeUsuario">Entrar</p>
-                    </a>
-                </div>
-                <% } %>
-               <% if (typeof nomeUsuario !== 'undefined') { %> 
-                <div class="sacola">
-                    <a href="/pages/sacola">
-                        <img src="/pages/img/inicio/bag.png" alt="" />
-                        <p>Sacola</p>
-                    </a>
-                <% } else { %>
-                   <div class="sacola">
-                    <a href="/pages/login.html">
-                        <img src="/pages/img/inicio/bag.png" alt="" />
-                        <p>Sacola</p>
-                    </a>
+                    <div class="entrar">
+                        <a href="/pages/login.html">
+                            <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                            <p id="nomeUsuario">Entrar</p>
+                        </a>
+                    </div>
                     <% } %>
-            </div>
-        </div>
-        <div class="faixa2">
-            <div class="opcoes">
-                <a href="/pages/produtos">Produtos</a>
-                <a href="#">Sobre nós</a>
-            </div>
-        </div>
+                        <% if (typeof nomeUsuario !=='undefined' ) { %>
+                            <div class="sacola">
+                                <a href="/pages/sacola">
+                                    <img src="/pages/img/inicio/bag.png" alt="" />
+                                    <p>Sacola</p>
+                                </a>
+                                <% } else { %>
+                                    <div class="sacola">
+                                        <a href="/pages/login.html">
+                                            <img src="/pages/img/inicio/bag.png" alt="" />
+                                            <p>Sacola</p>
+                                        </a>
+                                        <% } %>
+                                    </div>
+                            </div>
+                            <div class="faixa2">
+                                <div class="opcoes">
+                                    <a href="/pages/produtos">Produtos</a>
+                                    <a href="#">Sobre nós</a>
+                                </div>
+                            </div>
     </header>
     <main>
         <img src="/pages/img/sobre-nos/mulher.png" alt="" class="mulher">
         <section class="texto">
-            <p><b class="negrito">Bem-vindo(a) à Healthbox</b>, uma empresa inovadora no ramo alimentício que oferece marmitas congeladas de alimentos saudáveis. Criamos um serviço que entrega suas refeições prontas, gostosas e saudáveis.</p>
-            
-            <p>Nosso objetivo é fornecer alimentos saudáveis e saborosos, que não só atendam às suas necessidades nutricionais, mas também estimulem seu paladar. Todos os nossos ingredientes são cuidadosamente selecionados e preparados com o máximo de cuidado, para garantir a qualidade e o sabor em cada mordida.</p>
-            
-            <p>Na <b class="negrito">Healthbox</b>, acreditamos que a alimentação saudável não precisa ser monótona ou sem graça. Nós estamos aqui para mostrar que é possível ter uma alimentação equilibrada e deliciosa ao mesmo tempo. Experimente nossas marmitas de alimentos saudáveis e sinta a diferença em sua vida.</p>
+            <p><b class="negrito">Bem-vindo(a) à Healthbox</b>, uma empresa inovadora no ramo alimentício que oferece
+                marmitas congeladas de alimentos saudáveis. Criamos um serviço que entrega suas refeições prontas,
+                gostosas e saudáveis.</p>
+
+            <p>Nosso objetivo é fornecer alimentos saudáveis e saborosos, que não só atendam às suas necessidades
+                nutricionais, mas também estimulem seu paladar. Todos os nossos ingredientes são cuidadosamente
+                selecionados e preparados com o máximo de cuidado, para garantir a qualidade e o sabor em cada mordida.
+            </p>
+
+            <p>Na <b class="negrito">Healthbox</b>, acreditamos que a alimentação saudável não precisa ser monótona ou
+                sem graça. Nós estamos aqui para mostrar que é possível ter uma alimentação equilibrada e deliciosa ao
+                mesmo tempo. Experimente nossas marmitas de alimentos saudáveis e sinta a diferença em sua vida.</p>
         </section>
     </main>
     <footer>
@@ -110,12 +119,12 @@
                     <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
                     <p>Healthbox@gmail.com</p>
                 </div>
-    
+
             </div>
             <div class="linha2">
             </div>
         </div>
     </footer>
-    </body>
+</body>
 
 </html>

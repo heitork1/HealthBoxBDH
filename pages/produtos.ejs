@@ -21,13 +21,16 @@
 <body>
   <header>
     <div class="faixa1">
+      <!-- Logotipo -->
       <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
+      <!-- Barra de pesquisa -->
       <div class="pesquisa">
         <input type="text" name="" id="" placeholder="Pesquisar" />
         <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
           class="lupa" />
       </div>
       <% if (typeof nomeUsuario !=='undefined' ) { %>
+        <!-- Se o usuário estiver logado -->
         <div class="entrar">
           <a href="/pages/minha-conta">
             <img src="/pages/img/produto-img/bonequinho.png" alt="" />
@@ -37,6 +40,7 @@
           </a>
         </div>
         <% } else { %>
+          <!-- Se o usuário não estiver logado -->
           <div class="entrar">
             <a href="/pages/login.html">
               <img src="/pages/img/produto-img/bonequinho.png" alt="" />
@@ -45,12 +49,14 @@
           </div>
           <% } %>
             <% if (typeof nomeUsuario !=='undefined' ) { %>
+              <!-- Se o usuário estiver logado -->
               <div class="sacola">
                 <a href="/pages/sacola">
                   <img src="/pages/img/inicio/bag.png" alt="" />
                   <p>Sacola</p>
                 </a>
                 <% } else { %>
+                  <!-- Se o usuário não estiver logado -->
                   <div class="sacola">
                     <a href="/pages/login.html">
                       <img src="/pages/img/inicio/bag.png" alt="" />
@@ -59,15 +65,18 @@
                     <% } %>
                   </div>
               </div>
-              <div class="faixa2">
-                <div class="opcoes">
-                  <a href="#">Produtos</a>
-                  <a href="/pages/sobre-nos">Sobre nós</a>
-                </div>
-              </div>
+    </div>
+    <!-- Opções de navegação -->
+    <div class="faixa2">
+      <div class="opcoes">
+        <a href="#">Produtos</a>
+        <a href="/pages/sobre-nos">Sobre nós</a>
+      </div>
+    </div>
   </header>
 
   <div class="container-descricao">
+    <!-- Botão para exibir todos os produtos -->
     <div id="box1" class="box-descricao">
       <a href="/pages/produtos">
         <p>TODOS OS PRODUTOS</p>
@@ -112,72 +121,79 @@
               </div>
             </div>
           </div> -->
-
   </div>
-
   <div class="container-caixinhas">
+    <!-- Início da primeira caixa de produto -->
     <div id="box12">
       <a href="/pages/tela-produto.html">
-        <div id="imgbox12" class="imgbox"></div>
+        <div id="imgbox12" class="imgbox"></div> <!-- Imagem do produto -->
       </a>
-      <div class="descricao-produtos"><a href="/pages/tela-produto">
-          <h1 class="h1">DIETA -7KG EM 7 DIAS</h1>
+      <div class="descricao-produtos">
+        <a href="/pages/tela-produto">
+          <h1 class="h1">DIETA -7KG EM 7 DIAS</h1> <!-- Título do produto -->
         </a>
-
-        <h2 class="h2">R$ 200,00</h2>
+        <h2 class="h2">R$ 200,00</h2> <!-- Preço do produto -->
         <div class="espaco-botaoVer">
-          <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+          <button type="button" class="botaoVer">
+            <a href="/pages/tela-produto">VER MAIS</a> <!-- Botão "VER MAIS" -->
+          </button>
         </div>
       </div>
     </div>
+    <!-- Fim da primeira caixa de produto -->
+
+    <!-- Repetição da estrutura para as demais caixas de produto -->
     <div id="box13">
       <a href="/pages/tela-produto.html">
         <div id="imgbox13" class="imgbox"></div>
       </a>
-      <div class="descricao-produtos"><a href="/pages/tela-produto">
+      <div class="descricao-produtos">
+        <a href="/pages/tela-produto">
           <h1 class="h1">DIETA -15KG EM 15 DIAS</h1>
         </a>
-
         <h2 class="h2">R$ 400,00</h2>
         <div class="espaco-botaoVer">
-          <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+          <button type="button" class="botaoVer">
+            <a href="/pages/tela-produto">VER MAIS</a>
+          </button>
         </div>
-
       </div>
     </div>
+
     <div id="box14">
       <a href="/pages/tela-produto.html">
         <div id="imgbox14" class="imgbox"></div>
       </a>
-      <div class="descricao-produtos"><a href="/pages/tela-produto">
+      <div class="descricao-produtos">
+        <a href="/pages/tela-produto">
           <h1 class="h1">DIETA -7KG EM 7 DIAS</h1>
-<div class="palavrinhas">
+          <div class="palavrinhas">
             <h1 class="h1-2">SEM LACTOSE</h1>
             <h2 class="h2" style="margin-top:-28px;">R$ 250,00</h2>
-</div>
-
+          </div>
         </a>
-
-        
         <div class="espaco-botaoVer">
-          <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
+          <button type="button" class="botaoVer">
+            <a href="/pages/tela-produto">VER MAIS</a>
+          </button>
         </div>
-
       </div>
     </div>
+
+
     <div id="box15">
       <a href="/pages/tela-produto.html">
         <div id="imgbox15" class="imgbox"></div>
       </a>
       <div class="descricao-produtos"><a href="/pages/tela-produto">
-          <h1 class="h1">DIETA -7KG EM 7 DIAS</h1> 
-<div class="palavrinhas">
-          <h1 class="h1-2"> SEM GLÚTEN</h1>
-          <h2 class="h2" style="margin-top:-28px;">R$ 300,00</h2>
-</div>
+          <h1 class="h1">DIETA -7KG EM 7 DIAS</h1>
+          <div class="palavrinhas">
+            <h1 class="h1-2"> SEM GLÚTEN</h1>
+            <h2 class="h2" style="margin-top:-28px;">R$ 300,00</h2>
+          </div>
         </a>
 
-        
+
         <div class="espaco-botaoVer">
           <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
         </div>
@@ -189,6 +205,8 @@
   <div class="espaco-divs">
 
     <div id="minhaDiv" class="escondido" onclick="toggleDiv()">
+
+      <!-- Início da segunda seção de caixas de produtos -->
       <div class="container-caixinhas2">
 
         <div id="box16">
@@ -196,13 +214,13 @@
             <div id="imgbox16" class="imgbox"></div>
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
-              <h1 class="h1">DIETA -15KG EM 15 DIAS</h1> 
-<div class="palavrinhas">
-              <h1 class="h1-2">SEM LACTOSE</h1>
-               <h2 class="h2" style="margin-top:-28px;">R$ 450,00</h2>
-</div>
+              <h1 class="h1">DIETA -15KG EM 15 DIAS</h1>
+              <div class="palavrinhas">
+                <h1 class="h1-2">SEM LACTOSE</h1>
+                <h2 class="h2" style="margin-top:-28px;">R$ 450,00</h2>
+              </div>
             </a>
-           
+
 
             <div class="espaco-botaoVer">
               <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
@@ -211,18 +229,19 @@
           </div>
         </div>
 
+        <!-- Repetição para as demais caixas de produto -->
         <div id="box17">
           <a href="/pages/tela-produto">
             <div id="imgbox17" class="imgbox"></div>
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
-              <h1 class="h1">DIETA -15KG EM 15 DIAS</h1> 
+              <h1 class="h1">DIETA -15KG EM 15 DIAS</h1>
               <div class="palavrinhas">
-              <h1 class="h1-2">SEM GLÚTEN</h1>
-              <h2 class="h2" style="margin-top:-28px;">R$ 500,00</h2>
-</div>
+                <h1 class="h1-2">SEM GLÚTEN</h1>
+                <h2 class="h2" style="margin-top:-28px;">R$ 500,00</h2>
+              </div>
             </a>
-            
+
             <div class="espaco-botaoVer">
               <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
             </div>
@@ -235,13 +254,13 @@
             <div id="imgbox18" class="imgbox"></div>
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
-              <h1 class="h1">DIETA -7KG EM 7 DIAS</h1> 
+              <h1 class="h1">DIETA -7KG EM 7 DIAS</h1>
               <div class="palavrinhas">
-              <h1 class="h1-2">APLV</h1>
-              <h2 class="h2" style="margin-top:-28px;">R$ 300,00</h2>
-</div>
+                <h1 class="h1-2">APLV</h1>
+                <h2 class="h2" style="margin-top:-28px;">R$ 300,00</h2>
+              </div>
             </a>
-            
+
             <div class="espaco-botaoVer">
               <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
             </div>
@@ -253,13 +272,13 @@
             <div id="imgbox19" class="imgbox"></div>
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
-              <h1 class="h1">DIETA -15KG SEM 15 DIAS</h1> 
+              <h1 class="h1">DIETA -15KG SEM 15 DIAS</h1>
               <div class="palavrinhas">
-              <h1 class="h1-2">APLV</h1>
-              <h2 class="h2" style="margin-top:-28px;">R$ 500,00</h2>
-</div>
+                <h1 class="h1-2">APLV</h1>
+                <h2 class="h2" style="margin-top:-28px;">R$ 500,00</h2>
+              </div>
             </a>
-            
+
             <div class="espaco-botaoVer">
               <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
             </div>
@@ -271,13 +290,13 @@
             <div id="imgbox20" class="imgbox"></div>
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
-              <h1 class="h1">DIETA -7KG SEM 7 DIAS</h1> 
+              <h1 class="h1">DIETA -7KG SEM 7 DIAS</h1>
               <div class="palavrinhas">
-              <h1 class="h1-2">SEM GLÚTEN</h1>
-              <h2 class="h2" style="margin-top:-28px;">R$ 350,00</h2>
-</div>
+                <h1 class="h1-2">SEM GLÚTEN</h1>
+                <h2 class="h2" style="margin-top:-28px;">R$ 350,00</h2>
+              </div>
             </a>
-            
+
             <div class="espaco-botaoVer">
               <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
             </div>
@@ -289,13 +308,13 @@
             <div id="imgbox21" class="imgbox"></div>
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
-              <h1 class="h1">DIETA -7KG SEM 7 DIAS</h1> 
+              <h1 class="h1">DIETA -7KG SEM 7 DIAS</h1>
               <div class="palavrinhas">
-              <h1 class="h1-2">SEM GLÚTEN</h1>
-              <h2 class="h2" style="margin-top:-28px;">R$ 550,00</h2>
-</div>
+                <h1 class="h1-2">SEM GLÚTEN</h1>
+                <h2 class="h2" style="margin-top:-28px;">R$ 550,00</h2>
+              </div>
             </a>
-            
+
             <div class="espaco-botaoVer">
               <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
             </div>
@@ -307,13 +326,13 @@
             <div id="imgbox22" class="imgbox"></div>
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
-              <h1 class="h1">DIETA -7KG SEM 7 DIAS</h1> 
+              <h1 class="h1">DIETA -7KG SEM 7 DIAS</h1>
               <div class="palavrinhas">
-              <h1 class="h1-2">SEM GLÚTEN</h1>
-              <h2 class="h2" style="margin-top:-28px;">R$ 250,00</h2>
-</div>
+                <h1 class="h1-2">SEM GLÚTEN</h1>
+                <h2 class="h2" style="margin-top:-28px;">R$ 250,00</h2>
+              </div>
             </a>
-            
+
             <div class="espaco-botaoVer">
               <button type="button" class="botaoVer"><a href="/pages/tela-produto ">VER MAIS</a></button>
             </div>
@@ -325,13 +344,13 @@
             <div id="imgbox23" class="imgbox"></div>
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
-            <h1 class="h1">DIETA -7KG SEM 7 DIAS</h1>
-<div class="palavrinhas">
-              <h1 class="h1-2">SEM GLÚTEN</h1>
-              <h2 class="h2" style="margin-top:-28px;">R$ 500,00</h2>
-</div>
+              <h1 class="h1">DIETA -7KG SEM 7 DIAS</h1>
+              <div class="palavrinhas">
+                <h1 class="h1-2">SEM GLÚTEN</h1>
+                <h2 class="h2" style="margin-top:-28px;">R$ 500,00</h2>
+              </div>
             </a>
-            
+
             <div class="espaco-botaoVer">
               <button type="button" class="botaoVer"><a href="/pages/tela-produto">VER MAIS</a></button>
             </div>
@@ -393,4 +412,5 @@
     </div>
   </footer>
 </body>
+
 </html>

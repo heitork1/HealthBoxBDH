@@ -11,59 +11,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/pages/assets/politica.css">
-  
+
 
 <body>
     <header>
         <div class="faixa1">
-            <a href="../"><img src="img/inicio/logo-br.png" alt="" id="logo"/></a>
+            <a href="../"><img src="img/inicio/logo-br.png" alt="" id="logo" /></a>
             <div class="pesquisa">
                 <input type="text" name="" id="" placeholder="Pesquisar" />
                 <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
                     style="transform: scaleX(-1)" />
             </div>
 
-            <% if (typeof nomeUsuario !== 'undefined') { %> 
+            <% if (typeof nomeUsuario !=='undefined' ) { %>
                 <div class="entrar">
                     <a href="/pages/minha-conta">
                         <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                        <p id="nomeUsuario"><%= nomeUsuario %></p>
+                        <p id="nomeUsuario">
+                            <%= nomeUsuario %>
+                        </p>
                     </a>
                 </div>
                 <% } else { %>
-                  <div class="entrar">
-                    <a href="/pages/login.html">
-                        <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                        <p id="nomeUsuario">Entrar</p>
-                    </a>
-                </div>
-                <% } %>
-               <% if (typeof nomeUsuario !== 'undefined') { %> 
-                <div class="sacola">
-                    <a href="/pages/sacola">
-                        <img src="/pages/img/inicio/bag.png" alt="" />
-                        <p>Sacola</p>
-                    </a>
-                <% } else { %>
-                   <div class="sacola">
-                    <a href="/pages/login.html">
-                        <img src="/pages/img/inicio/bag.png" alt="" />
-                        <p>Sacola</p>
-                    </a>
+                    <div class="entrar">
+                        <a href="/pages/login.html">
+                            <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                            <p id="nomeUsuario">Entrar</p>
+                        </a>
+                    </div>
                     <% } %>
-            </div>
-        </div>
-        <div class="faixa2">
-            <div class="opcoes">
-                <p><a href="/pages/produtos">Produtos</a></p>
-                <p id="nos"><a href="/pages/sobre-nos">Sobre nós</a></p>
-            </div>
-        </div>
+                        <% if (typeof nomeUsuario !=='undefined' ) { %>
+                            <div class="sacola">
+                                <a href="/pages/sacola">
+                                    <img src="/pages/img/inicio/bag.png" alt="" />
+                                    <p>Sacola</p>
+                                </a>
+                                <% } else { %>
+                                    <div class="sacola">
+                                        <a href="/pages/login.html">
+                                            <img src="/pages/img/inicio/bag.png" alt="" />
+                                            <p>Sacola</p>
+                                        </a>
+                                        <% } %>
+                                    </div>
+                            </div>
+                            <div class="faixa2">
+                                <div class="opcoes">
+                                    <p><a href="/pages/produtos">Produtos</a></p>
+                                    <p id="nos"><a href="/pages/sobre-nos">Sobre nós</a></p>
+                                </div>
+                            </div>
     </header>
     <main>
-       
-            <h1>Política de privacidade</h1>
-        <div class="texto">     
+
+        <h1>Política de privacidade</h1>
+        <div class="texto">
             <p><b>Este site é mantido e operado por HealthBox</b></p><br>
             <p>Nós coletamos e utilizamos alguns dados pessoais que pertencem àqueles que utilizam
                 nosso site. Ao fazê-lo, agimos na qualidade de controlador desses dados e estamos sujeitos
@@ -148,7 +150,7 @@
             <p>Nós não compartilhamos seus dados pessoais com terceiros. Apesar disso, é possível que
                 o façamos para cumprir alguma determinação legal ou regulatória, ou, ainda, para cumprir
                 alguma ordem expedida por autoridade pública</p><br>
-            <p class="sub">b. Por quanto tempo seus dados pessoais serão armazenados</p> 
+            <p class="sub">b. Por quanto tempo seus dados pessoais serão armazenados</p>
             <p>Os dados pessoais coletados pelo site são armazenados e utilizados por período de tempo
                 que corresponda ao necessário para atingir as finalidades elencadas neste documento e
                 que considere os direitos de seus titulares, os direitos do controlador do site e as
@@ -233,10 +235,14 @@
                 <div class="col4">
                     <h4>Redes Sociais</h4>
                     <div class="redes">
-                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a> 
-                         <a href="https://www.instagram.com/accounts/login/"><img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
-                        <a href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a> 
-                     </div>
+                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img
+                                src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/accounts/login/"><img
+                                src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img
+                                src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a>
+                    </div>
                 </div>
             </div>
             <div class="contato">
@@ -258,4 +264,5 @@
         </div>
     </footer>
 </body>
+
 </html>

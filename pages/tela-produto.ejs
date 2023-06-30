@@ -3,12 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,20 +17,22 @@
 
     <header>
         <div class="faixa1">
-            <a href="../"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo"/></a>
+            <a href="../"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
             <div class="pesquisa">
                 <input type="text" name="" id="" placeholder="Pesquisar" />
-                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
-                    style="transform: scaleX(-1)" class="lupa"/>
+                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
+                    class="lupa" />
             </div>
-    
+
             <div class="entrar">
                 <a href="/pages/login.html">
                     <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                    <p id="nomeUsuario"><%= nomeUsuario %></p>
+                    <p id="nomeUsuario">
+                        <%= nomeUsuario %>
+                    </p>
                 </a>
             </div>
-    
+
             <div class="sacola">
                 <a href="/pages/sacola">
                     <img src="/pages/img/inicio/bag.png" alt="" />
@@ -50,140 +48,147 @@
         </div>
     </header>
 
-<div class="produto-especifico">
-    <div class="imagens-produtos">
-        <div id="img1" class="imgs" onclick="slider('/pages/img/prdt-especifico/image\ \(2\).png')"></div>
-        <div id="img2" class="imgs" onclick="slider('/pages/img/prdt-especifico/image\ \(2\).png')"></div>
-        <div id="img3" class="imgs" onclick="slider('/pages/img/prdt-especifico/image\ \(5\).png')"></div>
-        <div id="img4" class="imgs"></div>
-    </div>
-    <div class="img"><img src="/pages/img/prdt-especifico/image (2).png" alt="">
-    </div>
-
-    <div class="descricao-produto">
-        <div class="plv-produtos" id="plv1"><div><p>Dieta -7KG em 7 Dias SEM GLUTEN</p></div></div>
-        <div class="plv-produtos" id="plv2">R$300,00</div>
-      
-        <div class="plv-produtos" id="plv4"><p>Consulte o frete</p></div>
-        <div class="plv-produtos" id="plv5">
-            <div id="plv6">
-                <div class="frete">
-                    <div class="cep">
-                        <div><label for="cep"><img src="img/prdt-especifico/casinha.png" alt="casa"></label></div>
-                        <div><input type="text" placeholder="CEP 00000-000" name="cep"></div>
-                        <div><button type="submit" class="calcular">Calcular</button></div>
-                    </div>
-                    
-                </div>        
-            </div>
+    <div class="produto-especifico">
+        <div class="imagens-produtos">
+            <div id="img1" class="imgs" onclick="slider('/pages/img/prdt-especifico/image\ \(2\).png')"></div>
+            <div id="img2" class="imgs" onclick="slider('/pages/img/prdt-especifico/image\ \(2\).png')"></div>
+            <div id="img3" class="imgs" onclick="slider('/pages/img/prdt-especifico/image\ \(5\).png')"></div>
+            <div id="img4" class="imgs"></div>
         </div>
-        <div class="plv-produtos" id="plv7">
-            <div class="botao">
-                <div><button>ADICIONAR À SACOLA </button></div>
-            </div>
+        <div class="img"><img src="/pages/img/prdt-especifico/image (2).png" alt="">
         </div>
-        
-    </div>
 
-</div >
-
-<div id="minhaDiv" onclick="toggleDiv()" class="descricao-escondida">
-
-            <p>Dia 1: <br>
-                Café da manhã: Aveia com frutas e nozes. <br>
-                Almoço: Salada de folhas verdes com frango grelhado. <br>
-                Jantar: Salmão assado com legumes cozidos no vapor. <br> <br>
-                Dia 2: <br>
-                Café da manhã: Omelete de clara de ovo com espinafre e tomate. <br>
-                Almoço: Quinoa com legumes grelhados. <br>
-                Jantar: Peito de frango com molho de tomate e abobrinha salteada. <br> <br>
-                Dia 3: <br>
-                Café da manhã: Torrada integral com abacate e ovos escalfados. <br>
-                Almoço: Salada de grão de bico com tomate e pepino. <br>
-                Jantar: Bife grelhado com batata doce assada. <br> <br>
-                Dia 4: <br>
-                Café da manhã: Smoothie verde com espinafre, banana e leite de amêndoa. <br>
-                Almoço: Envoltório de frango e legumes em uma tortilla de trigo integral. <br>
-                Jantar: Filé de peixe grelhado com couve-flor salteado. <br> <br>
-                Dia 5: <br>
-                Café da manhã: Mingau de aveia com frutas vermelhas e sementes de linhaça. <br>
-                Almoço: Salada de quinoa com salmão defumado. <br>
-                Jantar: Frango assado com legumes assados ​​no forno. <br> <br>
-                Dia 6: <br>
-                Café da manhã: ovos mexidos com espinafre e queijo feta. <br>
-                Almoço: Wrap vegetariano com homus, abacate e legumes variados. <br>
-                Jantar: Coxinhas de frango assadas com batatas assadas. <br> <br>
-                Dia 7: <br>
-                Café da manhã: Torrada integral com manteiga de amendoim e rodelas de banana. <br>
-                Almoço: Iogurte grego com frutas frescas. <br>
-                Jantar: Salmão assado com legumes cozidos no vapor. <br>
-                </p>
-                
-             </div>
-            <div class="espaco-botao">
-                 <input type="button" name="botao" id="meuBotao" class="botaoEnviar" value="VER DESCRIÇÃO COMPLETA"   onclick="toggleDiv()">
+        <div class="descricao-produto">
+            <div class="plv-produtos" id="plv1">
+                <div>
+                    <p>Dieta -7KG em 7 Dias SEM GLUTEN</p>
+                </div>
             </div>
- 
-            <footer>
-                <div class="linha"></div>
-                <div class="verdinho">
-                    <div class="row1">
-                        <div class="col1">
-                            <img src="/pages/img/inicio/logo (2).png" alt="">
-                            <div class="sublinhado"></div>
-                            <p class="lema">Tornando a sua vida mais saudável</p>
+            <div class="plv-produtos" id="plv2">R$300,00</div>
+
+            <div class="plv-produtos" id="plv4">
+                <p>Consulte o frete</p>
+            </div>
+            <div class="plv-produtos" id="plv5">
+                <div id="plv6">
+                    <div class="frete">
+                        <div class="cep">
+                            <div><label for="cep"><img src="img/prdt-especifico/casinha.png" alt="casa"></label></div>
+                            <div><input type="text" placeholder="CEP 00000-000" name="cep"></div>
+                            <div><button type="submit" class="calcular">Calcular</button></div>
                         </div>
-                        <div class="col2">
-                            <h4>Institucional</h4>
-                            <a href="/pages/sobre-nos">Sobre nós</a>
-                            <a href="/pages/politica">Política de Privacidade</a>
-                        </div>
-                        <div class="col3">
-                            <h4>Dúvida</h4>
-                            <a href="/pages/minha-conta">Meus Pedidos</a>
-                            <a href="/pages/minha-conta">Minha Conta</a>
-                        </div>
-                        <div class="col4">
-                            <h4>Redes Sociais</h4>
-                            <div class="redes">
-                                <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
-                                <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
-                                <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contato">
-                        <div class="localizacao">
-                            <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
-                            <p>Joinville/SC</p>
-                        </div>
-                        <div class="fone">
-                            <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
-                            <p>Fone/Whatsapp: (47) 00000-0000</p>
-                        </div>
-                        <div class="email">
-                            <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
-                            <p>Healthbox@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="linha2">
+
                     </div>
                 </div>
-            </footer>
+            </div>
+            <div class="plv-produtos" id="plv7">
+                <div class="botao">
+                    <div><button>ADICIONAR À SACOLA </button></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="minhaDiv" onclick="toggleDiv()" class="descricao-escondida">
+
+        <p>Dia 1: <br>
+            Café da manhã: Aveia com frutas e nozes. <br>
+            Almoço: Salada de folhas verdes com frango grelhado. <br>
+            Jantar: Salmão assado com legumes cozidos no vapor. <br> <br>
+            Dia 2: <br>
+            Café da manhã: Omelete de clara de ovo com espinafre e tomate. <br>
+            Almoço: Quinoa com legumes grelhados. <br>
+            Jantar: Peito de frango com molho de tomate e abobrinha salteada. <br> <br>
+            Dia 3: <br>
+            Café da manhã: Torrada integral com abacate e ovos escalfados. <br>
+            Almoço: Salada de grão de bico com tomate e pepino. <br>
+            Jantar: Bife grelhado com batata doce assada. <br> <br>
+            Dia 4: <br>
+            Café da manhã: Smoothie verde com espinafre, banana e leite de amêndoa. <br>
+            Almoço: Envoltório de frango e legumes em uma tortilla de trigo integral. <br>
+            Jantar: Filé de peixe grelhado com couve-flor salteado. <br> <br>
+            Dia 5: <br>
+            Café da manhã: Mingau de aveia com frutas vermelhas e sementes de linhaça. <br>
+            Almoço: Salada de quinoa com salmão defumado. <br>
+            Jantar: Frango assado com legumes assados ​​no forno. <br> <br>
+            Dia 6: <br>
+            Café da manhã: ovos mexidos com espinafre e queijo feta. <br>
+            Almoço: Wrap vegetariano com homus, abacate e legumes variados. <br>
+            Jantar: Coxinhas de frango assadas com batatas assadas. <br> <br>
+            Dia 7: <br>
+            Café da manhã: Torrada integral com manteiga de amendoim e rodelas de banana. <br>
+            Almoço: Iogurte grego com frutas frescas. <br>
+            Jantar: Salmão assado com legumes cozidos no vapor. <br>
+        </p>
+
+    </div>
+    <div class="espaco-botao">
+        <input type="button" name="botao" id="meuBotao" class="botaoEnviar" value="VER DESCRIÇÃO COMPLETA"
+            onclick="toggleDiv()">
+    </div>
+
+    <footer>
+        <div class="linha"></div>
+        <div class="verdinho">
+            <div class="row1">
+                <div class="col1">
+                    <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <div class="sublinhado"></div>
+                    <p class="lema">Tornando a sua vida mais saudável</p>
+                </div>
+                <div class="col2">
+                    <h4>Institucional</h4>
+                    <a href="/pages/sobre-nos">Sobre nós</a>
+                    <a href="/pages/politica">Política de Privacidade</a>
+                </div>
+                <div class="col3">
+                    <h4>Dúvida</h4>
+                    <a href="/pages/minha-conta">Meus Pedidos</a>
+                    <a href="/pages/minha-conta">Minha Conta</a>
+                </div>
+                <div class="col4">
+                    <h4>Redes Sociais</h4>
+                    <div class="redes">
+                        <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
+                        <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
+                        <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="contato">
+                <div class="localizacao">
+                    <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
+                    <p>Joinville/SC</p>
+                </div>
+                <div class="fone">
+                    <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
+                    <p>Fone/Whatsapp: (47) 00000-0000</p>
+                </div>
+                <div class="email">
+                    <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
+                    <p>Healthbox@gmail.com</p>
+                </div>
+            </div>
+            <div class="linha2">
+            </div>
+        </div>
+    </footer>
 </body>
 <script>
-function toggleDiv() {
-  var div = document.getElementById("minhaDiv");
-  var botao = document.getElementById("meuBotao");
+    function toggleDiv() {
+        var div = document.getElementById("minhaDiv");
+        var botao = document.getElementById("meuBotao");
 
-  if (div.style.display === "none") {
-    div.style.display = "block"; // Mostra a div
-    botao.value = "ESCONDER DESCRICAO"; // Altera o texto do botão para "Esconder"
-  } else {
-    div.style.display = "none"; // Oculta a div
-    botao.value = "VER DESCRICAO COMPLETA"; // Altera o texto do botão para "Mostrar"
-  }
-}
+        if (div.style.display === "none") {
+            div.style.display = "block"; // Mostra a div
+            botao.value = "ESCONDER DESCRICAO"; // Altera o texto do botão para "Esconder"
+        } else {
+            div.style.display = "none"; // Oculta a div
+            botao.value = "VER DESCRICAO COMPLETA"; // Altera o texto do botão para "Mostrar"
+        }
+    }
 </script>
 
 </html>

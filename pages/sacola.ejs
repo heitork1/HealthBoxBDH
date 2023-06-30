@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sacola</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/pages/assets/sacola.css">
     <script src="/pages/scripts/sacola.js"></script>
 </head>
@@ -16,17 +15,19 @@
 <body>
     <header>
         <div class="faixa1">
-            <a href="../"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo"/></a>
+            <a href="../"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
             <div class="pesquisa">
                 <input type="text" name="" id="" placeholder="Pesquisar" />
-                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
-                    style="transform: scaleX(-1)" class="lupa"/>
+                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
+                    class="lupa" />
             </div>
 
             <div class="entrar">
                 <a href="/pages/minha-conta">
                     <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                    <p id="nomeUsuario"><%= nomeUsuario %></p>
+                    <p id="nomeUsuario">
+                        <%= nomeUsuario %>
+                    </p>
                 </a>
             </div>
 
@@ -54,11 +55,10 @@
                     <div class="valqtd">
                         <span class="val">R$200,00</span>
                         <div class="quantity">
-                            <span class="operadores" onclick="aumentarQuantidade(this)" >+</span>
+                            <span class="operadores" onclick="aumentarQuantidade(this)">+</span>
                             <span class="qtd">1</span>
                             <span class="operadores" onclick="diminuirQuantidade(this)">-</span>
-                        </div
-                        >
+                        </div>
                     </div>
                     <button type="button" class="botao-remover" onclick=" removeProduct(event)"></button>
                 </div>
@@ -76,7 +76,7 @@
                             <span class="operadores" onclick="diminuirQuantidade(this)">-</span>
                         </div>
                     </div>
-                    <button type="button" class="botao-remover"  onclick=" removeProduct(event)"></button>
+                    <button type="button" class="botao-remover" onclick=" removeProduct(event)"></button>
                 </div>
             </div>
         </section>
@@ -92,7 +92,7 @@
             </div>
             <h2>RESUMO DE PEDIDO</h2>
 
-           
+
             <div class="sub">
                 <p>Total itens:</p>
                 <span></span>
@@ -128,10 +128,14 @@
                 <div class="col4">
                     <h4>Redes Sociais</h4>
                     <div class="redes">
-                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a> 
-                         <a href="https://www.instagram.com/accounts/login/"><img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
-                        <a href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a> 
-                     </div>
+                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img
+                                src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/accounts/login/"><img
+                                src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img
+                                src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a>
+                    </div>
                 </div>
             </div>
             <div class="contato">

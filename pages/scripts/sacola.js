@@ -1,24 +1,22 @@
-if(document.readystate == "loading"){
+if (document.readystate == "loading") {
   document.addEventListener("DOMContentLoaded", ready)
-}else{
+} else {
   ready()
 
 }
 
 
-function ready(){
-  const botaoremover =document.getElementsByClassName("botao-remover")
+function ready() {
+  const botaoremover = document.getElementsByClassName("botao-remover")
   // console.log(botaoremover)
-  for (var i=0; i < botaoremover.length; i++){
-      botaoremover[i].addEventListener("click", removeProduct)
-  }    
-
-  const quantitySpan = document.getElementsByClassName("qtd").innerText
-  for (var i = 0; quantitySpan.length; i++){
-      quantitySpan[i].addEventListener("change", updateTotal)
+  for (var i = 0; i < botaoremover.length; i++) {
+    botaoremover[i].addEventListener("click", removeProduct)
   }
 
-
+  const quantitySpan = document.getElementsByClassName("qtd").innerText
+  for (var i = 0; quantitySpan.length; i++) {
+    quantitySpan[i].addEventListener("change", updateTotal)
+  }
 
 }
 
@@ -40,23 +38,23 @@ function diminuirQuantidade(element) {
   }
 }
 
-function removeProduct(event){
+function removeProduct(event) {
   event.target.parentElement.parentElement.remove()
   updateTotal()
 }
 
 
-function updateTotal(){
+function updateTotal() {
   let precoTotal = 0
   const itensSacola = document.getElementsByClassName("item")
-  for (var i=0; i < itensSacola.length; i++){
-  // console.log(itensSacola[i])
-      const itempreco = itensSacola[i].getElementsByClassName("val")[0].innerText.replace("R$", "").replace(",",".")
-      const itemQuantidade = itensSacola[i].getElementsByClassName("qtd")[0].innerText
-  
-      precoTotal +=  itempreco * itemQuantidade
+  for (var i = 0; i < itensSacola.length; i++) {
+    // console.log(itensSacola[i])
+    const itempreco = itensSacola[i].getElementsByClassName("val")[0].innerText.replace("R$", "").replace(",", ".")
+    const itemQuantidade = itensSacola[i].getElementsByClassName("qtd")[0].innerText
 
-  }   
+    precoTotal += itempreco * itemQuantidade
+
+  }
 
   precoTotal = precoTotal.toFixed(2)
   precoTotal = precoTotal.replace(".", ",")

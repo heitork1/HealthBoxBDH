@@ -12,15 +12,16 @@
 
 <body>
     <main class="principal">
-       <a href="../" id="home"><img src="/pages/img/inicio/logo (2).png" alt=""></a>
+        <a href="../" id="home"><img src="/pages/img/inicio/logo (2).png" alt=""></a>
         <h1 class="crie">Crie uma nova senha</h1>
         <form action="">
             <div class="bloco">
                 <p>Crie uma nova senha diferente da anterior. Tente usar no mínimo 8 caracteres, utilizando uma
-                    combinação de letras, números e caracteres especiais (@,!,#<$)</p>
+                    combinação de letras, números e caracteres especiais (@,!,#<$)< /p>
                         <input type="text" placeholder="Nova senha" class="senha" id="senha1">
                         <input type="text" placeholder="Repita nova senha" class="senha" id="senha2">
-                        <button id="meuBotao" type="button" class="confirma" onclick="mudarNomeBotao()" onclick="desabilitarHover()">CONFIRMAR</button>
+                        <button id="meuBotao" type="button" class="confirma" onclick="mudarNomeBotao()"
+                            onclick="desabilitarHover()">CONFIRMAR</button>
             </div>
         </form>
     </main>
@@ -47,10 +48,14 @@
                 <div class="col4">
                     <h4>Redes Sociais</h4>
                     <div class="redes">
-                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a> 
-                         <a href="https://www.instagram.com/accounts/login/"><img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
-                        <a href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a> 
-                     </div>
+                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img
+                                src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/accounts/login/"><img
+                                src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img
+                                src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a>
+                    </div>
                 </div>
             </div>
             <div class="contato">
@@ -71,16 +76,17 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 <script>
-function mudarNomeBotao() {
+    function mudarNomeBotao() {
 
-  var botao = document.getElementById("meuBotao");
-  botao.textContent = "CONFIRMADO";
-  botao.style.transform = "scale(1)";
-  botao.onclick = null;
-}
- 
+        var botao = document.getElementById("meuBotao");
+        botao.textContent = "CONFIRMADO";
+        botao.style.transform = "scale(1)";
+        botao.onclick = null;
+    }
+
 </script>
+
 </html>

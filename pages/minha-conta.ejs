@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="faixa1">
-            <a href="../"><img src="img/inicio/logo-br.png" alt="" id="logo"/></a>
+            <a href="../"><img src="img/inicio/logo-br.png" alt="" id="logo" /></a>
             <div class="pesquisa">
                 <input type="text" name="" id="" placeholder="Pesquisar" />
                 <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
@@ -27,7 +27,9 @@
             <div class="entrar">
                 <a href="#">
                     <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                    <p id="nomeUsuario"><%= nomeUsuario %></p>
+                    <p id="nomeUsuario">
+                        <%= nomeUsuario %>
+                    </p>
                 </a>
             </div>
 
@@ -53,15 +55,16 @@
                     <form action="/atualizar" method="post">
                         <div class="nome">
                             <label for="username">Nome Completo</label>
-                            <input type="text" name="username" id="inputNome" value=<%= nomeUsuario %>>
+                            <input type="text" name="username" id="inputNome" value=<%=nomeUsuario %>>
                         </div>
                         <div class="emailInput">
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" id="inputEmail" value=<%= emailUsuario %>>
+                            <input type="email" name="email" id="inputEmail" value=<%=emailUsuario %>>
                         </div>
                         <div class="senha">
-                            <label for="password" >Senha do usuário</label>
-                            <input type="text" name="password" placeholder="senha" id="inputSenha" value=<%= senhaUsuario %>>
+                            <label for="password">Senha do usuário</label>
+                            <input type="text" name="password" placeholder="senha" id="inputSenha" value=<%=senhaUsuario
+                                %>>
                         </div>
                         <div class="data_tel">
                             <div class="data">
@@ -70,7 +73,8 @@
                             </div>
                             <div class="tel">
                                 <label for="tel">DDD + Telefone</label>
-                                <input type="tel" placeholder="(00) 00000-0000" name="tel" id="telefone" value="<%= telefoneUsuario %>">
+                                <input type="tel" placeholder="(00) 00000-0000" name="tel" id="telefone"
+                                    value="<%= telefoneUsuario %>">
                             </div>
                         </div>
                         <input type="submit" value="Alterar informações de cadastro" id="alterar">
@@ -86,7 +90,7 @@
             <h1>Meus Pedidos</h1>
             <div class="box-1">
                 <div class="div1">
-                    
+
                     <img src="/pages\img/produto-img/curry-7249247_1920.jpg" alt="" class="produto">
                     <div class="legenda">
                         <p class="nomeprod">Dieta -7kg em 7 dias</p>

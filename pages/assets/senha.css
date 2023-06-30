@@ -1,39 +1,39 @@
-*{
+* {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
-body{
+body {
     background-color: #EBECF0;
 }
 
-.main{
+.main {
     display: flex;
     height: 100vh;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
-.main img{
+.main img {
     width: 25vw;
 }
 
-.main h1{
+.main h1 {
     color: #3D2A1A;
     font-size: 40px;
     text-align: center;
 }
 
-.texto-menor{
+.texto-menor {
     color: #3D2A1A;
     text-align: center;
     font-size: 20px;
 
 }
 
-.e-mail{
-    color:#3D2A1A;
+.e-mail {
+    color: #3D2A1A;
     font-size: 20px;
     margin-right: 20px;
 }
@@ -41,33 +41,33 @@ body{
 
 
 
-.grande{
+.grande {
     display: flex;
     height: fit-content;
     width: 600px;
     margin-top: -50px;
-    margin-bottom:100px;
+    margin-bottom: 100px;
     border-radius: 7px;
-    align-items: center;
-    justify-content: center; 
-}
-
-.medio{
     align-items: center;
     justify-content: center;
 }
 
-.espaco-email{
+.medio {
+    align-items: center;
+    justify-content: center;
+}
+
+.espaco-email {
     display: flex;
     align-items: center;
     margin-top: 30px;
     justify-content: center;
 }
 
-.email{
+.email {
     border-radius: 5px;
-    border:none;
-    background-color: rgb(223,203,190);
+    border: none;
+    background-color: rgb(223, 203, 190);
     height: 30px;
     width: 200px;
     transition: 0.3s;
@@ -75,18 +75,18 @@ body{
 
 
 
-.email:hover{
-    background:rgb(165, 151, 141);
+.email:hover {
+    background: rgb(165, 151, 141);
 }
 
-::placeholder{
+::placeholder {
     font-size: 15px;
     padding: 5px;
     transition: 0.3s;
 }
 
 
-.espaco-botao{
+.espaco-botao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,55 +108,56 @@ body{
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
 }
-.botao-enviar:hover{
+
+.botao-enviar:hover {
     transform: scale(1.05);
 }
 
-.voltar{
+.voltar {
     color: #3D2A1A;
     text-align: center;
     font-size: 20px;
     margin-top: 30px;
 }
 
-.voltar a{
+.voltar a {
     color: #3D2A1A;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.voltar a:HOVER{
+.voltar a:HOVER {
     color: #3D2A1A;
     text-decoration: underline;
 }
 
 
 
-.small-letters{
+.small-letters {
     line-height: 20px;
     font-size: 13px;
 }
 
-.opcoes1{
+.opcoes1 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-.opcoes1 a{
-    color:#FFFFFF;
+.opcoes1 a {
+    color: #FFFFFF;
 }
 
-.redes{
-display: flex;
-margin-right: 10%;
+.redes {
+    display: flex;
+    margin-right: 10%;
 }
 
-.icons8{
-   height:5px;
+.icons8 {
+    height: 5px;
 }
 
-#entrar{
+#entrar {
     margin-left: 30%;
     width: 40%;
     height: 10%;
@@ -169,62 +170,65 @@ margin-right: 10%;
     cursor: pointer;
 }
 
-.termos{
+.termos {
     font-size: 12px;
 }
 
-.registro{
+.registro {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
 
-.registro2{
+.registro2 {
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
 
-.cadastro{
+.cadastro {
     color: white;
     margin-left: 2%;
 }
 
-.uso{
-   margin-top: 0;
-   display: flex;
-   justify-content: center;
+.uso {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.link_uso{
+.link_uso {
     margin-left: 1%;
     margin-right: 1%;
 }
 
-.termos_link{
+.termos_link {
     color: white;
 }
 
-.linha{
+.linha {
     background-color: #093807;
     height: 2vh;
 }
 
-.linha2{
+.linha2 {
     background-color: #093807;
     height: 2vh;
-    
+
 }
-footer{
+
+footer {
     margin-top: 5%;
     font-family: 'montserrat', sans-serif;
     color: black;
     background-color: #EBECF0;
 }
-footer p{
+
+footer p {
     color: black;
     font-size: 16px;
 }
-.sublinhado{
+
+.sublinhado {
     background-color: #093807;
     margin-top: -8%;
     height: 2%;
@@ -232,84 +236,85 @@ footer p{
     margin-left: 2%;
 }
 
-.row1{
+.row1 {
     display: flex;
     padding-top: 1%;
     justify-content: space-around;
 }
 
-.row1 a{
+.row1 a {
     color: black;
 }
 
-.row1 img{
+.row1 img {
     margin-top: -5%;
 }
 
-.col1 p{
+.col1 p {
     width: 70%;
     margin-left: 6%;
 }
 
-.col2{
+.col2 {
     display: flex;
     flex-direction: column;
 }
 
-.col2 a{
+.col2 a {
     margin-top: 12%;
 }
 
-.col3{
+.col3 {
     display: flex;
     flex-direction: column;
 }
 
-.col3 a{
+.col3 a {
     margin-top: 20%;
 }
 
-.col4{
+.col4 {
     display: flex;
     flex-direction: column;
     width: 11%;
     margin-right: 5%;
 }
 
-.localizacao{
+.localizacao {
     display: flex;
 }
 
-.fone{
+.fone {
     width: 30%;
     display: flex;
 }
 
-#email{
+#email {
     display: flex;
-    
+
     margin-left: -10%;
-   
+
 }
 
-.contato{
+.contato {
     width: 85%;
     display: flex;
     justify-content: space-between;
     height: 7vh;
     margin-left: 6%;
-    margin-top: 2%; //
-    
-}
-.contato img{
-    height: 50%;
-    margin-right: 3%; //
-}
-.localizacao img{
-    margin-right: 5%; // 
+    margin-top: 2%; 
 }
 
-.lema{
+.contato img {
+    height: 50%;
+    margin-right: 3%; 
+}
+
+.localizacao img {
+    margin-right: 5%; 
+}
+
+.lema {
     margin-bottom: 3vh;
     text-align: center;
     margin-right: 1%;
@@ -317,12 +322,12 @@ footer p{
     font-size: 16px;
 }
 
-.redes img{
+.redes img {
     width: 75%;
     margin-top: 15%;
 }
 
-h4{
+h4 {
     margin-bottom: 3vh;
     font-size: 18px;
     margin-top: 2%;

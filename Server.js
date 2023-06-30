@@ -35,9 +35,9 @@ app.use(session({
 }));
 
 connection.connect(function (err) {
-  if (!err){
+  if (!err) {
     console.log("Conexão como o Banco realizada com sucesso!!!");
-  } else{
+  } else {
     console.log("Erro: Conexão NÃO realizada", err);
   }
 });
@@ -123,7 +123,7 @@ app.get('/logout', (req, res) => {
 });
 
 app.get('/pages/minha-conta', checkLogin, (req, res) => {
-  
+
 
   connection.query("SELECT * FROM usuarios WHERE id = '" + req.session.userID + "'", function (err, rows) {
     if (!err) {
@@ -134,8 +134,9 @@ app.get('/pages/minha-conta', checkLogin, (req, res) => {
       console.log(req.session.date)
       const filePath = path.join(__dirname, 'pages', 'minha-conta.ejs');
       const html = fs.readFileSync(filePath, 'utf8');
-      const renderedHtml = ejs.render(html, 
-        { nomeUsuario: req.session.username,
+      const renderedHtml = ejs.render(html,
+        {
+          nomeUsuario: req.session.username,
           emailUsuario: req.session.email,
           nascimentoUsuario: req.session.date,
           senhaUsuario: req.session.senha,
@@ -152,21 +153,21 @@ app.get('/pages/minha-conta', checkLogin, (req, res) => {
 app.get('/pages/sacola', checkLogin, (req, res) => {
   const filePath = path.join(__dirname, 'pages', 'sacola.ejs');
   const html = fs.readFileSync(filePath, 'utf8');
-  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username});
+  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username });
   res.send(renderedHtml);
 });
 
 app.get('/pages/tela-produto', checkLogin, (req, res) => {
   const filePath = path.join(__dirname, 'pages', 'tela-produto.ejs');
   const html = fs.readFileSync(filePath, 'utf8');
-  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username});
+  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username });
   res.send(renderedHtml);
 });
 
 app.get('/pages/finalizar', checkLogin, (req, res) => {
   const filePath = path.join(__dirname, 'pages', 'finalizar.ejs');
   const html = fs.readFileSync(filePath, 'utf8');
-  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username});
+  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username });
   res.send(renderedHtml);
 });
 
@@ -177,20 +178,16 @@ app.post('/cadastro', (req, res) => {
   let telefone = req.body.telefone;
   let date = req.body.date
 
-connection.query("INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username + "'," + "'" + email + "'," + "'" + password + "'," + "'" + telefone + "'," + "'" + date + "'" + ")"
-, function (err, rows) {
-    if (!err) {
-      console.log("Usuario cadastrado com sucesso")
-    } else {
-      console.log('Não foi possível cadastrar', err);
-    }
-  });
-    res.redirect('/pages/produtos.html');
+  connection.query("INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username + "'," + "'" + email + "'," + "'" + password + "'," + "'" + telefone + "'," + "'" + date + "'" + ")"
+    , function (err, rows) {
+      if (!err) {
+        console.log("Usuario cadastrado com sucesso")
+      } else {
+        console.log('Não foi possível cadastrar', err);
+      }
+    });
+  res.redirect('/pages/produtos.html');
 })
-
-
-
-
 
 
 app.listen(3002, () => {

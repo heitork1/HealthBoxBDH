@@ -3,33 +3,34 @@ body {
     background-color: #EBECF0;
     margin: 0;
     width: auto;
-    overflow-x: hidden; /* Impede a rolagem horizontal */
-  }
+    overflow-x: hidden;
+    /* Impede a rolagem horizontal */
+}
 
 
 /* menu principal */
-.faixa1{
+.faixa1 {
     background-color: #093807;
     display: flex;
     height: 8.8vh;
-    align-items: center;  
-    width:100%;
-    position: fixed;  
+    align-items: center;
+    width: 100%;
+    position: fixed;
     top: 0;
 }
 
 
 
-#logo{
+#logo {
     display: flex;
     height: 35vh;
     margin-left: -1vw;
 }
 
-.pesquisa{
+.pesquisa {
     display: flex;
     background-color: white;
-    height:2.5vw;
+    height: 2.5vw;
     align-items: center;
     border-radius: 1vw;
     width: 22vw;
@@ -39,59 +40,63 @@ body {
     justify-content: space-around;
 }
 
-.pesquisa:hover{
+.pesquisa:hover {
     background-color: rgb(211, 211, 211);
     cursor: pointer;
 
 }
 
-.pesquisa input{
-    width:12vw ;
-    background-color:transparent;
+.pesquisa input {
+    width: 12vw;
+    background-color: transparent;
     font-family: 'Montserrat', sans-serif;
 }
 
 .pesquisa img {
-    display:flex;
+    display: flex;
     height: 4vh;
 }
-@media screen and (max-width: 1150px){
-    .pesquisa{
+
+@media screen and (max-width: 1150px) {
+    .pesquisa {
         margin-left: 30vw;
-        height:5vh
+        height: 5vh
     }
-    .pesquisa img{
+
+    .pesquisa img {
         height: 3.5vh;
     }
 }
-input{
+
+input {
     border: none;
     outline: none;
 }
 
-.entrar{
+.entrar {
     display: flex;
     width: 10vw;
     margin-left: 3vw;
 }
-@media screen and (max-width: 1150px){
-    .entrar{
+
+@media screen and (max-width: 1150px) {
+    .entrar {
         margin-left: 2vw;
     }
 }
 
-.entrar a{
+.entrar a {
     display: flex;
     width: 4vw;
     align-items: center;
     text-decoration: none;
 }
 
-.entrar img{
+.entrar img {
     width: 2vw;
 }
 
-.entrar p{
+.entrar p {
     padding: 0.3vw;
     margin-left: 0.2vw;
     transition: 0.3s;
@@ -103,27 +108,29 @@ input{
     padding: 0.5vw;
 }
 
-.sacola img{
+.sacola img {
     width: 2vw;
 }
 
-.sacola a{
+.sacola a {
     display: flex;
     align-items: center;
     text-decoration: none;
     margin-right: 2vw;
 }
 
-.sacola p{
+.sacola p {
     margin-left: 0.76vw;
     transition: 0.3s;
 }
-@media screen and (max-width: 1150px){
+
+@media screen and (max-width: 1150px) {
     .sacola a {
         margin-right: 0.2vw;
         margin-left: 1vw
     }
 }
+
 .sacola p:hover {
     background-color: #429c4462;
     border-radius: 1vh;
@@ -132,14 +139,14 @@ input{
 
 /*Menu secundario*/
 
-.faixa2{
+.faixa2 {
     background-color: #429C44;
     height: 7.2vh;
-   width: 100%;
+    width: 100%;
     top: 8.7vh;
     position: fixed;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    
+
 }
 
 .opcoes a:hover {
@@ -148,14 +155,15 @@ input{
     padding: 0.5vw;
 }
 
-.opcoes{
+.opcoes {
     display: flex;
     height: 3.5vw;
     align-items: center;
-    margin-left:83vw;
-    justify-content:space-around;
+    margin-left: 83vw;
+    justify-content: space-around;
     width: 32.5vh;
 }
+
 .opcoes a {
     align-self: center;
     text-decoration: none;
@@ -163,80 +171,83 @@ input{
     color: white;
     transition: 0.3s;
 }
-@media screen and (max-width: 1150px){
-    .opcoes{
-        margin-left:80vw;
+
+@media screen and (max-width: 1150px) {
+    .opcoes {
+        margin-left: 80vw;
         height: 100%;
         align-items: center;
         width: 26.5vh;
     }
 }
-#nos{
+
+#nos {
     display: flex;
 }
-header p{
+
+header p {
     color: white;
     font-family: 'Montserrat', sans-serif;
     margin-left: 2vw;
 }
 
 
-.produto-especifico{
+.produto-especifico {
     display: flex;
     /* border: 1px solid black; */
     margin-top: 20vh;
 }
 
-.imagens-produtos{
+.imagens-produtos {
     display: grid;
     width: 250px;
     height: 490px;
 }
 
-.imgs{
-   margin-left: 120px ;
-   /* border: 1px solid black; */
-   width: 150px;
-   display: grid;
-   cursor: pointer;
+.imgs {
+    margin-left: 120px;
+    /* border: 1px solid black; */
+    width: 150px;
+    display: grid;
+    cursor: pointer;
 }
 
-#img1{
+#img1 {
     background-image: url(/pages/img/prdt-especifico/image\ \(2\).png);
-    background-size:110px;
+    background-size: 110px;
     background-repeat: no-repeat;
     transition: transform 0.3s;
 }
 
 #img1:hover {
     transform: scale(1.07);
-  }
+}
 
-#img2{
+#img2 {
     background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
-    background-size:110px;
+    background-size: 110px;
     background-repeat: no-repeat;
     transition: transform 0.3s;
 }
 
 #img2:hover {
     transform: scale(1.07);
-  }
+}
 
-#img3{
+#img3 {
     background-image: url(/pages/img/prdt-especifico/image.png);
-    background-size:110px;
+    background-size: 110px;
     background-repeat: no-repeat;
     transition: transform 0.3s;
 }
 
 #img3:hover {
     transform: scale(1.07);
-  }
+}
 
-#img4{
+#img4 {
     background-image: url(/pages/img/prdt-especifico/image\ \(4\).png);
-    background-size:110px;
+    background-size: 110px;
     background-repeat: no-repeat;
     display: flex;
     transition: transform 0.3s;
@@ -244,33 +255,33 @@ header p{
 
 #img4:hover {
     transform: scale(1.07);
-  }
-
-
-.img{
-   /* background-color: #857c9e; */
-   /* border: 1px solid black; */
-    height: 485px;
-    display: flex;
-    
 }
 
 
-.descricao-produto{
+.img {
+    /* background-color: #857c9e; */
+    /* border: 1px solid black; */
+    height: 485px;
+    display: flex;
+
+}
+
+
+.descricao-produto {
     /* border: 1px solid black; */
     height: fit-content;
     width: fit-content;
-    margin-left:5vh;
+    margin-left: 5vh;
 }
 
-.plv-produtos{
+.plv-produtos {
     /* border: 1px solid black; */
     width: 500px;
-    
+
 }
 
 
-#plv1{
+#plv1 {
     /* border: 1px solid black; */
     font-family: 'Montserrat', sans-serif;
     height: 14vh;
@@ -279,11 +290,11 @@ header p{
     margin-left: 2vh;
     margin-top: 3vh;
     display: flex;
-    align-items:end;
+    align-items: end;
     color: #3D2A1A;
 }
 
-#plv2{
+#plv2 {
     /* border: 1px solid black; */
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -293,7 +304,7 @@ header p{
     color: #3D2A1A;
 }
 
-#plv3{
+#plv3 {
     /* border: 1px solid black; */
     height: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -308,41 +319,41 @@ header p{
     margin-right: 125px;
     margin-top: -50px;
     font-size: 35px;
-  }
+}
 
 
-  .rating span {
+.rating span {
     display: inline-block;
     position: relative;
     width: 25px;
     cursor: pointer;
-  }
+}
 
 
-  .rating span:before {
+.rating span:before {
     content: "\2605";
     position: absolute;
-  }
+}
 
 
-  .rating span:hover:before,
-  .rating span:hover ~ span:before {
+.rating span:hover:before,
+.rating span:hover~span:before {
     content: "\2605";
     color: gold;
-  }
+}
 
 
-  .rating input {
+.rating input {
     display: none;
-  }
+}
 
 
-  .rating input:checked ~ span:before {
+.rating input:checked~span:before {
     content: "\2605";
     color: gold;
-  }
+}
 
-#plv4{
+#plv4 {
     /* border: 1px solid black; */
     color: #3D2A1A;
     height: 40px;
@@ -356,39 +367,40 @@ header p{
 
 
 
-#plv5{
+#plv5 {
     /* border: 1px solid black; */
     height: 50px;
-    
+
 }
 
-#plv6{
+#plv6 {
     display: flex;
     /* border: 1px solid black; */
     align-items: center;
 
 }
 
-.frete{
+.frete {
     display: grid;
     width: 500px;
-    
+
 }
 
-.cep input{
+.cep input {
     background-color: #DFCBBE;
     margin-left: 2px;
     width: 110px;
     position: relative;
 }
 
-input{
+input {
     border: none;
     outline: none;
     width: 130px;
     font-family: 'Montserrat', sans-serif;
 }
-.cep{
+
+.cep {
     display: flex;
     background-color: #DFCBBE;
     width: 160px;
@@ -399,36 +411,37 @@ input{
     align-items: center;
 }
 
-.calcular{
+.calcular {
     border: none;
     background-color: #B49E88;
     padding: 0 2% 0 2%;
     height: 30px;
     width: 80px;
-    border-radius:7px;
+    border-radius: 7px;
     margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
     cursor: pointer;
 }
-.calcular:hover{
+
+.calcular:hover {
     transform: scale(1.075);
 }
 
-.cep img{
+.cep img {
     width: 20px;
-    padding:4px 4px;
+    padding: 4px 4px;
 }
 
 
 
-#plv7{
+#plv7 {
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
 }
 
-.botao button{
+.botao button {
     background-color: #144d04;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -441,9 +454,9 @@ input{
     cursor: pointer;
 }
 
-.botao{
-    
-    display:flex;
+.botao {
+
+    display: flex;
     align-items: center;
     height: 100px;
     margin-left: 2vh;
@@ -451,20 +464,20 @@ input{
     transition: 0.3s;
 }
 
-.botao:hover{
+.botao:hover {
     transform: scale(1.05);
 }
- 
-.espaco-botao{
+
+.espaco-botao {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   margin-top: 30px;
-  }
+    margin-top: 30px;
+}
 
 
-  
-  .botaoEnviar {
+
+.botaoEnviar {
     width: 300px;
     border-radius: 8px;
     border: none;
@@ -475,152 +488,177 @@ input{
     background-color: #4CAF50;
     transition-duration: 0.4s;
     cursor: pointer;
-    font-weight:bold;
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
     cursor: pointer;
     align-items: center;
-  }
+}
 
-  .botaoEnviar:hover{
+.botaoEnviar:hover {
     transform: scale(1.03);
-    
-  }
+
+}
 
 botaoEnviar {
     text-decoration: none;
-  }
+}
 
-  #minhaDiv {
-    display: none; /* Oculta o conteúdo */
-  }
+#minhaDiv {
+    display: none;
+    /* Oculta o conteúdo */
+}
 
-  .descricao-escondida p{
+.descricao-escondida p {
     margin-top: 9vh;
     margin-left: 8vw;
     width: 50vw;
     border-radius: 2vh;
-    text-align:justify;
+    text-align: justify;
     /* border: 1px solid black; */
     font-family: 'montserrat', sans-serif;
-  }
+}
 
 
 
-body{
+body {
     background-color: #EBECF0;
     margin: auto;
 }
 
 
 
-footer{
+footer {
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
     margin-top: 9vh;
 }
-footer p{
+
+footer p {
     color: black;
 }
-.contato p{
+
+.contato p {
     margin-left: 0;
     font-size: 16px;
 }
-.linha{
+
+.linha {
     background-color: #093807;
     height: 2vh;
 }
-.linha2{
+
+.linha2 {
     background-color: #093807;
 
     height: 2vh;
 }
-.sublinhado{
+
+.sublinhado {
     background-color: #093807;
     margin-top: -8%;
     height: 2%;
     width: 80%;
     margin-left: 2%;
 }
-.row1{
+
+.row1 {
     display: flex;
     padding-top: 1%;
     justify-content: space-around;
 }
-.row1 a{
-    color:black;
+
+.row1 a {
+    color: black;
 }
-.row1 img{
+
+.row1 img {
     margin-top: -5%;
 }
-.col1 p{
+
+.col1 p {
     width: 70%;
     margin-left: 6%;
 }
-.col2{
+
+.col2 {
     display: flex;
     flex-direction: column;
 }
-.col2 a{
+
+.col2 a {
     margin-top: 12%;
 }
-.col3{
+
+.col3 {
     display: flex;
     flex-direction: column;
 }
-.col3 a{
+
+.col3 a {
     margin-top: 20%;
 }
-.col4{
+
+.col4 {
     display: flex;
     flex-direction: column;
     width: 11%;
     margin-right: 5%;
 }
-.localizacao{
+
+.localizacao {
     display: flex;
     align-items: center;
 }
-.fone{
+
+.fone {
     display: flex;
     align-items: center;
-    width: 30%; 
-    
+    width: 30%;
+
 }
-.email{
+
+.email {
     display: flex;
     align-items: center;
-    margin-left: -10%; 
+    margin-left: -10%;
 }
-.contato{
+
+.contato {
     width: 85%;
     display: flex;
     justify-content: space-between;
     height: 8vh;
     margin-left: 6%;
-    margin-top: 2%; 
+    margin-top: 2%;
 }
-.contato img{
+
+.contato img {
     height: 50%;
-    margin-right: 3%; 
+    margin-right: 3%;
 }
-.localizacao img{
+
+.localizacao img {
     margin-right: 5%;
 }
-.lema{
+
+.lema {
     text-align: center;
     margin-right: 1%;
     margin-top: 2%;
     font-size: 16px;
 }
-.redes img{
+
+.redes img {
     width: 25%;
     margin-top: 15%;
 }
-h4{
+
+h4 {
     font-size: 18px;
     margin-top: 2%;
 }
-#ilustra{
+
+#ilustra {
     margin-left: 52vw;
 }

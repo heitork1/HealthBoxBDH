@@ -6,9 +6,9 @@ function validarFormulario() {
   var password = document.getElementById('senha').value;
 
   if (username.trim() === '' || password.trim() === '') {
-      exibirAlerta('Por favor, preencha todos os campos.');
-      return false; // Impede o envio do formulário
-    }
+    exibirAlerta('Por favor, preencha todos os campos.');
+    return false; // Impede o envio do formulário
+  }
   // Envia uma requisição assíncrona para o servidor
   var xhr = new XMLHttpRequest();
   xhr.open('POST', '/login', true);
