@@ -259,14 +259,34 @@ main {
     border-radius: 4px;
 }
 
+.form {
+    width: 27vw;
+}
+
+@media screen and (max-width: 1150px) and (min-height: 720px) {
+    .formulario {
+        width: 35vw;
+    }
+
+    .form {
+        width: 30vw;
+    }
+
+    .box-1 {
+        height: 25vh;
+    }
+
+    .produto {
+        width: 30%;
+        height: 30%;
+    }
+}
+
 .logo {
     width: 12vw;
 }
 
-.form {
-    width: 27vw;
 
-}
 
 form {
     height: 90%;
@@ -307,6 +327,20 @@ form input {
     width: 85%;
 }
 
+@media screen and (max-width: 1150px) and (min-height: 720px) {
+    .data label {
+        font-size: 15px;
+    }
+
+    .tel label {
+        font-size: 15px;
+    }
+
+    .tel input {
+        width: 16.5vh;
+    }
+}
+
 #linha {
     height: 55%;
     margin-right: 4%;
@@ -315,7 +349,6 @@ form input {
 
 .legenda {
     width: 100%;
-
 }
 
 .nomeprod {
@@ -343,7 +376,13 @@ img.produto {
     margin-top: 5%;
     margin-left: 50%;
     padding: 1%;
+}
 
+@media screen and (max-width: 1150px) and (min-height: 720px) {
+    .valor {
+        width: 45%;
+        margin-left: 40%;
+    }
 }
 
 .entrega {
