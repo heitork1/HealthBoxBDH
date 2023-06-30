@@ -505,6 +505,17 @@ header p {
   }
 }
 
+@media screen and (max-width: 1300px) and (min-height:720px) {
+h2 > #box18{
+    margin-right: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    max-width: 23vw;
+    margin-top: -27%;
+
+  }
+}
+
 #box18:hover {
   transform: scale(1.03);
 }
@@ -645,6 +656,23 @@ header p {
   }
 }
 
+@media screen and (max-width: 1300px) and (min-height:720px) {
+  #veget{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-height:720px) {
+  #preco-23{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    
+  }
+}
+
+
 #box23:hover {
   transform: scale(1.03);
 }
@@ -678,14 +706,7 @@ header p {
   background-size: 100%;
 }
 
-@media screen and (max-width: 1300px) and (min-height:720px) {
-  #imgbox12 {
-    background-image: url(/pages/img/prdt-especifico/image\ \(2\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-}
+
 
 #imgbox13 {
 
@@ -865,7 +886,7 @@ header p {
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     max-width: 23vw;
-    margin-top: -20%;
+    margin-top: -27%;
   
   }
 }
