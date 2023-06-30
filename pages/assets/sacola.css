@@ -7,7 +7,6 @@ body {
     /* Impede a rolagem horizontal */
 }
 
-
 /* menu principal */
 .faixa1 {
     background-color: #093807;
@@ -266,11 +265,10 @@ main {
     font-weight: 900;
 }
 
-.itens {
-
+.itens {   
     width: 70%;
     margin-left: 5%;
-    margin-top: 1.5%;
+    margin-top: 0.5%;
 }
 
 .itens h1 {
@@ -280,7 +278,6 @@ main {
 }
 
 .itens h2 {
-
     background-color: #DFCBBE;
 }
 
@@ -289,7 +286,6 @@ main {
 }
 
 .item {
-
     display: flex;
     margin-top: 5%;
 }
@@ -326,7 +322,7 @@ main {
 
 @media screen and (max-width: 1150px) and (min-height: 720px) {
     .freres {
-        margin-top: 18vh;
+        margin-top: 16.5vh;
     }
 
     .itens h1 {
@@ -381,6 +377,7 @@ main {
     color: white;
     border: none;
     transition: 0.3s;
+    margin: auto;
 }
 
 .confirmar:hover {
