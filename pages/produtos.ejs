@@ -19,7 +19,8 @@
 </head>
 
 <body>
-  <header>
+
+  <header>  <!-- menu -->
     <div class="faixa1">
       <!-- Logotipo -->
       <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
@@ -66,64 +67,26 @@
                   </div>
               </div>
     </div>
+
     <!-- Opções de navegação -->
     <div class="faixa2">
       <div class="opcoes">
-        <a href="#">Produtos</a>
+        <a href="/pages/produtos">Produtos</a>
         <a href="/pages/sobre-nos">Sobre nós</a>
       </div>
     </div>
-  </header>
+  </header> <!-- fim do menu -->
+ 
 
-  <div class="container-descricao">
-    <!-- Botão para exibir todos os produtos -->
+  <div class="container-descricao"> <!-- exibir todos os produtos e titulo -->
     <div id="box1" class="box-descricao">
       <a href="/pages/produtos">
         <p>TODOS OS PRODUTOS</p>
       </a>
     </div>
-    <!-- <div class="menu" id="menu">
-            <span class="menu-titulo"><p>CATEGORIA &#9660;</p>  </span>
-            <div class="menu-dropdown">
-              <div class="menu-item">
-                <span class="menu-subtitulo">Faixa de Preço &#x25BA;</span>
-                <div class="menu-dropdown-sub">
-                  <div class="menu-item">Até R$150</div>
-                  <div class="menu-item">Até R$200</div>
-                  <div class="menu-item">Até R$250</div>
-                </div>
-              </div>
-              <div class="menu-item">
-                <span class="menu-subtitulo">Alérgicos &#x25BA;</span>
-                <div class="menu-dropdown-sub">
-                  <div class="menu-item">Gluten</div>
-                  <div class="menu-item">Lactose</div>
-                  <div class="menu-item">APLV</div>
-                  <div class="menu-item">Oleaginosos</div>
-                  <div class="menu-item">Ovo</div>
-                  <div class="menu-item">Frutos do mar</div>
-                </div>
-              </div>
-              <div class="menu-item">
-                <span class="menu-subtitulo">Dias &#x25BA;</span>
-                <div class="menu-dropdown-sub">
-                  <div class="menu-item">7 dias</div>
-                  <div class="menu-item">15 dias</div>
-                </div>
-              </div>
-              <div class="menu-item">
-                <span class="menu-subtitulo">Tipo de Alimentação &#x25BA;</span>
-                <div class="menu-dropdown-sub">
-                  <div class="menu-item">Vegetariano</div>
-                  <div class="menu-item">Vegano</div>
-                  <div class="menu-item">Ovolactovegetariano</div>
-                </div>
-              </div>
-            </div>
-          </div> -->
   </div>
-  <div class="container-caixinhas">
-    <!-- Início da primeira caixa de produto -->
+
+  <div class="container-caixinhas"> <!-- Início da primeira caixa de produto -->
     <div id="box12">
       <a href="/pages/tela-produto.html">
         <div id="imgbox12" class="imgbox"></div> <!-- Imagem do produto -->
@@ -167,9 +130,9 @@
       <div class="descricao-produtos">
         <a href="/pages/tela-produto">
           <h1 class="h1">DIETA -7KG EM 7 DIAS</h1>
-          <div class="palavrinhas">
-            <h1 class="h1-2">SEM LACTOSE</h1>
-            <h2 class="h2">R$ 250,00</h2>
+          <div>
+            <h1 id="lactose7">SEM LACTOSE</h1>
+            <h2 id="preco14">R$ 250,00</h2>
           </div>
         </a>
         <div class="espaco-botaoVer">
@@ -187,9 +150,9 @@
       </a>
       <div class="descricao-produtos"><a href="/pages/tela-produto">
           <h1 class="h1">DIETA -7KG EM 7 DIAS</h1>
-          <div class="palavrinhas">
-            <h1 class="h1-2"> SEM GLÚTEN</h1>
-            <h2 class="h2">R$ 300,00</h2>
+          <div>
+            <h1 id="gluten7"> SEM GLÚTEN</h1>
+            <h2 id="preco15">R$ 300,00</h2>
           </div>
         </a>
 
@@ -215,9 +178,9 @@
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
               <h1 class="h1">DIETA -15KG EM 15 DIAS</h1>
-              <div class="palavrinhas">
-                <h1 class="h1-2">SEM LACTOSE</h1>
-                <h2 class="h2">R$ 450,00</h2>
+              <div>
+                <h1 id="lactose15">SEM LACTOSE</h1>
+                <h2 id="preco16">R$ 450,00</h2>
               </div>
             </a>
 
@@ -236,9 +199,9 @@
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
               <h1 class="h1">DIETA -15KG EM 15 DIAS</h1>
-              <div class="palavrinhas">
-                <h1 class="h1-2">SEM GLÚTEN</h1>
-                <h2 class="h2">R$ 500,00</h2>
+              <div>
+                <h1 id="gluten15">SEM GLÚTEN</h1>
+                <h2 id="preco17">R$ 500,00</h2>
               </div>
             </a>
 
@@ -255,9 +218,9 @@
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
               <h1 class="h1">DIETA -7KG EM 7 DIAS</h1>
-              <div class="palavrinhas">
-                <h1 class="h1-2">APLV</h1>
-                <h2 class="h2">R$ 300,00</h2>
+              <div>
+                <h1 id="APLV7">APLV</h1>
+                <h2 id="preco18">R$ 300,00</h2>
               </div>
             </a>
 
@@ -273,9 +236,9 @@
           </a>
           <div class="descricao-produtos"><a href="/pages/tela-produto">
               <h1 class="h1">DIETA -15KG EM 15 DIAS</h1>
-              <div class="palavrinhas">
-                <h1 class="h1-2">APLV</h1>
-                <h2 class="h2">R$ 500,00</h2>
+              <div>
+                <h1 id="APLV15">APLV</h1>
+                <h2 id="preco19">R$ 500,00</h2>
               </div>
             </a>
 
@@ -358,14 +321,17 @@
         </div>
       </div>
     </div>
-
+    
+<!-- BOTÃO CARREGAR MAIS PRODUTOS -->
     <div class="espaco-botao">
       <input type="button" id="meuBotao" name="botao" value="CARREGAR MAIS" class="botaoEnviar" onclick="toggleDiv()">
     </div>
 
   </div>
 
-  <footer>
+ <!-- cabeçalho -->
+
+  <footer> 
     <div class="linha"></div>
     <div class="verdinho">
       <div class="row1">
