@@ -199,8 +199,8 @@ header p {
     display: inline-grid;
     /* border:1px solid black; */
     grid-template-areas:
-      'b1 b1 b1 b2 b2'
-      'b1 b1 b1 b2 b2';
+      'b1 b1 b1 '
+      'b1 b1 b1';
     width: 200vw;
 
   }
@@ -209,13 +209,13 @@ header p {
 
 .container-descricao {
   margin-top: 32vh;
-  margin-bottom: -3vh;
+  margin-bottom: -5vh;
   margin-left: 4vh;
   display: inline-grid;
   /* border:1px solid black; */
   grid-template-areas:
-    'b1 b1 b1 b2 b2'
-    'b1 b1 b1 b2 b2';
+    'b1 b1 b1'
+    'b1 b1 b1';
   width: 200vw;
 }
 
@@ -249,6 +249,15 @@ header p {
   display: flex;
   margin-top: -15VH;
   margin-left: 3vw;
+}
+
+@media screen and (max-width: 1300px) and (min-height:720px) {
+  .box-descricao {
+    /* border: solid 1px black; */
+    display: flex;
+    margin-top: -15VH;
+    margin-left: 2.5vw;
+  }
 }
 
 .box-descricao>h1 {
@@ -286,7 +295,7 @@ header p {
 #box12 {
   grid-area: b12;
   width: 20VW;
-  height: 58vh;
+  height: 60vh;
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -332,7 +341,7 @@ header p {
 #box13 {
   grid-area: b13;
   width: 20VW;
-  height: 58vh;
+  height: 60vh;
   /* background-image: url(2.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
@@ -381,7 +390,7 @@ header p {
 #box14 {
   grid-area: b14;
   width: 20VW;
-  height: 58vh;
+  height: 60vh;
   /* background-image: url(3.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
@@ -447,7 +456,7 @@ header p {
 
   grid-area: b15;
   width: 20VW;
-  height: 58vh;
+  height: 60vh;
   /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
@@ -558,7 +567,7 @@ header p {
   margin-top: 5vh;
   grid-area: b16;
   width: 20VW;
-  height: 58vh;
+  height: 60vh;
   /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
@@ -623,7 +632,7 @@ header p {
 #box17 {
   margin-top: 5vh;
   grid-area: b17;
-  height: 58vh;
+  height: 60vh;
   width: 20VW;
   /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
@@ -689,7 +698,7 @@ header p {
 #box18 {
   margin-top: 5vh;
   grid-area: b18;
-  height: 58vh;
+  height: 60vh;
   width: 20VW;
   /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
@@ -766,7 +775,7 @@ h2 > #box18{
 #box19 {
   margin-top: 5vh;
   grid-area: b19;
-  height: 58vh;
+  height: 60vh;
   width: 20VW;
   /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
@@ -832,7 +841,7 @@ h2 > #box18{
 #box20 {
   margin-top: 10vh;
   grid-area: b20;
-  height: 58vh;
+  height: 60vh;
   width: 20VW;
   /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
@@ -900,7 +909,7 @@ h2 > #box18{
 #box21 {
   margin-top: 10vh;
   grid-area: b21;
-  height: 58vh;
+  height: 60vh;
   width: 20VW;
   /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
@@ -968,7 +977,7 @@ h2 > #box18{
 #box22 {
   margin-top: 10vh;
   grid-area: b22;
-  height: 58vh;
+  height: 60vh;
   width: 20VW;
   /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
@@ -1034,7 +1043,7 @@ h2 > #box18{
 #box23 {
   margin-top: 10vh;
   grid-area: b23;
-  height: 58vh;
+  height: 60vh;
   width: 20VW;
   /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
@@ -1226,9 +1235,9 @@ h2 > #box18{
   font-size: 1.3em;
   font-family: 'Montserrat', sans-serif;
     align-content: center;
-    max-width: 16VW;
+    max-width: 17VW;
     margin-left: 3.9vh;
-    text-align: justify;
+    /* text-align: justify; */
     /* border: 1px solid black; */
 }
 
@@ -1246,35 +1255,13 @@ h2 > #box18{
 }
 
 
-.h2 { /* PRECO DOS PRODUTOS SEM ID */
-  display: flex;
-  font-size: 1.4em;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  margin-left: 2vw;
-  margin-top: -1vh;
-  margin-bottom: 1vh;
-}
 
-
-
-@media screen and (max-width: 1300px) and (min-height:720px) {
-  .h2 {
-    display: flex;
-    width: 20vh;
-    font-size: 1.3em;  
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    margin-left: 2vw;
-    margin-top: -1vh;
-  }
-}
 
 .espaco-botaoVer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+margin-bottom: 1vh;
 }
 
 .botaoVer { /* BOTAO VER MAIS */
