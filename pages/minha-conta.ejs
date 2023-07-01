@@ -88,28 +88,19 @@
         </section>
         <section class="pedidos">
             <h1>Meus Pedidos</h1>
-            <div class="box-1">
+            <% for (let i = 0; i < pedidos.length; i++) { %>
+              <div class="box-1">
                 <div class="div1">
-
-                    <img src="/pages\img/produto-img/curry-7249247_1920.jpg" alt="" class="produto">
-                    <div class="legenda">
-                        <p class="nomeprod">Dieta -7kg em 7 dias</p>
-                        <p class="valor">R$200,00</p>
-                    </div>
+                  <img src="<%= pedidos[i].url_imagem %>" alt="" class="produto">
+                  <div class="legenda">
+                    <p class="nomeprod"><%= pedidos[i].nome_produto %></p>
+                    <p class="valor">R$<%= pedidos[i].preco_produto %></p>
+                  </div>
                 </div>
-                <p class="entrega">Entrega prevista: 00/00/0000</p>
-            </div>
-            <div class="box-1 debaixo">
-                <div class="div1">
-                    <img src="/pages\img/produto-img/salmon-1485014_1920.jpg" alt="" class="produto">
-                    <div class="legenda">
-                        <p class="nomeprod">Dieta -15kg em 15 dias</p>
-                        <p class="valor">R$400,00</p>
-                    </div>
-                </div>
-                <p class="entrega">Entregue</p>
-            </div>
-        </section>
+                <p class="entrega">Realizado em: <%= pedidos[i].data_pedido %></p>
+              </div>
+            <% } %>
+          </section>
     </main>
     <footer>
         <div class="linha"></div>
