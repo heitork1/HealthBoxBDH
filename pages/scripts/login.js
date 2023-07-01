@@ -1,4 +1,3 @@
-const { request } = require("express");
 
 function validarFormulario() {
   // Obtém os valores do formulário
