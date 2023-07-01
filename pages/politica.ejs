@@ -14,18 +14,22 @@
 
 
 <body>
-    <header>
+    <header><!--cabeçalho menu -->
         <div class="faixa1">
-            <a href="../"><img src="img/inicio/logo-br.png" alt="" id="logo" /></a>
+            <a href="../"><img src="img/inicio/logo-br.png" alt=""
+                    id="logo" /></a><!--link para a página incicial e imagem da Logo  -->
+            <!-- Barra de pesquisa -->
             <div class="pesquisa">
                 <input type="text" name="" id="" placeholder="Pesquisar" />
                 <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
-                    style="transform: scaleX(-1)" />
+                    style="transform: scaleX(-1)" /><!--lupinha-->
             </div>
 
             <% if (typeof nomeUsuario !=='undefined' ) { %>
+                <!-- Se o usuário estiver logado -->
                 <div class="entrar">
                     <a href="/pages/minha-conta">
+                        <!-- link para a página de minha conta-->
                         <img src="/pages/img/produto-img/bonequinho.png" alt="" />
                         <p id="nomeUsuario">
                             <%= nomeUsuario %>
@@ -33,38 +37,47 @@
                     </a>
                 </div>
                 <% } else { %>
+                    <!-- Se o usuário não estiver logado -->
+                    <!-- login do usuário-->
                     <div class="entrar">
                         <a href="/pages/login.html">
+                            <!-- link para a página de login-->
                             <img src="/pages/img/produto-img/bonequinho.png" alt="" />
                             <p id="nomeUsuario">Entrar</p>
                         </a>
                     </div>
                     <% } %>
                         <% if (typeof nomeUsuario !=='undefined' ) { %>
+                            <!-- Se o usuário estiver logado -->
+                            <!--sacola-->
                             <div class="sacola">
+                                <!-- link para a página de sacola e imagem de sácola -->
                                 <a href="/pages/sacola">
                                     <img src="/pages/img/inicio/bag.png" alt="" />
                                     <p>Sacola</p>
                                 </a>
                                 <% } else { %>
+                                    <!-- Se o usuário não estiver logado -->
                                     <div class="sacola">
                                         <a href="/pages/login.html">
+                                            <!-- link para a página de login-->
                                             <img src="/pages/img/inicio/bag.png" alt="" />
                                             <p>Sacola</p>
                                         </a>
                                         <% } %>
                                     </div>
                             </div>
-                            <div class="faixa2">
+                            <div class="faixa2"><!-- Opções de navegação -->
                                 <div class="opcoes">
-                                    <p><a href="/pages/produtos">Produtos</a></p>
+                                    <p><a href="/pages/produtos">Produtos</a></p><!-- link para a página de produto-->
                                     <p id="nos"><a href="/pages/sobre-nos">Sobre nós</a></p>
+                                    <!--link para a página sobre nós -->
                                 </div>
                             </div>
-    </header>
+    </header><!--fim do menu-->
     <main>
-
-        <h1>Política de privacidade</h1>
+        <!-- texto política de privacidade -->
+        <h1>Política de privacidade</h1><!-- titulo -->
         <div class="texto">
             <p><b>Este site é mantido e operado por HealthBox</b></p><br>
             <p>Nós coletamos e utilizamos alguns dados pessoais que pertencem àqueles que utilizam
@@ -79,7 +92,7 @@
             <p><b>1. Dados que coletamos e motivos da coleta</b><br><br>
                 Nosso site coleta e utiliza alguns dados pessoais de nossos usuários, de acordo com o
                 disposto nesta:</p><br>
-            <p class="sub">a. Dados pessoais fornecidos expressamente pelo usuário</p> <br>
+            <p class="sub">a. Dados pessoais fornecidos expressamente pelo usuário</p> <br><!-- subtitulo -->
             <p>Nós coletamos os seguintes dados pessoais que nossos usuários nos fornecem
                 expressamente ao utilizar nosso site: <br>
                 Nome completo; <br>
@@ -94,7 +107,7 @@
             <p>Os dados fornecidos por nossos usuários são coletados com as seguintes finalidades: <br>
                 Para que o usuário possa adquirir nossos produtos/serviços; <br> Para que o usuário possa
                 receber nossas ofertas e promoções.</p><br>
-            <p class="sub">b. Dados pessoais obtidos de outras formas</p> <br>
+            <p class="sub">b. Dados pessoais obtidos de outras formas</p> <br><!-- subtitulo -->
             <p>Nós coletamos os seguintes dados pessoais de nossos usuários: <br>
                 -Endereço Ip; <br>
                 -Geolocalização; <br>
@@ -120,7 +133,7 @@
                 do usuário, não sendo possível, ainda que por meio deles se tenha acesso a informações
                 pessoais que não tenham partido do usuário ou de forma como utiliza os recursos do site.
             </p> <br>
-            <p class="sub">a. Cookies do site</p> <br>
+            <p class="sub">a. Cookies do site</p> <br><!-- subtitulo -->
             <p>Os cookies do site são aqueles enviados do computador ou dispositivo do usuário e
                 administrador exclusivamente pelo site.
                 As informações coletadas por meio desses cookies são utilizadas para melhorar o
@@ -128,7 +141,7 @@
                 utilizados para lembrar as preferências do usuário bem como para o oferecimento de
                 conteúdo personalizado.
             </p> <br>
-            <p class="sub">b. Gestão de cookies</p> <br>
+            <p class="sub">b. Gestão de cookies</p> <br><!-- subtitulo -->
             <p>O usuário poderá se opor à utilização de cookies pelo site, bastando que os desative no
                 momento em que começa a utilizar o serviço, seguindo as seguintes instruções:
                 Assim que entrar no site, o usuário terá a opção de bloquear ou de permitir a utilização de
@@ -146,11 +159,11 @@
                 Em qualquer caso, a coleta de dados e as atividades de tratamento dela decorrentes serão
                 informadas aos usuários do site.
             </p> <br>
-            <p class="sub">a. Compartilhamento de dados pessoais com terceiros</p>
+            <p class="sub">a. Compartilhamento de dados pessoais com terceiros</p><!-- subtitulo -->
             <p>Nós não compartilhamos seus dados pessoais com terceiros. Apesar disso, é possível que
                 o façamos para cumprir alguma determinação legal ou regulatória, ou, ainda, para cumprir
                 alguma ordem expedida por autoridade pública</p><br>
-            <p class="sub">b. Por quanto tempo seus dados pessoais serão armazenados</p>
+            <p class="sub">b. Por quanto tempo seus dados pessoais serão armazenados</p><!-- subtitulo -->
             <p>Os dados pessoais coletados pelo site são armazenados e utilizados por período de tempo
                 que corresponda ao necessário para atingir as finalidades elencadas neste documento e
                 que considere os direitos de seus titulares, os direitos do controlador do site e as
@@ -159,7 +172,7 @@
                 removidos de nossas bases de dados ou anonimizados, salvo nos casos em que houver a
                 possibilidade ou a necessidade de armazenamento em virtude de disposição legal ou
                 regulatória</p> <br>
-            <p class="sub">c. Bases legais para o tratamento de dados pessoais</p><br>
+            <p class="sub">c. Bases legais para o tratamento de dados pessoais</p><br><!-- subtitulo -->
             <p>Cada operação de tratamento de dados pessoais precisa ter um fundamento jurídico, ou
                 seja, uma base legal, que nada mais é que uma justificativa que a autorize, prevista na Lei
                 Geral de Proteção de Dados Pessoais.
@@ -214,38 +227,46 @@
         </div>
     </main>
     <footer>
+        <!-- Rodapé -->
         <div class="linha"></div>
         <div class="verdinho">
             <div class="row1">
                 <div class="col1">
-                    <a href="/index"><img src="/pages/img/inicio/logo (2).png" alt=""></a>
+                    <!-- Div da primeira coluna do rodapé logo e lema -->
+                    <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <!-- Imagem do logo -->
                     <div class="sublinhado"></div>
                     <p class="lema">Tornando a sua vida mais saudável</p>
                 </div>
                 <div class="col2">
+                    <!-- Div da segunda coluna do rodapé -->
                     <h4>Institucional</h4>
-                    <a href="/pages/sobre-nos">Sobre nós</a>
-                    <a href="/pages/politica">Política de Privacidade</a>
+                    <a href="/pages/sobre-nos.html">Sobre nós</a>
+                    <!-- Link para a página "Sobre nós" -->
+                    <a href="/pages/politica.html">Política de Privacidade</a>
+                    <!-- Link para a página "Política de Privacidade" -->
                 </div>
                 <div class="col3">
+                    <!-- Div da terceira coluna do rodapé Dúvidas-->
                     <h4>Dúvida</h4>
-                    <a href="/pages/minha-conta">Meus Pedidos</a>
-                    <a href="/pages/minha-conta">Minha Conta</a>
+                    <a href="/pages/minha-conta.html">Meus Pedidos</a>
+                    <!-- Link para a página "Meus Pedidos" -->
+                    <a href="/pages/minha-conta.html">Minha Conta</a>
+                    <!-- Link para a página "Minha Conta" -->
                 </div>
                 <div class="col4">
+                    <!-- Div da quarta coluna do rodapé das redes sociais -->
                     <h4>Redes Sociais</h4>
                     <div class="redes">
-                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img
-                                src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a>
-                        <a href="https://www.instagram.com/accounts/login/"><img
-                                src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
-                        <a
-                            href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img
-                                src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a>
+                        <!-- Div das redes sociais -->
+                        <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
+                        <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
+                        <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
                     </div>
                 </div>
             </div>
             <div class="contato">
+                <!-- Div para as informações de contato -->
                 <div class="localizacao">
                     <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
                     <p>Joinville/SC</p>

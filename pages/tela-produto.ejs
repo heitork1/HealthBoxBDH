@@ -3,8 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&family=Montserrat:ital,wght@0,300;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,100&family=League+Gothic&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,58 +19,70 @@
 
 <body>
 
-    <header>
+    <header><!--cabeçalho menu -->
         <div class="faixa1">
-            <a href="../"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
+            <a href="../"><img src="/pages/img/inicio/logo-br.png" alt=""
+                    id="logo" /></a><!--link para a página incicial e imagem da Logo  -->
+            <!-- Barra de pesquisa -->
             <div class="pesquisa">
                 <input type="text" name="" id="" placeholder="Pesquisar" />
                 <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
-                    class="lupa" />
+                    class="lupa" /><!--lupinha-->
             </div>
-
+            <!-- login do usuário-->
             <div class="entrar">
-                <a href="/pages/login.html">
+                <a href="/pages/login.html"><!-- link para a página de login-->
                     <img src="/pages/img/produto-img/bonequinho.png" alt="" />
                     <p id="nomeUsuario">
                         <%= nomeUsuario %>
                     </p>
                 </a>
             </div>
-
+            <!-- sacola-->
             <div class="sacola">
-                <a href="/pages/sacola">
+                <a href="/pages/sacola"> <!-- link para a página de sacola e imagem de sácola -->
                     <img src="/pages/img/inicio/bag.png" alt="" />
                     <p>Sacola</p>
                 </a>
             </div>
         </div>
-        <div class="faixa2">
+        <div class="faixa2"><!-- Opções de navegação -->
             <div class="opcoes">
-                <a href="/pages/produtos">Produtos</a>
-                <a href="/pages/sobre-nos">Sobre nós</a>
+                <a href="/pages/produtos">Produtos</a><!-- link para a página de produto-->
+                <a href="/pages/sobre-nos">Sobre nós</a><!--link para a página sobre nós -->
             </div>
         </div>
     </header>
 
     <div class="produto-especifico">
+        <!-- Div para exibir o produto específico -->
+
         <div class="imagens-produtos">
-            <img class="imgs" id="img1" src="/pages/img/prdt-especifico/image (2).png" onclick="selecionarImagem('/pages/img/prdt-especifico/image (2).png')">
-            <img class="imgs" id="img2" src="/pages/img/prdt-especifico/image (5).png" onclick="selecionarImagem('/pages/img/prdt-especifico/image (5).png')">
-            <img class="imgs" id="img3" src="/pages/img/prdt-especifico/image (4).png" onclick="selecionarImagem('/pages/img/prdt-especifico/image (4).png')">
-            <img class="imgs" id="img4" src="/pages/img/produto-img/asparagus-2169305_1920.jpg" onclick="selecionarImagem('/pages/img/produto-img/asparagus-2169305_1920.jpg')">
+            <!-- Div para exibir as imagens do produto quando selecinar imagem-->
+            <img class="imgs" id="img1" src="/pages/img/prdt-especifico/image (2).png"
+                onclick="selecionarImagem('/pages/img/prdt-especifico/image (2).png')">
+            <img class="imgs" id="img2" src="/pages/img/prdt-especifico/image (5).png"
+                onclick="selecionarImagem('/pages/img/prdt-especifico/image (5).png')">
+            <img class="imgs" id="img3" src="/pages/img/prdt-especifico/image (4).png"
+                onclick="selecionarImagem('/pages/img/prdt-especifico/image (4).png')">
+            <img class="imgs" id="img4" src="/pages/img/produto-img/asparagus-2169305_1920.jpg"
+                onclick="selecionarImagem('/pages/img/produto-img/asparagus-2169305_1920.jpg')">
         </div>
 
         <div class="img">
-            <img id="imagem-principal" style="border-radius: 8px" src="/pages/img/prdt-especifico/image (2).png" alt="imagem-principal">
+            <!-- Div para exibir a imagem maior do produto -->
+            <img id="imagem-principal" style="border-radius: 8px" src="/pages/img/prdt-especifico/image (2).png"
+                alt="imagem-principal">
         </div>
 
         <div class="descricao-produto">
+            <!-- descrição do produto -->
             <div class="plv-produtos" id="plv1">
                 <div>
-                    <p>Dieta -7KG em 7 Dias SEM GLUTEN</p>
+                    <p>Dieta -7KG em 7 Dias SEM GLUTEN</p><!--título-->
                 </div>
             </div>
-            <div class="plv-produtos" id="plv2">R$300,00</div>
+            <div class="plv-produtos" id="plv2">R$300,00</div><!--preço-->
 
             <div class="plv-produtos" id="plv4">
                 <p>Consulte o frete</p>
@@ -74,28 +90,25 @@
             <div class="plv-produtos" id="plv5">
                 <div id="plv6">
                     <div class="frete">
-                        <div class="cep">
+                        <div class="cep"><!--campo para o frete-->
                             <div><label for="cep"><img src="img/prdt-especifico/casinha.png" alt="casa"></label></div>
                             <div><input type="text" placeholder="CEP 00000-000" name="cep"></div>
                             <div><button type="submit" class="calcular">Calcular</button></div>
                         </div>
-
                     </div>
                 </div>
             </div>
             <div class="plv-produtos" id="plv7">
                 <div class="botao">
-                    <div><button>ADICIONAR À SACOLA </button></div>
+                    <div><button>ADICIONAR À SACOLA</button></div><!--botão de adicioanr a sacola-->
                 </div>
             </div>
-
         </div>
-
     </div>
 
     <div id="minhaDiv" onclick="toggleDiv()" class="descricao-escondida">
-
-        <p>Dia 1: <br>
+        <!-- Div para exibir a descrição completa do produto, inicialmente oculta -->
+        <p>Dia 1: <br><!--descrição do produto-->
             Café da manhã: Aveia com frutas e nozes. <br>
             Almoço: Salada de folhas verdes com frango grelhado. <br>
             Jantar: Salmão assado com legumes cozidos no vapor. <br> <br>
@@ -124,35 +137,46 @@
             Almoço: Iogurte grego com frutas frescas. <br>
             Jantar: Salmão assado com legumes cozidos no vapor. <br>
         </p>
-
     </div>
+
     <div class="espaco-botao">
+        <!-- Div para exibir um botão para mostrar a descrição completa do produto -->
         <input type="button" name="botao" id="meuBotao" class="botaoEnviar" value="VER DESCRIÇÃO COMPLETA"
             onclick="toggleDiv()">
     </div>
-
     <footer>
+        <!-- Rodapé -->
         <div class="linha"></div>
         <div class="verdinho">
             <div class="row1">
                 <div class="col1">
+                    <!-- Div da primeira coluna do rodapé logo e lema -->
                     <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <!-- Imagem do logo -->
                     <div class="sublinhado"></div>
                     <p class="lema">Tornando a sua vida mais saudável</p>
                 </div>
                 <div class="col2">
+                    <!-- Div da segunda coluna do rodapé -->
                     <h4>Institucional</h4>
-                    <a href="/pages/sobre-nos">Sobre nós</a>
-                    <a href="/pages/politica">Política de Privacidade</a>
+                    <a href="/pages/sobre-nos.html">Sobre nós</a>
+                    <!-- Link para a página "Sobre nós" -->
+                    <a href="/pages/politica.html">Política de Privacidade</a>
+                    <!-- Link para a página "Política de Privacidade" -->
                 </div>
                 <div class="col3">
+                    <!-- Div da terceira coluna do rodapé Dúvidas-->
                     <h4>Dúvida</h4>
-                    <a href="/pages/minha-conta">Meus Pedidos</a>
-                    <a href="/pages/minha-conta">Minha Conta</a>
+                    <a href="/pages/minha-conta.html">Meus Pedidos</a>
+                    <!-- Link para a página "Meus Pedidos" -->
+                    <a href="/pages/minha-conta.html">Minha Conta</a>
+                    <!-- Link para a página "Minha Conta" -->
                 </div>
                 <div class="col4">
+                    <!-- Div da quarta coluna do rodapé das redes sociais -->
                     <h4>Redes Sociais</h4>
                     <div class="redes">
+                        <!-- Div das redes sociais -->
                         <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
                         <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
                         <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
@@ -160,6 +184,7 @@
                 </div>
             </div>
             <div class="contato">
+                <!-- Div para as informações de contato -->
                 <div class="localizacao">
                     <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
                     <p>Joinville/SC</p>
@@ -178,24 +203,5 @@
         </div>
     </footer>
 </body>
-<script>
-    function toggleDiv() {
-        var div = document.getElementById("minhaDiv");
-        var botao = document.getElementById("meuBotao");
-
-        if (div.style.display === "none") {
-            div.style.display = "block"; // Mostra a div
-            botao.value = "ESCONDER DESCRICAO"; // Altera o texto do botão para "Esconder"
-        } else {
-            div.style.display = "none"; // Oculta a div
-            botao.value = "VER DESCRICAO COMPLETA"; // Altera o texto do botão para "Mostrar"
-        }
-    }
-
-    function selecionarImagem(caminhoImagem) {
-      var imagemPrincipal = document.getElementById('imagem-principal');
-      imagemPrincipal.src = caminhoImagem;
-    }
-</script>
 
 </html>

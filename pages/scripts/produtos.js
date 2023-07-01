@@ -1,3 +1,4 @@
+// função que mostra o restante do produtos quando clicado no botao "CARREGAR MAIS"
 
 function toggleDiv() {
   var div = document.getElementById("minhaDiv");

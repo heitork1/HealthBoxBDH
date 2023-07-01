@@ -6,19 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Conta</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/pages/assets/minha-conta.css">
     <script src="/pages/scripts/minha-conta.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
+    <!--cabeçalho MENU-->
     <header>
-        <div class="faixa1">
-            <a href="../"><img src="img/inicio/logo-br.png" alt="" id="logo" /></a>
-            <div class="pesquisa">
+        <div class="faixa1"><!--primeira faixa do menu-->
+            <a href="../"><img src="img/inicio/logo-br.png" alt="" id="logo" /></a><!--link para a página inicial e imagem da logo-->
+
+            <div class="pesquisa"><!-- Barra de pesquisa -->
                 <input type="text" name="" id="" placeholder="Pesquisar" />
                 <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt=""
                     style="transform: scaleX(-1)" />
@@ -48,82 +52,107 @@
         </div>
     </header>
     <main>
+        <!--sessão com os dados da conta-->
         <section class="minhaconta">
-            <h1>Minha Conta  <a href="/logout"><img src="/pages/img/sacola/sair.png" alt="" id="sair"></a></h1>
+            <h1>Minha Conta <a href="/logout"><img src="/pages/img/sacola/sair.png" alt="" id="sair"></a></h1>
+            <!--deslogar da conta-->
+            <!--formulário preenchido com os dados da conta-->
             <div class="formulario">
                 <div class="form">
                     <form action="/atualizar" method="POST" onsubmit="confirmacaoAlterado()">
+                        <!--enviar os dados alterados-->
                         <div class="nome">
-                            <label for="username">Nome</label>
-                            <input type="text" name="username" id="inputNome" value=<%= nomeUsuario %>>
+                            <label for="username">Nome</label><!--campo de nome do usuário-->
+                            <input type="text" name="username" id="inputNome" value=<%=nomeUsuario %>>
                         </div>
                         <div class="emailInput">
-                            <label for="email">E-mail</label>
+                            <label for="email">E-mail</label><!--campo de e-mail do usuário-->
                             <input type="email" name="email" id="inputEmail" value=<%=emailUsuario %>>
                         </div>
                         <div class="senha">
-                            <label for="password">Senha do usuário</label>
+                            <label for="password">Senha do usuário</label><!--campo de senha do usuário-->
                             <input type="text" name="password" placeholder="senha" id="inputSenha" value=<%=senhaUsuario
                                 %>>
                         </div>
                         <div class="data_tel">
                             <div class="data">
-                                <label for="date">Data de nascimento</label>
+                                <label for="date">Data de
+                                    nascimento</label><!--campo de data de nascimento do usuário-->
                                 <input name="date" id="nasc" value="<%= nascimentoUsuario %>">
                             </div>
                             <div class="tel">
-                                <label for="tel">DDD + Telefone</label>
+                                <label for="tel">DDD + Telefone</label><!--campo de telefone do usuário-->
                                 <input type="tel" placeholder="(00) 00000-0000" name="tel" id="telefone"
                                     value="<%= telefoneUsuario %>">
                             </div>
                         </div>
-                        <input type="submit" value="Alterar informações de cadastro" id="alterar">
+                        <input type="submit" value="Alterar informações de cadastro"
+                            id="alterar"><!--botão para enviar alteração dos dados-->
                     </form>
                 </div>
             </div>
+
         </section>
         <section class="separador">
-            <img src="../pages/img/inicio/logo (2).png" alt="" class="logo">
-            <img src="../pages/img/finalizar/linha-vertical.png" alt="" id="linha">
+            <img src="../pages/img/inicio/logo (2).png" alt="" class="logo"><!--logo-->
+            <img src="../pages/img/finalizar/linha-vertical.png" alt="" id="linha"><!--linha que separa as sessões-->
         </section>
+
+        <!--sessão com as informções dos pedidos anteriores-->
         <section class="pedidos">
             <h1>Meus Pedidos</h1>
-            <% for (let i = 0; i < pedidos.length; i++) { %>
-              <div class="box-1">
-                <div class="div1">
-                  <img src="<%= pedidos[i].url_imagem %>" alt="" class="produto">
-                  <div class="legenda">
-                    <p class="nomeprod"><%= pedidos[i].nome_produto %></p>
-                    <p class="valor">R$<%= pedidos[i].preco_produto %></p>
-                  </div>
+
+            <% for (let i=0; i < pedidos.length; i++) { %>
+                <div class="box-1">
+                    <div class="div1">
+                        <img src="<%= pedidos[i].url_imagem %>" alt="" class="produto"><!--imagem do pedido-->
+                        <div class="legenda">
+                            <p class="nomeprod"><!--nome do produto-->
+                                <%= pedidos[i].nome_produto %>
+                            </p>
+                            <p class="valor">R$<%= pedidos[i].preco_produto %><!--valor do produto-->
+                            </p>
+                        </div>
+                    </div>
+                    <p class="entrega">Realizado em: <%= pedidos[i].data_pedido %><!--data da realização do pedido-->
+                    </p>
                 </div>
-                <p class="entrega">Realizado em: <%= pedidos[i].data_pedido %></p>
-              </div>
-            <% } %>
-          </section>
+                <% } %>
+        </section>
     </main>
     <footer>
+        <!-- Rodapé -->
         <div class="linha"></div>
         <div class="verdinho">
             <div class="row1">
                 <div class="col1">
+                    <!-- Div da primeira coluna do rodapé logo e lema -->
                     <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <!-- Imagem do logo -->
                     <div class="sublinhado"></div>
                     <p class="lema">Tornando a sua vida mais saudável</p>
                 </div>
                 <div class="col2">
+                    <!-- Div da segunda coluna do rodapé -->
                     <h4>Institucional</h4>
-                    <a href="sobre-nos">Sobre nós</a>
-                    <a href="politica">Política de Privacidade</a>
+                    <a href="/pages/sobre-nos.html">Sobre nós</a>
+                    <!-- Link para a página "Sobre nós" -->
+                    <a href="/pages/politica.html">Política de Privacidade</a>
+                    <!-- Link para a página "Política de Privacidade" -->
                 </div>
                 <div class="col3">
+                    <!-- Div da terceira coluna do rodapé Dúvidas-->
                     <h4>Dúvida</h4>
-                    <a href="minha-conta">Meus Pedidos</a>
-                    <a href="minha-conta">Minha Conta</a>
+                    <a href="/pages/minha-conta.html">Meus Pedidos</a>
+                    <!-- Link para a página "Meus Pedidos" -->
+                    <a href="/pages/minha-conta.html">Minha Conta</a>
+                    <!-- Link para a página "Minha Conta" -->
                 </div>
                 <div class="col4">
+                    <!-- Div da quarta coluna do rodapé das redes sociais -->
                     <h4>Redes Sociais</h4>
                     <div class="redes">
+                        <!-- Div das redes sociais -->
                         <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
                         <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
                         <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
@@ -131,6 +160,7 @@
                 </div>
             </div>
             <div class="contato">
+                <!-- Div para as informações de contato -->
                 <div class="localizacao">
                     <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
                     <p>Joinville/SC</p>

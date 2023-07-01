@@ -46,24 +46,24 @@
         </div>
     </header>
     <main>
-        <section class="itens">
+        <section class="itens"><!--sessão onde ficam os produtos-->
             <h1>SACOLA</h1>
-            <div class="item" id="produto1">
+            <div class="item" id="produto1"> <!--produto 1-->
                 <img src="/pages/img/sacola/image.png" alt="">
                 <div class="descricao">
-                    <h2>Dieta -7kg em 7 dias</h2>
+                    <h2>Dieta -7kg em 7 dias</h2><!--nome do produto-->
                     <div class="valqtd">
-                        <span class="val">R$200,00</span>
+                        <span class="val">R$200,00</span><!--valor do produto-->
                         <div class="quantity">
-                            <span class="operadores" onclick="aumentarQuantidade(this)">+</span>
+                            <span class="operadores" onclick="aumentarQuantidade(this)">+</span><!--botão que aumenta a quantidade de itens de 1 em 1-->
                             <span class="qtd">1</span>
-                            <span class="operadores" onclick="diminuirQuantidade(this)">-</span>
+                            <span class="operadores" onclick="diminuirQuantidade(this)">-</span><!--botão que diminui a quantidade de itens de 1 em 1-->
                         </div>
                     </div>
-                    <button type="button" class="botao-remover" onclick=" removeProduct(event)"></button>
+                    <button type="button" class="botao-remover" onclick=" removeProduct(event)"></button><!--botão de lixeira que remove o produto-->
                 </div>
             </div>
-
+<!--mesmo sequencia para o produto 2-->
             <div class="item" id="produto2">
                 <img src="/pages/img/sacola/image1.png" alt="">
                 <div class="descricao">
@@ -80,65 +80,73 @@
                 </div>
             </div>
         </section>
-        <img src="/pages/img/finalizar/linha-vertical.png" alt="" class="linha">
-        <section class="freres">
+
+        <img src="/pages/img/finalizar/linha-vertical.png" alt="" class="linha"><!--linha que separa as duas sessões-->
+
+        <section class="freres"><!--sessão de frete-->
             <h2>FRETE</h2>
             <div class="frete">
-                <div class="cep">
+                <div class="cep"><!--campo do frete-->
                     <label for="cep"><img src="/pages/img/prdt-especifico/casinha.png" alt=""></label>
                     <input type="text" placeholder="CEP 00000-000" name="cep">
                 </div>
                 <button type="submit" class="calcular">CALCULAR</button>
             </div>
+<!--sessão das informações do valor e quantidade de itens-->
             <h2>RESUMO DE PEDIDO</h2>
-
-
             <div class="sub">
                 <p>Total itens:</p>
-                <span></span>
+                <span></span><!--mostra o total de itens-->
             </div>
             <div class="total">
                 <p>Total do pedido:</p>
-                <span id="precoTotal">R$400,00</span>
+                <span id="precoTotal">R$400,00</span><!--mostra o o valor dos itens-->
             </div>
             <div class="botao">
-                <button type="submit" class="confirmar" onclick="alterarNome(this)">CONFIRMAR</button>
+                <button type="submit" class="confirmar" onclick="alterarNome(this)">CONFIRMAR</button><!--botão de confirmar pedido-->
             </div>
     </main>
-
     <footer>
-        <div class="linha1"></div>
+        <!-- Rodapé -->
+        <div class="linha"></div>
         <div class="verdinho">
             <div class="row1">
                 <div class="col1">
-                    <a href="/"><img src="/pages/img/inicio/logo (2).png" alt=""></a>
+                    <!-- Div da primeira coluna do rodapé logo e lema -->
+                    <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <!-- Imagem do logo -->
                     <div class="sublinhado"></div>
                     <p class="lema">Tornando a sua vida mais saudável</p>
                 </div>
                 <div class="col2">
+                    <!-- Div da segunda coluna do rodapé -->
                     <h4>Institucional</h4>
-                    <a href="/pages/sobre-nos">Sobre nós</a>
-                    <a href="/pages/politica">Política de Privacidade</a>
+                    <a href="/pages/sobre-nos.html">Sobre nós</a>
+                    <!-- Link para a página "Sobre nós" -->
+                    <a href="/pages/politica.html">Política de Privacidade</a>
+                    <!-- Link para a página "Política de Privacidade" -->
                 </div>
                 <div class="col3">
+                    <!-- Div da terceira coluna do rodapé Dúvidas-->
                     <h4>Dúvida</h4>
-                    <a href="/pages/minha-conta">Meus Pedidos</a>
-                    <a href="/pages/minha-conta">Minha Conta</a>
+                    <a href="/pages/minha-conta.html">Meus Pedidos</a>
+                    <!-- Link para a página "Meus Pedidos" -->
+                    <a href="/pages/minha-conta.html">Minha Conta</a>
+                    <!-- Link para a página "Minha Conta" -->
                 </div>
                 <div class="col4">
+                    <!-- Div da quarta coluna do rodapé das redes sociais -->
                     <h4>Redes Sociais</h4>
                     <div class="redes">
-                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img
-                                src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a>
-                        <a href="https://www.instagram.com/accounts/login/"><img
-                                src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
-                        <a
-                            href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img
-                                src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a>
+                        <!-- Div das redes sociais -->
+                        <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
+                        <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
+                        <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
                     </div>
                 </div>
             </div>
             <div class="contato">
+                <!-- Div para as informações de contato -->
                 <div class="localizacao">
                     <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
                     <p>Joinville/SC</p>

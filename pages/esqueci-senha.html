@@ -14,56 +14,73 @@
 <body>
     <div class="main">
         <a href="../"><img src="/pages/img/Login-cadastro/logo.png" alt=""></a>
+        <!-- Imagem do logo -->
         <div class="grande">
             <form class="medio" action="/login" method="post">
-                <h1> Esqueceu a sua senha?</h1>
-                <p class="texto-menor"> Insira o seu endereço de e-mail. Você receberá uma mensangem de e-mail com as
-                    instruções necessárias para redefinir a senha.</p>
+                <!-- Formulário de login -->
+                <h1>Esqueceu a sua senha?</h1>
+                <p class="texto-menor">Insira o seu endereço de e-mail. Você receberá uma mensagem de e-mail com as
+                    instruções necessárias para redefinir a senha.</p><!-- Parágrafo de instruções -->
                 <label for=""></label>
                 <div class="espaco-email">
+                    <!-- Div do e-mail -->
                     <p class="e-mail">E-mail:</p>
+                    <!-- Campo de texto para o e-mail -->
                     <input type="text" class="email" name="username" placeholder="Insira seu e-mail">
+
                 </div>
-                <div class="espaco-botao"><input type="submit" id="meuBotao" value="ENVIAR" class="botao-enviar"
-                        onclick="mudarNomeBotao()"></div>
+                <div class="espaco-botao">
+                    <!-- do botão -->
+                    <input type="submit" id="meuBotao" value="ENVIAR" class="botao-enviar" onclick="mudarNomeBotao()">
+                    <!-- Botão de enviar -->
+                </div>
                 <p class="voltar">Volte para página de <a href="/pages/login.html">Login</a> ou <a
                         href="/pages/cadastro.html">Cadastro</a>.</p>
+                <!-- Parágrafo com links para voltar para as páginas de Login e Cadastro -->
             </form>
         </div>
     </div>
     <footer>
+        <!-- Rodapé -->
         <div class="linha"></div>
         <div class="verdinho">
             <div class="row1">
                 <div class="col1">
-                    <a href="/index.html"><img src="/pages/img/inicio/logo (2).png" alt=""></a>
+                    <!-- Div da primeira coluna do rodapé logo e lema -->
+                    <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <!-- Imagem do logo -->
                     <div class="sublinhado"></div>
                     <p class="lema">Tornando a sua vida mais saudável</p>
                 </div>
                 <div class="col2">
+                    <!-- Div da segunda coluna do rodapé -->
                     <h4>Institucional</h4>
-                    <a href="">Sobre nós</a>
-                    <a href="">Política de Privacidade</a>
+                    <a href="/pages/sobre-nos.html">Sobre nós</a>
+                    <!-- Link para a página "Sobre nós" -->
+                    <a href="/pages/politica.html">Política de Privacidade</a>
+                    <!-- Link para a página "Política de Privacidade" -->
                 </div>
                 <div class="col3">
+                    <!-- Div da terceira coluna do rodapé Dúvidas-->
                     <h4>Dúvida</h4>
-                    <a href="">Meus Pedidos</a>
-                    <a href="">Minha Conta</a>
+                    <a href="/pages/minha-conta.html">Meus Pedidos</a>
+                    <!-- Link para a página "Meus Pedidos" -->
+                    <a href="/pages/minha-conta.html">Minha Conta</a>
+                    <!-- Link para a página "Minha Conta" -->
                 </div>
                 <div class="col4">
+                    <!-- Div da quarta coluna do rodapé das redes sociais -->
                     <h4>Redes Sociais</h4>
                     <div class="redes">
-                        <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img
-                                src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a>
-                        <a href="https://www.instagram.com/accounts/login/"><img
-                                src="/pages/img/Login-cadastro/instagram2.png" alt="instagram"></a>
-                        <a
-                            href="https://api.whatsapp.com/send?phone=5547988528481&text=Oi%2C%20quero%20fazer%20um%20pedido!"><img
-                                src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp"></a>
+                        <!-- Div das redes sociais -->
+                        <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
+                        <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
+                        <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
                     </div>
                 </div>
             </div>
             <div class="contato">
+                <!-- Div para as informações de contato -->
                 <div class="localizacao">
                     <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
                     <p>Joinville/SC</p>
@@ -72,7 +89,7 @@
                     <img src="/pages/img/Login-cadastro/telefone.png" alt="telefone">
                     <p>Fone/Whatsapp: (47) 00000-0000</p>
                 </div>
-                <div id="email">
+                <div class="email">
                     <img src="/pages/img/Login-cadastro/o-email.png" alt="email">
                     <p>Healthbox@gmail.com</p>
                 </div>
@@ -81,15 +98,6 @@
             </div>
         </div>
     </footer>
-    <script>
-
-        function mudarNomeBotao() {
-
-            var botao = document.getElementById("meuBotao");
-            botao.value = "ENVIADO";
-            botao.style.transform = "scale(1)";
-            botao.onclick = null;
-        }
-
-    </script>
 </body>
+
+</html>

@@ -14,135 +14,191 @@
 
 <body>
     <header>
+        <!-- Cabeçalho da página  MENU-->
         <div class="faixa1">
+            <!-- Div da primeira faixa -->
             <a href="../"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
+            <!-- Imagem do logo -->
             <div class="pesquisa">
+                <!-- barra de pesquisa -->
                 <input type="text" name="" id="" placeholder="Pesquisar" />
+                <!-- Campo de pesquisa -->
                 <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
                     class="lupa" />
+                <!-- Ícone de busca -->
             </div>
 
             <div class="entrar">
                 <a href="/pages/login.html">
+                    <!-- Link para a página de login -->
                     <img src="/pages/img/produto-img/bonequinho.png" alt="" />
+                    <!-- Imagem de um bonequinho -->
                     <p id="nomeUsuario">
                         <%= nomeUsuario %>
                     </p>
+                    <!-- Nome do usuário -->
                 </a>
             </div>
 
             <div class="sacola">
                 <a href="/pages/sacola">
+                    <!-- Link para a página da sacola -->
                     <img src="/pages/img/inicio/bag.png" alt="" />
+                    <!-- Imagem de uma sacola -->
                     <p>Sacola</p>
                 </a>
             </div>
         </div>
         <div class="faixa2">
+            <!-- Div da segunda faixa -->
             <div class="opcoes">
+                <!-- opções de navegação -->
                 <a href="/pages/produtos">Produtos</a>
+                <!-- Link para a página de produtos -->
                 <a href="/pages/sobre-nos">Sobre nós</a>
+                <!-- Link para a página "Sobre nós" -->
             </div>
         </div>
     </header>
+
     <main class="">
         <form action="">
             <section class="informacoes">
+                <!-- Seção de informações do pedido -->
                 <h1>FINALIZAR PEDIDO</h1>
                 <div class="endereco box">
-                    <h2><span class="um"><img src="/pages/img/finalizar/um.png" alt="" srcset="" width="100%"></span>
-                        Endereço de Entrega</h2>
+                    <!--  endereço de entrega -->
+                    <h2>
+                        <span class="um"><img src="/pages/img/finalizar/um.png" alt="" srcset="" width="100%"></span>
+                        Endereço de Entrega
+                    </h2>
                     <div class="casa">
+                        <!-- campo de logradouro -->
                         <label for="casa"><img src="/pages/img/finalizar/casa.png" alt=""></label>
                         <input type="text" name="casa" id="" placeholder="Logradouro">
                     </div>
+    
                     <div class="casa">
+                        <!-- campo de número da casa -->
                         <label for="casa"><img src="/pages/img/finalizar/casa.png" alt=""></label>
                         <input type="text" name="casa" id="" placeholder="N° da casa">
                     </div>
+    
                     <div class="casa">
+                        <!-- campo de complemento -->
                         <label for="casa"><img src="/pages/img/finalizar/casa.png" alt=""></label>
                         <input type="text" name="casa" id="" placeholder="Complemento (caso tenha)">
                     </div>
                 </div>
-
+    
                 <div class="envio box asdemais">
-                    <h2 class="dois"><img src="/pages/img/finalizar/dois.png" alt="" id="dois">Forma de Envio <img
-                            src="/pages/img/finalizar/furgao.png" alt=""></h2>
+                    <!--formas de envio -->
+                    <h2 class="dois">
+                        <img src="/pages/img/finalizar/dois.png" alt="" id="dois">Forma de Envio
+                        <img src="/pages/img/finalizar/furgao.png" alt="">
+                    </h2>
+    
                     <div class="inputs">
+                        <!-- selecionar a opção de envio -->
                         <input type="radio" name="envio" value="fedex">
                         <label for="fedex"><img src="/pages/img/finalizar/fedex.png" alt=""></label>
                         <input type="radio" name="envio" value="sedex" id="sedex">
                         <label for="sedex"><img src="/pages/img/finalizar/sedex.png" alt=""></label>
                     </div>
                 </div>
-
+    
                 <div class="pagamento box asdemais">
-
-                    <h2 class="forma"><span class="tres"><img src="/pages/img/finalizar/tres.png" alt=""
-                                id="tres"></span> Forma de pagamento</h2>
+                    <!-- forma de pagamento -->
+                    <h2 class="forma">
+                        <span class="tres"><img src="/pages/img/finalizar/tres.png" alt="" id="tres"></span> Forma de pagamento
+                    </h2>
                     <div class="bolpix">
+                        <!-- selecionar a opção de pagamento -->
                         <div class="boleto">
                             <input type="radio" name="paga" id="">
-                            <label><span class="bolet"><img src="/pages/img/finalizar/boleto.png"
-                                        alt="">Boleto</span></label>
+                            <label>
+                                <span class="bolet"><img src="/pages/img/finalizar/boleto.png" alt="">Boleto</span>
+                            </label>
                         </div>
                         <div class="pix">
                             <input type="radio" name="paga" id="">
-                            <label><span class="pi"><img src="/pages/img/finalizar/pix.png" alt="">Pix</span></label>
+                            <label>
+                                <span class="pi"><img src="/pages/img/finalizar/pix.png" alt="">Pix</span>
+                            </label>
                         </div>
                     </div>
                 </div>
             </section>
+            
             <img src="/pages/img/finalizar/linha-vertical.png" alt="" id="linha">
+    
             <section class="resumo">
+                <!-- resumo do pedido -->
                 <h1>RESUMO DE PEDIDO</h1>
+    
                 <div class="descricao">
                     <img src="/pages/img/finalizar/comida.png" alt="">
+                    <!-- Imagem do produto -->
                     <div class="descproduto">
-                        <p class="desc">Dieta -15 kg em 15 dias
-                        </p>
-
+                        <p class="desc">Dieta -15 kg em 15 dias</p>
+    
                         <div class="ume50">
                             <p id="umdesc">1</p>
                             <span id="cinquenta">R$400,00</span>
                         </div>
+                        <!-- Quantidade e preço do produto -->
                     </div>
                 </div>
+    
                 <div class="observacoes">
                     <h5>Observações</h5>
-                    <textarea name="addobs" id="" cols="50" rows="4"
-                        placeholder="Adicione informações relacionadas ao seu pedido"></textarea>
+                    <textarea name="addobs" id="" cols="50" rows="4" placeholder="Adicione informações relacionadas ao seu pedido"></textarea>
+                    <!-- Campo de texto para as observações -->
                     <p class="voltar"><a href="/pages/sacola.html">Voltar à sacola</a></p>
+                    <!-- Link para voltar à sacola -->
                     <h4>Subtotal: R$400,00</h4>
+                    <!-- Subtotal do pedido -->
                     <h3>Total do pedido: R$408,00</h3>
+                    <!-- Total do pedido -->
                     <input type="submit" value="CONFIRMAR" class="confirmar">
+                    <!-- Botão de confirmação do pedido -->
                 </div>
             </section>
         </form>
     </main>
     <footer>
+        <!-- Rodapé -->
         <div class="linha"></div>
         <div class="verdinho">
             <div class="row1">
                 <div class="col1">
+                    <!-- Div da primeira coluna do rodapé logo e lema -->
                     <img src="/pages/img/inicio/logo (2).png" alt="">
+                    <!-- Imagem do logo -->
                     <div class="sublinhado"></div>
                     <p class="lema">Tornando a sua vida mais saudável</p>
                 </div>
                 <div class="col2">
+                    <!-- Div da segunda coluna do rodapé -->
                     <h4>Institucional</h4>
-                    <a href="/pages/sobre-nos">Sobre nós</a>
-                    <a href="/pages/politica">Política de Privacidade</a>
+                    <a href="/pages/sobre-nos.html">Sobre nós</a>
+                    <!-- Link para a página "Sobre nós" -->
+                    <a href="/pages/politica.html">Política de Privacidade</a>
+                    <!-- Link para a página "Política de Privacidade" -->
                 </div>
                 <div class="col3">
+                    <!-- Div da terceira coluna do rodapé Dúvidas-->
                     <h4>Dúvida</h4>
-                    <a href="/pages/sacola">Meus Pedidos</a>
-                    <a href="/pages/minha-conta">Minha Conta</a>
+                    <a href="/pages/minha-conta.html">Meus Pedidos</a>
+                    <!-- Link para a página "Meus Pedidos" -->
+                    <a href="/pages/minha-conta.html">Minha Conta</a>
+                    <!-- Link para a página "Minha Conta" -->
                 </div>
                 <div class="col4">
+                    <!-- Div da quarta coluna do rodapé das redes sociais -->
                     <h4>Redes Sociais</h4>
                     <div class="redes">
+                        <!-- Div das redes sociais -->
                         <img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook">
                         <img src="/pages/img/Login-cadastro/instagram2.png" alt="instagram">
                         <img src="/pages/img/Login-cadastro/whatsapp2.png" alt="whatsapp">
@@ -150,6 +206,7 @@
                 </div>
             </div>
             <div class="contato">
+                <!-- Div para as informações de contato -->
                 <div class="localizacao">
                     <img src="/pages/img/Login-cadastro/instagram-direto.png" alt="aviao">
                     <p>Joinville/SC</p>
