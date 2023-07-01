@@ -201,21 +201,22 @@ header p {
 .imagens-produtos {
     display: grid;
     width: 250px;
-    height: 490px;
+    height: 70vh;
+    justify-content: space-around;
 }
 
 .imgs {
-    margin-left: 120px;
+    margin-left: 15vh;
     /* border: 1px solid black; */
-    width: 150px;
+    width: 120px;
     display: grid;
     cursor: pointer;
+    
 }
 
 #img1 {
-    background-image: url(/pages/img/prdt-especifico/image\ \(2\).png);
     background-size: 110px;
-    background-repeat: no-repeat;
+    display: flex;
     transition: transform 0.3s;
 }
 
@@ -224,9 +225,8 @@ header p {
 }
 
 #img2 {
-    background-image: url(/pages/img/prdt-especifico/image\ \(5\).png);
     background-size: 110px;
-    background-repeat: no-repeat;
+    display: flex;
     transition: transform 0.3s;
 }
 
@@ -235,9 +235,7 @@ header p {
 }
 
 #img3 {
-    background-image: url(/pages/img/prdt-especifico/image.png);
-    background-size: 110px;
-    background-repeat: no-repeat;
+    display: flex;
     transition: transform 0.3s;
 }
 
@@ -246,9 +244,7 @@ header p {
 }
 
 #img4 {
-    background-image: url(/pages/img/prdt-especifico/image\ \(4\).png);
     background-size: 110px;
-    background-repeat: no-repeat;
     display: flex;
     transition: transform 0.3s;
 }
