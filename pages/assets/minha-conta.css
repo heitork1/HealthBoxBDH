@@ -198,7 +198,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 2%;
+    margin-left: 0;
     margin-right: 2%;
 }
 
@@ -260,20 +260,25 @@ main {
 }
 
 .form {
-    width: 27vw;
+    width: 26vw;
 }
 
 @media screen and (max-width: 1150px) and (min-height: 720px) {
     .formulario {
-        width: 35vw;
+        width: 30vw;
+        height: 54vh;
     }
 
     .form {
-        width: 30vw;
+        width: 27vw;
+    }
+    .form input{
+        height: 3.5vh;
     }
 
     .box-1 {
         height: 25vh;
+        
     }
 
     .produto {
@@ -317,6 +322,7 @@ form input {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     transition: 0.3S;
+    cursor: pointer;
 }
 
 #alterar:hover {
@@ -329,15 +335,20 @@ form input {
 
 @media screen and (max-width: 1150px) and (min-height: 720px) {
     .data label {
-        font-size: 15px;
+        font-size: 14px;
     }
-
+    #alterar{
+        font-size: 16px;
+    }
+    #nasc{
+        width: 13.5vw;
+    }
     .tel label {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .tel input {
-        width: 16.5vh;
+        width: 14vh;
     }
 }
 
@@ -397,13 +408,14 @@ img.produto {
     padding-right: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
-    max-width: 70%;
+    max-width: 75%;
     margin: auto;
     margin-top: 4%;
 }
 
 .minhaconta {
     height: 75vh;
+    width: 35vw;
 }
 
 .debaixo {
@@ -416,13 +428,22 @@ h1 {
     display: flex;
     justify-content: center;
 }
+#sair{
+    width: 65%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+.minhaconta a{
+    width: 10%;
+}
 
 
 
 footer {
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
-    margin-top: 3vh;
+    margin-top: 30vh;
 }
 
 footer p {

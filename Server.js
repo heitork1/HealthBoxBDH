@@ -13,7 +13,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.set("view engine", "ejs");
 
 const path = require("path");
-const { error } = require("console");
 app.use("/assets", express.static("assets"));
 app.use("/img", express.static("img"));
 app.use("/pages", express.static("pages"));
@@ -43,14 +42,6 @@ connection.connect(function (err) {
   }
 });
 
-function insertUsernameIntoHTML(filePath, username) {
-  let html = fs.readFileSync(filePath, "utf8");
-  html = html.replace(
-    '<p id="nomeUsuario">Entrar</p>',
-    `<p id="nomeUsuario">${username}</p>`
-  );
-  return html;
-}
 
 function checkLogin(req, res, next) {
   if (req.session.username) {
@@ -142,8 +133,7 @@ app.get("/pages/minha-conta", checkLogin, (req, res) => {
         req.session.date = moment(rows[0].data_nascimento).format("DD/MM/YYYY");
         req.session.senha = rows[0].senha;
         req.session.tel = rows[0].telefone;
-        
-        
+
         // Buscar pedidos do usuário
         connection.query(
           `SELECT pedidos.*, produtos.nome_produto, produtos.preco_produto, produtos.url_imagem 
@@ -184,6 +174,29 @@ app.get("/pages/minha-conta", checkLogin, (req, res) => {
   );
 });
 
+app.post("/atualizar", (req, res) => {
+  let username = req.body.username;
+  let email = req.body.email;
+  let password = req.body.password;
+  let date = moment(req.body.date, 'DD/MM/YYYY').format('YYYY-MM-DD');
+  let tel = req.body.tel;
+
+  connection.query(
+    `UPDATE usuarios SET nome = ?, email = ?, senha = ?, data_nascimento = ?, telefone = ? WHERE id = ?`,
+    [username, email, password, date, tel, req.session.userID],
+    function (err) {
+      if (!err) {
+
+        // Redirecionar de volta para a tela minha-conta
+        res.redirect("/pages/minha-conta");
+      } else {
+        console.log(err);
+        res.send("Ocorreu um erro durante a atualização das informações de cadastro.");
+      }
+    }
+  );
+});
+
 app.get("/pages/sacola", checkLogin, (req, res) => {
   const filePath = path.join(__dirname, "pages", "sacola.ejs");
   const html = fs.readFileSync(filePath, "utf8");
@@ -213,22 +226,21 @@ app.post("/cadastro", (req, res) => {
   let date = req.body.date;
 
   connection.query(
-    "INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" +
-      username +
-      "'," +
-      "'" +
-      email +
-      "'," +
-      "'" +
-      password +
-      "'," +
-      "'" +
-      telefone +
-      "'," +
-      "'" +
-      date +
-      "'" +
-      ")",
+    "INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username +
+    "'," +
+    "'" +
+    email +
+    "'," +
+    "'" +
+    password +
+    "'," +
+    "'" +
+    telefone +
+    "'," +
+    "'" +
+    date +
+    "'" +
+    ")",
     function (err, rows) {
       if (!err) {
         console.log("Usuario cadastrado com sucesso");

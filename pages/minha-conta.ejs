@@ -49,10 +49,10 @@
     </header>
     <main>
         <section class="minhaconta">
-            <h1>Minha Conta</h1>
+            <h1>Minha Conta  <a href="/logout"><img src="/pages/img/sacola/sair.png" alt="" id="sair"></a></h1>
             <div class="formulario">
                 <div class="form">
-                    <form action="/atualizar" method="post">
+                    <form action="/atualizar" method="POST" onsubmit="confirmacaoAlterado()">
                         <div class="nome">
                             <label for="username">Nome</label>
                             <input type="text" name="username" id="inputNome" value=<%= nomeUsuario %>>
