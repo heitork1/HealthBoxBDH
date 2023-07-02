@@ -236,6 +236,7 @@ main {
     border-radius: 4px;
     width: 28vw;
     height: 27.5vh;
+    margin-top: 2vh;
 }
 
 .div1 {
@@ -291,8 +292,10 @@ main {
     width: 12vw;
 }
 
-
-
+.pedidos h1{
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+}
 form {
     height: 90%;
     margin-top: 4%;
