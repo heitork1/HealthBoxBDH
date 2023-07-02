@@ -1,3 +1,4 @@
+// função que mostra a descrição escondida
 function toggleDiv() {
     var div = document.getElementById("minhaDiv");
     var botao = document.getElementById("meuBotao");
@@ -10,7 +11,7 @@ function toggleDiv() {
         botao.value = "VER DESCRIÇÃO COMPLETA"; // Altera o texto do botão para "Mostrar"
     }
 }
-
+// função para trocar as imagens
 function selecionarImagem(caminhoImagem) {
     var imagemPrincipal = document.getElementById('imagem-principal');
     imagemPrincipal.src = caminhoImagem;

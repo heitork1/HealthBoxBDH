@@ -59,7 +59,7 @@ body {
     height: 4vh;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1300px) and (min-height:720px) {
     .pesquisa {
         margin-left: 30vw;
         height: 5vh
@@ -81,7 +81,7 @@ input {
     margin-left: 3vw;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1300px) and (min-height:720px) {
     .entrar {
         margin-left: 2vw;
     }
@@ -128,7 +128,7 @@ input {
 }
 
 /* ajuste para a tela */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1300px) and (min-height:720px) {
     .sacola a {
         margin-right: 0.2vw;
         margin-left: 1vw
@@ -179,7 +179,7 @@ input {
 }
 
 /* ajuste para a tela */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1300px) and (min-height:720px) {
     .opcoes {
         margin-left: 80vw;
         height: 100%;
@@ -217,28 +217,15 @@ header p {
 }
 
 /* ajuste tamanho de tela */
-/* 
-@media screen (max-width: 1300px) and (min-height:720px) {
+@media screen and (max-width: 1300px) and (min-height:720px) {
     .imgs {
-        margin-right: 9vw;
-        width: 14.5vh;
+        margin-left: 5vh;
+        width: 13.5vh;
         display: grid;
         cursor: pointer;
         border-radius: 6px;
     }
 }
-
-@media screen (max-width: 1300px) and (min-height:720px) {
-
-    /* ajuste tamanho de tela */
-/* .imagens-produtos {
-        display:grid;
-        width: 17vw;
-        height: 60vh;
-        margin-right:17vw;
-        justify-content: space-between;
-    }
-} */
 
 /* espaço para as imagens */
 .imagens-produtos {
@@ -247,6 +234,20 @@ header p {
     height: 70vh;
     justify-content: space-between;
 }
+
+/* ajuste de tela */
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    .imagens-produtos {
+        display: grid;
+        width: 17vw;
+        height: 61.8vh;
+        margin-right: 2vw;
+        justify-content: space-between;
+    }
+}
+
+
+
 
 #img1 {
     display: flex;
@@ -291,12 +292,12 @@ header p {
 }
 
 /* ajuste tamanho de tela */
-/* @media screen (max-width: 1300px) and (min-height:720px) {
- .img {
-     height: 63.5vh;
-     display: flex;
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    .img {
+        height: 60vh;
+        display: flex;
+    }
 }
-}     */
 
 
 .descricao-produto {
@@ -304,14 +305,32 @@ header p {
     width: fit-content;
     margin-left: 5vh;
     margin-top: 5vh;
-
 }
+
+/* ajuste tamanho de tela */
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    .descricao-produto {
+        height: fit-content;
+        width: fit-content;
+        margin-left: 3vh;
+        margin-top: 2vh;
+    }
+}
+
 
 /* divisão da descrição dos produtos */
 .plv-produtos {
     width: 500px;
 
 }
+
+/* ajuste tamanho de tela */
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    .plv-produtos {
+        width: 350px;
+    }
+}
+
 
 /* nome do produto */
 #plv1 {
@@ -410,6 +429,7 @@ input {
     margin-top: 2px;
 }
 
+/* botao adicionar à sacola */
 .botao button {
     background-color: #144d04;
     color: white;
@@ -423,8 +443,8 @@ input {
     cursor: pointer;
 }
 
+/* espaço do botão sacola */
 .botao {
-
     display: flex;
     align-items: center;
     height: 100px;
@@ -433,10 +453,29 @@ input {
     transition: 0.3s;
 }
 
+/* ajuste tamanho de tela */
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    .botao button {
+        background-color: #144d04;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        height: 60px;
+        border-radius: 7px;
+        width: 270px;
+        border: none;
+        margin-top: -4vh;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+
 .botao:hover {
     transform: scale(1.05);
 }
 
+/* espaço do botão da descrição completa */
 .espaco-botao {
     display: flex;
     justify-content: space-around;
@@ -444,7 +483,7 @@ input {
 }
 
 
-
+/* botão ver descrição completa */
 .botaoEnviar {
     width: 300px;
     border-radius: 8px;
@@ -461,6 +500,30 @@ input {
     transition: 0.3s;
     cursor: pointer;
     align-items: center;
+}
+
+/* ajuste tamanho de tela */
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    .botaoEnviar {
+        width: 350px;
+        height: 55px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        padding: 16px;
+        text-align: center;
+        font-size: 16px;
+        background-color: #4CAF50;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.3s;
+        cursor: pointer;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
 }
 
 .botaoEnviar:hover {
@@ -496,6 +559,15 @@ footer {
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
     margin-top: 9vh;
+}
+
+/* ajuste tamanho de tela */
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    footer {
+        font-family: 'montserrat', sans-serif;
+        background-color: #EBECF0;
+        margin-top: 27vh;
+    }
 }
 
 footer p {
@@ -622,16 +694,14 @@ footer p {
     font-size: 16px;
 }
 
-.redes img {
-    width: 25%;
-    margin-top: 15%;
-}
 
+/* título das redes sociais */
 h4 {
     font-size: 18px;
     margin-top: 2%;
 }
 
-#ilustra {
-    margin-left: 52vw;
+.redes img {
+    width: 25%;
+    margin-top: 15%;
 }
