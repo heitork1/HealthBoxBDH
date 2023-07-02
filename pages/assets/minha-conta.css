@@ -1,579 +1,568 @@
 body {
-    padding: 0;
-    background-color: #EBECF0;
-    margin: 0;
-    width: auto;
-    overflow-x: hidden;
-    /* Impede a rolagem horizontal */
+    padding: 0; /* Define o preenchimento interno do elemento body como 0 */
+    background-color: #EBECF0; /* Define a cor de fundo como #EBECF0 */
+    margin: 0; /* Define a margem externa do elemento body como 0 */
+    width: auto; /* Define a largura do elemento body como automática */
+    overflow-x: hidden; /* Impede a rolagem horizontal */
 }
-
 
 /* menu principal */
 .faixa1 {
-    background-color: #093807;
-    display: flex;
-    height: 8.8vh;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
+    background-color: #093807; /* Define a cor de fundo como #093807 */
+    display: flex; /* Exibe o elemento como um flex container */
+    height: 8.8vh; /* Define a altura do elemento como 8.8vh */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 100%; /* Define a largura do elemento como 100% */
+    position: fixed; /* Define a posição fixa */
+    top: 0; /* Define a posição superior como 0 */
 }
 
-
-
 #logo {
-    display: flex;
-    height: 35vh;
-    margin-left: -1vw;
+    display: flex; /* Exibe o elemento como um flex container */
+    height: 35vh; /* Define a altura do elemento como 35vh */
+    margin-left: -1vw; /* Define a margem esquerda do elemento como -1vw */
 }
 
 .pesquisa {
-    display: flex;
-    background-color: white;
-    height: 2.5vw;
-    align-items: center;
-    border-radius: 1vw;
-    width: 22vw;
-    padding-left: 1vw;
-    margin-left: 45vw;
-    transition: 0.2s;
-    justify-content: space-around;
+    display: flex; /* Exibe o elemento como um flex container */
+    background-color: white; /* Define a cor de fundo como branco */
+    height: 2.5vw; /* Define a altura do elemento como 2.5vw */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    border-radius: 1vw; /* Define o raio da borda como 1vw */
+    width: 22vw; /* Define a largura do elemento como 22vw */
+    padding-left: 1vw; /* Define o preenchimento esquerdo do elemento como 1vw */
+    margin-left: 45vw; /* Define a margem esquerda do elemento como 45vw */
+    transition: 0.2s; /* Adiciona uma transição de 0.2 segundos */
+    justify-content: space-around; /* Distribui o espaço entre os itens uniformemente */
 }
 
 .pesquisa:hover {
-    background-color: rgb(211, 211, 211);
-    cursor: pointer;
-
+    background-color: rgb(211, 211, 211); /* Define a cor de fundo como rgb(211, 211, 211) ao passar o mouse */
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse */
 }
 
 .pesquisa input {
-    width: 12vw;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
+    width: 12vw; /* Define a largura do input como 12vw */
+    background-color: transparent; /* Define a cor de fundo do input como transparente */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte do input como 'Montserrat', sans-serif */
 }
 
 .pesquisa img {
-    display: flex;
-    height: 4vh;
+    display: flex; /* Exibe o elemento como um flex container */
+    height: 4vh; /* Define a altura do elemento como 4vh */
 }
 
 @media screen and (max-width: 1150px) {
     .pesquisa {
-        margin-left: 30vw;
-        height: 5vh
+        margin-left: 30vw; /* Define a margem esquerda do elemento como 30vw */
+        height: 5vh; /* Define a altura do elemento como 5vh */
     }
 
     .pesquisa img {
-        height: 3.5vh;
+        height: 3.5vh; /* Define a altura do elemento como 3.5vh */
     }
 }
 
 input {
-    border: none;
-    outline: none;
+    border: none; /* Define a borda do input como nula */
+    outline: none; /* Remove o contorno ao redor do input */
 }
 
 .entrar {
-    display: flex;
-    width: 10vw;
-    margin-left: 3vw;
+    display: flex; /* Define o elemento como flexível */
+    width: 10vw; /* Define a largura do elemento como 10% da largura da viewport */
+    margin-left: 3vw; /* Define a margem esquerda do elemento como 3% da largura da viewport */
 }
 
 @media screen and (max-width: 1150px) {
     .entrar {
-        margin-left: 2vw;
+        margin-left: 2vw; /* Define a margem esquerda do elemento como 2% da largura da viewport quando a largura da tela for menor ou igual a 1150px */
     }
 }
 
 .entrar a {
-    display: flex;
-    width: 4vw;
-    align-items: center;
-    text-decoration: none;
+    display: flex; /* Define o elemento filho como flexível */
+    width: 4vw; /* Define a largura do elemento filho como 4% da largura da viewport */
+    align-items: center; /* Alinha verticalmente o conteúdo do elemento filho */
+    text-decoration: none; /* Remove a decoração de texto do elemento filho */
 }
 
 .entrar img {
-    width: 2vw;
+    width: 2vw; /* Define a largura da imagem como 2% da largura da viewport */
 }
 
 .entrar p {
-    padding: 0.3vw;
-    margin-left: 0.2vw;
-    transition: 0.3s;
+    padding: 0.3vw; /* Define o preenchimento interno do parágrafo como 0.3% da largura da viewport */
+    margin-left: 0.2vw; /* Define a margem esquerda do parágrafo como 0.2% da largura da viewport */
+    transition: 0.3s; /* Adiciona uma transição de 0.3 segundos */
 }
 
 .entrar p:hover {
-    background-color: #429c4462;
-    border-radius: 1vh;
-    padding: 0.5vw;
+    background-color: #429c4462; /* Define a cor de fundo do parágrafo quando o mouse está sobre ele */
+    border-radius: 1vh; /* Define o raio da borda do parágrafo */
+    padding: 0.5vw; /* Define o preenchimento interno do parágrafo como 0.5% da largura da viewport */
 }
 
 .sacola img {
-    width: 2vw;
+    width: 2vw; /* Define a largura da imagem como 2% da largura da viewport */
 }
 
 .sacola a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    margin-right: 2vw;
+    display: flex; /* Define o elemento filho como flexível */
+    align-items: center; /* Alinha verticalmente o conteúdo do elemento filho */
+    text-decoration: none; /* Remove a decoração de texto do elemento filho */
+    margin-right: 2vw; /* Define a margem direita do elemento como 2% da largura da viewport */
 }
 
 .sacola p {
-    margin-left: 0.76vw;
-    transition: 0.3s;
+    margin-left: 0.76vw; /* Define a margem esquerda do parágrafo como 0.76% da largura da viewport */
+    transition: 0.3s; /* Adiciona uma transição de 0.3 segundos */
 }
 
 @media screen and (max-width: 1150px) {
     .sacola a {
-        margin-right: 0.2vw;
-        margin-left: 1vw
+        margin-right: 0.2vw; /* Define a margem direita do elemento como 0.2% da largura da viewport quando a largura da tela for menor ou igual a 1150px */
+        margin-left: 1vw; /* Define a margem esquerda do elemento como 1% da largura da viewport quando a largura da tela for menor ou igual a 1150px */
     }
 }
 
 .sacola p:hover {
-    background-color: #429c4462;
-    border-radius: 1vh;
-    padding: 0.5vw;
+    background-color: #429c4462; /* Define a cor de fundo do parágrafo quando o mouse está sobre ele */
+    border-radius: 1vh; /* Define o raio da borda do parágrafo */
+    padding: 0.5vw; /* Define o preenchimento interno do parágrafo como 0.5% da largura da viewport */
 }
 
 /*Menu secundario*/
 
 .faixa2 {
-    background-color: #429C44;
-    height: 7.2vh;
-    width: 100%;
-    top: 8.7vh;
-    position: fixed;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-
+    background-color: #429C44; /* Define a cor de fundo da faixa2 */
+    height: 7.2vh; /* Define a altura da faixa2 */
+    width: 100%; /* Define a largura da faixa2 */
+    top: 8.7vh; /* Define a posição vertical da faixa2 */
+    position: fixed; /* Define a posição da faixa2 como fixa */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; /* Adiciona uma sombra à faixa2 */
 }
 
 .opcoes a:hover {
-    background-color: #254e2562;
-    border-radius: 1vh;
-    padding: 0.5vw;
+    background-color: #254e2562; /* Define a cor de fundo do elemento quando o mouse está sobre ele */
+    border-radius: 1vh; /* Define o raio da borda do elemento */
+    padding: 0.5vw; /* Define o preenchimento interno do elemento como 0.5% da largura da viewport */
 }
 
 .opcoes {
-    display: flex;
-    height: 3.5vw;
-    align-items: center;
-    margin-left: 83vw;
-    justify-content: space-around;
-    width: 32.5vh;
+    display: flex; /* Define o elemento como flexível */
+    height: 3.5vw; /* Define a altura do elemento como 3.5% da largura da viewport */
+    align-items: center; /* Alinha verticalmente o conteúdo do elemento */
+    margin-left: 83vw; /* Define a margem esquerda do elemento como 83% da largura da viewport */
+    justify-content: space-around; /* Distribui o espaço livre de forma igual entre os elementos filhos */
+    width: 32.5vh; /* Define a largura do elemento como 32.5% da altura da viewport */
 }
 
 .opcoes a {
-    align-self: center;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    transition: 0.3s;
+    align-self: center; /* Alinha verticalmente o conteúdo do elemento */
+    text-decoration: none; /* Remove a decoração de texto do elemento */
+    font-family: 'Montserrat', sans-serif; /* Define a família de fonte do elemento */
+    color: white; /* Define a cor do texto do elemento como branco */
+    transition: 0.3s; /* Adiciona uma transição de 0.3 segundos */
 }
 
 @media screen and (max-width: 1150px) {
     .opcoes {
-        margin-left: 80vw;
-        height: 100%;
-        align-items: center;
-        width: 26.5vh;
+        margin-left: 80vw; /* Define a margem esquerda do elemento como 80% da largura da viewport quando a largura da tela for menor ou igual a 1150px */
+        height: 100%; /* Define a altura do elemento como 100% da altura da viewport */
+        align-items: center; /* Alinha verticalmente o conteúdo do elemento */
+        width: 26.5vh; /* Define a largura do elemento como 26.5% da altura da viewport */
     }
 }
 
 #nos {
-    display: flex;
+    display: flex; /* Define o elemento como flexível */
 }
 
-
-
 p {
-    color: white;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 4%;
+    color: white; /* Define a cor do texto como branco */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+    font-family: 'Montserrat', sans-serif; /* Define a família de fonte do texto */
+    margin-left: 4%; /* Define a margem esquerda como 4% */
 }
 
 .separador {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    margin-right: 2%;
+    display: flex; /* Define o elemento como flexível */
+    flex-direction: column; /* Define a direção do fluxo como coluna */
+    align-items: center; /* Alinha verticalmente o conteúdo do elemento */
+    margin-left: 0; /* Define a margem esquerda como 0 */
+    margin-right: 2%; /* Define a margem direita como 2% */
 }
 
 main {
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    justify-content: center;
-    height: 84vh;
-    background-color: #EBECF0;
-    margin-top: 18vh;
+    display: flex; /* Define o elemento como flexível */
+    font-family: 'Montserrat', sans-serif; /* Define a família de fonte do elemento */
+    justify-content: center; /* Alinha horizontalmente o conteúdo do elemento */
+    height: 84vh; /* Define a altura do elemento como 84% da altura da viewport */
+    background-color: #EBECF0; /* Define a cor de fundo do elemento */
+    margin-top: 18vh; /* Define a margem superior como 18% da altura da viewport */
 }
 
 .nome {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Define o elemento como flexível */
+    flex-direction: column; /* Define a direção do fluxo como coluna */
 }
 
 .emailInput {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Define o elemento como flexível */
+    flex-direction: column; /* Define a direção do fluxo como coluna */
 }
 
 .senha {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Define o elemento como flexível */
+    flex-direction: column; /* Define a direção do fluxo como coluna */
 }
 
 .data_tel {
-    display: flex;
+    display: flex; /* Define o elemento como flexível */
 }
 
 .box-1 {
-    background-color: rgb(223, 203, 190);
-    border: 15px solid #6AA96B;
-    border-radius: 4px;
-    width: 28vw;
-    height: 27.5vh;
-    margin-top: 2vh;
+    background-color: rgb(223, 203, 190); /* Define a cor de fundo da caixa-1 */
+    border: 15px solid #6AA96B; /* Define uma borda com 15 pixels de largura e cor #6AA96B */
+    border-radius: 4px; /* Define o raio da borda da caixa-1 */
+    width: 28vw; /* Define a largura da caixa-1 como 28% da largura da viewport */
+    height: 27.5vh; /* Define a altura da caixa-1 como 27.5% da altura da viewport */
+    margin-top: 1vh; /* Define a margem superior como 2% da altura da viewport */
 }
 
 .div1 {
-    display: flex;
+    display: flex; /* Define o elemento como flexível */
 }
 
 .produto {
-    width: 25%;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 4%;
+    width: 25%; /* Define a largura do produto como 25% */
+    margin-top: 5%; /* Define a margem superior do produto como 5% */
+    margin-left: 5%; /* Define a margem esquerda do produto como 5% */
+    margin-right: 4%; /* Define a margem direita do produto como 4% */
 }
 
 .formulario {
-    background-color: #093807;
-    border: 15px solid #6AA96B;
-    display: flex;
-    justify-content: center;
-    height: 60vh;
-    width: 30vw;
-    border-radius: 4px;
+    background-color: #093807;  /* Define a cor de fundo do formulário */
+    border: 15px solid #6AA96B;  /* Define a cor e a largura da borda */
+    display: flex;  /* Define o tipo de exibição como flex */
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    height: 60vh;  /* Define a altura do formulário como 60% da altura da viewport */
+    width: 30vw;  /* Define a largura do formulário como 30% da largura da viewport */
+    border-radius: 4px;  /* Define o raio de borda do formulário */
 }
 
 .form {
-    width: 26vw;
+    width: 26vw;  /* Define a largura do formulário interno como 26% da largura da viewport */
 }
 
 @media screen and (max-width: 1150px) and (min-height: 720px) {
     .formulario {
-        width: 30vw;
-        height: 54vh;
+        width: 30vw;  /* Define a largura do formulário como 30% da largura da viewport em determinada resolução */
+        height: 54vh;  /* Define a altura do formulário como 54% da altura da viewport em determinada resolução */
     }
-
     .form {
-        width: 27vw;
+        width: 27vw;  /* Define a largura do formulário interno como 27% da largura da viewport em determinada resolução */
     }
     .form input{
-        height: 3.5vh;
+        height: 3.5vh;  /* Define a altura dos inputs do formulário interno em determinada resolução */
     }
-
     .box-1 {
-        height: 25vh;
-        
+        height: 25vh;  /* Define a altura da caixa com a classe "box-1" em determinada resolução */
+        margin-top: 1.7vh;  /* Define a margem superior da caixa com a classe "box-1" em determinada resolução */
+    }
+    .produto {
+        width: 30%;  /* Define a largura do elemento com a classe "produto" em determinada resolução */
+        height: 30%;  /* Define a altura do elemento com a classe "produto" em determinada resolução */
     }
 
-    .produto {
-        width: 30%;
-        height: 30%;
-    }
 }
 
 .logo {
-    width: 12vw;
+    width: 12vw;  /* Define a largura do elemento com a classe "logo" */
 }
 
 .pedidos h1{
-    margin-bottom: 4vh;
-    margin-top: 4vh;
+    margin-bottom: 4vh;  /* Define a margem inferior do elemento h1 dentro de um elemento com a classe "pedidos" */
+    margin-top: 3.6vh;  /* Define a margem superior do elemento h1 dentro de um elemento com a classe "pedidos" */
 }
 form {
-    height: 90%;
-    margin-top: 4%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: white;
+    height: 90%;  /* Define a altura do formulário como 90% do seu elemento pai */
+    margin-top: 4%;  /* Define a margem superior do formulário */
+    display: flex;  /* Define o tipo de exibição como flex */
+    flex-direction: column;  /* Define a direção dos elementos filhos como coluna */
+    justify-content: space-around;  /* Distribui o espaço verticalmente entre os elementos filhos */
+    color: white;  /* Define a cor do texto do formulário como branco */
 }
 
 form input {
-    height: 4vh;
-    border-radius: 4px;
-    padding-left: 2%;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 2%;
-    background-color: #E9E7E4;
+    height: 4vh;  /* Define a altura dos inputs do formulário */
+    border-radius: 4px;  /* Define o raio de borda dos inputs do formulário */
+    padding-left: 2%;  /* Adiciona preenchimento à esquerda dos inputs do formulário */
+    font-family: 'Montserrat', sans-serif;  /* Define a família de fonte dos inputs do formulário */
+    margin-top: 2%;  /* Define a margem superior dos inputs do formulário */
+    background-color: #E9E7E4;  /* Define a cor de fundo dos inputs do formulário */
 }
 
 .tel input {
-    width: 98%;
+    width: 98%;  /* Define a largura dos inputs dentro de um elemento com a classe "tel" */
 }
 
 #alterar {
-    background-color: #4CAF50;
-    color: #FFFFFF;
-    height: 12%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    transition: 0.3S;
-    cursor: pointer;
+    background-color: #4CAF50;  /* Define a cor de fundo do elemento com o ID "alterar" */
+    color: #FFFFFF;  /* Define a cor do texto do elemento com o ID "alterar" */
+    height: 12%;  /* Define a altura do elemento com o ID "alterar" */
+    font-family: 'Montserrat', sans-serif;  /* Define a família de fonte do elemento com o ID "alterar" */
+    font-size: 18px;  /* Define o tamanho da fonte do elemento com o ID "alterar" */
+    transition: 0.3S;  /* Define uma transição de 0.3 segundos para o elemento com o ID "alterar" */
+    cursor: pointer;  /* Define o cursor do mouse como um ponteiro para o elemento com o ID "alterar" */
 }
 
 #alterar:hover {
-    transform: scale(1.05);
+    transform: scale(1.05);  /* Define uma escala de transformação para o elemento com o ID "alterar" quando o mouse passa por cima */
 }
 
 .data input {
-    width: 85%;
+    width: 85%;  /* Define a largura dos inputs dentro de um elemento com a classe "data" */
 }
 
 @media screen and (max-width: 1150px) and (min-height: 720px) {
     .data label {
-        font-size: 14px;
+        font-size: 14px;  /* Define o tamanho da fonte das labels dentro de um elemento com a classe "data" em determinada resolução */
     }
     #alterar{
-        font-size: 16px;
+        font-size: 16px;  /* Define o tamanho da fonte do elemento com o ID "alterar" em determinada resolução */
     }
     #nasc{
-        width: 13.5vw;
+        width: 13.5vw;  /* Define a largura do elemento com o ID "nasc" em determinada resolução */
     }
     .tel label {
-        font-size: 14px;
+        font-size: 14px;  /* Define o tamanho da fonte das labels dentro de um elemento com a classe "tel" em determinada resolução */
     }
 
     .tel input {
-        width: 14vh;
+        width: 14vh;  /* Define a largura dos inputs dentro de um elemento com a classe "tel" em determinada resolução */
+    }
+    .pedidos h1{
+        margin-top: 2.5vh;  /* Define a margem superior do elemento h1 dentro de um elemento com a classe "pedidos" em determinada resolução */
+        margin-bottom: 0;  /* Define a margem inferior do elemento h1 dentro de um elemento com a classe "pedidos" em determinada resolução */
     }
 }
 
 #linha {
-    height: 55%;
-    margin-right: 4%;
-    margin-top: 12%;
+    height: 55%;  /* Define a altura do elemento com o ID "linha" */
+    margin-right: 4%;  /* Define a margem direita do elemento com o ID "linha" */
+    margin-top: 12%;  /* Define a margem superior do elemento com o ID "linha" */
 }
 
 .legenda {
-    width: 100%;
+    width: 100%;  /* Define a largura do elemento com a classe "legenda" */
 }
 
 .nomeprod {
-    background-color: #E9E7E4;
-    color: #3D2A1A;
-    font-size: 17px;
-    font-weight: 600;
-    margin-top: 7.5%;
-    padding-left: 1%;
-    padding-right: 1%;
-    width: 14VW;
-    border-radius: 4px;
+    background-color: #E9E7E4;  /* Define a cor de fundo do elemento com a classe "nomeprod" */
+    color: #3D2A1A;  /* Define a cor do texto do elemento com a classe "nomeprod" */
+    font-size: 17px;  /* Define o tamanho da fonte do elemento com a classe "nomeprod" */
+    font-weight: 600;  /* Define o peso da fonte do elemento com a classe "nomeprod" */
+    margin-top: 7.5%;  /* Define a margem superior do elemento com a classe "nomeprod" */
+    padding-left: 1%;  /* Define o preenchimento à esquerda do elemento com a classe "nomeprod" */
+    padding-right: 1%;  /* Define o preenchimento à direita do elemento com a classe "nomeprod" */
+    width: 14VW;  /* Define a largura do elemento com a classe "nomeprod" */
+    border-radius: 4px;  /* Define o raio de borda do elemento com a classe "nomeprod" */
 }
 
 img.produto {
-    border-radius: 7px;
+    border-radius: 7px;  /* Define o raio de borda da imagem com a classe "produto" */
 }
 
 .valor {
-    background-color: #3D2A1A;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    border-radius: 4px;
-    margin-top: 5%;
-    margin-left: 50%;
-    padding: 1%;
+    background-color: #3D2A1A;  /* Define a cor de fundo do elemento com a classe "valor" */
+    width: 30%;  /* Define a largura do elemento com a classe "valor" */
+    display: flex;  /* Define o tipo de exibição como flex */
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    border-radius: 4px;  /* Define o raio de borda do elemento com a classe "valor" */
+    margin-top: 5%;  /* Define a margem superior do elemento com a classe "valor" */
+    margin-left: 50%;  /* Define a margem esquerda do elemento com a classe "valor" */
+    padding: 1%;  /* Define o preenchimento do elemento com a classe "valor" */
 }
 
 @media screen and (max-width: 1150px) and (min-height: 720px) {
     .valor {
-        width: 45%;
-        margin-left: 40%;
+        width: 45%;  /* Define a largura do elemento com a classe "valor" em determinada resolução */
+        margin-left: 40%;  /* Define a margem esquerda do elemento com a classe "valor" em determinada resolução */
     }
 }
 
+
 .entrega {
-    background-color: #E9E7E4;
-    color: #3D2A1A;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    border-radius: 8px;
-    margin-left: 0;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    max-width: 75%;
-    margin: auto;
-    margin-top: 4%;
+    background-color: #E9E7E4; /* Cor de fundo */
+    color: #3D2A1A; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: center; /* Alinhar conteúdo horizontalmente ao centro */
+    border-radius: 8px; /* Raio do arredondamento das bordas */
+    margin-left: 0; /* Margem esquerda */
+    padding-left: 2%; /* Espaçamento interno à esquerda */
+    padding-right: 2%; /* Espaçamento interno à direita */
+    padding-top: 1%; /* Espaçamento interno superior */
+    padding-bottom: 1%; /* Espaçamento interno inferior */
+    max-width: 75%; /* Largura máxima */
+    margin: auto; /* Margem automática para centralizar horizontalmente */
+    margin-top: 4%; /* Margem superior */
 }
 
 .minhaconta {
-    height: 75vh;
-    width: 35vw;
+    height: 75vh; /* Altura */
+    width: 35vw; /* Largura */
 }
 
 .debaixo {
-    margin-top: 1%;
+    margin-top: 1%; /* Margem superior */
 }
 
 h1 {
-    margin-top: 4%;
-    margin-bottom: 4%;
-    display: flex;
-    justify-content: center;
+    margin-top: 4%; /* Margem superior */
+    margin-bottom: 4%; /* Margem inferior */
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: center; /* Alinhar conteúdo horizontalmente ao centro */
 }
+
 #sair{
-    width: 65%;
-    margin-left: 20%;
-    margin-top: 5%;
-    margin-bottom: 0;
+    width: 65%; /* Largura */
+    margin-left: 20%; /* Margem esquerda */
+    margin-top: 5%; /* Margem superior */
+    margin-bottom: 0; /* Margem inferior */
 }
+
 .minhaconta a{
-    width: 10%;
+    width: 10%; /* Largura */
 }
-
-
 
 footer {
-    font-family: 'montserrat', sans-serif;
-    background-color: #EBECF0;
-    margin-top: 30vh;
+    font-family: 'montserrat', sans-serif; /* Família da fonte */
+    background-color: #EBECF0; /* Cor de fundo */
+    margin-top: 30vh; /* Margem superior */
 }
 
 footer p {
-    color: black;
+    color: black; /* Cor do texto */
 }
 
 .contato p {
-    margin-left: 0;
-    font-size: 16px;
+    margin-left: 0; /* Margem esquerda */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
 .linha {
-    background-color: #093807;
-    height: 2vh;
+    background-color: #093807; /* Cor de fundo */
+    height: 2vh; /* Altura */
 }
 
 .linha2 {
-    background-color: #093807;
-
-    height: 2vh;
+    background-color: #093807; /* Cor de fundo */
+    height: 2vh; /* Altura */
 }
 
 .sublinhado {
-    background-color: #093807;
-    margin-top: -8%;
-    height: 2%;
-    width: 80%;
-    margin-left: 2%;
+    background-color: #093807; /* Cor de fundo */
+    margin-top: -8%; /* Margem superior negativa */
+    height: 2%; /* Altura */
+    width: 80%; /* Largura */
+    margin-left: 2%; /* Margem esquerda */
 }
 
 .row1 {
-    display: flex;
-    padding-top: 1%;
-    justify-content: space-around;
+    display: flex; /* Exibir como um elemento flexível */
+    padding-top: 1%; /* Espaçamento interno superior */
+    justify-content: space-around; /* Alinhar conteúdo horizontalmente com espaçamento igual */
 }
 
 .row1 a {
-    color: black;
+    color: black; /* Cor do texto */
 }
 
 .row1 img {
-    margin-top: -5%;
+    margin-top: -5%; /* Margem superior negativa */
 }
 
 .col1 p {
-    width: 70%;
-    margin-left: 6%;
+    width: 70%; /* Largura */
+    margin-left: 6%; /* Margem esquerda */
 }
 
 .col2 {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
 }
 
 .col2 a {
-    margin-top: 12%;
+    margin-top: 12%; /* Margem superior */
 }
 
 .col3 {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
 }
 
 .col3 a {
-    margin-top: 20%;
+    margin-top: 20%; /* Margem superior */
 }
 
 .col4 {
-    display: flex;
-    flex-direction: column;
-    width: 11%;
-    margin-right: 5%;
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
+    width: 11%; /* Largura */
+    margin-right: 5%; /* Margem direita */
 }
 
 .localizacao {
-    display: flex;
-    align-items: center;
+    display: flex; /* Exibir como um elemento flexível */
+    align-items: center; /* Alinhar conteúdo verticalmente ao centro */
 }
 
 .fone {
-    display: flex;
-    align-items: center;
-    width: 30%;
-
+    display: flex; /* Exibir como um elemento flexível */
+    align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+    width: 30%; /* Largura */
 }
 
 .email {
-    display: flex;
-    align-items: center;
-    margin-left: -10%;
+    display: flex; /* Exibir como um elemento flexível */
+    align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+    margin-left: -10%; /* Margem esquerda negativa */
 }
 
 .contato {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    height: 8vh;
-    margin-left: 6%;
-    margin-top: 2%;
+    width: 85%; /* Largura */
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: space-between; /* Alinhar conteúdo horizontalmente com espaçamento igual */
+    height: 8vh; /* Altura */
+    margin-left: 6%; /* Margem esquerda */
+    margin-top: 2%; /* Margem superior */
 }
 
 .contato img {
-    height: 50%;
-    margin-right: 3%;
+    height: 50%; /* Altura */
+    margin-right: 3%; /* Margem direita */
 }
 
 .localizacao img {
-    margin-right: 5%;
+    margin-right: 5%; /* Margem direita */
 }
 
 .lema {
-    text-align: center;
-    margin-right: 1%;
-    margin-top: 2%;
-    font-size: 16px;
+    text-align: center; /* Alinhamento do texto ao centro */
+    margin-right: 1%; /* Margem direita */
+    margin-top: 2%; /* Margem superior */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
 .redes img {
-    width: 25%;
-    margin-top: 15%;
+    width: 25%; /* Largura */
+    margin-top: 15%; /* Margem superior */
 }
 
 h4 {
-    font-size: 18px;
-    margin-top: 2%;
-}
-
-#ilustra {
-    margin-left: 52vw;
+    font-size: 18px; /* Tamanho da fonte */
+    margin-top: 2%; /* Margem superior */
 }
