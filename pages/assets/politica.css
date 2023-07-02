@@ -1,368 +1,382 @@
+/* Define estilos globais para todos os elementos */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0; /* Margem externa igual a zero */
+  padding: 0; /* Preenchimento igual a zero */
 }
 
 body {
-    padding: 0;
-    background-color: #EBECF0;
-    margin: 0;
-    width: auto;
-    overflow-x: hidden;
-    /* Impede a rolagem horizontal */
+  padding: 0; /* Preenchimento igual a zero */
+  background-color: #ebecf0; /* Cor de fundo do corpo */
+  margin: 0; /* Margem externa igual a zero */
+  width: auto; /* Largura automática */
+  overflow-x: hidden; /* Impede a rolagem horizontal */
+
+  /* Início do estilo do menu principal */
+  /* Estilo para a faixa de navegação principal no topo da página */
 }
 
-
-/* menu principal */
 .faixa1 {
-    background-color: #093807;
-    display: flex;
-    height: 8.8vh;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
+  background-color: #093807; /* Cor de fundo */
+  display: flex; /* Exibir como elemento flexível */
+  height: 8.8vh; /* Altura */
+  align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+  width: 100%; /* Largura */
+  position: fixed; /* Fixar a posição no topo da página */
+
+  /* Início do estilo do logo */
 }
-
-
 
 #logo {
-    display: flex;
-    height: 35vh;
-    margin-left: -1vw;
+  display: flex; /* Exibir como elemento flexível */
+  height: 35vh; /* Altura */
+  margin-left: -1vw; /* Margem esquerda negativa */
+
+  /* Início do estilo do campo de pesquisa */
 }
 
 .pesquisa {
-    display: flex;
-    background-color: white;
-    height: 2.5vw;
-    align-items: center;
-    border-radius: 1vw;
-    width: 22vw;
-    padding-left: 1vw;
-    margin-left: 45vw;
-    transition: 0.2s;
-    justify-content: space-around;
+  display: flex; /* Exibir como elemento flexível */
+  background-color: white; /* Cor de fundo */
+  height: 2.5vw; /* Altura */
+  align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+  border-radius: 1vw; /* Raio do canto */
+  width: 22vw; /* Largura */
+  padding-left: 1vw; /* Preenchimento à esquerda */
+  margin-left: 45vw; /* Margem esquerda */
+  transition: 0.2s; /* Transição suave de propriedades */
+  justify-content: space-around; /* Justificar conteúdo com espaçamento igual */
+
+  /* Estilo ao passar o mouse sobre o campo de pesquisa */
 }
 
 .pesquisa:hover {
-    background-color: rgb(211, 211, 211);
-    cursor: pointer;
+  background-color: rgb(211, 211, 211); /* Cor de fundo ao passar o mouse */
+  cursor: pointer; /* Cursor do mouse alterado */
 
+  /* Estilo do input do campo de pesquisa */
 }
 
 .pesquisa input {
-    width: 12vw;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
+  width: 12vw; /* Largura do input */
+  background-color: transparent; /* Cor de fundo transparente */
+  font-family: "Montserrat", sans-serif; /* Estilo da fonte */
 }
 
 .pesquisa img {
-    display: flex;
-    height: 4vh;
+  display: flex; /* Exibir como elemento flexível */
+  height: 4vh; /* Altura */
+
+  /* Estilo para o campo de pesquisa em telas menores */
 }
 
 @media screen and (max-width: 1150px) {
-    .pesquisa {
-        margin-left: 30vw;
-        height: 5vh
-    }
+  .pesquisa {
+    margin-left: 30vw; /* Margem esquerda em telas menores */
+    height: 5vh; /* Altura em telas menores */
+  }
 
-    .pesquisa img {
-        height: 3.5vh;
-    }
+  .pesquisa img {
+    height: 3.5vh; /* Altura em telas menores */
+  }
 }
 
 input {
-    border: none;
-    outline: none;
+  border: none; /* Sem borda */
+  outline: none; /* Sem contorno */
 }
 
+/* Estilo para a área de login */
 .entrar {
-    display: flex;
-    width: 10vw;
-    margin-left: 3vw;
+  display: flex; /* Exibir como elemento flexível */
+  width: 10vw; /* Largura */
+  margin-left: 3vw; /* Margem esquerda */
+
+  /* Estilo para a área de login em telas menores */
 }
 
 @media screen and (max-width: 1150px) {
-    .entrar {
-        margin-left: 2vw;
-    }
+  .entrar {
+    margin-left: 2vw; /* Margem esquerda em telas menores */
+  }
 }
 
 .entrar a {
-    display: flex;
-    width: 4vw;
-    align-items: center;
-    text-decoration: none;
+  display: flex; /* Exibir como elemento flexível */
+  width: 4vw; /* Largura */
+  align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+  text-decoration: none; /* Sem decoração de texto */
 }
 
 .entrar img {
-    width: 2vw;
+  width: 2vw; /* Largura da imagem */
 }
 
 .entrar p {
-    padding: 0.3vw;
-    margin-left: 0.2vw;
-    transition: 0.3s;
+  padding: 0.3vw; /* Preenchimento */
+  margin-left: 0.2vw; /* Margem esquerda */
+  transition: 0.3s; /* Transição suave de propriedades */
+
+  /* Estilo ao passar o mouse sobre a área de login */
 }
 
 .entrar p:hover {
-    background-color: #429c4462;
-    border-radius: 1vh;
-    padding: 0.5vw;
+  background-color: #429c4462; /* Cor de fundo ao passar o mouse */
+  border-radius: 1vh; /* Raio do canto */
+  padding: 0.5vw; /* Preenchimento */
 }
 
+/* Estilo para o ícone do carrinho de compras */
 .sacola img {
-    width: 2vw;
+  width: 2vw; /* Largura da imagem */
 }
 
 .sacola a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    margin-right: 2vw;
+  display: flex; /* Exibir como elemento flexível */
+  align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+  text-decoration: none; /* Sem decoração de texto */
+  margin-right: 2vw; /* Margem direita */
 }
 
 .sacola p {
-    margin-left: 0.76vw;
-    transition: 0.3s;
+  margin-left: 0.76vw; /* Margem esquerda */
+  transition: 0.3s; /* Transição suave de propriedades */
+
+  /* Estilo para o ícone do carrinho de compras em telas menores */
 }
 
 @media screen and (max-width: 1150px) {
-    .sacola a {
-        margin-right: 0.2vw;
-        margin-left: 1vw
-    }
+  .sacola a {
+    margin-right: 0.2vw; /* Margem direita em telas menores */
+    margin-left: 1vw; /* Margem esquerda em telas menores */
+  }
 }
 
 .sacola p:hover {
-    background-color: #429c4462;
-    border-radius: 1vh;
-    padding: 0.5vw;
+  background-color: #429c4462; /* Cor de fundo ao passar o mouse */
+  border-radius: 1vh; /* Raio do canto */
+  padding: 0.5vw; /* Preenchimento */
 }
 
-/*Menu secundario*/
-
+/* Estilo para o menu secundário */
 .faixa2 {
-    background-color: #429C44;
-    height: 7.2vh;
-    width: 100%;
-    top: 8.7vh;
-    position: fixed;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  background-color: #429c44; /* Cor de fundo */
+  height: 7.2vh; /* Altura */
+  width: 100%; /* Largura */
+  top: 8.7vh; /* Posicionamento superior */
+  position: fixed; /* Fixar a posição */
 
+  /* Sombra do menu secundário */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
+/* Estilo ao passar o mouse sobre as opções do menu */
 .opcoes a:hover {
-    background-color: #254e2562;
-    border-radius: 1vh;
-    padding: 0.5vw;
+  background-color: #254e2562; /* Cor de fundo ao passar o mouse */
+  border-radius: 1vh;
+  padding: 0.5vw; /* Preenchimento */
 }
 
+/* Estilo para as opções do menu */
 .opcoes {
-    display: flex;
-    height: 3.5vw;
-    align-items: center;
-    margin-left: 83vw;
-    justify-content: space-around;
-    width: 32.5vh;
+  display: flex; /* Exibir como elemento flexível */
+  height: 3.5vw; /* Altura / */
+  align-items: center; /*Alinhar conteúdo verticalmente ao centro*/
+  margin-left: 83vw; /* Margem esquerda */
+  justify-content: space-around; /* Justificar conteúdo com espaçamento igual */
+  width: 32.5vh; /* Largura das opções do menu */
 }
 
 .opcoes a {
-    align-self: center;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    transition: 0.3s;
+  align-self: center;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  transition: 0.3s;
 }
 
+/* Estilo para as opções do menu em telas menores */
 @media screen and (max-width: 1150px) {
-    .opcoes {
-        margin-left: 80vw;
-        height: 100%;
-        align-items: center;
-        width: 26.5vh;
-    }
+  .opcoes {
+    margin-left: 80vw; /* Margem esquerda em telas menores */
+    height: 100%; /* Altura em telas menores */
+    align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+    width: 26.5vh; /* Largura em telas menores */
+  }
 }
 
 #nos {
-    display: flex;
+  display: flex; /*Exibir como elemento flexível */
 }
 
-
-
+/* Estilo para o texto do cabeçalho */
 header p {
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 4%;
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    font-family: 'Montserrat', sans-serif; /* Estilo da fonte */
+    margin-left: 4%; /* Margem esquerda */
 }
-
-
 main {
-    background-color: #EBECF0;
-    font-family: 'Montserrat', sans-serif;
-    text-align: justify;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    padding-top: 20vh;
-    padding-bottom: 3%;
-}
-
-.texto {
-    width: 70%;
-    margin-left: 1%;
-    margin: auto;
-}
-
-.sub {
-    font-weight: 500;
-}
-
-
-footer {
-    margin-top: 8vh;
-    font-family: 'montserrat', sans-serif;
-    background-color: #EBECF0;
-}
-
-footer p {
-    color: black;
-}
-
-.contato p {
-    margin-left: 0;
-    font-size: 16px;
-}
-
-.linha {
-    background-color: #093807;
-    height: 2vh;
-}
-
-.linha2 {
-    background-color: #093807;
-
-    height: 2vh;
-}
-
-.sublinhado {
-    background-color: #093807;
-    margin-top: -8%;
-    height: 2%;
-    width: 80%;
-    margin-left: 2%;
-}
-
-.row1 {
-    display: flex;
-    padding-top: 1%;
-    justify-content: space-around;
-}
-
-.row1 a {
-    color: black;
-}
-
-.row1 img {
-    margin-top: -5%;
-}
-
-.col1 p {
-    width: 70%;
-    margin-left: 6%;
-}
-
-.col2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.col2 a {
-    margin-top: 12%;
-}
-
-.col3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.col3 a {
-    margin-top: 20%;
-}
-
-.col4 {
-    display: flex;
-    flex-direction: column;
-    width: 11%;
-    margin-right: 5%;
-}
-
-.localizacao {
-    display: flex;
-    align-items: center;
-
-}
-
-.fone {
-    display: flex;
-    align-items: center;
-    width: 30%;
-
-}
-
-.email {
-    display: flex;
-    align-items: center;
-    margin-left: -10%;
-}
-
-.contato {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    height: 8vh;
-    margin-left: 6%;
-    margin-top: 2%;
-}
-
-.contato img {
-    height: 50%;
-    margin-right: 3%;
-}
-
-.localizacao img {
-    margin-right: 5%;
-}
-
-.lema {
-    text-align: center;
-    margin-right: 1%;
-    margin-top: 2%;
-    font-size: 16px;
-    margin-bottom: 4.5vh;
-}
-
-.redes img {
-    width: 25%;
-    margin-top: 15%;
-}
-
-h4 {
-    font-size: 18px;
-    margin-top: 2%;
-    margin-bottom: 13%;
-}
-
-.col3 h4 {
-    margin-bottom: 23%;
-}
-
-#ilustra {
-    margin-left: 52vw;
-}
+    background-color: #ebecf0; /* Cor de fundo */
+    font-family: "Montserrat", sans-serif; /* Fonte */
+    text-align: justify; /* Alinhamento do texto justificado */
+  }
+  
+  h1 {
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: center; /* Alinhar conteúdo horizontalmente ao centro */
+    padding-top: 20vh; /* Preenchimento superior */
+    padding-bottom: 3%; /* Preenchimento inferior */
+  }
+  
+  .texto {
+    width: 70%; /* Largura */
+    margin-left: 1%; /* Margem esquerda */
+    margin: auto; /* Centralizar horizontalmente */
+  }
+  
+  .sub {
+    font-weight: 500; /* Espessura da fonte */
+  }
+  
+  footer {
+    margin-top: 8vh; /* Margem superior */
+    font-family: "montserrat", sans-serif; /* Fonte */
+    background-color: #ebecf0; /* Cor de fundo */
+  }
+  
+  footer p {
+    color: black; /* Cor do texto */
+  }
+  
+  .contato p {
+    margin-left: 0; /* Margem esquerda */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  .linha {
+    background-color: #093807; /* Cor de fundo */
+    height: 2vh; /* Altura */
+  }
+  
+  .linha2 {
+    background-color: #093807; /* Cor de fundo */
+  
+    height: 2vh; /* Altura */
+  }
+  
+  .sublinhado {
+    background-color: #093807; /* Cor de fundo */
+    margin-top: -8%; /* Margem superior negativa */
+    height: 2%; /* Altura */
+    width: 80%; /* Largura */
+    margin-left: 2%; /* Margem esquerda */
+  }
+  
+  .row1 {
+    display: flex; /* Exibir como um elemento flexível */
+    padding-top: 1%; /* Preenchimento superior */
+    justify-content: space-around; /* Alinhar conteúdo horizontalmente com espaçamento igual */
+  }
+  
+  .row1 a {
+    color: black; /* Cor do texto */
+  }
+  
+  .row1 img {
+    margin-top: -5%; /* Margem superior negativa */
+  }
+  
+  .col1 p {
+    width: 70%; /* Largura */
+    margin-left: 6%; /* Margem esquerda */
+  }
+  
+  .col2 {
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
+  }
+  
+  .col2 a {
+    margin-top: 12%; /* Margem superior */
+  }
+  
+  .col3 {
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
+  }
+  
+  .col3 a {
+    margin-top: 20%; /* Margem superior */
+  }
+  
+  .col4 {
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
+    width: 11%; /* Largura */
+    margin-right: 5%; /* Margem direita */
+  }
+  
+  .localizacao {
+    display: flex; /* Exibir como um elemento flexível */
+    align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+  }
+  
+  .fone {
+    display: flex; /* Exibir como um elemento flexível */
+    align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+    width: 30%; /* Largura */
+  }
+  
+  .email {
+    display: flex; /* Exibir como um elemento flexível */
+    align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+    margin-left: -10%; /* Margem esquerda negativa */
+  }
+  
+  .contato {
+    width: 85%; /* Largura */
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: space-between; /* Alinhar conteúdo horizontalmente com espaçamento igual */
+    height: 8vh; /* Altura */
+    margin-left: 6%; /* Margem esquerda */
+    margin-top: 2%; /* Margem superior */
+  }
+  
+  .contato img {
+    height: 50%; /* Altura */
+    margin-right: 3%; /* Margem direita */
+  }
+  
+  .localizacao img {
+    margin-right: 5%; /* Margem direita */
+  }
+  
+  .lema {
+    text-align: center; /* Alinhamento do texto centralizado */
+    margin-right: 1%; /* Margem direita */
+    margin-top: 2%; /* Margem superior */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-bottom: 4.5vh; /* Margem inferior */
+  }
+  
+  .redes img {
+    width: 25%; /* Largura */
+    margin-top: 15%; /* Margem superior */
+  }
+  
+  h4 {
+    font-size: 18px; /* Tamanho da fonte */
+    margin-top: 2%; /* Margem superior */
+    margin-bottom: 13%; /* Margem inferior */
+  }
+  
+  .col3 h4 {
+    margin-bottom: 23%; /* Margem inferior */
+  }
+  
+  #ilustra {
+    margin-left: 52vw; /* Margem esquerda */
+  }
+  
