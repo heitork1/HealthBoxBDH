@@ -3,7 +3,6 @@ const express = require("express"); // Framework para criação de aplicações 
 const bodyParser = require("body-parser"); // Middleware para processar corpos de requisições
 const mysql = require("mysql2"); // Módulo para conexão com o banco de dados MySQL
 const session = require("express-session"); // Middleware para gerenciar sessões de usuário
-const expressLayouts = require("express-ejs-layouts"); // Middleware para uso de layouts EJS
 const fs = require("fs"); // Módulo para leitura de arquivos
 const ejs = require("ejs"); // Mecanismo de renderização de templates EJS
 const moment = require('moment'); // Biblioteca para manipulação de datas e horários
@@ -17,7 +16,6 @@ const path = require("path"); // Módulo para lidar com caminhos de diretórios
 app.use("/assets", express.static("assets")); // Configuração do middleware para servir arquivos estáticos da pasta "assets"
 app.use("/img", express.static("img")); // Configuração do middleware para servir arquivos estáticos da pasta "img"
 app.use("/pages", express.static("pages")); // Configuração do middleware para servir arquivos estáticos da pasta "pages"
-app.use(expressLayouts); // Configuração do middleware para uso de layouts EJS
 app.set("views", path.join(__dirname, "views")); // Configuração do diretório de visualizações
 
 // Configuração da conexão com o banco de dados MySQL
