@@ -1,345 +1,243 @@
 * {
     margin: 0;
-}
+} /* Define a margem para zero de todos os elementos */
 
 body {
-    background-color: #EBECF0;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #EBECF0; /* Define a cor de fundo do corpo do documento */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte para 'Montserrat' */
 }
 
 .main {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    display: flex; /* Define o elemento com display flex */
+    height: 100vh; /* Define a altura como 100% da viewport */
+    flex-direction: column; /* Define a direção da flexão como coluna */
+    align-items: center; /* Alinha os itens ao centro horizontalmente */
+    justify-content: center; /* Alinha os itens ao centro verticalmente */
+    color: white; /* Define a cor do texto como branco */
 }
 
 .main>a {
-    width: 22%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -12vh;
-    margin-top: -10vh;
+    width: 22%; /* Define a largura como 22% */
+    display: flex; /* Define o elemento com display flex */
+    justify-content: center; /* Alinha o conteúdo ao centro horizontalmente */
+    margin-bottom: -12vh; /* Define a margem inferior como -12vh (12% da altura da viewport) */
+    margin-top: -10vh; /* Define a margem superior como -10vh (10% da altura da viewport) */
 }
 
 .large-data {
-    background-color: #E9E7E4;
-    border: none;
-    padding-left: 2%;
-    font-family: 'montserrat', sans-serif;
-    transition: 0.3s;
+    background-color: #E9E7E4; /* Define a cor de fundo */
+    border: none; /* Remove a borda */
+    padding-left: 2%; /* Adiciona um preenchimento esquerdo de 2% */
+    font-family: 'montserrat', sans-serif; /* Define a fonte como 'Montserrat' */
+    transition: 0.3s; /* Adiciona uma transição de 0.3s */
 }
 
 .large-data:hover {
-    opacity: 0.9;
-    transform: scale(1.01);
-    transition: 0.3s;
+    opacity: 0.9; /* Define a opacidade como 0.9 quando passa o mouse sobre o elemento */
+    transform: scale(1.01); /* Realiza uma escala de 1.01 quando passa o mouse sobre o elemento */
+    transition: 0.3s; /* Adiciona uma transição de 0.3s */
 }
 
 .grande {
-    width: 70vh;
-    height: 76vh;
-    background-color: #194018;
-    border: 3vh solid #72B06F;
-    margin-bottom: 1%;
-    border-radius: 1%;
+    width: 70vh; /* Define a largura como 70% da altura da viewport */
+    height: 76vh; /* Define a altura como 76% da altura da viewport */
+    background-color: #194018; /* Define a cor de fundo */
+    border: 3vh solid #72B06F; /* Adiciona uma borda de 3vh com cor #72B06F */
+    margin-bottom: 1%; /* Adiciona uma margem inferior de 1% */
+    border-radius: 1%; /* Define o raio da borda como 1% */
 }
 
 .main img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 100%; /* Define a largura como 100% */
+    display: flex; /* Define o elemento com display flex */
+    justify-content: center; /* Alinha o conteúdo ao centro horizontalmente */
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    margin-top: 3vh;
-    justify-content: space-around;
-    text-decoration: none;
+    display: flex; /* Define o elemento com display flex */
+    flex-direction: column; /* Define a direção da flexão como coluna */
+    height: 100%; /* Define a altura como 100% */
+    width: 80%; /* Define a largura como 80% */
+    margin: auto; /* Define as margens como automático */
+    margin-top: 3vh; /* Define a margem superior como 3vh (3% da altura da viewport) */
+    justify-content: space-around; /* Distribui uniformemente os itens ao redor */
+    text-decoration: none; /* Remove a decoração do texto */
 }
 
 form .large-data {
-    height: 6%;
-    margin-top: 2%;
-    outline: none;
-    border-radius: 4px;
+    height: 6%; /* Define a altura como 6% */
+    margin-top: 2%; /* Define a margem superior como 2% */
+    outline: none; /* Remove o contorno ao ganhar foco */
+    border-radius: 4px; /* Define o raio da borda como 4px */
 }
 
 .label {
-    margin-top: 5%;
+    margin-top: 5%; /* Define a margem superior como 5% */
 }
 
 .termos {
-    text-align: center;
-    margin-top: 6%;
+    text-align: center; /* Centraliza o texto */
+    margin-top: 6%; /* Define a margem superior como 6% */
 }
 
 .small-data input {
-    height: 4.5vh;
-    padding-left: 4%;
-    border-radius: 4px;
-    border: none;
-    font-family: 'montserrat', sans-serif;
-    transition: 0.3s;
+    height: 4.5vh; /* Define a altura como 4.5vh (4.5% da altura da viewport) */
+    padding-left: 4%; /* Adiciona um preenchimento esquerdo de 4% */
+    border-radius: 4px; /* Define o raio da borda como 4px */
+    border: none; /* Remove a borda */
+    font-family: 'montserrat', sans-serif; /* Define a fonte como 'Montserrat' */
+    transition: 0.3s; /* Adiciona uma transição de 0.3s */
 }
 
 .small-data input:hover {
-    opacity: 0.9;
-    transition: 0.3s;
-    transform: scale(1.01);
+    opacity: 0.9; /* Define a opacidade como 0.9 quando passa o mouse sobre o elemento */
+    transition: 0.3s; /* Adiciona uma transição de 0.3s */
+    transform: scale(1.01); /* Realiza uma escala de 1.01 quando passa o mouse sobre o elemento */
 }
 
 #date {
-    height: 4.8vh;
-    margin-top: 1vh;
+    height: 4.8vh; /* Define a altura como 4.8vh (4.8% da altura da viewport) */
+    margin-top: 1vh; /* Define a margem superior como 1vh (1% da altura da viewport) */
 }
 
 .form2 {
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    margin-top: 5%;
+    display: flex; /* Define o elemento com display flex */
+    justify-content: space-between; /* Distribui uniformemente o espaço entre os itens */
+    text-decoration: none; /* Remove a decoração do texto */
+    margin-top: 5%; /* Define a margem superior como 5% */
 }
 
 #tel {
-    margin-top: 4%;
+    margin-top: 4%; /* Define a margem superior como 4% */
 }
 
 .small-data {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    font-size: 14px;
+    display: flex; /* Define o elemento com display flex */
+    flex-direction: column; /* Define a direção da flexão como coluna */
+    text-decoration: none; /* Remove a decoração do texto */
+    font-size: 14px; /* Define o tamanho da fonte como 14px */
 }
 
 .small-data input {
-    outline: none;
-    background-color: #E9E7E4;
-    margin-top: 6%;
+    outline: none; /* Remove o contorno ao ganhar foco */
+    background-color: #E9E7E4; /* Define a cor de fundo */
+    margin-top: 6%; /* Define a margem superior como 6% */
 }
 
 .small-letters {
-    margin: auto;
-    line-height: 20px;
-    font-size: 12px;
+    margin: auto; /* Centraliza horizontalmente */
+    line-height: 20px; /* Define a altura da linha como 20px */
+    font-size: 12px; /* Define o tamanho da fonte como 12px */
 }
 
 .small-letters a {
-    color: white;
+    color: white; /* Define a cor do link como branco */
 }
 
 #cadastrar {
-    font-weight: 400;
-    background-color: #848D43;
-    font-size: 22px;
-    padding: 2%;
-    color: #ffffff;
-    width: 45%;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 1%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.3s;
+    font-weight: 400; /* Define o peso da fonte como 400 */
+    background-color: #848D43; /* Define a cor de fundo */
+    font-size: 22px; /* Define o tamanho da fonte como 22px */
+    padding: 2%; /* Adiciona um preenchimento de 2% */
+    color: #ffffff; /* Define a cor do texto como branco */
+    width: 45%; /* Define a largura como 45% */
+    margin: auto; /* Define as margens como automático */
+    margin-top: 5%; /* Define a margem superior como 5% */
+    margin-bottom: 1%; /* Define a margem inferior como 1% */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Define o raio da borda como 4px */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte como 'Montserrat' */
+    transition: 0.3s; /* Adiciona uma transição de 0.3s */
 }
 
 #cadastrar:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.05); /* Realiza uma escala de 1.05 quando passa o mouse sobre o elemento */
+    transition: 0.3s; /* Adiciona uma transição de 0.3s */
 }
 
-@media screen and (min-width:1226px) {
-    label {
-        font-size: 14px;
-    }
-
-    .small-data {
-        font-size: 14px;
-    }
-
-    #cadastrar {
-        margin-bottom: 0;
-    }
-
-    #login {
-        margin-top: 0vh;
-    }
-
-    .termos {
-        margin-top: 2vh;
-    }
-}
-
-@media screen and (min-width: 900px) AND (max-width:1220px) {
+@media screen and (max-width: 1150px) and (min-height: 720px) {
     .small-letters {
-        font-size: 14px;
+        font-size: 14px; /* Define o tamanho da fonte como 14px */
     }
-
     label {
-        font-size: 18px;
+        font-size: 18px; /* Define o tamanho da fonte como 18px */
     }
 
     input {
-        font-size: 16px;
+        font-size: 16px; /* Define o tamanho da fonte como 16px */
     }
 
     #cadastrar {
-        font-size: 24px;
+        font-size: 24px; /* Define o tamanho da fonte como 24px */
+    }
+    .main>a{
+        margin-bottom: -5vh; /* Define a margem inferior como -5vh (5% da altura da viewport) */
+        margin-top: -5vh; /* Define a margem superior como -5vh (5% da altura da viewport) */
     }
 }
 
 #login {
-    margin-top: 5%;
+    margin-top: 5%; /* Define a margem superior como 5% */
 }
 
 
 
 
 footer {
-    font-family: 'montserrat', sans-serif;
-    background-color: #EBECF0;
+    font-family: 'montserrat', sans-serif; /* Define a fonte como 'Montserrat' */
+    background-color: #EBECF0; /* Define a cor de fundo */
 }
 
 footer p {
-    color: black;
+    color: black; /* Define a cor do texto como preto */
 }
 
 .contato p {
-    margin-left: 0;
-    font-size: 16px;
+    margin-left: 0; /* Define a margem esquerda como zero */
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
 }
 
 .linha {
-    background-color: #093807;
-    height: 2vh;
+    background-color: #093807; /* Define a cor de fundo */
+    height: 2vh; /* Define a altura como 2vh (2% da altura da viewport) */
 }
 
 .linha2 {
-    background-color: #093807;
-
-    height: 2vh;
+    background-color: #093807; /* Define a cor de fundo */
+    height: 2vh; /* Define a altura como 2vh (2% da altura da viewport) */
 }
 
 .sublinhado {
-    background-color: #093807;
-    margin-top: -8%;
-    height: 2%;
-    width: 80%;
-    margin-left: 2%;
+    background-color: #093807; /* Define a cor de fundo */
+    margin-top: -8%; /* Define a margem superior como -8% */
+    height: 2%; /* Define a altura como 2% */
+    width: 80%; /* Define a largura como 80% */
+    margin-left: 2%; /* Define a margem esquerda como 2% */
 }
 
-.row1 {
-    display: flex;
-    padding-top: 1%;
-    justify-content: space-around;
+.sublinhado2 {
+    background-color: #093807; /* Define a cor de fundo */
+    margin-top: -7%; /* Define a margem superior como -7% */
+    height: 2%; /* Define a altura como 2% */
+    width: 80%; /* Define a largura como 80% */
+    margin-left: 10%; /* Define a margem esquerda como 10% */
 }
 
-.row1 a {
-    color: black;
-}
+@media (max-width: 768px) {
+    .main>a {
+        width: 40%; /* Define a largura como 40% */
+    }
 
-.row1 img {
-    margin-top: -5%;
-}
+    .grande {
+        width: 80vh; /* Define a largura como 80% da altura da viewport */
+    }
 
-.col1 p {
-    width: 70%;
-    margin-left: 6%;
-}
+    form {
+        width: 90%; /* Define a largura como 90% */
+    }
 
-.col2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.col2 a {
-    margin-top: 12%;
-}
-
-.col3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.col3 a {
-    margin-top: 20%;
-}
-
-.col4 {
-    display: flex;
-    flex-direction: column;
-    width: 11%;
-    margin-right: 5%;
-}
-
-.localizacao {
-    display: flex;
-    align-items: center;
-
-}
-
-.fone {
-    display: flex;
-    align-items: center;
-    width: 30%;
-}
-
-.email {
-    display: flex;
-    align-items: center;
-    margin-left: -10%;
-}
-
-.contato {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    height: 8vh;
-    margin-left: 6%;
-    margin-top: 2%;
-    align-content: baseline;
-}
-
-.contato img {
-    height: 50%;
-    margin-right: 3%;
-}
-
-.localizacao img {
-    margin-right: 5%;
-}
-
-.lema {
-    text-align: center;
-    margin-right: 1%;
-    margin-top: 2%;
-    font-size: 16px;
-    margin-bottom: 4.5vh;
-}
-
-.redes img {
-    width: 25%;
-    margin-top: 15%;
-}
-
-h4 {
-    font-size: 18px;
-    margin-top: 2%;
-    margin-bottom: 13%;
-}
-
-.col3 h4 {
-    margin-bottom: 23%;
-}
-
-#ilustra {
-    margin-left: 52vw;
+    .small-data input {
+        height: 5.5vh; /* Define a altura como 5.5vh (5.5% da altura da viewport) */
+    }
 }

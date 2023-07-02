@@ -33,12 +33,6 @@ body {
     transition: 0.3s;
 }
 
-@media screen and (min-width:900px) {
-    .email-senha {
-        font-size: 15px;
-    }
-}
-
 .email-senha {
     outline: none;
 }
@@ -68,11 +62,6 @@ body {
     border-radius: 1%;
 }
 
-@media screen and (min-width: 900px) {
-    label {
-        font-size: 18px;
-    }
-}
 
 label {
     margin-bottom: -3%;
@@ -90,12 +79,6 @@ form {
 .small-letters {
     line-height: 20px;
     font-size: 12px;
-}
-
-@media screen and (min-width: 900px) {
-    .small-letters {
-        font-size: 13px;
-    }
 }
 
 .opcoes1 {
@@ -131,12 +114,6 @@ form {
     font-size: 12px;
 }
 
-@media screen and (min-width: 900px) {
-    .termos {
-        font-size: 12px;
-    }
-}
-
 .registro2 {
     display: flex;
     justify-content: center;
@@ -157,6 +134,17 @@ form {
     text-align: center;
 }
 
+@media screen and (max-width: 1150px) and (min-height: 720px) {
+    label {
+        font-size: 18px;
+    }
+    .small-letters{
+        font-size: 14px;
+    }
+    .termos{
+        font-size: 14px;
+    }
+}
 
 
 
