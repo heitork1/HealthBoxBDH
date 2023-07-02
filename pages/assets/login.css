@@ -1,286 +1,282 @@
 * {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #EBECF0;
-}
-
-.main {
-    display: flex;
-    height: 90vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: 2%;
-}
-
-.email-senha {
-    height: 4.5vh;
-    border-radius: 4px;
-    padding-left: 1%;
-    border: none;
-    background-color: #E9E7E4;
-    transition: 0.3s;
-}
-
-.email-senha:hover {
-    opacity: 0.9;
-    transform: scale(1.01);
-    transition: 0.3s;
-}
-
-.email-senha {
-    outline: none;
-}
-
-.main>a {
-    height: 20%;
-
-    margin-top: -10vh;
-    margin-bottom: 14vh;
-}
-
-.main img {
-    width: 72%;
-    margin: auto;
-    display: flex;
-    justify-content: center
-}
-
-.grande {
-    display: flex;
-    justify-content: space-around;
-    width: 65vh;
-    height: 55vh;
-    background-color: #194018;
-    border: 3vh solid #72B06F;
-    margin-bottom: 1%;
-    border-radius: 1%;
-}
-
-
-label {
-    margin-bottom: -3%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 95%;
-    width: 85%;
-    margin-top: 1.5vh;
-}
-
-.small-letters {
-    line-height: 20px;
-    font-size: 12px;
-}
-
-.opcoes1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.opcoes1 a {
-    color: #FFFFFF;
-}
-
-#entrar {
-    margin-left: 30%;
-    width: 40%;
-    height: 12%;
-    font-size: 20px;
-    font-weight: 700;
-    background-color: #848D43;
-    border: none;
-    color: #FFFFFF;
-    border-radius: 2%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#entrar:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-.termos {
-    font-size: 12px;
-}
-
-.registro2 {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-
-.cadastro {
-    color: white;
-    margin-left: 2%;
-}
-
-.termos_link {
-    color: white;
-}
-
-.concorda {
-    margin-top: 0;
-    text-align: center;
-}
-
-@media screen and (max-width: 1150px) and (min-height: 720px) {
+    font-family: 'Montserrat', sans-serif; /* Fonte */
+    margin: 0; /* Margem */
+    padding: 0; /* Preenchimento */
+  }
+  
+  body {
+    background-color: #EBECF0; /* Cor de fundo */
+  }
+  
+  .main {
+    display: flex; /* Exibir como um elemento flexível */
+    height: 90vh; /* Altura */
+    flex-direction: column; /* Direção da coluna */
+    align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+    justify-content: center; /* Alinhar conteúdo horizontalmente ao centro */
+    color: white; /* Cor do texto */
+    margin-top: 2%; /* Margem superior */
+  }
+  
+  .email-senha {
+    height: 4.5vh; /* Altura */
+    border-radius: 4px; /* Raio do canto */
+    padding-left: 1%; /* Preenchimento esquerdo */
+    border: none; /* Sem borda */
+    background-color: #E9E7E4; /* Cor de fundo */
+    transition: 0.3s; /* Transição */
+  }
+  
+  .email-senha:hover {
+    opacity: 0.9; /* Opacidade */
+    transform: scale(1.01); /* Escala */
+    transition: 0.3s; /* Transição */
+  }
+  
+  .email-senha {
+    outline: none; /* Sem contorno */
+  }
+  
+  .main>a {
+    height: 20%; /* Altura */
+    margin-top: -10vh; /* Margem superior negativa */
+    margin-bottom: 14vh; /* Margem inferior */
+  }
+  
+  .main img {
+    width: 72%; /* Largura */
+    margin: auto; /* Margem automática */
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: center; /* Alinhar conteúdo horizontalmente ao centro */
+  }
+  
+  .grande {
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: space-around; /* Alinhar conteúdo horizontalmente com espaçamento igual */
+    width: 65vh; /* Largura */
+    height: 55vh; /* Altura */
+    background-color: #194018; /* Cor de fundo */
+    border: 3vh solid #72B06F; /* Borda */
+    margin-bottom: 1%; /* Margem inferior */
+    border-radius: 1%; /* Raio do canto */
+  }
+  
+  label {
+    margin-bottom: -3%; /* Margem inferior negativa */
+  }
+  
+  form {
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
+    justify-content: space-around; /* Alinhar conteúdo verticalmente com espaçamento igual */
+    height: 95%; /* Altura */
+    width: 85%; /* Largura */
+    margin-top: 1.5vh; /* Margem superior */
+  }
+  
+  .small-letters {
+    line-height: 20px; /* Altura da linha */
+    font-size: 12px; /* Tamanho da fonte */
+  }
+  
+  .opcoes1 {
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: space-between; /* Alinhar conteúdo horizontalmente com espaçamento igual */
+    align-items: center; /* Alinhar conteúdo verticalmente ao centro */
+  }
+  
+  .opcoes1 a {
+    color: #FFFFFF; /* Cor do texto */
+  }
+  
+  #entrar {
+    margin-left: 30%; /* Margem esquerda */
+    width: 40%; /* Largura */
+    height: 12%; /* Altura */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+    background-color: #848D43; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: #FFFFFF; /* Cor do texto */
+    border-radius: 2%; /* Raio do canto */
+    cursor: pointer; /* Cursor */
+    transition: 0.3s; /* Transição */
+  }
+  
+  #entrar:hover {
+    transform: scale(1.05); /* Escala */
+    transition: 0.3s; /* Transição */
+  }
+  
+  .termos {
+    font-size: 12px; /* Tamanho da fonte */
+  }
+  
+  .registro2 {
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: center; /* Alinhar conteúdo horizontalmente ao centro */
+    align-items: baseline; /* Alinhar itens verticalmente à linha de base */
+  }
+  
+  .cadastro {
+    color: white; /* Cor do texto */
+    margin-left: 2%; /* Margem esquerda */
+  }
+  
+  .termos_link {
+    color: white; /* Cor do texto */
+  }
+  
+  .concorda {
+    margin-top: 0; /* Margem superior */
+    text-align: center; /* Alinhar ao centro */
+  }
+  
+  @media screen and (max-width: 1150px) and (min-height: 720px) {
     label {
-        font-size: 18px;
+      font-size: 18px; /* Tamanho da fonte */
     }
-    .small-letters{
-        font-size: 14px;
+    .small-letters {
+      font-size: 14px; /* Tamanho da fonte */
     }
-    .termos{
-        font-size: 14px;
+    .termos {
+      font-size: 14px; /* Tamanho da fonte */
     }
-}
-
-
-
-footer {
-    margin-top: 8vh;
-    font-family: 'montserrat', sans-serif;
-    background-color: #EBECF0;
-}
-
-footer p {
-    color: black;
-}
-
-.contato p {
-    margin-left: 0;
-    font-size: 16px;
-}
-
-.linha {
-    background-color: #093807;
-    height: 2vh;
-}
-
-.linha2 {
-    background-color: #093807;
-
-    height: 2vh;
-}
-
-.sublinhado {
-    background-color: #093807;
-    margin-top: -8%;
-    height: 2%;
-    width: 80%;
-    margin-left: 2%;
-}
-
-.row1 {
-    display: flex;
-    padding-top: 1%;
-    justify-content: space-around;
-}
-
-.row1 a {
-    color: black;
-}
-
-.row1 img {
-    margin-top: -5%;
-}
-
-.col1 p {
-    width: 70%;
-    margin-left: 6%;
-}
-
-.col2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.col2 a {
-    margin-top: 12%;
-}
-
-.col3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.col3 a {
-    margin-top: 20%;
-}
-
-.col4 {
-    display: flex;
-    flex-direction: column;
-    width: 11%;
-    margin-right: 5%;
-}
-
-.localizacao {
-    display: flex;
-    align-items: center;
-
-}
-
-.fone {
-    display: flex;
-    align-items: center;
-    width: 30%; 
-}
-
-.email {
-    display: flex;
-    align-items: center;
-    margin-left: -10%; 
-}
-
-.contato {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    height: 8vh;
-    margin-left: 6%;
-    margin-top: 2%; 
-}
-
-.contato img {
-    height: 50%;
-    margin-right: 3%;
-}
-
-.localizacao img {
-    margin-right: 5%;
-}
-
-.lema {
-    text-align: center;
-    margin-right: 1%;
-    margin-top: 2%;
-    font-size: 16px;
-    margin-bottom: 4.5vh;
-}
-
-.redes img {
-    width: 25%;
-    margin-top: 15%;
-}
-
-h4 {
-    font-size: 18px;
-    margin-top: 2%;
-    margin-bottom: 13%;
-}
-
-.col3 h4 {
-    margin-bottom: 23%;
-}
+  }
+  
+  /* Estilos do footer */
+  footer {
+    margin-top: 8vh; /* Margem superior */
+    font-family: 'montserrat', sans-serif; /* Fonte */
+    background-color: #EBECF0; /* Cor de fundo */
+  }
+  
+  footer p {
+    color: black; /* Cor do texto */
+  }
+  
+  .contato p {
+    margin-left: 0; /* Margem esquerda */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  .linha {
+    background-color: #093807; /* Cor de fundo */
+    height: 2vh; /* Altura */
+  }
+  
+  .linha2 {
+    background-color: #093807; /* Cor de fundo */
+    height: 2vh; /* Altura */
+  }
+  
+  .sublinhado {
+    background-color: #093807; /* Cor de fundo */
+    margin-top: -8%; /* Margem superior negativa */
+    height: 2%; /* Altura */
+    width: 80%; /* Largura */
+    margin-left: 2%; /* Margem esquerda */
+  }
+  
+  .row1 {
+    display: flex; /* Exibir como um elemento flexível */
+    padding-top: 1%; /* Preenchimento superior */
+    justify-content: space-around; /* Alinhar conteúdo horizontalmente com espaçamento igual */
+  }
+  
+  .row1 a {
+    color: black; /* Cor do texto */
+  }
+  
+  .row1 img {
+    margin-top: -5%; /* Margem superior negativa */
+  }
+  
+  .col1 p {
+    width: 70%; /* Largura */
+    margin-left: 6%; /* Margem esquerda */
+  }
+  
+  .col2 {
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
+  }
+  
+  .col2 a {
+    margin-top: 12%; /* Margem superior */
+  }
+  
+  .col3 {
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
+  }
+  
+  .col3 a {
+    margin-top: 20%; /* Margem superior */
+  }
+  
+  .col4 {
+    display: flex; /* Exibir como um elemento flexível */
+    flex-direction: column; /* Direção da coluna */
+    width: 11%; /* Largura */
+    margin-right: 5%; /* Margem direita */
+  }
+  
+  .localizacao {
+    display: flex; /* Exibir como um elemento flexível */
+    align-items: center; /* Alinhar itens verticalmente ao centro */
+  }
+  
+  .fone {
+    display: flex; /* Exibir como um elemento flexível */
+    align-items: center; /* Alinhar itens verticalmente ao centro */
+    width: 30%; /* Largura */
+  }
+  
+  .email {
+    display: flex; /* Exibir como um elemento flexível */
+    align-items: center; /* Alinhar itens verticalmente ao centro */
+    margin-left: -10%; /* Margem esquerda negativa */
+  }
+  
+  .contato {
+    width: 85%; /* Largura */
+    display: flex; /* Exibir como um elemento flexível */
+    justify-content: space-between; /* Alinhar conteúdo horizontalmente com espaçamento igual */
+    height: 8vh; /* Altura */
+    margin-left: 6%; /* Margem esquerda */
+    margin-top: 2%; /* Margem superior */
+  }
+  
+  .contato img {
+    height: 50%; /* Altura */
+    margin-right: 3%; /* Margem direita */
+  }
+  
+  .localizacao img {
+    margin-right: 5%; /* Margem direita */
+  }
+  
+  .lema {
+    text-align: center; /* Alinhar ao centro */
+    margin-right: 1%; /* Margem direita */
+    margin-top: 2%; /* Margem superior */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-bottom: 4.5vh; /* Margem inferior */
+  }
+  
+  .redes img {
+    width: 25%; /* Largura */
+    margin-top: 15%; /* Margem superior */
+  }
+  
+  h4 {
+    font-size: 18px; /* Tamanho da fonte */
+    margin-top: 2%; /* Margem superior */
+    margin-bottom: 13%; /* Margem inferior */
+  }
+  
+  .col3 h4 {
+    margin-bottom: 23%; /* Margem inferior */
+  }
+  
