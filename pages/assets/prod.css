@@ -3,7 +3,8 @@ body {
   background-color: #EBECF0;
   margin: 0;
   width: auto;
-  overflow-x: hidden; /* impede a barra de rolar na horizontal */
+  overflow-x: hidden;
+  /* impede a barra de rolar na horizontal */
 }
 
 
@@ -17,9 +18,9 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 9999;/* impede que outros elementos se sobreponham */
+  z-index: 9999;
+  /* impede que outros elementos se sobreponham */
 }
-
 
 #logo {
   display: flex;
@@ -56,8 +57,9 @@ body {
   display: flex;
   height: 4vh;
 }
+
 /* ajuste da barra de pesquisa */
-@media screen and (max-width: 1300px) and (min-height:720px) { /* ajuste tamanho de tela */
+@media screen and (max-width: 1300px) and (min-height:720px) {
   .pesquisa {
     margin-left: 30vw;
     height: 5vh
@@ -72,6 +74,7 @@ input {
   border: none;
   outline: none;
 }
+
 /* login */
 .entrar {
   display: flex;
@@ -80,7 +83,7 @@ input {
 }
 
 /* ajuste do login para o tamanho de tela */
-@media screen (max-width: 1300px) and (min-height:720px) { 
+@media screen (max-width: 1300px) and (min-height:720px) {
   .entrar {
     margin-left: 2vw;
   }
@@ -125,8 +128,9 @@ input {
   margin-left: 0.76vw;
   transition: 0.3s;
 }
+
 /* ajuste para o tamanho da tela */
-@media screen and (max-width: 1300px) and (min-height:720px) { 
+@media screen and (max-width: 1300px) and (min-height:720px) {
   .sacola a {
     margin-right: 0.2vw;
     margin-left: 1vw
@@ -147,10 +151,12 @@ input {
   width: 100%;
   top: 8.7vh;
   position: fixed;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; /* sombreado  */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  /* sombreado  */
   z-index: 9999;
- 
+
 }
+
 /* opções de navegação */
 .opcoes a:hover {
   background-color: #254e2562;
@@ -174,6 +180,7 @@ input {
   color: white;
   transition: 0.3s;
 }
+
 /* ajuste para o tamanho da tela */
 @media screen and (max-width: 1300px) and (min-height:720px) {
   .opcoes {
@@ -194,6 +201,21 @@ header p {
   margin-left: 2vw;
 }
 
+
+/* texto título da página */
+.container-descricao {
+  margin-top: 32vh;
+  margin-bottom: -5vh;
+  margin-left: 4vh;
+  display: inline-grid;
+  /* border:1px solid black; */
+  grid-template-areas:
+    'b1 b1 b1'
+    'b1 b1 b1';
+  width: 200vw;
+}
+
+/* ajusto de tela */
 @media screen and (max-width: 1300px) and (min-height:720px) {
   .container-descricao {
     margin-top: 32vh;
@@ -208,32 +230,7 @@ header p {
   }
 }
 
-
-.container-descricao {
-  margin-top: 32vh;
-  margin-bottom: -5vh;
-  margin-left: 4vh;
-  display: inline-grid;
-  /* border:1px solid black; */
-  grid-template-areas:
-    'b1 b1 b1'
-    'b1 b1 b1';
-  width: 200vw;
-}
-
-@media screen and (max-width: 1300px) and (min-height:720px) {
-  .container-caixinhas {
-    margin-top: 0;
-    margin-bottom: 5%;
-    display: grid;
-    grid-template-areas:
-      'b12 b13 b14'
-      'b12 b13 b14';
-    justify-content: space-around;
-    max-width: 100%;
-  }
-}
-
+/* caixa de produtos */
 .container-caixinhas {
   display: grid;
   grid-template-areas:
@@ -242,20 +239,33 @@ header p {
   justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
-  
+
 }
 
+/* ajuste de tela */
+@media screen and (max-width: 1300px) and (min-height:720px) {
+  .container-caixinhas {
+    margin-top: 0;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-areas:
+      'b12 b13 b14 b15'
+      'b12 b13 b14 b15';
+    justify-content: space-between;
+    max-width: 100%;
+  }
+}
 
+/* descrição dos produtos */
 .box-descricao {
-  /* border: solid 1px black; */
   display: flex;
   margin-top: -15VH;
   margin-left: 3vw;
 }
 
+/* ajuste de tela */
 @media screen and (max-width: 1300px) and (min-height:720px) {
   .box-descricao {
-    /* border: solid 1px black; */
     display: flex;
     margin-top: -15VH;
     margin-left: 2.5vw;
@@ -266,6 +276,7 @@ header p {
   cursor: pointer;
 }
 
+/* título da página */
 #box1 {
   grid-area: b1;
   /* grid-column: 1/11; */
@@ -285,15 +296,7 @@ header p {
   color: #3D2A1A;
 }
 
-#menu {
-  grid-area: b2;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: #3D2A1A;
-  font-weight: bold;
-  margin-top: -17VH;
-}
-
+/* produto 1 */
 #box12 {
   grid-area: b12;
   width: 20VW;
@@ -320,7 +323,7 @@ header p {
   transform: scale(1.03);
 }
 
-#preco12{
+#preco12 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -330,9 +333,9 @@ header p {
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco12{
+  #preco12 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -340,11 +343,11 @@ header p {
   }
 }
 
+/* produto 2 */
 #box13 {
   grid-area: b13;
   width: 20VW;
   height: 60vh;
-  /* background-image: url(2.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -369,7 +372,7 @@ header p {
   transform: scale(1.03);
 }
 
-#preco13{
+#preco13 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -379,9 +382,9 @@ header p {
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco13{
+  #preco13 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -389,11 +392,11 @@ header p {
   }
 }
 
+/* produto 3 */
 #box14 {
   grid-area: b14;
   width: 20VW;
   height: 60vh;
-  /* background-image: url(3.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -416,18 +419,18 @@ header p {
   transform: scale(1.03);
 }
 
-#lactose7{
+#lactose7 {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
-  
+
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #lactose7{
+  #lactose7 {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     margin-top: -2vh;
@@ -435,7 +438,7 @@ header p {
   }
 }
 
-#preco14{
+#preco14 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -444,9 +447,9 @@ header p {
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco14{
+  #preco14 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -454,12 +457,11 @@ header p {
   }
 }
 
+/* produto 4 */
 #box15 {
-
   grid-area: b15;
   width: 20VW;
   height: 60vh;
-  /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -483,18 +485,18 @@ header p {
   transform: scale(1.03);
 }
 
-#gluten7{
+#gluten7 {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
-  
+
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #gluten7{
+  #gluten7 {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     margin-top: -2vh;
@@ -502,7 +504,7 @@ header p {
   }
 }
 
-#preco15{
+#preco15 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -511,9 +513,9 @@ header p {
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco15{
+  #preco15 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -521,23 +523,23 @@ header p {
   }
 }
 
-.espaco-divs { /* aqui é a div pai dos produtos escondido */
+.espaco-divs {
+  /* aqui é a div pai dos produtos escondido */
   display: flex;
   flex-direction: column;
   margin-top: 2%;
 }
 
- 
-#minhaDiv { /* Oculta o conteúdo do resto dos produtos*/
+
+#minhaDiv {
+  /* Oculta o conteúdo do resto dos produtos*/
   display: none;
 
 }
 
-
+/* caixa dos produtos escondidos */
 .container-caixinhas2 {
   display: grid;
-  /* grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(4, 25%) ; */
   grid-template-areas:
     'b16 b17 b18 b19'
     'b16 b17 b18 b19'
@@ -552,8 +554,6 @@ header p {
 @media screen and (max-width: 1300px) and (min-height:720px) {
   .container-caixinhas2 {
     display: grid;
-    /* grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(4, 25%) ; */
     grid-template-areas:
       'b16 b17 b18 b19'
       'b16 b17 b18 b19'
@@ -562,15 +562,15 @@ header p {
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
-  }}
+  }
+}
 
-
+/* produto 5 */
 #box16 {
   margin-top: 5vh;
   grid-area: b16;
   width: 20VW;
   height: 60vh;
-  /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -593,18 +593,18 @@ header p {
   transform: scale(1.03);
 }
 
-#lactose15{
+#lactose15 {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
-  
+
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #lactose15{
+  #lactose15 {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     margin-top: -2vh;
@@ -612,7 +612,7 @@ header p {
   }
 }
 
-#preco16{
+#preco16 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -621,9 +621,9 @@ header p {
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco16{
+  #preco16 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -631,12 +631,12 @@ header p {
   }
 }
 
+/* produto 6 */
 #box17 {
   margin-top: 5vh;
   grid-area: b17;
   height: 60vh;
   width: 20VW;
-  /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -659,18 +659,18 @@ header p {
   transform: scale(1.03);
 }
 
-#gluten15{
+#gluten15 {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
-  
+
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #gluten15{
+  #gluten15 {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     margin-top: -2vh;
@@ -678,7 +678,7 @@ header p {
   }
 }
 
-#preco17{
+#preco17 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -687,22 +687,22 @@ header p {
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco17{
+  #preco17 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
-    margin-bottom: 1vh; 
+    margin-bottom: 1vh;
   }
 }
 
+/* produto 7 */
 #box18 {
   margin-top: 5vh;
   grid-area: b18;
   height: 60vh;
   width: 20VW;
-  /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -722,7 +722,7 @@ header p {
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-h2 > #box18{
+  h2>#box18 {
     margin-right: 15%;
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
@@ -736,18 +736,18 @@ h2 > #box18{
   transform: scale(1.03);
 }
 
-#APLV7{
+#APLV7 {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
-  
+
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #APLV7{
+  #APLV7 {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     margin-top: -2vh;
@@ -755,7 +755,7 @@ h2 > #box18{
   }
 }
 
-#preco18{
+#preco18 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -764,9 +764,9 @@ h2 > #box18{
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco18{
+  #preco18 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -774,12 +774,12 @@ h2 > #box18{
   }
 }
 
+/* produto 8 */
 #box19 {
   margin-top: 5vh;
   grid-area: b19;
   height: 60vh;
   width: 20VW;
-  /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -802,18 +802,18 @@ h2 > #box18{
   transform: scale(1.03);
 }
 
-#APLV15{
+#APLV15 {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
-  
+
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #APLV15{
+  #APLV15 {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     margin-top: -2vh;
@@ -821,7 +821,7 @@ h2 > #box18{
   }
 }
 
-#preco19{
+#preco19 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -830,9 +830,9 @@ h2 > #box18{
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco19{
+  #preco19 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -840,12 +840,12 @@ h2 > #box18{
   }
 }
 
+/* produto 9 */
 #box20 {
   margin-top: 10vh;
   grid-area: b20;
   height: 60vh;
   width: 20VW;
-  /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -870,18 +870,18 @@ h2 > #box18{
   transform: scale(1.03);
 }
 
-#ovo{
+#ovo {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
-  
+
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #ovo{
+  #ovo {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     margin-top: -2vh;
@@ -889,7 +889,7 @@ h2 > #box18{
   }
 }
 
-#preco20{
+#preco20 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -898,9 +898,9 @@ h2 > #box18{
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco20{
+  #preco20 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -908,12 +908,12 @@ h2 > #box18{
   }
 }
 
+/* produto 10 */
 #box21 {
   margin-top: 10vh;
   grid-area: b21;
   height: 60vh;
   width: 20VW;
-  /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -936,18 +936,18 @@ h2 > #box18{
   transform: scale(1.03);
 }
 
-#fruto{
+#fruto {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
-  
+
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #fruto{
+  #fruto {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     margin-top: -2vh;
@@ -955,7 +955,7 @@ h2 > #box18{
   }
 }
 
-#preco21{
+#preco21 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -964,9 +964,9 @@ h2 > #box18{
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco21{
+  #preco21 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -975,13 +975,12 @@ h2 > #box18{
 }
 
 
-
+/* produto 11 */
 #box22 {
   margin-top: 10vh;
   grid-area: b22;
   height: 60vh;
   width: 20VW;
-  /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -1000,18 +999,18 @@ h2 > #box18{
   }
 }
 
- #vegana{
+#vegana {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
 
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #vegana{
+  #vegana {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     margin-top: -2vh;
@@ -1019,7 +1018,7 @@ h2 > #box18{
   }
 }
 
-#preco22{
+#preco22 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -1028,12 +1027,12 @@ h2 > #box18{
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco22{
+  #preco22 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
-    margin-left: 1.8VH; 
+    margin-left: 1.8VH;
     margin-bottom: 1vh;
   }
 }
@@ -1042,12 +1041,12 @@ h2 > #box18{
   transform: scale(1.03);
 }
 
+/* produto 12 */
 #box23 {
   margin-top: 10vh;
   grid-area: b23;
   height: 60vh;
   width: 20VW;
-  /* background-image: url(4.png); */
   background-color: rgb(223, 203, 190);
   border-radius: 8px;
   text-decoration: none;
@@ -1066,17 +1065,17 @@ h2 > #box18{
   }
 }
 
-#veget{
+#veget {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 0;
-  float: right ;
+  float: right;
   margin-right: 2.2vw;
   margin-top: 4.5%;
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #veget{
+  #veget {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     margin-top: -2vh;
@@ -1084,7 +1083,7 @@ h2 > #box18{
   }
 }
 
-#preco-23{
+#preco-23 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   color: black;
@@ -1093,9 +1092,9 @@ h2 > #box18{
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
-  #preco-23{
+  #preco-23 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;  
+    font-size: 1.3em;
     margin-top: -4%;
     color: black;
     margin-left: 1.8VH;
@@ -1107,25 +1106,23 @@ h2 > #box18{
   transform: scale(1.03);
 }
 
-.imgbox {/* CLASSE GERAL DAS IMAGENS DO PRODUTOS */
+.imgbox {
+  /* CLASSE GERAL DAS IMAGENS DO PRODUTOS */
   border-radius: 9px;
   margin: auto;
   margin-top: 10%;
   height: 55%;
   width: 16vw;
   justify-content: center;
-  /* border: 1px solid black; */
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
   .imgbox {
-  border-radius:9px ;
-  margin-top:6% ;
-  height: 50%;
-  width: 17vw;
-  justify-content: center;
-  /* border: 1px solid black; */
-  
+    border-radius: 9px;
+    margin-top: 6%;
+    height: 50%;
+    width: 17vw;
+    justify-content: center
   }
 }
 
@@ -1227,20 +1224,20 @@ h2 > #box18{
   background-repeat: no-repeat;
 }
 
-.descricao-produtos { /* DIV DESCRICAO DOS PRODUTOS */
+.descricao-produtos {
+  /* DIV DESCRICAO DOS PRODUTOS */
   height: 15vh;
 }
 
 
-.h1 { /* TITULOS DOS PRODUTOS SEM ID*/
+.h1 {
+  /* TITULOS DOS PRODUTOS SEM ID*/
   display: flex;
   font-size: 1.3em;
   font-family: 'Montserrat', sans-serif;
-    align-content: center;
-    max-width: 17VW;
-    margin-left: 3.9vh;
-    /* text-align: justify; */
-    /* border: 1px solid black; */
+  align-content: center;
+  max-width: 17VW;
+  margin-left: 3.9vh;
 }
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
@@ -1252,7 +1249,6 @@ h2 > #box18{
     max-width: 17.2VW;
     margin-left: 1.7vh;
     text-align: justify;
-    /* border: 1px solid black; */
   }
 }
 
@@ -1263,10 +1259,11 @@ h2 > #box18{
   display: flex;
   justify-content: space-around;
   align-items: center;
-margin-bottom: 1vh;
+  margin-bottom: 1vh;
 }
 
-.botaoVer { /* BOTAO VER MAIS */
+.botaoVer {
+  /* BOTAO VER MAIS */
   width: 70%;
   height: 30%;
   border-radius: 7px;
@@ -1303,7 +1300,8 @@ margin-bottom: 1vh;
   margin-top: -0.6%;
 }
 
-.botaoEnviar { /* BOTAO CARREGAR MAIS PRODUTOS */
+.botaoEnviar {
+  /* BOTAO CARREGAR MAIS PRODUTOS */
   width: 230px;
   border-radius: 8px;
   border: none;
@@ -1327,9 +1325,7 @@ margin-bottom: 1vh;
 
 
 
-
-
-/* Aqui começa o cabeçalho */
+/* rodapé */
 
 footer {
   font-family: 'montserrat', sans-serif;
@@ -1346,6 +1342,7 @@ footer p {
   font-size: 16px;
 }
 
+/* linhas que divide o rodapé */
 .linha {
   background-color: #093807;
   height: 2vh;
@@ -1356,6 +1353,7 @@ footer p {
   height: 2vh;
 }
 
+/* linha que divide a logo do lema */
 .sublinhado {
   background-color: #093807;
   margin-top: -8%;
@@ -1364,6 +1362,7 @@ footer p {
   margin-left: 2%;
 }
 
+/* espaço para as colunas */
 .row1 {
   display: flex;
   padding-top: 1%;
@@ -1378,11 +1377,13 @@ footer p {
   margin-top: -5%;
 }
 
+/* primeira coluna */
 .col1 p {
   width: 70%;
   margin-left: 6%;
 }
 
+/* segunda coluna */
 .col2 {
   display: flex;
   flex-direction: column;
@@ -1392,6 +1393,7 @@ footer p {
   margin-top: 12%;
 }
 
+/* terceira coluna */
 .col3 {
   display: flex;
   flex-direction: column;
@@ -1401,6 +1403,7 @@ footer p {
   margin-top: 20%;
 }
 
+/* quarta coluna */
 .col4 {
   display: flex;
   flex-direction: column;
@@ -1408,23 +1411,7 @@ footer p {
   margin-right: 5%;
 }
 
-.localizacao {
-  display: flex;
-  align-items: center;
-}
-
-.fone {
-  display: flex;
-  align-items: center;
-  width: 30%;
-}
-
-.email {
-  display: flex;
-  align-items: center;
-  margin-left: -10%;
-}
-
+/* contatos */
 .contato {
   width: 85%;
   display: flex;
@@ -1439,9 +1426,35 @@ footer p {
   margin-right: 3%;
 }
 
+.localizacao {
+  display: flex;
+  align-items: center;
+}
+
 .localizacao img {
   margin-right: 5%;
 }
+
+.fone {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+@media screen and (max-width: 1300px) and (min-height:720px) {
+  .fone {
+    display: flex;
+    align-items: center;
+    width: 40%;
+  }
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  margin-left: -10%;
+}
+
 
 .lema {
   text-align: center;
@@ -1450,16 +1463,14 @@ footer p {
   font-size: 16px;
 }
 
-.redes img {
-  width: 25%;
-  margin-top: 15%;
-}
 
+/* título das redes sociais */
 h4 {
   font-size: 18px;
   margin-top: 2%;
 }
 
-#ilustra {
-  margin-left: 52vw;
+.redes img {
+  width: 25%;
+  margin-top: 15%;
 }
