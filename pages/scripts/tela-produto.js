@@ -4,10 +4,10 @@ function toggleDiv() {
 
     if (div.style.display === "none") {
         div.style.display = "block"; // Mostra a div
-        botao.value = "ESCONDER DESCRICAO"; // Altera o texto do botão para "Esconder"
+        botao.value = "ESCONDER DESCRIÇÃO"; // Altera o texto do botão para "Esconder"
     } else {
         div.style.display = "none"; // Oculta a div
-        botao.value = "VER DESCRICAO COMPLETA"; // Altera o texto do botão para "Mostrar"
+        botao.value = "VER DESCRIÇÃO COMPLETA"; // Altera o texto do botão para "Mostrar"
     }
 }
 

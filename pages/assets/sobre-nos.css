@@ -8,7 +8,7 @@ body {
 }
 
 
-/* menu principal */
+/* menu principal primeira faixa*/
 .faixa1 {
     background-color: #093807;
     display: flex;
@@ -56,7 +56,7 @@ body {
     display: flex;
     height: 4vh;
 }
-
+/* ajuste da barra de pesquisa */
 @media screen and (max-width: 1150px) {
     .pesquisa {
         margin-left: 30vw;
@@ -72,13 +72,14 @@ input {
     border: none;
     outline: none;
 }
-
+/* login */
 .entrar {
     display: flex;
     width: 10vw;
     margin-left: 3vw;
 }
 
+/* ajuste do login para o tamanho de tela */
 @media screen and (max-width: 1150px) {
     .entrar {
         margin-left: 2vw;
@@ -107,7 +108,7 @@ input {
     border-radius: 1vh;
     padding: 0.5vw;
 }
-
+/* sacola */
 .sacola img {
     width: 2vw;
 }
@@ -123,7 +124,7 @@ input {
     margin-left: 0.76vw;
     transition: 0.3s;
 }
-
+/* ajuste para o tamanho da tela */
 @media screen and (max-width: 1150px) {
     .sacola a {
         margin-right: 0.2vw;
@@ -137,7 +138,7 @@ input {
     padding: 0.5vw;
 }
 
-/*Menu secundario*/
+/*Menu segunda faixa*/
 
 .faixa2 {
     background-color: #429C44;
@@ -148,7 +149,7 @@ input {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
 }
-
+/* opções de navegação */
 .opcoes a:hover {
     background-color: #254e2562;
     border-radius: 1vh;
@@ -171,7 +172,7 @@ input {
     color: white;
     transition: 0.3s;
 }
-
+/* ajuste para o tamanho da tela */
 @media screen and (max-width: 1150px) and (min-height: 720px) {
     .opcoes {
         margin-left: 80vw;

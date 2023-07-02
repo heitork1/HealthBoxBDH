@@ -17,11 +17,12 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 9999;/* impede que outros elementos se sobreponham */
+    z-index: 9999;
+    /* impede que outros elementos se sobreponham */
 }
 
 
-
+/* logo */
 #logo {
     display: flex;
     height: 35vh;
@@ -109,6 +110,7 @@ input {
     padding: 0.5vw;
 }
 
+/* sacola */
 .sacola img {
     width: 2vw;
 }
@@ -125,6 +127,7 @@ input {
     transition: 0.3s;
 }
 
+/* ajuste para a tela */
 @media screen and (max-width: 1150px) {
     .sacola a {
         margin-right: 0.2vw;
@@ -138,7 +141,7 @@ input {
     padding: 0.5vw;
 }
 
-/*Menu secundario*/
+/*Menu segunda faixa*/
 
 .faixa2 {
     background-color: #429C44;
@@ -147,9 +150,11 @@ input {
     top: 8.7vh;
     position: fixed;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    z-index: 9999;/* impede que outros elementos se sobreponham */
+    z-index: 9999;
+    /* impede que outros elementos se sobreponham */
 }
 
+/* opções de navegação */
 .opcoes a:hover {
     background-color: #254e2562;
     border-radius: 1vh;
@@ -173,6 +178,7 @@ input {
     transition: 0.3s;
 }
 
+/* ajuste para a tela */
 @media screen and (max-width: 1150px) {
     .opcoes {
         margin-left: 80vw;
@@ -192,7 +198,7 @@ header p {
     margin-left: 2vw;
 }
 
-
+/* div grande principal */
 .produto-especifico {
     display: flex;
     /* border: 1px solid black; */
@@ -200,9 +206,8 @@ header p {
 
 }
 
-
-
-.imgs{
+/* imagens da esquerda */
+.imgs {
     margin-left: 17vh;
     /* border: 1px solid black; */
     width: 14.5vh;
@@ -211,27 +216,32 @@ header p {
     border-radius: 6px;
 }
 
-@media screen (max-width: 1300px) and (min-height:720px) { /* ajuste tamanho de tela */
-    .imgs{
-        margin-left: 1vh;
-        /* border: 1px solid black; */
+/* ajuste tamanho de tela */
+/* 
+@media screen (max-width: 1300px) and (min-height:720px) {
+    .imgs {
+        margin-right: 9vw;
         width: 14.5vh;
         display: grid;
         cursor: pointer;
         border-radius: 6px;
     }
-  }
+}
 
- @media screen (max-width: 1300px) and (min-height:720px) { /* ajuste tamanho de tela */
-    .imagens-produtos {
-        display:flex;
+@media screen (max-width: 1300px) and (min-height:720px) {
+
+    /* ajuste tamanho de tela */
+/* .imagens-produtos {
+        display:grid;
         width: 17vw;
-        height: 70vh;
+        height: 60vh;
+        margin-right:17vw;
         justify-content: space-between;
     }
-  }
+} */
 
- .imagens-produtos {
+/* espaço para as imagens */
+.imagens-produtos {
     display: grid;
     width: 17vw;
     height: 70vh;
@@ -274,17 +284,22 @@ header p {
     transform: scale(1.07);
 }
 
-
+/* imagem maior principal */
 .img {
-    /* background-color: #857c9e; */
-    /* border: 1px solid black; */
     height: 67.5vh;
     display: flex;
 }
 
+/* ajuste tamanho de tela */
+/* @media screen (max-width: 1300px) and (min-height:720px) {
+ .img {
+     height: 63.5vh;
+     display: flex;
+}
+}     */
+
 
 .descricao-produto {
-    /* border: 1px solid black; */
     height: fit-content;
     width: fit-content;
     margin-left: 5vh;
@@ -292,15 +307,14 @@ header p {
 
 }
 
+/* divisão da descrição dos produtos */
 .plv-produtos {
-    /* border: 1px solid black; */
     width: 500px;
 
 }
 
-
+/* nome do produto */
 #plv1 {
-    /* border: 1px solid black; */
     font-family: 'Montserrat', sans-serif;
     height: 14vh;
     font-weight: bold;
@@ -312,8 +326,8 @@ header p {
     color: #3D2A1A;
 }
 
+/* preço do produto */
 #plv2 {
-    /* border: 1px solid black; */
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 35px;
@@ -322,19 +336,8 @@ header p {
     color: #3D2A1A;
 }
 
-#plv3 {
-    /* border: 1px solid black; */
-    height: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-left: 2vh;
-    margin-top: 20px;
-    display: flex;
-}
-
-
+/* consulta de frete frase */
 #plv4 {
-    /* border: 1px solid black; */
     color: #3D2A1A;
     height: 40px;
     font-family: 'Montserrat', sans-serif;
@@ -346,20 +349,13 @@ header p {
 }
 
 
-
+/* tamanho para o frete */
 #plv5 {
-    /* border: 1px solid black; */
     height: 50px;
 
 }
 
-#plv6 {
-    display: flex;
-    /* border: 1px solid black; */
-    align-items: center;
-
-}
-
+/* div menor frete */
 .frete {
     display: grid;
     width: 500px;
@@ -412,14 +408,6 @@ input {
     width: 20px;
     padding: 5px;
     margin-top: 2px;
-}
-
-
-
-#plv7 {
-    /* border: 1px solid black; */
-    display: flex;
-    align-items: center;
 }
 
 .botao button {
@@ -480,10 +468,7 @@ input {
 
 }
 
-botaoEnviar {
-    text-decoration: none;
-}
-
+/* descrição dos produtos */
 #minhaDiv {
     display: none;
     /* Oculta o conteúdo */
@@ -495,19 +480,18 @@ botaoEnviar {
     width: 50vw;
     border-radius: 2vh;
     text-align: justify;
-    /* border: 1px solid black; */
     font-family: 'montserrat', sans-serif;
 }
 
 
-
+/* cor de fundo */
 body {
     background-color: #EBECF0;
     margin: auto;
 }
 
 
-
+/* rodapé */
 footer {
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
@@ -523,6 +507,7 @@ footer p {
     font-size: 16px;
 }
 
+/* linha que divide o rodapé */
 .linha {
     background-color: #093807;
     height: 2vh;
@@ -534,6 +519,7 @@ footer p {
     height: 2vh;
 }
 
+/* linha que divide a logo do lema */
 .sublinhado {
     background-color: #093807;
     margin-top: -8%;
@@ -542,6 +528,7 @@ footer p {
     margin-left: 2%;
 }
 
+/* espaço para as colunas */
 .row1 {
     display: flex;
     padding-top: 1%;
@@ -556,11 +543,13 @@ footer p {
     margin-top: -5%;
 }
 
+/* primeira coluna */
 .col1 p {
     width: 70%;
     margin-left: 6%;
 }
 
+/* segunda coluna */
 .col2 {
     display: flex;
     flex-direction: column;
@@ -570,6 +559,7 @@ footer p {
     margin-top: 12%;
 }
 
+/* terceira coluna */
 .col3 {
     display: flex;
     flex-direction: column;
@@ -579,12 +569,15 @@ footer p {
     margin-top: 20%;
 }
 
+/* quarta coluna */
 .col4 {
     display: flex;
     flex-direction: column;
     width: 11%;
     margin-right: 5%;
 }
+
+/* contatos */
 
 .localizacao {
     display: flex;

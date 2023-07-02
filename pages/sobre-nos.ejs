@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre-nos</title>
@@ -13,9 +14,11 @@
 </head>
 
 <body>
-    <header>
+    <header> <!--cabeçalho menu -->
         <div class="faixa1">
+            <!--link para a página incicial e imagem da Logo  -->
             <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
+            <!-- Barra de pesquisa -->
             <div class="pesquisa">
                 <input type="text" name="" id="" placeholder="Pesquisar" />
                 <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
@@ -23,6 +26,7 @@
             </div>
 
             <% if (typeof nomeUsuario !=='undefined' ) { %>
+                <!-- Se o usuário estiver logado -->
                 <div class="entrar">
                     <a href="/pages/minha-conta">
                         <img src="/pages/img/produto-img/bonequinho.png" alt="" />
@@ -32,6 +36,7 @@
                     </a>
                 </div>
                 <% } else { %>
+                    <!-- Se o usuário não estiver logado -->
                     <div class="entrar">
                         <a href="/pages/login.html">
                             <img src="/pages/img/produto-img/bonequinho.png" alt="" />
@@ -40,12 +45,14 @@
                     </div>
                     <% } %>
                         <% if (typeof nomeUsuario !=='undefined' ) { %>
+                            <!-- Se o usuário estiver logado -->
                             <div class="sacola">
                                 <a href="/pages/sacola">
                                     <img src="/pages/img/inicio/bag.png" alt="" />
                                     <p>Sacola</p>
                                 </a>
                                 <% } else { %>
+                                    <!-- Se o usuário não estiver logado -->
                                     <div class="sacola">
                                         <a href="/pages/login.html">
                                             <img src="/pages/img/inicio/bag.png" alt="" />
@@ -54,17 +61,18 @@
                                         <% } %>
                                     </div>
                             </div>
+                            <!-- Opções de navegação -->
                             <div class="faixa2">
                                 <div class="opcoes">
                                     <a href="/pages/produtos">Produtos</a>
                                     <a href="#">Sobre nós</a>
                                 </div>
                             </div>
-    </header>
+    </header><!-- fim do menu -->
     <main>
         <!-- IMAGEM MARKENTING -->
         <img src="/pages/img/sobre-nos/mulher.png" alt="" class="mulher">
-        
+
         <section class="texto"><!-- TEXTO SOBRE A EMPRESA -->
             <p><b class="negrito">Bem-vindo(a) à Healthbox</b>, uma empresa inovadora no ramo alimentício que oferece
                 marmitas congeladas de alimentos saudáveis. Criamos um serviço que entrega suas refeições prontas,
