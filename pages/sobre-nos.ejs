@@ -1,66 +1,67 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-br"> <!-- Tag raiz do documento HTML com atributo de linguagem definido como "pt-br" -->
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre-nos</title>
-    <link rel="stylesheet" type="text/css" href="/pages/assets/sobre-nos.css">
-</head>
+<head> <!-- Início da seção de cabeçalho -->
+    <meta charset="UTF-8"> <!-- Meta tag para especificar o conjunto de caracteres UTF-8 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Link para pré-conexão com o serviço de fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Link para pré-conexão com o serviço de fontes do Google, com atributo crossorigin definido -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet"> <!-- Link para importar a fonte Montserrat do Google Fonts -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Meta tag para definir a compatibilidade com o Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para definir a viewport e a escala inicial -->
+    <title>Sobre-nos</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" type="text/css" href="/pages/assets/sobre-nos.css"> <!-- Link para importar o arquivo CSS "sobre-nos.css" -->
+</head> <!-- Fim da seção de cabeçalho -->
 
-<body>
-    <header>
-        <div class="faixa1">
-            <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
-            <div class="pesquisa">
-                <input type="text" name="" id="" placeholder="Pesquisar" />
-                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
-                    class="lupa" />
+<body> <!-- Início da seção de corpo do documento -->
+    <header> <!-- Início do elemento header, que representa o cabeçalho da página -->
+        <div class="faixa1"> <!-- Início de uma div com a classe "faixa1" -->
+            <a href="/"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a> <!-- Imagem do logo -->
+            <div class="pesquisa"> <!-- Início de uma div com a classe "pesquisa" -->
+                <input type="text" name="" id="" placeholder="Pesquisar" /> <!-- Campo de pesquisa -->
+                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)" class="lupa" /> <!-- Imagem de uma lupa -->
             </div>
 
-            <% if (typeof nomeUsuario !=='undefined' ) { %>
-                <div class="entrar">
-                    <a href="/pages/minha-conta">
-                        <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                        <p id="nomeUsuario">
-                            <%= nomeUsuario %>
+            <% if (typeof nomeUsuario !=='undefined' ) { %> <!-- Início de uma tag de script do EJS para renderização condicional -->
+                <div class="entrar"> <!-- Início de uma div com a classe "entrar" -->
+                    <a href="/pages/minha-conta"> <!-- Link para a página "Minha Conta" -->
+                        <img src="/pages/img/produto-img/bonequinho.png" alt="" /> <!-- Imagem de um bonequinho -->
+                        <p id="nomeUsuario"> <!-- Parágrafo com o ID "nomeUsuario" -->
+                            <%= nomeUsuario %> <!-- Valor dinâmico do nome do usuário obtido a partir do EJS -->
                         </p>
                     </a>
                 </div>
-                <% } else { %>
-                    <div class="entrar">
-                        <a href="/pages/login.html">
-                            <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                            <p id="nomeUsuario">Entrar</p>
+            <% } else { %> <!-- Tag de script do EJS para renderização condicional -->
+                <div class="entrar"> <!-- Início de uma div com a classe "entrar" -->
+                    <a href="/pages/login.html"> <!-- Link para a página de login -->
+                        <img src="/pages/img/produto-img/bonequinho.png" alt="" /> <!-- Imagem de um bonequinho -->
+                        <p id="nomeUsuario">Entrar</p> <!-- Parágrafo com o ID "nomeUsuario" exibindo "Entrar" -->
+                    </a>
+                </div>
+            <% } %>
+            
+            <% if (typeof nomeUsuario !=='undefined' ) { %> <!-- Tag de script do EJS para renderização condicional -->
+                <div class="sacola"> <!-- Início de uma div com a classe "sacola" -->
+                    <a href="/pages/sacola"> <!-- Link para a página "Sacola" -->
+                        <img src="/pages/img/inicio/bag.png" alt="" /> <!-- Imagem de uma sacola -->
+                        <p>Sacola</p> <!-- Parágrafo exibindo "Sacola" -->
+                    </a>
+                <% } else { %> <!-- Tag de script do EJS para renderização condicional -->
+                    <div class="sacola"> <!-- Início de uma div com a classe "sacola" -->
+                        <a href="/pages/login.html"> <!-- Link para a página de login -->
+                            <img src="/pages/img/inicio/bag.png" alt="" /> <!-- Imagem de uma sacola -->
+                            <p>Sacola</p> <!-- Parágrafo exibindo "Sacola" -->
                         </a>
-                    </div>
                     <% } %>
-                        <% if (typeof nomeUsuario !=='undefined' ) { %>
-                            <div class="sacola">
-                                <a href="/pages/sacola">
-                                    <img src="/pages/img/inicio/bag.png" alt="" />
-                                    <p>Sacola</p>
-                                </a>
-                                <% } else { %>
-                                    <div class="sacola">
-                                        <a href="/pages/login.html">
-                                            <img src="/pages/img/inicio/bag.png" alt="" />
-                                            <p>Sacola</p>
-                                        </a>
-                                        <% } %>
-                                    </div>
-                            </div>
-                            <div class="faixa2">
-                                <div class="opcoes">
-                                    <a href="/pages/produtos">Produtos</a>
-                                    <a href="#">Sobre nós</a>
-                                </div>
-                            </div>
-    </header>
+                </div>
+            </div>
+            
+            <div class="faixa2"> <!-- Início de uma div com a classe "faixa2" -->
+                <div class="opcoes"> <!-- Início de uma div com a classe "opcoes" -->
+                    <a href="/pages/produtos">Produtos</a> <!-- Link para a página "Produtos" -->
+                    <a href="#">Sobre nós</a> <!-- Link para a seção "Sobre nós" -->
+                </div>
+            </div>
+    </header> <!-- Fim do elemento header -->
     <main>
         <!-- IMAGEM MARKENTING -->
         <img src="/pages/img/sobre-nos/mulher.png" alt="" class="mulher">

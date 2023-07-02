@@ -1,69 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="pt-br"> <!-- Início do elemento HTML com o atributo lang definido como "pt-br" (português do Brasil) -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sacola</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/pages/assets/sacola.css">
-    <script src="/pages/scripts/sacola.js"></script>
+<head> <!-- Início da seção de cabeçalho do documento -->
+    <meta charset="UTF-8"> <!-- Definição da codificação de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Configuração para compatibilidade com o Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração da visualização da página em dispositivos móveis -->
+    <title>Sacola</title> <!-- Título da página exibido na barra do navegador -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" /> <!-- Inclusão de uma fonte externa do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Inclusão de outra fonte externa do Google Fonts -->
+    <link rel="stylesheet" href="/pages/assets/sacola.css"> <!-- Inclusão de um arquivo CSS externo -->
+    <script src="/pages/scripts/sacola.js"></script> <!-- Inclusão de um arquivo JavaScript externo -->
 </head>
 
-<body>
-    <header>
-        <div class="faixa1">
-            <a href="../"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a>
-            <div class="pesquisa">
-                <input type="text" name="" id="" placeholder="Pesquisar" />
-                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)"
-                    class="lupa" />
+<body> <!-- Início da seção de corpo do documento -->
+    <header> <!-- Início do elemento header, que representa o cabeçalho da página -->
+        <div class="faixa1"> <!-- Início de uma div com a classe "faixa1" -->
+            <a href="../"><img src="/pages/img/inicio/logo-br.png" alt="" id="logo" /></a> <!-- Link com um logotipo -->
+            <div class="pesquisa"> <!-- Início de uma div com a classe "pesquisa" -->
+                <input type="text" name="" id="" placeholder="Pesquisar" /> <!-- Campo de input para pesquisa -->
+                <img src="http://www.devmedia.com.br/imagens/2013/buscar_grey.png" alt="" style="transform: scaleX(-1)" class="lupa" /> <!-- Imagem de uma lupa para pesquisa -->
             </div>
 
-            <div class="entrar">
-                <a href="/pages/minha-conta">
-                    <img src="/pages/img/produto-img/bonequinho.png" alt="" />
-                    <p id="nomeUsuario">
-                        <%= nomeUsuario %>
+            <div class="entrar"> <!-- Início de uma div com a classe "entrar" -->
+                <a href="/pages/minha-conta"> <!-- Link para a página "Minha Conta" -->
+                    <img src="/pages/img/produto-img/bonequinho.png" alt="" /> <!-- Imagem de um boneco -->
+                    <p id="nomeUsuario"> <!-- Parágrafo com o ID "nomeUsuario" -->
+                        <%= nomeUsuario %> <!-- Código de template para exibir o nome do usuário -->
                     </p>
                 </a>
             </div>
 
-            <div class="sacola">
-                <a href="/pages/sacola">
-                    <img src="/pages/img/inicio/bag.png" alt="" />
-                    <p>Sacola</p>
+            <div class="sacola"> <!-- Início de uma div com a classe "sacola" -->
+                <a href="/pages/sacola"> <!-- Link para a página "Sacola" -->
+                    <img src="/pages/img/inicio/bag.png" alt="" /> <!-- Imagem de uma sacola -->
+                    <p>Sacola</p> <!-- Parágrafo com o texto "Sacola" -->
                 </a>
             </div>
         </div>
-        <div class="faixa2">
-            <div class="opcoes">
-                <a href="/pages/produtos">Produtos</a>
-                <a href="/pages/sobre-nos">Sobre nós</a>
+        <div class="faixa2"> <!-- Início de uma div com a classe "faixa2" -->
+            <div class="opcoes"> <!-- Início de uma div com a classe "opcoes" -->
+                <a href="/pages/produtos">Produtos</a> <!-- Link para a página "Produtos" -->
+                <a href="/pages/sobre-nos">Sobre nós</a> <!-- Link para a página "Sobre nós" -->
             </div>
         </div>
-    </header>
-    <main>
-        <section class="itens"><!--sessão onde ficam os produtos-->
-            <h1>SACOLA</h1>
-            <div class="item" id="produto1"> <!--produto 1-->
-                <img src="/pages/img/sacola/image.png" alt="">
-                <div class="descricao">
-                    <h2>Dieta -7kg em 7 dias</h2><!--nome do produto-->
-                    <div class="valqtd">
-                        <span class="val">R$200,00</span><!--valor do produto-->
-                        <div class="quantity">
-                            <span class="operadores" onclick="aumentarQuantidade(this)">+</span><!--botão que aumenta a quantidade de itens de 1 em 1-->
-                            <span class="qtd">1</span>
-                            <span class="operadores" onclick="diminuirQuantidade(this)">-</span><!--botão que diminui a quantidade de itens de 1 em 1-->
+    </header> <!-- Fim do elemento header -->
+
+    <main> <!-- Início do elemento main, que representa o conteúdo principal da página -->
+        <section class="itens"> <!-- Início de uma seção com a classe "itens" -->
+            <h1>SACOLA</h1> <!-- Título da seção -->
+            <div class="item" id="produto1"> <!-- Início de uma div com a classe "item" e o ID "produto1" -->
+                <img src="/pages/img/sacola/image.png" alt=""> <!-- Imagem do produto -->
+                <div class="descricao"> <!-- Início de uma div com a classe "descricao" -->
+                    <h2>Dieta -7kg em 7 dias</h2> <!-- Título do produto -->
+                    <div class="valqtd"> <!-- Início de uma div com a classe "valqtd" -->
+                        <span class="val">R$200,00</span> <!-- Valor do produto -->
+                        <div class="quantity"> <!-- Início de uma div com a classe "quantity" -->
+                            <span class="operadores" onclick="aumentarQuantidade(this)">+</span> <!-- Botão para aumentar a quantidade de itens -->
+                            <span class="qtd">1</span> <!-- Quantidade atual de itens -->
+                            <span class="operadores" onclick="diminuirQuantidade(this)">-</span> <!-- Botão para diminuir a quantidade de itens -->
                         </div>
                     </div>
-                    <button type="button" class="botao-remover" onclick=" removeProduct(event)"></button><!--botão de lixeira que remove o produto-->
+                    <button type="button" class="botao-remover" onclick=" removeProduct(event)"></button> <!-- Botão para remover o produto -->
                 </div>
             </div>
-<!--mesmo sequencia para o produto 2-->
+            <!-- Mesma sequência de código para o produto 2 -->
             <div class="item" id="produto2">
                 <img src="/pages/img/sacola/image1.png" alt="">
                 <div class="descricao">
@@ -81,62 +81,53 @@
             </div>
         </section>
 
-        <img src="/pages/img/finalizar/linha-vertical.png" alt="" class="linha"><!--linha que separa as duas sessões-->
+        <img src="/pages/img/finalizar/linha-vertical.png" alt="" class="linha"> <!-- Imagem de uma linha vertical -->
 
-        <section class="freres"><!--sessão de frete-->
-            <h2>FRETE</h2>
-            <div class="frete">
-                <div class="cep"><!--campo do frete-->
-                    <label for="cep"><img src="/pages/img/prdt-especifico/casinha.png" alt=""></label>
-                    <input type="text" placeholder="CEP 00000-000" name="cep">
+        <section class="freres"> <!-- Início de uma seção com a classe "freres" -->
+            <h2>FRETE</h2> <!-- Título da seção de frete -->
+            <div class="frete"> <!-- Início de uma div com a classe "frete" -->
+                <div class="cep"> <!-- Início de uma div com a classe "cep" -->
+                    <label for="cep"><img src="/pages/img/prdt-especifico/casinha.png" alt=""></label> <!-- Imagem de uma casinha -->
+                    <input type="text" placeholder="CEP 00000-000" name="cep"> <!-- Campo de entrada para o CEP -->
                 </div>
-                <button type="submit" class="calcular">CALCULAR</button>
+                <button type="submit" class="calcular">CALCULAR</button> <!-- Botão para calcular o frete -->
             </div>
-<!--sessão das informações do valor e quantidade de itens-->
-            <h2>RESUMO DE PEDIDO</h2>
-            <div class="sub">
-                <p>Total itens:</p>
-                <span></span><!--mostra o total de itens-->
+            <!-- Seção das informações do valor e quantidade de itens -->
+            <h2>RESUMO DE PEDIDO</h2> <!-- Título da seção -->
+            <div class="sub"> <!-- Início de uma div com a classe "sub" -->
+                <p>Total itens:</p> <!-- Texto "Total itens:" -->
+                <span></span> <!-- Elemento span vazio, onde será exibido o total de itens -->
             </div>
-            <div class="total">
-                <p>Total do pedido:</p>
-                <span id="precoTotal">R$400,00</span><!--mostra o o valor dos itens-->
+            <div class="total"> <!-- Início de uma div com a classe "total" -->
+                <p>Total do pedido:</p> <!-- Texto "Total do pedido:" -->
+                <span id="precoTotal">R$400,00</span> <!-- Elemento span com o ID "precoTotal", onde será exibido o valor total do pedido -->
             </div>
-            <div class="botao">
-                <button type="submit" class="confirmar" onclick="alterarNome(this)">CONFIRMAR</button><!--botão de confirmar pedido-->
+            <div class="botao"> <!-- Início de uma div com a classe "botao" -->
+                <button type="submit" class="confirmar" onclick="alterarNome(this)">CONFIRMAR</button> <!-- Botão para confirmar o pedido -->
             </div>
-    </main>
-    <footer>
-        <!-- Rodapé -->
-        <div class="linha"></div>
-        <div class="verdinho">
-            <div class="row1">
-                <div class="col1">
-                    <!-- Div da primeira coluna do rodapé logo e lema -->
-                    <a href="../"><img src="/pages/img/inicio/logo (2).png" alt=""></a>
-                    <!-- Imagem do logo -->
-                    <div class="sublinhado"></div>
-                    <p class="lema">Tornando a sua vida mais saudável</p>
+    </main> <!-- Fim do elemento main -->
+
+    <footer> <!-- Início do elemento footer, que representa o rodapé da página -->
+        <div class="linha"></div> <!-- Div com a classe "linha" -->
+        <div class="verdinho"> <!-- Div com a classe "verdinho" -->
+            <div class="row1"> <!-- Div com a classe "row1" -->
+                <div class="col1"> <!-- Div com a classe "col1" -->
+                    <a href="../"><img src="/pages/img/inicio/logo (2).png" alt=""></a> <!-- Imagem do logo -->
+                    <div class="sublinhado"></div> <!-- Div com a classe "sublinhado" -->
+                    <p class="lema">Tornando a sua vida mais saudável</p> <!-- Texto de lema -->
                 </div>
-                <div class="col2">
-                    <!-- Div da segunda coluna do rodapé -->
-                    <h4>Institucional</h4>
-                    <a href="/pages/sobre-nos">Sobre nós</a>
-                    <!-- Link para a página "Sobre nós" -->
-                    <a href="/pages/politica">Política de Privacidade</a>
-                    <!-- Link para a página "Política de Privacidade" -->
+                <div class="col2"> <!-- Div com a classe "col2" -->
+                    <h4>Institucional</h4> <!-- Título "Institucional" -->
+                    <a href="/pages/sobre-nos">Sobre nós</a> <!-- Link para a página "Sobre nós" -->
+                    <a href="/pages/politica">Política de Privacidade</a> <!-- Link para a página "Política de Privacidade" -->
                 </div>
-                <div class="col3">
-                    <!-- Div da terceira coluna do rodapé Dúvidas-->
-                    <h4>Dúvida</h4>
-                    <a href="/pages/minha-conta">Meus Pedidos</a>
-                    <!-- Link para a página "Meus Pedidos" -->
-                    <a href="/pages/minha-conta">Minha Conta</a>
-                    <!-- Link para a página "Minha Conta" -->
+                <div class="col3"> <!-- Div com a classe "col3" -->
+                    <h4>Dúvida</h4> <!-- Título "Dúvida" -->
+                    <a href="/pages/minha-conta">Meus Pedidos</a> <!-- Link para a página "Meus Pedidos" -->
+                    <a href="/pages/minha-conta">Minha Conta</a> <!-- Link para a página "Minha Conta" -->
                 </div>
-                <div class="col4">
-                    <!-- Div da quarta coluna do rodapé das redes sociais -->
-                    <h4>Redes Sociais</h4>
+                <div class="col4"> <!-- Div com a classe "col4" -->
+                    <h4>Redes Sociais</h4> <!-- Título "Redes Sociais" -->
                     <div class="redes">
                         <!-- Div das redes sociais -->
                         <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="/pages/img/Login-cadastro/facebook2.png" alt="facebook"></a> 
