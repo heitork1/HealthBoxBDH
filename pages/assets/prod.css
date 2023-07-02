@@ -56,7 +56,7 @@ body {
   display: flex;
   height: 4vh;
 }
-
+/* ajuste da barra de pesquisa */
 @media screen and (max-width: 1300px) and (min-height:720px) { /* ajuste tamanho de tela */
   .pesquisa {
     margin-left: 30vw;
@@ -72,14 +72,15 @@ input {
   border: none;
   outline: none;
 }
-
+/* login */
 .entrar {
   display: flex;
   width: 10vw;
   margin-left: 3vw;
 }
 
-@media screen (max-width: 1300px) and (min-height:720px) { /* ajuste tamanho de tela */
+/* ajuste do login para o tamanho de tela */
+@media screen (max-width: 1300px) and (min-height:720px) { 
   .entrar {
     margin-left: 2vw;
   }
@@ -112,6 +113,7 @@ input {
   width: 2vw;
 }
 
+/* sacola */
 .sacola a {
   display: flex;
   align-items: center;
@@ -123,8 +125,8 @@ input {
   margin-left: 0.76vw;
   transition: 0.3s;
 }
-
-@media screen and (max-width: 1300px) and (min-height:720px) { /* ajuste tamanho de tela */
+/* ajuste para o tamanho da tela */
+@media screen and (max-width: 1300px) and (min-height:720px) { 
   .sacola a {
     margin-right: 0.2vw;
     margin-left: 1vw
@@ -149,7 +151,7 @@ input {
   z-index: 9999;
  
 }
-
+/* opções de navegação */
 .opcoes a:hover {
   background-color: #254e2562;
   border-radius: 1vh;
@@ -172,7 +174,7 @@ input {
   color: white;
   transition: 0.3s;
 }
-
+/* ajuste para o tamanho da tela */
 @media screen and (max-width: 1300px) and (min-height:720px) {
   .opcoes {
     margin-left: 80vw;

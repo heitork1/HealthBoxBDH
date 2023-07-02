@@ -4,10 +4,12 @@
     font-family: 'montserrat', sans-serif;
 }
 
+/* cor de fundo */
 body {
     background-color: #EBECF0;
 }
 
+/* div central */
 .bloco {
     display: flex;
     flex-direction: column;
@@ -17,6 +19,7 @@ body {
     justify-content: space-around;
 }
 
+/* logo */
 .principal img {
     width: 15vw;
     display: flex;
@@ -26,25 +29,29 @@ body {
     margin-top: 5vh;
 }
 
+/* título */
 h1.crie {
     color: #3D2A1A;
     font-size: 40px;
     text-align: center;
+    margin-bottom: -2vh;
 }
 
+/* div formujlário */
 form {
     display: flex;
     justify-content: center;
 }
 
+/* instruções */
 form p {
     text-align: center;
     color: #3D2A1A;
     text-align: center;
     font-size: 20px;
-
 }
 
+/* input da senha */
 .senha {
     width: 70%;
     height: 5vh;
@@ -53,15 +60,19 @@ form p {
     border: none;
     background-color: rgb(223, 203, 190);
     padding-left: 1%;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
     transition: 0.3s;
 }
+
 
 .senha:hover {
     background-color: rgb(196, 166, 146);
 }
 
-
+/* botão de .confirmar senha */
 .confirma {
+    margin-top: 2vh;
     width: 30%;
     height: 10vh;
     background-color: #255226;
@@ -73,27 +84,47 @@ form p {
     transition: 0.3s;
 }
 
+/* ajuste do botão para o tamanho datela */
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    .confirma {
+        width: 40%;
+        height: 8vh;
+        background-color: #255226;
+        border: none;
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+        border-radius: 4px;
+        transition: 0.3s;
+    }
+}
+
+
 .confirma:hover {
     transform: scale(1.05);
 }
 
 
-
+/* rodapé */
 footer {
-    margin-top: 16vh;
+    margin-top: 18vh;
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
+}
+
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    footer {
+        margin-top: 26vh;
+        font-family: 'montserrat', sans-serif;
+        background-color: #EBECF0;
+    }
 }
 
 footer p {
     color: black;
 }
 
-.contato p {
-    margin-left: 0;
-    font-size: 16px;
-}
-
+/* linhas que dividem o rodapé */
 .linha {
     background-color: #093807;
     height: 2vh;
@@ -105,6 +136,7 @@ footer p {
     height: 2vh;
 }
 
+/* linha que divide a logo do lema */
 .sublinhado {
     background-color: #093807;
     margin-top: -8%;
@@ -113,6 +145,7 @@ footer p {
     margin-left: 2%;
 }
 
+/* div das colunas */
 .row1 {
     display: flex;
     padding-top: 1%;
@@ -127,11 +160,13 @@ footer p {
     margin-top: -5%;
 }
 
+/* primeira coluna */
 .col1 p {
     width: 70%;
     margin-left: 6%;
 }
 
+/* segunda coluna */
 .col2 {
     display: flex;
     flex-direction: column;
@@ -141,6 +176,7 @@ footer p {
     margin-top: 12%;
 }
 
+/* terceira coluna */
 .col3 {
     display: flex;
     flex-direction: column;
@@ -150,6 +186,7 @@ footer p {
     margin-top: 20%;
 }
 
+/* quarta coluna */
 .col4 {
     display: flex;
     flex-direction: column;
@@ -157,24 +194,7 @@ footer p {
     margin-right: 5%;
 }
 
-.localizacao {
-    display: flex;
-    align-items: center;
-}
-
-.fone {
-    display: flex;
-    align-items: center;
-    width: 30%; 
-
-}
-
-.email {
-    display: flex;
-    align-items: center;
-    margin-left: -10%; 
-}
-
+/* contatos */
 .contato {
     width: 85%;
     display: flex;
@@ -184,13 +204,36 @@ footer p {
     margin-top: 2%;
 }
 
+.contato p {
+    margin-left: 0;
+    font-size: 16px;
+}
+
 .contato img {
     height: 50%;
     margin-right: 3%;
 }
 
+.localizacao {
+    display: flex;
+    align-items: center;
+}
+
 .localizacao img {
     margin-right: 5%;
+}
+
+.fone {
+    display: flex;
+    align-items: center;
+    width: 30%;
+
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    margin-left: -10%;
 }
 
 .lema {
@@ -201,13 +244,14 @@ footer p {
     font-size: 16px;
 }
 
-.redes img {
-    width: 25%;
-    margin-top: 15%;
-}
-
+/* título redes sociais */
 h4 {
     margin-bottom: 3vh;
     font-size: 18px;
     margin-top: 2%;
+}
+
+.redes img {
+    width: 25%;
+    margin-top: 15%;
 }
