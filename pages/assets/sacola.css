@@ -4,11 +4,13 @@ body {
     margin: 0;
     width: auto;
     overflow-x: hidden;
-    /* Impede a rolagem horizontal */
-}
-
-/* menu principal */
-.faixa1 {
+    /* impede a barra de rolar na horizontal */
+  }
+  
+  
+  /* menu principal primeira faixa*/
+  
+  .faixa1 {
     background-color: #093807;
     display: flex;
     height: 8.8vh;
@@ -16,17 +18,17 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-}
-
-
-
-#logo {
+    z-index: 9999;
+    /* impede que outros elementos se sobreponham */
+  }
+  
+  #logo {
     display: flex;
     height: 35vh;
     margin-left: -1vw;
-}
-
-.pesquisa {
+  }
+  
+  .pesquisa {
     display: flex;
     background-color: white;
     height: 2.5vw;
@@ -37,149 +39,158 @@ body {
     margin-left: 45vw;
     transition: 0.2s;
     justify-content: space-around;
-}
-
-.pesquisa:hover {
+  }
+  
+  .pesquisa:hover {
     background-color: rgb(211, 211, 211);
     cursor: pointer;
-
-}
-
-.pesquisa input {
+  
+  }
+  
+  .pesquisa input {
     width: 12vw;
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
-}
-
-.pesquisa img {
+  }
+  
+  .pesquisa img {
     display: flex;
     height: 4vh;
-}
-
-@media screen and (max-width: 1150px) {
+  }
+  
+  /* ajuste da barra de pesquisa */
+  @media screen and (max-width: 1300px) and (min-height:720px) {
     .pesquisa {
-        margin-left: 30vw;
-        height: 5vh
+      margin-left: 30vw;
+      height: 5vh
     }
-
+  
     .pesquisa img {
-        height: 3.5vh;
+      height: 3.5vh;
     }
-}
-
-input {
+  }
+  
+  input {
     border: none;
     outline: none;
-}
-
-.entrar {
+  }
+  
+  /* login */
+  .entrar {
     display: flex;
     width: 10vw;
     margin-left: 3vw;
-}
-
-@media screen and (max-width: 1150px) {
+  }
+  
+  /* ajuste do login para o tamanho de tela */
+  @media screen (max-width: 1300px) and (min-height:720px) {
     .entrar {
-        margin-left: 2vw;
+      margin-left: 2vw;
     }
-}
-
-.entrar a {
+  }
+  
+  .entrar a {
     display: flex;
     width: 4vw;
     align-items: center;
     text-decoration: none;
-}
-
-.entrar img {
+  }
+  
+  .entrar img {
     width: 2vw;
-}
-
-.entrar p {
+  }
+  
+  .entrar p {
     padding: 0.3vw;
     margin-left: 0.2vw;
     transition: 0.3s;
-}
-
-.entrar p:hover {
+  }
+  
+  .entrar p:hover {
     background-color: #429c4462;
     border-radius: 1vh;
     padding: 0.5vw;
-}
-
-.sacola img {
+  }
+  
+  .sacola img {
     width: 2vw;
-}
-
-.sacola a {
+  }
+  
+  /* sacola */
+  .sacola a {
     display: flex;
     align-items: center;
     text-decoration: none;
     margin-right: 2vw;
-}
-
-.sacola p {
+  }
+  
+  .sacola p {
     margin-left: 0.76vw;
     transition: 0.3s;
-}
-
-@media screen and (max-width: 1150px) {
+  }
+  
+  /* ajuste para o tamanho da tela */
+  @media screen and (max-width: 1300px) and (min-height:720px) {
     .sacola a {
-        margin-right: 0.2vw;
-        margin-left: 1vw
+      margin-right: 0.2vw;
+      margin-left: 1vw
     }
-}
-
-.sacola p:hover {
+  }
+  
+  .sacola p:hover {
     background-color: #429c4462;
     border-radius: 1vh;
     padding: 0.5vw;
-}
-
-/*Menu secundario*/
-
-.faixa2 {
+  }
+  
+  /*Menu segunda faixa*/
+  
+  .faixa2 {
     background-color: #429C44;
     height: 7.2vh;
     width: 100%;
     top: 8.7vh;
     position: fixed;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-
-}
-
-.opcoes a:hover {
+    /* sombreado  */
+    z-index: 9999;
+  
+  }
+  
+  /* opções de navegação */
+  .opcoes a:hover {
     background-color: #254e2562;
     border-radius: 1vh;
     padding: 0.5vw;
-}
-
-.opcoes {
+  }
+  
+  .opcoes {
     display: flex;
     height: 3.5vw;
     align-items: center;
     margin-left: 84vw;
     justify-content: space-around;
     width: 32.5vh;
-}
-
-.opcoes a {
+  }
+  
+  .opcoes a {
     align-self: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: white;
     transition: 0.3s;
-}
-
-@media screen and (max-width: 1150px) {
+  }
+  
+  /* ajuste para o tamanho da tela */
+  @media screen and (max-width: 1300px) and (min-height:720px) {
     .opcoes {
-        margin-left: 80vw;
-        height: 100%;
-        align-items: center;
-        width: 26.5vh;
+      margin-left: 80vw;
+      height: 100%;
+      align-items: center;
+      width: 26.5vh;
     }
-}
-
+  }
+  
 #nos {
     display: flex;
 }
@@ -192,13 +203,13 @@ p {
     font-family: 'Montserrat', sans-serif;
     margin-left: 4%;
 }
-
+/* cor da tela */
 body {
     background-color: #EBECF0;
     font-family: 'montserrat', sans-serif;
     color: #3D2A1A;
 }
-
+ /* div do preço e quantidade */
 .valqtd {
 
     display: flex;
@@ -212,34 +223,8 @@ main {
     display: flex;
 }
 
-.sub {
-    display: flex;
-    align-items: baseline;
-    height: 8%;
-    width: 60%;
-    justify-content: space-between;
-}
-
-.sub p {
-    color: #3D2A1A;
-    font-size: 18px;
-    margin-left: 0;
-    font-weight: 600;
-}
-
-.sub span {
-    background-color: #DFCBBE;
-    width: 50%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7px;
-    font-weight: 900;
-}
 
 .total {
-
     display: flex;
     align-items: baseline;
     height: 8%;
@@ -253,7 +238,7 @@ main {
     margin-left: 0;
     font-weight: 600;
 }
-
+/* valor total */
 .total span {
     background-color: #DFCBBE;
     width: 50%;
@@ -264,7 +249,7 @@ main {
     border-radius: 7px;
     font-weight: 900;
 }
-
+/* div dos produtos da sacola */
 .itens {   
     width: 70%;
     margin-left: 5%;
@@ -284,7 +269,7 @@ main {
 .itens p {
     background-color: #DFCBBE;
 }
-
+/* div dos produtos */
 .item {
     display: flex;
     margin-top: 5%;
@@ -295,7 +280,7 @@ main {
     border: 4px solid rgb(196, 166, 146);
     border-radius: 7px;
 }
-
+/* botão lixeirinha */
 .botao-remover {
     border: none;
     cursor: pointer;
@@ -312,17 +297,19 @@ main {
     padding: 0.5% 3%;
     border-radius: 2px;
 }
-
+/* div com o frte e o valor total */
 .freres {
     margin-top: 13vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
+/* ajuste para o tamanho da tela */
 @media screen and (max-width: 1150px) and (min-height: 720px) {
     .freres {
-        margin-top: 16.5vh;
+        justify-content: none;
+        height: 70vh;
+        margin-top:16vh;
     }
 
     .itens h1 {
@@ -332,6 +319,36 @@ main {
     .item img {
         height: 25%;
         margin-top: 2vh;
+    }
+    .itens{
+        height: 100vh;
+    }
+    .item {
+        display: flex;
+        margin-left: 5%;
+        margin-top: 17%;
+    }
+    .linha{
+        height:70vh ;
+    }
+    .cep{margin-top: 10vh;
+    }
+    .calcular{
+        margin-top: 10vh;
+        height: 3.7vh;
+    }
+    .frete{
+        align-items: center;
+    }
+    .freres p{
+        width: 20vw;
+    }
+    .confirmar{ 
+        margin-top: 50vh;
+    }
+    .valqtd{ 
+        width: 30vw;
+        height: 3vh;
     }
 }
 
@@ -348,17 +365,7 @@ main {
     margin-bottom: 0;
 }
 
-.botao-remover {
-    border: none;
-    cursor: pointer;
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-    float: right;
-    margin-top: -3vh;
-    background-image: url(/pages/img/sacola/icons8-lixeira-16.png);
-}
-
+/* espaço do botão confirmar */
 .botao {
     display: flex;
     justify-content: center;
@@ -366,7 +373,7 @@ main {
     height: 7vh;
     flex-direction: column;
 }
-
+/* botão confirmar */
 .confirmar {
     width: 50%;
     height: 7vh;
@@ -385,18 +392,7 @@ main {
     transition: 0.3s;
 }
 
-#minhaDiv {
-    margin-top: -2vh;
-    margin-left: -1vw;
-    display: none;
-    width: 70vh;
-}
-
-#minhaDiv p {
-    color: black;
-
-}
-
+/* + e - */
 .operadores {
     background-color: #B49E88;
     width: 30%;
@@ -410,7 +406,7 @@ main {
     transform: scale(1.05);
     transition: 0.3s;
 }
-
+ /* número de itens */
 .qtd {
     background-color: #CDB9AA;
     width: 35%;
@@ -420,7 +416,7 @@ main {
     height: 100%;
     align-items: center;
 }
-
+/* frete */
 .cep {
     display: flex;
     background-color: #DFCBBE;
@@ -457,7 +453,7 @@ main {
 .frete {
     display: flex;
 }
-
+/* botão de calcular */
 .calcular {
     border: none;
     background-color: #B49E88;
@@ -472,12 +468,12 @@ main {
     transform: scale(1.05);
     transition: 0.3s;
 }
-
+/* descrição do produto */
 .descricao {
     margin-left: 5%;
     width: 60%;
 }
-
+/* valor do produto */
 .val {
     width: 50%;
     border-radius: 5px;
@@ -488,7 +484,7 @@ main {
     align-items: center;
     font-size: 18px;
 }
-
+/* div do número de itens e operadores */
 .quantity {
     width: 20%;
     display: flex;
@@ -501,31 +497,35 @@ main {
     transition: 0.3s;
     height: 100%;
 }
-
+/* linha que divide as duas sessões */
 .linha {
     margin-left: -5%;
     margin-top: 20vh;
 }
 
-
-
-
+/* rodapé */
 footer {
-    margin-top: 16vh;
     font-family: 'montserrat', sans-serif;
     background-color: #EBECF0;
+    margin-top: 9vh;
+}
+@media screen and (max-width: 1150px) and (min-height: 720px) {
+    footer {
+        font-family: 'montserrat', sans-serif;
+        background-color: #EBECF0;
+        margin-top: 0vh;
+    }
+
 }
 
 footer p {
     color: black;
 }
 
-.contato p {
-    margin-left: 0;
-    font-size: 16px;
-}
 
-.linha1 {
+
+/* linhas que divide o rodapé */
+.linha1{
     background-color: #093807;
     height: 2vh;
 }
@@ -536,6 +536,7 @@ footer p {
     height: 2vh;
 }
 
+/* linha que divide a logo do lema */
 .sublinhado {
     background-color: #093807;
     margin-top: -8%;
@@ -544,6 +545,7 @@ footer p {
     margin-left: 2%;
 }
 
+/* espaço para as colunas */
 .row1 {
     display: flex;
     padding-top: 1%;
@@ -558,11 +560,13 @@ footer p {
     margin-top: -5%;
 }
 
+/* primeira coluna */
 .col1 p {
     width: 70%;
     margin-left: 6%;
 }
 
+/* segunda coluna */
 .col2 {
     display: flex;
     flex-direction: column;
@@ -572,6 +576,7 @@ footer p {
     margin-top: 12%;
 }
 
+/* terceira coluna */
 .col3 {
     display: flex;
     flex-direction: column;
@@ -581,6 +586,7 @@ footer p {
     margin-top: 20%;
 }
 
+/* quarta coluna */
 .col4 {
     display: flex;
     flex-direction: column;
@@ -588,23 +594,7 @@ footer p {
     margin-right: 5%;
 }
 
-.localizacao {
-    display: flex;
-    align-items: center;
-}
-
-.fone {
-    display: flex;
-    align-items: center;
-    width: 30%;
-}
-
-.email {
-    display: flex;
-    align-items: center;
-    margin-left: -10%;
-}
-
+/* contatos */
 .contato {
     width: 85%;
     display: flex;
@@ -618,17 +608,52 @@ footer p {
     height: 50%;
     margin-right: 3%;
 }
+.contato p {
+    margin-left: 0;
+    font-size: 16px;
+}
+.localizacao {
+    display: flex;
+    align-items: center;
+}
+
+.fone {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+@media screen and (max-width: 1300px) and (min-height:720px) {
+    .fone {
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    margin-left: -10%;
+}
+
 
 .localizacao img {
     margin-right: 5%;
 }
 
 .lema {
-    margin-bottom: 3vh;
     text-align: center;
     margin-right: 1%;
     margin-top: 2%;
     font-size: 16px;
+}
+
+
+/* título das redes sociais */
+h4 {
+    font-size: 18px;
+    margin-top: 2%;
 }
 
 .redes img {
@@ -636,12 +661,4 @@ footer p {
     margin-top: 15%;
 }
 
-h4 {
-    margin-bottom: 3vh;
-    font-size: 18px;
-    margin-top: 2%;
-}
 
-#ilustra {
-    margin-left: 52vw;
-}
