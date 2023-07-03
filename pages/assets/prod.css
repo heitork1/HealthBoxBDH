@@ -642,6 +642,13 @@ header p {
   text-decoration: none;
   transition: 0.3s;
 }
+#box17 a{
+  text-decoration: none;
+  color: #3D2A1A;
+}
+#botaoVER{
+  color: white;
+}
 
 @media screen and (max-width: 1300px) and (min-height:720px) {
   #box17 {
