@@ -83,7 +83,7 @@ body {
   }
   
   /* ajuste do login para o tamanho de tela */
-  @media screen (max-width: 1300px) and (min-height:720px) {
+  @media screen AND (max-width: 1300px) and (min-height:720px) {
     .entrar {
       margin-left: 2vw;
     }
