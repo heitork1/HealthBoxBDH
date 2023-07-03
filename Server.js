@@ -5,7 +5,7 @@ const mysql = require("mysql2"); // Módulo para conexão com o banco de dados M
 const session = require("express-session"); // Middleware para gerenciar sessões de usuário
 const fs = require("fs"); // Módulo para leitura de arquivos
 const ejs = require("ejs"); // Mecanismo de renderização de templates EJS
-const moment = require('moment'); // Biblioteca para manipulação de datas e horários
+const moment = require("moment"); // Biblioteca para manipulação de datas e horários
 
 const app = express(); // Criação da instância do aplicativo Express
 app.use(bodyParser.json()); // Configuração do middleware para processar corpos de requisições JSON
@@ -30,7 +30,7 @@ const connection = mysql.createConnection({
 app.use(
   session({
     secret: "123", // Chave secreta utilizada para assinar as sessões
-    resave: true,  //Salva a sessão mesmo que não tenha sido modificada durante a requisição
+    resave: true, //Salva a sessão mesmo que não tenha sido modificada durante a requisição
     saveUninitialized: true, // Salva a sessão mesmo que ela não tenha sido inicializada
   })
 );
@@ -62,7 +62,7 @@ app.get("/", (req, res) => {
     const renderedHtml = ejs.render(html, {
       nomeUsuario: req.session.username, // Renderiza o arquivo "index.ejs" com o nome de usuário
     });
-    res.send(renderedHtml);// Envia o HTML renderizado como resposta
+    res.send(renderedHtml); // Envia o HTML renderizado como resposta
   } else {
     // Usuário não está logado
     res.render("index"); //renderiza o arquivo "index.ejs" diretamente
@@ -109,21 +109,22 @@ app.post("/cadastro", (req, res) => {
   let date = req.body.date;
   // Lógica para cadastrar um novo usuário no banco de dados
   connection.query(
-    "INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" + username +
-    "'," +
-    "'" +
-    email +
-    "'," +
-    "'" +
-    password +
-    "'," +
-    "'" +
-    telefone +
-    "'," +
-    "'" +
-    date +
-    "'" +
-    ")",
+    "INSERT INTO usuarios (`nome`, `email`, `senha`,`telefone`, `data_nascimento`) VALUES ('" +
+      username +
+      "'," +
+      "'" +
+      email +
+      "'," +
+      "'" +
+      password +
+      "'," +
+      "'" +
+      telefone +
+      "'," +
+      "'" +
+      date +
+      "'" +
+      ")",
     function (err, rows) {
       if (!err) {
         console.log("Usuario cadastrado com sucesso");
@@ -138,69 +139,69 @@ app.post("/cadastro", (req, res) => {
 // Rota de logout ("/logout")
 app.get("/logout", (req, res) => {
   // Destroi a sessão do usuário e redireciona para a página de login
- req.session.destroy();
- res.redirect("/pages/login.html");
+  req.session.destroy();
+  res.redirect("/pages/login.html");
 });
 
 // Rota da página "Minha Conta" ("/pages/minha-conta")
 app.get("/pages/minha-conta", checkLogin, (req, res) => {
- // Lógica para obter informações do usuário e seus pedidos
- connection.query(
-   "SELECT * FROM usuarios WHERE id = '" + req.session.userID + "'",
-   function (err, rows) {
-     if (!err) {
-       req.session.email = rows[0].email;
-       req.session.date = moment(rows[0].data_nascimento).format("DD/MM/YYYY");
-       req.session.senha = rows[0].senha;
-       req.session.tel = rows[0].telefone;
+  // Lógica para obter informações do usuário e seus pedidos
+  connection.query(
+    "SELECT * FROM usuarios WHERE id = '" + req.session.userID + "'",
+    function (err, rows) {
+      if (!err) {
+        req.session.email = rows[0].email;
+        req.session.date = moment(rows[0].data_nascimento).format("DD/MM/YYYY");
+        req.session.senha = rows[0].senha;
+        req.session.tel = rows[0].telefone;
 
-       // Buscar pedidos do usuário
-       connection.query(
-         `SELECT pedidos.*, produtos.nome_produto, produtos.preco_produto, produtos.url_imagem 
+        // Buscar pedidos do usuário
+        connection.query(
+          `SELECT pedidos.*, produtos.nome_produto, produtos.preco_produto, produtos.url_imagem 
      FROM pedidos 
      INNER JOIN itenspedido ON pedidos.id = itenspedido.pedido_id 
      INNER JOIN produtos ON itenspedido.produto_id = produtos.id 
      WHERE pedidos.usuario_id = ${req.session.userID} AND pedidos.status = 'finalizado'`,
-         function (err, pedidos) {
-           if (!err) {
-             // Formatar a data de cada pedido
-             for (let i = 0; i < pedidos.length; i++) {
-               const dataPedido = moment(pedidos[i].data_pedido).format(
-                 "DD/MM/YYYY HH:mm:ss"
-               );
-               pedidos[i].data_pedido = dataPedido;
-             }
+          function (err, pedidos) {
+            if (!err) {
+              // Formatar a data de cada pedido
+              for (let i = 0; i < pedidos.length; i++) {
+                const dataPedido = moment(pedidos[i].data_pedido).format(
+                  "DD/MM/YYYY HH:mm:ss"
+                );
+                pedidos[i].data_pedido = dataPedido;
+              }
 
-             const filePath = path.join(__dirname, "pages", "minha-conta.ejs");
-             const html = fs.readFileSync(filePath, "utf8");
-             const renderedHtml = ejs.render(html, {
-               nomeUsuario: req.session.username,
-               emailUsuario: req.session.email,
-               nascimentoUsuario: req.session.date,
-               senhaUsuario: req.session.senha,
-               telefoneUsuario: req.session.tel,
-               pedidos: pedidos,
-             });
-             res.send(renderedHtml);
-           } else {
-             res.send(err);
-           }
-         }
-       );
-     } else {
-       res.send(err);
-     }
-   }
- );
+              const filePath = path.join(__dirname, "pages", "minha-conta.ejs");
+              const html = fs.readFileSync(filePath, "utf8");
+              const renderedHtml = ejs.render(html, {
+                nomeUsuario: req.session.username,
+                emailUsuario: req.session.email,
+                nascimentoUsuario: req.session.date,
+                senhaUsuario: req.session.senha,
+                telefoneUsuario: req.session.tel,
+                pedidos: pedidos,
+              });
+              res.send(renderedHtml);
+            } else {
+              res.send(err);
+            }
+          }
+        );
+      } else {
+        res.send(err);
+      }
+    }
+  );
 });
 
 // Rota para atualizar as informações de cadastro do usuário
 app.post("/atualizar", (req, res) => {
-  let username = req.body.username;  // Obtém o novo nome de usuário do corpo da requisição
-  let email = req.body.email;  // Obtém o novo email do usuário do corpo da requisição
-  let password = req.body.password;  // Obtém a nova senha do usuário do corpo da requisição
-  let date = moment(req.body.date, 'DD/MM/YYYY').format('YYYY-MM-DD');  // Obtém a nova data de nascimento do usuário do corpo da requisição e formata no padrão esperado
-  let tel = req.body.tel;  // Obtém o novo número de telefone do usuário do corpo da requisição
+  let username = req.body.username; // Obtém o novo nome de usuário do corpo da requisição
+  let email = req.body.email; // Obtém o novo email do usuário do corpo da requisição
+  let password = req.body.password; // Obtém a nova senha do usuário do corpo da requisição
+  let date = moment(req.body.date, "DD/MM/YYYY").format("YYYY-MM-DD"); // Obtém a nova data de nascimento do usuário do corpo da requisição e formata no padrão esperado
+  let tel = req.body.tel; // Obtém o novo número de telefone do usuário do corpo da requisição
 
   connection.query(
     `UPDATE usuarios SET nome = ?, email = ?, senha = ?, data_nascimento = ?, telefone = ? WHERE id = ?`,
@@ -211,7 +212,9 @@ app.post("/atualizar", (req, res) => {
         res.redirect("/pages/minha-conta");
       } else {
         console.log(err);
-        res.send("Ocorreu um erro durante a atualização das informações de cadastro.");
+        res.send(
+          "Ocorreu um erro durante a atualização das informações de cadastro."
+        );
       }
     }
   );
@@ -249,12 +252,32 @@ app.get("/pages/sacola", checkLogin, (req, res) => {
   res.send(renderedHtml);
 });
 
-//Rota da página "Tela-produto" 
+//Rota da página "Tela-produto"
 app.get("/pages/tela-produto", checkLogin, (req, res) => {
-  const filePath = path.join(__dirname, "pages", "tela-produto.ejs");
-  const html = fs.readFileSync(filePath, "utf8");
-  const renderedHtml = ejs.render(html, { nomeUsuario: req.session.username });
-  res.send(renderedHtml);
+  const produtoId = req.query.id;
+  connection.query(
+    `SELECT * FROM produtos WHERE id = ?`,
+    [produtoId],
+    function (err, rows) {
+      if (!err) {
+        const filePath = path.join(__dirname, "pages", "tela-produto.ejs");
+        const html = fs.readFileSync(filePath, "utf8");
+        const renderedHtml = ejs.render(html, {
+          nomeUsuario: req.session.username,
+          imagemProduto: rows[0].url_imagem,
+          nomeProduto: rows[0].nome_produto,
+          precoProduto: rows[0].preco_produto,
+          descricaoProduto: rows[0].descricao_produto,
+        });
+        res.send(renderedHtml);
+      } else {
+        console.log(err);
+        res.send(
+          "Ocorreu um erro ao localizar este produto."
+        );
+      }
+    }
+  );
 });
 
 // Rota da página "Finalizar"

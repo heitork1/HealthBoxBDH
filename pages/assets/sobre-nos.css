@@ -151,7 +151,7 @@ body {
     display: flex; /* Exibir como um elemento flexível */
     height: 3.5vw; /* Altura */
     align-items: center; /* Alinhar conteúdo verticalmente ao centro */
-    margin-left: 83vw; /* Margem esquerda */
+    margin-left: 84vw; /* Margem esquerda */
     justify-content: space-around; /* Alinhar conteúdo horizontalmente com espaçamento igual */
     width: 32.5vh; /* Largura */
   }

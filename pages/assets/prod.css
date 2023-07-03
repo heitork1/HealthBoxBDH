@@ -83,7 +83,7 @@ input {
 }
 
 /* ajuste do login para o tamanho de tela */
-@media screen (max-width: 1300px) and (min-height:720px) {
+@media screen and (max-width: 1300px) and (min-height:720px) {
   .entrar {
     margin-left: 2vw;
   }
@@ -168,7 +168,7 @@ input {
   display: flex;
   height: 3.5vw;
   align-items: center;
-  margin-left: 83vw;
+  margin-left: 84vw;
   justify-content: space-around;
   width: 32.5vh;
 }

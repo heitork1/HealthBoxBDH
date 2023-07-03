@@ -182,7 +182,7 @@ input {
   display: flex; /* Exibir como elemento flexível */
   height: 3.5vw; /* Altura / */
   align-items: center; /*Alinhar conteúdo verticalmente ao centro*/
-  margin-left: 83vw; /* Margem esquerda */
+  margin-left: 83.7vw; /* Margem esquerda */
   justify-content: space-around; /* Justificar conteúdo com espaçamento igual */
   width: 32.5vh; /* Largura das opções do menu */
 }

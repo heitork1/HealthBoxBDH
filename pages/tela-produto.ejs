@@ -72,7 +72,7 @@
 
         <div class="img">
             <!-- Div para exibir a imagem maior do produto -->
-            <img id="imagem-principal" style="border-radius: 8px" src="/pages/img/prdt-especifico/image (2).png"
+            <img id="imagem-principal" style="border-radius: 8px" src="<%= imagemProduto %>"
                 alt="imagem-principal">
         </div>
 
@@ -80,10 +80,10 @@
             <!-- descrição do produto -->
             <div class="plv-produtos" id="plv1">
                 <div>
-                    <p>Dieta -7KG em 7 Dias SEM GLUTEN</p><!--título-->
+                    <p><%= nomeProduto %></p><!--título-->
                 </div>
             </div>
-            <div class="plv-produtos" id="plv2">R$300,00</div><!--preço-->
+            <div class="plv-produtos" id="plv2">R$ <%= precoProduto %></div><!--preço-->
 
             <div class="plv-produtos" id="plv4">
                 <p>Consulte o frete</p>
@@ -109,35 +109,10 @@
 
     <div id="minhaDiv" onclick="toggleDiv()" class="descricao-escondida">
         <!-- Div para exibir a descrição completa do produto, inicialmente oculta -->
-        <p>Dia 1: <br><!--descrição do produto-->
-            Café da manhã: Aveia com frutas e nozes. <br>
-            Almoço: Salada de folhas verdes com frango grelhado. <br>
-            Jantar: Salmão assado com legumes cozidos no vapor. <br> <br>
-            Dia 2: <br>
-            Café da manhã: Omelete de clara de ovo com espinafre e tomate. <br>
-            Almoço: Quinoa com legumes grelhados. <br>
-            Jantar: Peito de frango com molho de tomate e abobrinha salteada. <br> <br>
-            Dia 3: <br>
-            Café da manhã: Torrada integral com abacate e ovos escalfados. <br>
-            Almoço: Salada de grão de bico com tomate e pepino. <br>
-            Jantar: Bife grelhado com batata doce assada. <br> <br>
-            Dia 4: <br>
-            Café da manhã: Smoothie verde com espinafre, banana e leite de amêndoa. <br>
-            Almoço: Envoltório de frango e legumes em uma tortilla de trigo integral. <br>
-            Jantar: Filé de peixe grelhado com couve-flor salteado. <br> <br>
-            Dia 5: <br>
-            Café da manhã: Mingau de aveia com frutas vermelhas e sementes de linhaça. <br>
-            Almoço: Salada de quinoa com salmão defumado. <br>
-            Jantar: Frango assado com legumes assados ​​no forno. <br> <br>
-            Dia 6: <br>
-            Café da manhã: ovos mexidos com espinafre e queijo feta. <br>
-            Almoço: Wrap vegetariano com homus, abacate e legumes variados. <br>
-            Jantar: Coxinhas de frango assadas com batatas assadas. <br> <br>
-            Dia 7: <br>
-            Café da manhã: Torrada integral com manteiga de amendoim e rodelas de banana. <br>
-            Almoço: Iogurte grego com frutas frescas. <br>
-            Jantar: Salmão assado com legumes cozidos no vapor. <br>
-        </p>
+        <p><% const linhasDescricao = descricaoProduto.split('Dia '); %>
+            <% for (let i = 1; i < linhasDescricao.length; i++) { %>
+              <p>Dia <%= linhasDescricao[i] %></p>
+            <% } %></p>
     </div>
 
     <div class="espaco-botao">

@@ -153,7 +153,7 @@ input {
     display: flex; /* Define o elemento como flexível */
     height: 3.5vw; /* Define a altura do elemento como 3.5% da largura da viewport */
     align-items: center; /* Alinha verticalmente o conteúdo do elemento */
-    margin-left: 83vw; /* Define a margem esquerda do elemento como 83% da largura da viewport */
+    margin-left: 83.7vw; /* Define a margem esquerda do elemento como 83% da largura da viewport */
     justify-content: space-around; /* Distribui o espaço livre de forma igual entre os elementos filhos */
     width: 32.5vh; /* Define a largura do elemento como 32.5% da altura da viewport */
 }
